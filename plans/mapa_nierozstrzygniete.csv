@@ -1,0 +1,23 @@
+zrodlo,gatunek,nazwa_w_tytule,status_mapy,najlepszy_folder,wynik,drugi_folder,wynik_drugi,przewaga
+EtsyListingsDownload.csv:40,koń,Percheron,NIEJEDNOZNACZNA RASA,37. Percheron 5055882487321,0.925,,,
+EtsyListingsDownload.csv:65,koń,Clydesdale,DO SPRAWDZENIA (ten sam folder),37. Percheron 5055882487321,0.693,9. Clydesdale 5055882487048,0.561,0.132
+EtsyListingsDownload.csv:70,koń,Clydesdale,DO SPRAWDZENIA (ten sam folder),9. Clydesdale 5055882487048,0.836,37. Percheron 5055882487321,0.658,0.179
+EtsyListingsDownload.csv:107,kot,Bengal,DO SPRAWDZENIA (ten sam folder),15. Bengal 5055882486607,0.802,12. Cornish Rex 5055882486577,0.532,0.27
+EtsyListingsDownload.csv:110,pies,Tosa Inu,BRAK FOLDERU,187 Tosa 5055882489325,0.899,133 Pyrenean Shepherd 5055882488786,0.765,0.135
+EtsyListingsDownload.csv:115,pies,Russian Tsvetnaya Bolonka,BRAK RASY W RASY.XLSX,193 Russian Tsvetnaya Bolonka 5055882489387,0.807,133 Pyrenean Shepherd 5055882488786,0.757,0.049
+EtsyListingsDownload.csv:126,pies,German pointer,BRAK FOLDERU,171 German Longhaired Pointer 5055882489165,0.917,133 Pyrenean Shepherd 5055882488786,0.757,0.159
+EtsyListingsDownload.csv:131,pies,Fox Terrier,DO SPRAWDZENIA (ten sam folder),135 Scottish Deerhound 5055882488809,0.711,187 Tosa 5055882489325,0.709,0.002
+EtsyListingsDownload.csv:139,pies,Laekenois Dog,BRAK RASY W RASY.XLSX,133 Pyrenean Shepherd 5055882488786,0.745,4 Basset 5055882487499,0.685,0.059
+EtsyListingsDownload.csv:147,pies,Laekenois Dog,BRAK RASY W RASY.XLSX,155 Laekenois dog 5055882489004,0.811,133 Pyrenean Shepherd 5055882488786,0.716,0.095
+EtsyListingsDownload.csv:150,pies,Catahoula Cur,BRAK RASY W RASY.XLSX,150 Catahoula Cur 5055882488953,0.859,133 Pyrenean Shepherd 5055882488786,0.73,0.129
+EtsyListingsDownload.csv:161,pies,Pyrenean Shepherd,BRAK RASY W RASY.XLSX,133 Pyrenean Shepherd 5055882488786,0.839,146 Wirehaired Vizsla 5055882488915,0.739,0.1
+EtsyListingsDownload.csv:163,pies,Scottish Deerhound,BRAK RASY W RASY.XLSX,135 Scottish Deerhound 5055882488809,0.913,133 Pyrenean Shepherd 5055882488786,0.776,0.138
+EtsyListingsDownload.csv:202,pies,Schnauzer Cropped,BRAK RASY W RASY.XLSX,88 Schnauzer 5055882488335,0.858,146 Wirehaired Vizsla 5055882488915,0.759,0.099
+EtsyListingsDownload.csv:212,pies,Fox Terrier,DO SPRAWDZENIA (ten sam folder),75 Fox Terrier 5055882488205,0.763,133 Pyrenean Shepherd 5055882488786,0.684,0.079
+EtsyListingsDownload.csv:248,pies,Dachshund,DO SPRAWDZENIA (ten sam folder),19 Dachshund 5055882487642,0.736,133 Pyrenean Shepherd 5055882488786,0.723,0.013
+EtsyListingsDownload.csv:1350,pies,Vizsla,BRAK FOLDERU,146 Wirehaired Vizsla 5055882488915,0.793,133 Pyrenean Shepherd 5055882488786,0.749,0.044
+EtsyListingsDownload.csv:1549,pies,Jagdterrier,BRAK RASY W RASY.XLSX,174 Jagdterrier 5055882489196,0.785,133 Pyrenean Shepherd 5055882488786,0.704,0.081
+EtsyListingsDownload.csv:1680,pies,Dachshund,DO SPRAWDZENIA (ten sam folder),96 Wirehaired Dachshund 5055882488410,0.859,133 Pyrenean Shepherd 5055882488786,0.719,0.14
+EtsyListingsDownload.csv:1701,kot,Bengal,DO SPRAWDZENIA (ten sam folder),15. Bengal 5055882486607,0.802,12. Cornish Rex 5055882486577,0.532,0.27
+EtsyListingsDownload1.csv:90,pies,Basset Hound,BRAK FOLDERU,4 Basset 5055882487499,0.911,133 Pyrenean Shepherd 5055882488786,0.721,0.189
+EtsyListingsDownload1.csv:151,pies,Akita Inu,BRAK RASY W RASY.XLSX,1 Akita Inu 5055882487468,0.831,133 Pyrenean Shepherd 5055882488786,0.737,0.093
