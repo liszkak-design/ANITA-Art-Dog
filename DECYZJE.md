@@ -8,7 +8,7 @@ Ten plik zbiera ustalenia właścicielki sklepu Art-Dog. Obowiązuje razem z `CL
 * Kolumna C arkusza Rasy = główna angielska nazwa (do tytułu). Kolumna D = pełna nazwa, jeśli C jest skrócona. Kolumna E = jeden angielski wariant do użycia w pierwszym akapicie opisu (pusta = brak wariantu). Kolumna K = polskie nazwy potoczne.
 * Nazwy ras i tłumaczenia bierz z `Rasy.xlsx`, nie z istniejących tytułów i opisów w Etsy (mogą zawierać błędy). Fakty o produktach (wymiary, pojemność, materiał, terminy, cła, wysyłka) mogą pochodzić tylko od właścicielki. Etsy jest tylko źródłem danych wejściowych do kontroli.
 * Rasy, których nie ma w `Rasy.xlsx`: zgłoś na liście braków, nie zgaduj nazwy ani tłumaczeń. Jeśli w kontekście oferty tłumaczenie rasy z `Rasy.xlsx` wydaje ci się nie prawidłowe zgłoś jako pytanie.
-* Dane pomocnicze: `data/EtsyListingsDownload.csv`, `data/EtsyListingsDownload1.csv` (2304 oferty), `data/EtsySoldOrderItems2025-2026.csv`, `Audyt\_Etsy\_ArtDog.xlsx`. W eksporcie ofert kolumna SKU jest pusta, więc nie ma w nim numerów EAN.
+* Dane pomocnicze: `data/EtsyListingsDownload.csv`, `data/EtsyListingsDownload1.csv` (razem 2304 oferty: 2000 + 304), `data/EtsySoldOrderItems2025-2026.csv`, `Audyt\_Etsy\_ArtDog.xlsx`. W eksporcie ofert kolumna SKU jest pusta, więc nie ma w nim numerów EAN.
 
 ## 2\. Statusy tłumaczeń
 
@@ -81,3 +81,15 @@ Ten plik zbiera ustalenia właścicielki sklepu Art-Dog. Obowiązuje razem z `CL
 * Format nagłówka `x-api-key` (keystring:shared\_secret) i adres przekierowania OAuth to założenia do potwierdzenia przy pierwszym teście.
 * Ok. 200 nowych ofert: wystawiane jako szkice, publikacja po akceptacji właścicielki.
 
+
+## 9\. Płytki ceramiczne "with a Photo" (ustalenia z 25.10.2026)
+
+* Zakres: tylko 302 oferty płytek "with a Photo" (1 zdjęcie, cena 16, bez wariantów). Rodzinę "with Graphics" (145 ofert) odkładamy.
+* Szukanie folderów: zbiorczy folder wideo `https://www.artdog.com.pl/VIDEO/VII%20tura/38.%20SUBLIMACJA/6.%20Plyta%20Nagrobna/`, w nim podfoldery typu `195. Plyta nagro KOTY`, `196. Plyta nagro PSY` itd. Z nazwy folderu rasy bierzemy EAN, zdjęcia są w `https://www.artdog.com.pl/allegro/zebraneEAN/<EAN>/`.
+* Zdjęcia w ofercie, kolejność: `3.jpg` (główne), `4.jpg`, `5.jpg`, `2.jpg`, `6.jpg`, `7.jpg`, na końcu `original.jpg` (nieedytowane zdjęcie prawdziwej płytki, jedno dla wszystkich ofert z tej grupy, plik `media/plytki_with_photo/original.jpg`). Pliki `1.jpg` i `Druk.jpg` nie są używane. Zdjęć nie edytujemy. Zdjęcie `6.jpg` (płytka na urnie) to przykład zastosowania, urna nie jest częścią oferty.
+* Właścicielka zgodziła się na usunięcie istniejącego zdjęcia w tych ofertach i zastąpienie go nowym. Wymianę robimy przez nadpisanie slotów (`uploadListingImage`), bez uprawnienia `listings_d`. Zgoda dotyczy tylko zdjęć w ofertach z tej grupy.
+* Wideo: film o personalizacji (`video/video-ceramic-plaques-anita.mp4`). Żadna oferta nie powinna mieć jeszcze wideo. Jeśli któraś ma, zgłosić i nie dodawać.
+* Pilot z grupą kontrolną: odpuszczony. Po teście na jednej ofercie idziemy w partiach po maks. 50.
+* SKU = EAN: dodajemy tylko, jeśli API pozwala zapisać samo SKU bez ryzyka dla ceny i stanu. W razie wątpliwości pomijamy i zgłaszamy.
+* "Shopping basket summary": "Ceramic memorial plaque" (tłumaczymy na 8 języków).
+* Szablony opisów: `templates/opis_plytka_kot.md`, `opis_plytka_pies.md`, `opis_plytka_kon.md` (zatwierdzone). Plik `data/key_words.txt` (z `data/key_words.pdf`) to tylko sugestia do tagów: 180 z 317 fraz ma więcej niż 20 znaków.

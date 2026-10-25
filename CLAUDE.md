@@ -10,7 +10,7 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 * Ok. 2300 działających ofert + ok. 200 nowych. Ok. 40 typów produktów. Oferty seryjne: ten sam produkt, różne rasy.
 * Oferty po angielsku. Główne rynki: USA i UK, dużo Niemiec i Holandii, czasem Francja.
 * Statuetki z brązu i urny ze statuetką/grawerem dają ok. 81% przychodu. Te oferty zmieniamy na końcu i ostrożnie.
-* Dane w repozytorium: `data/Rasy.xlsx` (nadrzędny plik nazw ras, osób i tłumaczeń), `data/EtsyListingsDownload.csv`, `data/EtsyListingsDownload1.csv` (eksport ofert, 2304), `data/EtsySoldOrderItems2025-2026.csv` (sprzedaż), `Audyt\_Etsy\_ArtDog.xlsx` (audyt). Nazwy ras i tłumaczenia bierz tylko z `Rasy.xlsx`, nie z tekstów ofert w Etsy. 
+* Dane w repozytorium: `data/Rasy.xlsx` (nadrzędny plik nazw ras, osób i tłumaczeń), `data/EtsyListingsDownload.csv`, `data/EtsyListingsDownload1.csv` (eksport ofert: 2000 + 304 = 2304), `data/EtsySoldOrderItems2025-2026.csv` (sprzedaż), `Audyt\_Etsy\_ArtDog.xlsx` (audyt). Nazwy ras i tłumaczenia bierz tylko z `Rasy.xlsx`, nie z tekstów ofert w Etsy. 
 
 ## Zasady bezwzględne
 
@@ -63,7 +63,7 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 3. Autoryzacja tylko do odczytu → pełna kopia zapasowa ofert w `backup/` (tylko odczyt).
 4. Test zapisu na JEDNEJ ofercie o niskiej sprzedaży (tytuł, tagi, opis, alt text jednego zdjęcia, jedno tłumaczenie) i sprawdzenie w Etsy przez użytkowniczkę.
 5. Wzorce (tytuły, tagi, wstępy opisów, alt texty) dla jednego typu produktu → zatwierdzenie.
-6. Pilot na 30-40 ofertach z grupą kontrolną bez zmian → pomiar po 4-8 tygodniach.
+6. Pilot na 30-40 ofertach z grupą kontrolną bez zmian → pomiar po 4-8 tygodniach (pominięty dla płytek "with a Photo", decyzja właścicielki).
 7. Wdrożenie typ po typie (najpierw niższa sprzedaż, bestsellery na końcu).
 8. Tłumaczenia po zatwierdzeniu angielskich wersji i słownika: najpierw 1-2 języki, potem reszta.
 9. Nowe oferty (ok. 200) jako szkice, publikacja po akceptacji użytkowniczki.
