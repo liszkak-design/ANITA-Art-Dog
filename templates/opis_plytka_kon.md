@@ -32,6 +32,30 @@ w partii różnią się co najmniej w dwóch slotach. Pełna nazwa rasy `{BREED}
 - C3: You can also have the plaque printed with a photo of your own horse.
 - C4: Your own photo can be printed instead, just attach it when ordering.
 
+## 1a. Warianty dla kucyków (Shetland Pony, Fell Pony, Falabella)
+
+Dla tych trzech ras używamy poniższych banków zamiast banków z punktu 1. Sekcje stałe z punktu 2 czytamy
+z „pony" w miejsce „horse" (A LASTING TRIBUTE, imię w PERSONALISATION, zdanie zamykające).
+
+**Slot A**
+- A1: This pony memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of a {BREED}, made to remember a much-loved pony.
+- A2: A ceramic memorial plaque for your pony, decorated with a sketch-style portrait of a {BREED}.
+- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of the breed.
+- A4: This ceramic pet memorial plaque features a sketch-style portrait of a {BREED}, created to honour a much-loved companion.
+- A5: A pony memorial plaque in ceramic: a sketch-style portrait of a {BREED} that keeps the memory of your pony close.
+
+**Slot B**
+- B1: Place it on a grave or in any other place of remembrance, as a lasting tribute to the pony who shared your life.
+- B2: It can mark a grave or sit in a quiet spot that is special to you, a lasting reminder of the pony you loved.
+- B3: Use it as a grave marker or as a keepsake in a place of remembrance, a lasting tribute to your pony.
+- B4: A fitting tribute for a grave or any place where you remember your pony, made to last outdoors.
+
+**Slot C**
+- C1: If you would rather remember your own pony, send us a photo and we will print it instead.
+- C2: Prefer your own pony's portrait? Attach a photo and we will print it on the plaque.
+- C3: You can also have the plaque printed with a photo of your own pony.
+- C4: Your own photo can be printed instead, just attach it when ordering.
+
 ## 2. Sekcje stałe (gotowy tekst, wersja dla konia)
 
 ```
