@@ -93,3 +93,17 @@ Ten plik zbiera ustalenia właścicielki sklepu Art-Dog. Obowiązuje razem z `CL
 * SKU = EAN: dodajemy tylko, jeśli API pozwala zapisać samo SKU bez ryzyka dla ceny i stanu. W razie wątpliwości pomijamy i zgłaszamy.
 * "Shopping basket summary": "Ceramic memorial plaque" (tłumaczymy na 8 języków).
 * Szablony opisów: `templates/opis_plytka_kot.md`, `opis_plytka_pies.md`, `opis_plytka_kon.md` (zatwierdzone). Plik `data/key_words.txt` (z `data/key_words.pdf`) to tylko sugestia do tagów: 180 z 317 fraz ma więcej niż 20 znaków.
+
+### 9a\. Dopasowanie nazw z ofert i folderów do Rasy.xlsx (reguły do wszystkich typów produktów)
+
+* Nazwa w tytule oferty lub folderu serwera, której nie ma w kolumnie C, jest dopasowywana wg poniższych rozstrzygnięć. Obowiązuje zawsze nazwa z kolumny C.
+  * Akita Inu = Akita. Russian Tsvetnaya Bolonka = Bolonka. Catahoula Cur = Catahoula Leopard Dog. Laekenois Dog = Laekenois Belgian Shepherd. Scottish Deerhound = Deerhound. Basset (folder) i Basset Hound = Basset Hound. Tosa (folder) = Tosa Inu. Pyrenean Shepherd = Pyrenean Sheepdog.
+  * Schnauzer Cropped = Schnauzer (Cropped to cecha produktu, nie rasa).
+  * Wirehaired, Longhaired, Shorthaired, Smooth, Fohlen i podobne w nazwach folderów to cecha (długość lub rodzaj sierści, wiek), nie osobna rasa, jak przy Chihuahua i Dachshund. Dlatego: Wirehaired Vizsla = Vizsla, German Longhaired Pointer = German Pointer, Wirehaired Dachshund i Smooth Fox Terrier = Dachshund i Fox Terrier, Kurilian Bobtail Longhaired i Selkirk Rex Longhaired lub Shorthaired = Kurilian Bobtail i Selkirk Rex, Haflinger Fohlen = Haflinger.
+  * Percheron to osobna rasa (R222), nie Belgian Horse.
+  * Jagdterrier dodany do `Rasy.xlsx` jako R331 (tłumaczenia to szkice Claude'a, do sprawdzenia).
+* Dwie oferty tej samej rasy z różnymi grafikami (np. Boxer z uszami przyciętymi i naturalnymi) dopasowujemy do dwóch folderów porównując zdjęcie oferty z `1.jpg` w folderze (`scripts/match_by_image.py`). To tylko dopasowanie oferty do folderu, rasy ze zdjęcia nie ustalamy.
+* Gdy tytuł oferty nie pasuje do zdjęcia, właścicielka rozstrzyga rasę. Oferta "Fox Terrier" (`EtsyListingsDownload.csv:131`) ma zdjęcie Brittany Spaniel, więc optymalizujemy ją jako Brittany Spaniel (poprawiamy rasę w tytule).
+* Oferty bez pasującego folderu (Clydesdale `664826022`, Laekenois Dog `678580977`) pomijamy. Duplikaty produktu (dwie oferty Bengal na jednym folderze): optymalizujemy jedną, drugą pomijamy.
+* Foldery bez oferty (Cornish Rex, Smooth Fox Terrier): można wystawić nowe oferty.
+* Mapa końcowa płytek "with a Photo": `plans/mapa_koncowa.csv` (299 ofert do optymalizacji, 3 pominięte).
