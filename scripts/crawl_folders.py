@@ -10,6 +10,8 @@ import re
 import subprocess
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
+from html import unescape as html_unescape
 import urllib.parse
 from pathlib import Path
 
@@ -39,44 +41,52 @@ def children(url):
     for h in HREF.findall(html):
         if h.startswith("/") or h.startswith("http"):
             continue
-        out.append(urllib.parse.unquote(h))
+        out.append(urllib.parse.unquote(html_unescape(h)))
     return out
+
+
+def process(sp, br):
+    m = re.search(r"(\d{13})/?$", br)
+    ean = m.group(1) if m else ""
+    row = {"species_folder": sp.strip("/"), "breed_folder": br.strip("/"), "ean": ean, "videos": "", "photos": ""}
+    try:
+        files = children(VIDEO + urllib.parse.quote(sp) + urllib.parse.quote(br))
+        row["videos"] = "|".join(f for f in files if f.endswith(".mp4"))
+        if ean:
+            row["photos"] = "|".join(sorted(f for f in children(PHOTOS + ean + "/") if f.lower().endswith(".jpg")))
+    except Exception as e:
+        row["photos"] = ("ERROR " + str(e))[-100:]
+    return row
 
 
 def main():
     OUT.parent.mkdir(exist_ok=True)
+    FIELDS = ["species_folder", "breed_folder", "ean", "videos", "photos"]
     done = set()
-    rows = []
     if OUT.exists():
-        rows = list(csv.DictReader(open(OUT, encoding="utf-8")))
-        done = {r["ean"] for r in rows}
+        done = {(r["species_folder"], r["breed_folder"]) for r in csv.DictReader(open(OUT, encoding="utf-8"))
+                if not r["photos"].startswith("ERROR")}
+        kept = [r for r in csv.DictReader(open(OUT, encoding="utf-8")) if not r["photos"].startswith("ERROR")]
+    else:
+        kept = []
+    jobs = []
     for sp in children(VIDEO):
-        if not sp.endswith("/"):
-            continue
-        for br in children(VIDEO + urllib.parse.quote(sp)):
-            if not br.endswith("/"):
-                continue
-            m = re.search(r"(\d{13})/?$", br)
-            ean = m.group(1) if m else ""
-            if ean in done and ean:
-                continue
-            files = children(VIDEO + urllib.parse.quote(sp) + urllib.parse.quote(br))
-            videos = [f for f in files if f.endswith(".mp4")]
-            photos = []
-            if ean:
-                try:
-                    photos = [f for f in children(PHOTOS + ean + "/") if f.lower().endswith(".jpg")]
-                except Exception as e:
-                    photos = [f"ERROR {e}"[:80]]
-            rows.append({"species_folder": sp.strip("/"), "breed_folder": br.strip("/"), "ean": ean,
-                         "videos": "|".join(videos), "photos": "|".join(sorted(photos))})
-            print(sp.strip("/"), "|", br.strip("/"), "|", len(photos), "zdjęć", file=sys.stderr)
-            time.sleep(0.15)
-    with open(OUT, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["species_folder", "breed_folder", "ean", "videos", "photos"])
+        if sp.endswith("/"):
+            for br in children(VIDEO + urllib.parse.quote(sp)):
+                if br.endswith("/") and (sp.strip("/"), br.strip("/")) not in done:
+                    jobs.append((sp, br))
+    print(len(jobs), "folderów do przejrzenia", file=sys.stderr)
+    with open(OUT, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=FIELDS)
         w.writeheader()
-        w.writerows(rows)
-    print(len(rows), "folderów zapisano do", OUT)
+        w.writerows(kept)
+        fh.flush()
+        with ThreadPoolExecutor(max_workers=3) as ex:
+            for row in ex.map(lambda j: process(*j), jobs):
+                w.writerow(row)
+                fh.flush()
+                print(row["species_folder"], "|", row["breed_folder"], "|", row["photos"].count("jpg"), "zdjęć", file=sys.stderr)
+    print("zapisano", OUT)
 
 
 if __name__ == "__main__":
