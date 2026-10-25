@@ -5,12 +5,12 @@
 Tytuł zaczyna się od nazwy rasy z kolumny C `Rasy.xlsx` (`{B}`), po niej ewentualne słowo odmiany ze "Słowa stałe"
 (np. Longhaired). `{S}` = Dog / Cat / Horse (Pony dla kucyków), pomijane, gdy nazwa rasy już zawiera to słowo
 (np. Arabian Horse). Wzorzec wybierany po ID oferty, sąsiednie oferty w partii mają różne wzorce.
-Najdłuższy tytuł dla najdłuższej nazwy rasy z dodaną odmianą ma 137 znaków (limit 140).
+Najdłuższy tytuł dla najdłuższej nazwy rasy z dodaną odmianą ma poniżej 140 znaków (limit 140). Słowo Headstone nie występuje w tytułach (decyzja właścicielki), zostaje tylko w tagach z puli.
 
 1. {B} {S} Memorial Plaque, Personalized Ceramic Tombstone with Your Photo, Pet Loss Gift
 2. {B} Pet Memorial Plaque, Custom Ceramic Grave Marker with Photo, Sympathy Gift
 3. {B} {S} Tombstone Plaque, Ceramic Grave Marker with Your Photo, Personalised Pet Memorial
-4. {B} Headstone Plaque with Photo, Custom Ceramic Memorial for Pet Grave or Garden, Pet Loss Gift
+4. {B} Pet Grave Marker with Photo, Custom Ceramic Plaque for Garden or Cemetery, Pet Loss Gift
 5. {B} {S} Memorial Plaque with Photo, Personalised Ceramic Pet Grave Marker, In Loving Memory
 6. {B} Ceramic Memorial Plaque, Custom Photo Grave Marker for Your {S}, Pet Loss Keepsake
 
