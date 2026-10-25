@@ -174,7 +174,7 @@ def build():
     """Returns list of (layer, start, end, slide) where end None = until the end of its scene."""
     L = []
     # Each scene fades fully to white by the time the next one starts (end = next start - FADE).
-    S1, S2, S3, S4, S5 = 0.0, 2.4, 5.7, 9.3, 12.5
+    S1, S2, S3, S4, S5 = 0.0, 2.0, 5.3, 9.2, 12.9
     E1, E2, E3, E4 = S2 - FADE, S3 - FADE, S4 - FADE, S5 - FADE
 
     # scene 1: intro
