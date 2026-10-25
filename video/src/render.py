@@ -173,22 +173,24 @@ def scale_alpha(layer, a):
 def build():
     """Returns list of (layer, start, end, slide) where end None = until the end of its scene."""
     L = []
-    S1, S2, S3, S4, S5 = 0.0, 2.5, 5.9, 9.5, 12.5
+    # Each scene fades fully to white by the time the next one starts (end = next start - FADE).
+    S1, S2, S3, S4, S5 = 0.0, 2.4, 5.7, 9.3, 12.5
+    E1, E2, E3, E4 = S2 - FADE, S3 - FADE, S4 - FADE, S5 - FADE
 
     # scene 1: intro
     L.append((text_block("PERSONALISATION", ["How to customize", "*your plaque*"],
                          "Optional – order as shown, or make it your own", W // 2, H // 2, max_w=1100,
-                         title_size=104, centered=True), S1, S2 + FADE, True))
+                         title_size=104, centered=True), S1, E1, True))
 
     # scene 2: A-D, same position, text on the right
     t2 = text_block("YOUR PHOTO", ["Any photo", "*you send us*"],
                     "Optional · attach it in the personalisation box", 1090, H // 2)
-    L.append((t2, S2, S3 + FADE, True))
-    step = (S3 - S2 - FADE) / 4
+    L.append((t2, S2, E2, True))
+    step = (E2 - S2 - FADE) / 4
     for i, n in enumerate("ABCD"):
         start = S2 + i * step
-        end = S2 + (i + 1) * step + (FADE if i < 3 else 0.0)
-        L.append((photo(n, 880, 520, H // 2), start, end if i < 3 else S3 + FADE, False))
+        end = S2 + (i + 1) * step + FADE if i < 3 else E2
+        L.append((photo(n, 880, 520, H // 2), start, end, False))
 
     # scenes 3 & 4: three panels
     def triple(label, title, caps, names, s, e):
@@ -205,21 +207,25 @@ def build():
         L.append((head, s, e, True))
         xs = [W // 2 - 640, W // 2, W // 2 + 640]
         for i, (n, c) in enumerate(zip(names, caps)):
-            ps = s + 0.2 + i * 0.85
+            ps = s + 0.2 + i * 0.8
             L.append((photo(n, 640, xs[i], 625), ps, e, False))
             L.append((caption(c, xs[i], 968), ps, e, True))
 
     triple("CHOOSE YOUR STYLE", "Your photo, *three ways*",
            ["Original photo", "Colour, background removed", "Pencil sketch"],
-           ["0", "0-color", "0-sketch"], S3, S4 + FADE)
+           ["0", "0-color", "0-sketch"], S3, E3)
     triple("ADD A DEDICATION", "Name and dates, *if you wish*",
            ["Portrait only", "With your pet's name", "With name and dates"],
-           ["1", "1-name", "1-name-dates"], S4, S5 + FADE)
+           ["1", "1-name", "1-name-dates"], S4, E4)
 
-    # scene 5: end card
-    lg, lh = logo(380, W // 2, 130)
-    L.append((lg, S5 + 0.1, None, False))
-    L.append((end_texts(130 + lh + 50), S5 + 0.8, None, True))
+    # scene 5: end card, the whole block centred vertically in the frame
+    lg, lh = logo(380, W // 2, 0)
+    et = end_texts(lh + 50)
+    boxes = [b for b in (lg.getbbox(), et.getbbox()) if b]
+    top, bottom = min(b[1] for b in boxes), max(b[3] for b in boxes)
+    dy = H // 2 - (top + bottom) // 2
+    L.append((ImageChops.offset(lg, 0, dy), S5, None, False))
+    L.append((ImageChops.offset(et, 0, dy), S5 + 0.7, None, True))
     return L
 
 
