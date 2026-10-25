@@ -1,0 +1,24 @@
+zrodlo,nazwa_w_tytule,folder_najlepszy,wynik,drugi_folder,wynik_drugi,przewaga
+EtsyListingsDownload.csv:43,Haflinger Fohlen,34. Haflinger Fohlen 5055882487291,0.694,12. Haflinger 5055882487079,0.624,0.069
+EtsyListingsDownload.csv:59,Haflinger,12. Haflinger 5055882487079,0.874,34. Haflinger Fohlen 5055882487291,0.715,0.159
+EtsyListingsDownload.csv:75,Kurilian Bobtail Longhaired,46 Kurilian Bobtail Longhaired 5055882486911,0.858,45 Kurilian Bobtail 5055882486904,0.667,0.191
+EtsyListingsDownload.csv:78,Selkirk Rex Cat Shorthaired,37 Selkirk Rex Cat Shorthaired 5055882486829,0.775,36 Selkirk Rex Cat Longhaired 5055882486812,0.709,0.066
+EtsyListingsDownload.csv:79,Selkirk Rex Cat Longhaired,36 Selkirk Rex Cat Longhaired 5055882486812,0.87,37 Selkirk Rex Cat Shorthaired 5055882486829,0.706,0.164
+EtsyListingsDownload.csv:83,Kurilian Bobtail,45 Kurilian Bobtail 5055882486904,0.901,46 Kurilian Bobtail Longhaired 5055882486911,0.671,0.229
+EtsyListingsDownload.csv:137,Black and Tan Coonhound,157 Black And Tan Coonhound 5055882489028,0.929,148 Black & Tan Coonhound 5055882488939,0.677,0.251
+EtsyListingsDownload.csv:152,Black and Tan Coonhound,148 Black & Tan Coonhound 5055882488939,0.758,157 Black And Tan Coonhound 5055882489028,0.655,0.103
+EtsyListingsDownload.csv:181,Belgian Sheepdog,117 Belgian Sheepdog 5055882488625,0.921,59 Belgian Shepherd 5055882488045,0.661,0.26
+EtsyListingsDownload.csv:207,Pointer,85 Pointer 5055882488304,0.712,24 English Pointer 5055882487697,0.648,0.064
+EtsyListingsDownload.csv:215,Doberman,71 Doberman 5055882488168,0.819,21 Doberman 5055882487666,0.583,0.237
+EtsyListingsDownload.csv:217,Great Dane,70 Great Dane 5055882488151,0.731,28 Great Dane 5055882487734,0.671,0.06
+EtsyListingsDownload.csv:219,Chihuahua,66 Chihuahua 5055882488113,0.817,18 Chihuahua 5055882487635,0.721,0.096
+EtsyListingsDownload.csv:222,Belgian Shepherd,59 Belgian Shepherd 5055882488045,0.871,117 Belgian Sheepdog 5055882488625,0.677,0.194
+EtsyListingsDownload.csv:228,Boxer,62 Boxer 5055882488076,0.864,12 Boxer 5055882487574,0.691,0.173
+EtsyListingsDownload.csv:236,Schnauzer,44 Schnauzer 5055882487895,0.816,88 Schnauzer 5055882488335,0.681,0.134
+EtsyListingsDownload.csv:243,Doberman,21 Doberman 5055882487666,0.906,71 Doberman 5055882488168,0.571,0.335
+EtsyListingsDownload.csv:245,Great Dane,28 Great Dane 5055882487734,0.846,70 Great Dane 5055882488151,0.605,0.24
+EtsyListingsDownload.csv:246,English Pointer,24 English Pointer 5055882487697,0.726,85 Pointer 5055882488304,0.605,0.121
+EtsyListingsDownload.csv:1188,Labrador Retriever,81 Labrador Retriever 5055882488267,0.843,31 Labrador Retriever 5055882487765,0.664,0.179
+EtsyListingsDownload.csv:1469,Boxer,12 Boxer 5055882487574,0.874,62 Boxer 5055882488076,0.682,0.192
+EtsyListingsDownload.csv:1675,Chihuahua,18 Chihuahua 5055882487635,0.789,66 Chihuahua 5055882488113,0.768,0.022
+EtsyListingsDownload1.csv:174,Labrador Retriever,31 Labrador Retriever 5055882487765,0.763,81 Labrador Retriever 5055882488267,0.716,0.048
