@@ -10,7 +10,11 @@ w partii różnią się co najmniej w dwóch slotach. Pełna nazwa rasy `{BREED}
 
 Zdrobnienie `{NICK}`: tylko w slotach B i C, tylko w wariantach oznaczonych [N], tylko gdy kolumna E jest wpisana,
 po jednym razie w B i C (razem najwyżej dwa), nigdy w A. Gdy kolumna E jest pusta, używamy wyłącznie wariantów bez [N].
-Wartości z kolumny E użyte są dokładnie tak, jak wpisano w arkuszu.
+Wartości z kolumny E użyte są dokładnie tak, jak wpisano w arkuszu, z wyjątkiem poprawek zatwierdzonych przez
+właścicielkę (arkusz `Rasy.xlsx` niezmieniony): Affenpinscher: `Affie` (w arkuszu `ffie`), Newfoundland: `Newfie`
+(w arkuszu `Newfies`), Central Asia Shepherd: `Alabay` (w arkuszu `Alabai, Alabay`).
+Wpisy w kolumnie E, które są synonimami (np. Alsatian, Saint Bernard, Russian Wolfhound), są używane tak samo
+jak zdrobnienia, bo to często wyszukiwane nazwy alternatywne rasy.
 
 **Slot A (otwarcie, nazwa rasy + słowa kluczowe)**
 - A1: This {BREED} dog memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of a {BREED}, made to remember a much-loved dog.
