@@ -57,11 +57,11 @@ Folder: `allegro/zebraneEAN/5055882486553/`. Zdjęć nie edytujemy.
 ## Wideo
 `video/video-ceramic-plaques-anita.mp4` (bez zmian w pliku). Sprawdzić przy odczycie, czy oferta nie ma już wideo.
 
-## Pola personalizacji (propozycja, do potwierdzenia limitów znaków)
-1. "Do you want to personalize the plaque?" opcje: Yes / No. Instrukcja: Choose No to order the plaque exactly as shown.
-2. "Your photo (optional)". Instrukcja: Attach a clear photo of your pet, or send it later by Etsy message. Leave empty if you chose No.
-3. "Print style" opcje: Original photo / Original, background removed / Sketch style. Instrukcja: Choose how your photo is printed. Sketch style is the pencil-sketch look shown in the listing.
-4. "Name and dates (optional)". Instrukcja: Type the name, or name and dates of life, as they should appear, for example: Felix 12/29/2013 - 11/9/2026. Leave empty for no text.
+## Pola personalizacji (dopasowane do limitów Etsy: pytanie 45 zn., odpowiedź na liście 30 zn., instrukcja 120 zn. tylko przy uploadzie i polu tekstowym)
+1. Pytanie: "Do you want to personalize the plaque?" (38). Opcje: "No, as shown" (12) / "Yes, personalize it" (19). Lista nie ma instrukcji.
+2. Upload: "Your photo (optional)" (21). Instrukcja (96): Attach a clear photo of your pet, or send it later by Etsy message. Leave empty if you chose No.
+3. Pytanie: "Print style (if personalizing)" (30). Opcje: "Original photo" (14) / "Original, background removed" (28) / "Sketch style" (12). Lista nie ma instrukcji, opis stylów jest w opisie oferty.
+4. Pole tekstowe: "Name and dates (optional)" (25). Instrukcja (107): Name, or name and dates, as they should appear, e.g. Felix 12/29/2013 - 11/9/2026. Leave empty for no text.
 
 ## Pozostałe pola
 - Shopping basket summary: Ceramic memorial plaque
