@@ -4,7 +4,7 @@
 
 # Oferta 664665982: American Staffordshire Terrier (pies), EAN 5055882487475
 
-Wzorzec tytułu 2, warianty akapitu A1B3C1, zdrobnienie w danych rasy: Amstaff
+Wzorzec tytułu 2, warianty akapitu A4B3C1
 
 ## EN
 **Tytuł (105 zn.):** American Staffordshire Terrier Pet Memorial Plaque, Custom Ceramic Grave Marker with Photo, Sympathy Gift
@@ -15,7 +15,7 @@ Wzorzec tytułu 2, warianty akapitu A1B3C1, zdrobnienie w danych rasy: Amstaff
 
 **Opis:**
 ```
-This American Staffordshire Terrier dog memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of the dog, made to remember a much-loved pet. Use it as a grave marker or as a keepsake in a place of remembrance, a lasting tribute to your dog. If you would rather remember your own dog, send us a photo and we will print it instead.
+This ceramic pet memorial plaque features a sketch-style portrait of an American Staffordshire Terrier, created to honour a much-loved companion. Use it as a grave marker or as a keepsake in a place of remembrance, a lasting tribute to your dog. If you would rather remember your own dog, send us a photo and we will print it instead.
 
 IN SHORT
 - Ceramic oval plaque, approx. 10.5 x 7.5 cm (4.13 x 2.95 in), approx. 0.5 cm (0.2 in) thick
@@ -59,7 +59,7 @@ Our products are shipped from Poland, so import charges may apply in some countr
 
 **Opis:**
 ```
-Amerykański Staffordshire terrier: ceramiczna płytka nagrobna ze szkicowym portretem, stworzona na pamiątkę ukochanego psa. Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, hołd dla Twojego psa. Jeśli wolisz upamiętnić własnego psa, prześlij nam zdjęcie, a nadrukujemy je zamiast projektu.
+Ceramiczna płytka pamiątkowa ze szkicowym portretem, rasa: Amerykański Staffordshire terrier. Stworzona, by oddać hołd ukochanemu towarzyszowi. Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, hołd dla Twojego psa. Jeśli wolisz upamiętnić własnego psa, prześlij nam zdjęcie, a nadrukujemy je zamiast projektu.
 
 W SKRÓCIE
 - Ceramiczna owalna płytka, ok. 10,5 x 7,5 cm (4,13 x 2,95 cala), grubość ok. 0,5 cm (0,2 cala)
@@ -94,7 +94,7 @@ Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać n
 
 **Opis:**
 ```
-American Staffordshire Terrier: Gedenkplatte aus Keramik mit einem Skizzenporträt, gestaltet zur Erinnerung an Ihren Hund. Sie dient als Grabkennzeichnung oder als Erinnerungsstück an einem Ort des Gedenkens, eine Hommage an Ihren Hund. Wenn Sie lieber Ihr eigenes Tier in Erinnerung behalten möchten, senden Sie uns ein Foto, und wir drucken es anstelle des Motivs.
+Keramik-Gedenkplatte mit Skizzenporträt, Rasse: American Staffordshire Terrier. Geschaffen, um einem geliebten Begleiter die letzte Ehre zu erweisen. Sie dient als Grabkennzeichnung oder als Erinnerungsstück an einem Ort des Gedenkens, eine Hommage an Ihren Hund. Wenn Sie lieber Ihr eigenes Tier in Erinnerung behalten möchten, senden Sie uns ein Foto, und wir drucken es anstelle des Motivs.
 
 KURZ ZUSAMMENGEFASST
 - Ovale Keramikplatte, ca. 10,5 x 7,5 cm (4,13 x 2,95 Zoll), ca. 0,5 cm (0,2 Zoll) dick
@@ -129,7 +129,7 @@ Unsere Produkte werden aus Polen versendet, daher können in einigen Ländern Ei
 
 **Opis:**
 ```
-American Staffordshire Terrier: keramische grafplaat met een schetsportret, gemaakt ter nagedachtenis aan uw hond. Hij dient als grafmarkering of als aandenken op een plek van herinnering, een eerbetoon aan uw hond. Wilt u liever uw eigen dier herdenken? Stuur ons een foto en wij drukken die af in plaats van het ontwerp.
+Keramische gedenkplaat met een schetsportret, ras: American Staffordshire Terrier. Gemaakt om een geliefde metgezel te eren. Hij dient als grafmarkering of als aandenken op een plek van herinnering, een eerbetoon aan uw hond. Wilt u liever uw eigen dier herdenken? Stuur ons een foto en wij drukken die af in plaats van het ontwerp.
 
 IN HET KORT
 - Ovale keramische plaat, ca. 10,5 x 7,5 cm (4,13 x 2,95 inch), ca. 0,5 cm (0,2 inch) dik
@@ -164,7 +164,7 @@ Onze producten worden vanuit Polen verzonden, daarom kunnen in sommige landen in
 
 **Opis:**
 ```
-American Staffordshire Terrier : plaque funéraire en céramique ornée d'un portrait au style croquis, créée en souvenir de votre chien bien-aimé. Elle sert de marque de tombe ou de souvenir dans un lieu de recueillement, un hommage à votre chien. Si vous préférez honorer votre propre chien, envoyez-nous une photo et nous l'imprimerons à la place du motif.
+Plaque commémorative en céramique avec portrait au style croquis, race : American Staffordshire Terrier. Conçue pour rendre hommage à un compagnon bien-aimé. Elle sert de marque de tombe ou de souvenir dans un lieu de recueillement, un hommage à votre chien. Si vous préférez honorer votre propre chien, envoyez-nous une photo et nous l'imprimerons à la place du motif.
 
 EN BREF
 - Plaque ovale en céramique, env. 10,5 x 7,5 cm (4,13 x 2,95 po), épaisseur env. 0,5 cm (0,2 po)
@@ -199,7 +199,7 @@ Nos produits sont expédiés depuis la Pologne ; des frais d'importation peuvent
 
 **Opis:**
 ```
-American Staffordshire Terrier: targa funeraria in ceramica con ritratto in stile schizzo, creata in ricordo del suo cane. Serve come segno sulla tomba o come ricordo in un luogo di raccoglimento, un omaggio al suo cane. Se preferisce ricordare il suo animale, ci invii una foto e la stamperemo al posto del motivo.
+Targa commemorativa in ceramica con ritratto in stile schizzo, razza: American Staffordshire Terrier. Pensata per rendere omaggio a un compagno amato. Serve come segno sulla tomba o come ricordo in un luogo di raccoglimento, un omaggio al suo cane. Se preferisce ricordare il suo animale, ci invii una foto e la stamperemo al posto del motivo.
 
 IN BREVE
 - Targa ovale in ceramica, circa 10,5 x 7,5 cm (4,13 x 2,95 pollici), spessore circa 0,5 cm (0,2 pollici)
@@ -234,7 +234,7 @@ I nostri prodotti vengono spediti dalla Polonia, quindi in alcuni paesi possono 
 
 **Opis:**
 ```
-American Staffordshire Terrier: placa funerária em cerâmica com retrato em estilo esboço, criada em memória do seu cão. Serve como marca de túmulo ou como lembrança num local de memória, uma homenagem ao seu cão. Se preferir recordar o seu próprio animal, envie-nos uma foto e imprimiremos no lugar do motivo.
+Placa comemorativa em cerâmica com retrato em estilo esboço, raça: American Staffordshire Terrier. Criada para homenagear um companheiro querido. Serve como marca de túmulo ou como lembrança num local de memória, uma homenagem ao seu cão. Se preferir recordar o seu próprio animal, envie-nos uma foto e imprimiremos no lugar do motivo.
 
 EM RESUMO
 - Placa oval em cerâmica, aprox. 10,5 x 7,5 cm (4,13 x 2,95 polegadas), aprox. 0,5 cm (0,2 polegadas) de espessura
@@ -269,7 +269,7 @@ Os nossos produtos são enviados da Polónia, pelo que em alguns países podem s
 
 **Opis:**
 ```
-American Staffordshire Terrier: placa funeraria de cerámica con un retrato estilo boceto, creada en recuerdo de tu perro. Sirve como señal de tumba o como recuerdo en un lugar de homenaje, un tributo a tu perro. Si prefieres recordar a tu propio perro, envíanos una foto y la imprimiremos en lugar del diseño.
+Placa conmemorativa de cerámica con retrato estilo boceto, raza: American Staffordshire Terrier. Creada para rendir homenaje a un compañero querido. Sirve como señal de tumba o como recuerdo en un lugar de homenaje, un tributo a tu perro. Si prefieres recordar a tu propio perro, envíanos una foto y la imprimiremos en lugar del diseño.
 
 EN RESUMEN
 - Placa oval de cerámica, aprox. 10,5 x 7,5 cm (4,13 x 2,95 pulgadas), aprox. 0,5 cm (0,2 pulgadas) de grosor
@@ -304,7 +304,7 @@ Nuestros productos se envían desde Polonia, por lo que en algunos países puede
 
 **Opis:**
 ```
-American Staffordshire Terrier: gravplatta i keramik med ett skissporträtt, skapad till minne av din hund. Den fungerar som gravmarkering eller som minne på en minnesplats, en hyllning till din hund. Om du hellre vill minnas ditt eget djur, skicka oss ett foto så trycker vi det i stället för motivet.
+Minnesplatta i keramik med skissporträtt, ras: American Staffordshire Terrier. Skapad för att hedra en älskad följeslagare. Den fungerar som gravmarkering eller som minne på en minnesplats, en hyllning till din hund. Om du hellre vill minnas ditt eget djur, skicka oss ett foto så trycker vi det i stället för motivet.
 
 KORT OM PRODUKTEN
 - Oval keramikplatta, ca 10,5 x 7,5 cm (4,13 x 2,95 tum), ca 0,5 cm (0,2 tum) tjock
@@ -335,7 +335,7 @@ Våra produkter skickas från Polen, så i vissa länder kan importavgifter till
 
 # Oferta 664813212: Ragdoll (kot), EAN 5055882486515
 
-Wzorzec tytułu 3, warianty akapitu A1B1C1, zdrobnienie w danych rasy: brak
+Wzorzec tytułu 3, warianty akapitu A1B1C1
 
 ## EN
 **Tytuł (93 zn.):** Ragdoll Cat Tombstone Plaque, Ceramic Grave Marker with Your Photo, Personalised Pet Memorial
@@ -666,7 +666,7 @@ Våra produkter skickas från Polen, så i vissa länder kan importavgifter till
 
 # Oferta 664825084: Andalusian Horse (koń), EAN 5055882486997
 
-Wzorzec tytułu 2, warianty akapitu A4B1C4, zdrobnienie w danych rasy: brak
+Wzorzec tytułu 2, warianty akapitu A4B1C4
 
 ## EN
 **Tytuł (91 zn.):** Andalusian Horse Pet Memorial Plaque, Custom Ceramic Grave Marker with Photo, Sympathy Gift

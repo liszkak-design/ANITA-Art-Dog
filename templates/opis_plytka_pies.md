@@ -15,9 +15,9 @@ pełna nazwa rasy jest wtedy w tytule oferty i w sekcji IN SHORT (decyzja właś
 Wartości z kolumny E użyte są dokładnie tak, jak wpisano w arkuszu, z wyjątkiem poprawek zatwierdzonych przez
 właścicielkę (arkusz `Rasy.xlsx` niezmieniony): Affenpinscher: `Affie` (w arkuszu `ffie`), Newfoundland: `Newfie`
 (w arkuszu `Newfies`), Central Asia Shepherd: `Alabay` (w arkuszu `Alabai, Alabay`).
-Wpisy w kolumnie E, które są synonimami (np. Alsatian, Saint Bernard, Russian Wolfhound), NIE dostają zdań ze zdrobnieniem
-(decyzja 26.10.2026). Klasyfikacja wszystkich 45 wpisów: `data/nick_klasyfikacja.csv` (zdrobnienie / synonim / do decyzji);
-zdania [N] używamy tylko dla typu "zdrobnienie".
+Wpisy w kolumnie E, które są synonimami (np. Alsatian, Saint Bernard, Russian Wolfhound; 27 z 45), NIE dostają zdań ze zdrobnieniem [N],
+ale mają synonim w zdaniu A (warianty [S] A12-A18, nowe, do przeglądu w partii 1: synonim zamiast nazwy rasy albo obok niej),
+żeby oferta była znajdowana po tych nazwach (decyzja 26.10.2026). Klasyfikacja: `data/nick_klasyfikacja.csv` (18 zdrobnień, 27 synonimów).
 
 **Slot A (otwarcie, nazwa rasy + słowa kluczowe)**
 - A1: This {BREED} dog memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of the dog, made to remember a much-loved pet.
@@ -31,6 +31,13 @@ zdania [N] używamy tylko dla typu "zdrobnienie".
 - A9 [N]: A ceramic tombstone plaque with a sketch-style portrait, made to remember your much-loved {NICK}.
 - A10 [N]: Remember your faithful {NICK} with this ceramic memorial plaque, decorated with a sketch-style portrait of the dog.
 - A11 [N]: This ceramic plaque keeps the memory of your dear {NICK} close, with a sketch-style portrait of the dog.
+- A12 [S]: This {SYN} dog memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of the dog, made to remember a much-loved pet.
+- A13 [S]: A ceramic memorial plaque for your {SYN} dog, decorated with a sketch-style portrait of the breed.
+- A14 [S]: Remember your {SYN} with this ceramic tombstone plaque, printed with a sketch-style portrait of the dog.
+- A15 [S]: This ceramic pet memorial plaque features a sketch-style portrait of a {SYN}, created to honour a much-loved companion.
+- A16 [S]: A {SYN} dog memorial plaque in ceramic: a sketch-style portrait that keeps the memory of your dog close.
+- A17 [S]: Remember your {BREED}, also known as the {SYN}, with this ceramic tombstone plaque, printed with a sketch-style portrait of the dog.
+- A18 [S]: This ceramic pet memorial plaque features a sketch-style portrait of a {BREED}, also called the {SYN}, created to honour a much-loved companion.
 
 **Slot B (zastosowanie)**
 - B1: Place it on a grave or in any other place of remembrance, as a lasting tribute to the dog who shared your life.

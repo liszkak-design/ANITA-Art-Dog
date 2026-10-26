@@ -22,8 +22,8 @@ def banks(species):
     text = (TPL / SPECIES_FILE[species]).read_text(encoding="utf-8")
     text = text.split("## 1a.")[0] if species == "koń" else text  # pony variants are separate
     out = {"A": [], "B": [], "C": []}
-    for m in re.finditer(r"^- ([ABC])\d( \[N\])?: (.*)$", text, re.M):
-        out[m.group(1)].append((bool(m.group(2)), m.group(3)))
+    for m in re.finditer(r"^- ([ABC])\d+(?: \[([NS])\])?: (.*)$", text, re.M):
+        out[m.group(1)].append((m.group(2) or "", m.group(3)))  # flaga: "" zwykły, "N" zdrobnienie, "S" synonim
     return out
 
 
@@ -33,15 +33,19 @@ def fixed_sections(species):
     return re.search(r"```\n(.*?)\n```", block, re.S).group(1)
 
 
-def description(listing_id, species, breed, nick=""):
+def description(listing_id, species, breed, nick="", syn=""):
     b = banks(species)
     parts, chosen, nicks = [], {}, 0
+    overlap = bool(syn) and (breed.lower() in syn.lower() or syn.lower() in breed.lower())  # np. Bulldog / English Bulldog: bez zdań z obiema nazwami
     for slot in "ABC":
-        opts = [(n, t) for n, t in b[slot] if not n or (nick and nicks < 2)]  # zdrobnienie: także w A, max 2 w akapicie
+        # zdrobnienie [N]: także w A, max 2 w akapicie; synonim [S]: tylko w A, a gdy rasa ma synonim, zdanie A zawsze go zawiera
+        opts = [(f, t) for f, t in b[slot]
+                if (f == "" and not (slot == "A" and syn)) or (f == "N" and nick and nicks < 2)
+                or (f == "S" and syn and slot == "A" and not ("{BREED}" in t and overlap))]
         i = pick(listing_id, slot, len(opts))
         chosen[slot] = i
-        nicks += opts[i][0]
-        parts.append(opts[i][1].replace("{BREED}", breed).replace("{NICK}", nick))
+        nicks += opts[i][0] == "N"
+        parts.append(opts[i][1].replace("{BREED}", breed).replace("{NICK}", nick).replace("{SYN}", syn))
     return " ".join(parts) + "\n\n" + fixed_sections(species).replace("{BREED}", breed), chosen
 
 

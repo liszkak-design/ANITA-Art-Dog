@@ -52,9 +52,9 @@ def rasy():
     return {(r[1], r[0]): dict(zip(h, r)) for r in ws.iter_rows(min_row=2, values_only=True) if r[0]}
 
 
-def nick_allowed():
-    """Zdrobnienie z kolumny E tylko dla wpisów sklasyfikowanych jako 'zdrobnienie' (synonimy i 'do decyzji' pomijamy)."""
-    return {r["rasa_id"] for r in csv.DictReader(open(ROOT / "data" / "nick_klasyfikacja.csv", encoding="utf-8")) if r["typ"] == "zdrobnienie"}
+def e_class():
+    """Klasyfikacja wpisów kolumny E (data/nick_klasyfikacja.csv): rasa_id -> 'zdrobnienie' lub 'synonim'."""
+    return {r["rasa_id"]: r["typ"] for r in csv.DictReader(open(ROOT / "data" / "nick_klasyfikacja.csv", encoding="utf-8"))}
 
 
 def read_map():
@@ -181,8 +181,12 @@ def render(row, lid, R):
     sp = row["gatunek"]
     breed = row["rasa_kolumna_C"]
     rr = R[(sp, row["rasa_id"])]
-    nick = (rr.get("Potoczne EN") or "").strip() if row["rasa_id"] in nick_allowed() else ""
-    desc, ch = gen.description(lid, sp, breed, nick)
+    e_val, typ = (rr.get("Potoczne EN") or "").strip(), e_class().get(row["rasa_id"], "")
+    nick, syn = (e_val if typ == "zdrobnienie" else ""), (e_val if typ == "synonim" else "")
+    desc, ch = gen.description(lid, sp, breed, nick, syn)
+    desc = re.sub(r"\b(dog|cat|horse|pony)\s+\1\b", r"\1", desc, flags=re.I)  # np. "Mexican Hairless Dog dog" -> "... Dog"
+    if syn:
+        assert syn in desc.split("\n\n")[0], f"brak synonimu w pierwszym akapicie: {lid}"
     # banki mają na sztywno "a {BREED}": poprawna forma a/an zależnie od nazwy rasy
     desc = re.sub(r"\b([Aa]) (?=" + re.escape(breed) + r")",
                   lambda m: (article(breed).capitalize() if m.group(1) == "A" else article(breed)) + " ", desc)
@@ -190,7 +194,7 @@ def render(row, lid, R):
     tg = gen.tags(lid, sp)
     assert breed in desc, f"brak pełnej nazwy rasy w opisie: {lid}"  # zdanie A może być samym zdrobnieniem, rasa jest w IN SHORT
     out = {"title": tit, "description": desc, "tags": tg, "materials": ["ceramic"], "alts": alts(breed, sp),
-           "wzorzec_tytulu": tidx, "ABC": ch, "nick": nick}
+           "wzorzec_tytulu": tidx, "ABC": ch, "nick": nick, "synonim": syn}
     trans = {c: render_translation(c, lid, sp, rr, ch, tg, tidx) for c in LANGS}
     return out, trans
 
