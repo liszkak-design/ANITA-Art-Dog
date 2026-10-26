@@ -15,7 +15,7 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 ## Zasady bezwzględne
 
 1. Domyślnie tryb próbny (dry-run): skrypty zapisują planowane zmiany do `plans/\*.csv` i niczego nie wysyłają do Etsy. Zapis tylko z flagą `--apply` i tylko po wyraźnym "tak" użytkowniczki w czacie dla konkretnej partii.
-2. Nigdy nie usuwaj (ofert, zdjęć, personalizacji, tłumaczeń, wideo) bez osobnej, wyraźnej zgody dla konkretnej operacji. Nie proś o uprawnienie `listings\_d`.
+2. Nigdy nie usuwaj (ofert, zdjęć, personalizacji, tłumaczeń, wideo) bez osobnej, wyraźnej zgody dla konkretnej operacji. Wolno poprosić o uprawnienie `listings\_d` wyłącznie do wymiany zdjęć i tylko po zgodzie użytkowniczki.
 3. Nigdy nie wypisuj w czacie ani nie commituj: kluczy, Shared Secret, tokenów, verifierów PKCE. Sekrety i tokeny tylko w `.secrets/` (w .gitignore). Przed każdym commitem sprawdź, że w plikach nie ma tokenów.
 4. Przed zmianą istniejącej oferty zapisz jej stan w `backup/<listing\_id>\_<data>.json` (tytuł, opis, tagi, materiały, personalizacja, zdjęcia z kolejnością i alt textem, wideo).
 5. Partie maksymalnie po 50 ofert. Po każdej partii: log w `logs/` (id oferty, pole, wartość przed, po, status, czas) i prośba o sprawdzenie próbki w Etsy, zanim ruszy następna partia.
