@@ -30,3 +30,16 @@
 2026-10-26T14:59:17 POST /v3/application/shops/19255336/listings/678653467/translations/sv
 2026-10-26T14:59:18 GET /v3/application/listings/678653467
 2026-10-26T14:59:24 GET /v3/application/listings/678653467
+2026-10-26T18:13:52 GET /v3/application/listings/678653467/translations/de
+2026-10-26T18:14:01 GET /v3/application/seller-taxonomy/nodes/1426/properties
+2026-10-26T18:14:02 GET /v3/application/listings/678653467/translations/de
+2026-10-26T18:14:18 GET /v3/application/listings/678653467
+2026-10-26T18:14:19 GET /v3/application/shops/19255336/listings/678653467/properties
+2026-10-26T18:14:19 GET /v3/application/listings/678653467/inventory
+2026-10-26T18:14:34 GET /v3/application/listings/678653467
+2026-10-26T18:14:35 PUT /v3/application/shops/19255336/listings/678653467/properties/148789511893
+2026-10-26T18:14:35 PATCH /v3/application/shops/19255336/listings/678653467
+2026-10-26T18:14:35 GET /v3/application/listings/678653467
+2026-10-26T18:14:36 GET /v3/application/shops/19255336/listings/678653467/properties
+2026-10-26T18:14:44 PATCH /v3/application/shops/19255336/listings/678653467
+2026-10-26T18:14:44 GET /v3/application/listings/678653467
