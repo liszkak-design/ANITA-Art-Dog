@@ -4,3 +4,5 @@
 {"listing_id": 664722626, "status": "ok", "cena_ok": true, "stan_ok": true, "status_ok": true, "zdjec": 7, "wideo": 1, "pytan": 5, "tlumaczen": 8, "who_made": "collective", "proba": 1}
 {"listing_id": 678662871, "status": "błąd", "krok": "zdjecie_5_6.jpg", "odpowiedź": "{'error': '[Errno 104] Connection reset by peer'}"}
 {"listing_id": 678662871, "status": "ok", "cena_ok": true, "stan_ok": true, "status_ok": true, "zdjec": 7, "wideo": 1, "pytan": 5, "tlumaczen": 8, "who_made": "collective", "proba": 1}
+{"listing_id": 678673155, "status": "ok", "cena_ok": true, "stan_ok": true, "status_ok": true, "zdjec": 7, "wideo": 1, "pytan": 5, "tlumaczen": 8, "who_made": "collective", "proba": 1}
+{"listing_id": 664722732, "status": "ok", "cena_ok": true, "stan_ok": true, "status_ok": true, "zdjec": 7, "wideo": 1, "pytan": 5, "tlumaczen": 8, "who_made": "collective", "proba": 1}
