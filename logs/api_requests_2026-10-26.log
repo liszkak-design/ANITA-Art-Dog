@@ -1,3 +1,4 @@
 2026-10-26T09:44:50+00:00 GET testy nagłówków (4x)
 2026-10-26T11:12:06 GET /v3/application/listings/678653467
 2026-10-26T11:12:13 GET /v3/application/users/me
+2026-10-26T14:41:31 GET /v3/application/openapi-ping
