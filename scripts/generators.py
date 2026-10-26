@@ -35,13 +35,12 @@ def fixed_sections(species):
 
 def description(listing_id, species, breed, nick=""):
     b = banks(species)
-    parts, chosen = [], {}
+    parts, chosen, nicks = [], {}, 0
     for slot in "ABC":
-        opts = [(n, t) for n, t in b[slot] if not n or nick]
-        if slot == "A":
-            opts = [(n, t) for n, t in opts if not n]
+        opts = [(n, t) for n, t in b[slot] if not n or (nick and nicks < 2)]  # zdrobnienie: także w A, max 2 w akapicie
         i = pick(listing_id, slot, len(opts))
         chosen[slot] = i
+        nicks += opts[i][0]
         parts.append(opts[i][1].replace("{BREED}", breed).replace("{NICK}", nick))
     return " ".join(parts) + "\n\n" + fixed_sections(species).replace("{BREED}", breed), chosen
 

@@ -8,8 +8,8 @@ Język oferty: angielski. Zasady i sekcje stałe jak w `opis_plytka_kot.md` (zat
 Akapit = zdanie A + zdanie B + zdanie C. Wariant wybierany deterministycznie po ID oferty, sąsiednie oferty
 w partii różnią się co najmniej w dwóch slotach. Pełna nazwa rasy `{BREED}` jest w zdaniu A.
 
-Zdrobnienie `{NICK}`: tylko w slotach B i C, tylko w wariantach oznaczonych [N], tylko gdy kolumna E jest wpisana,
-po jednym razie w B i C (razem najwyżej dwa), nigdy w A. Gdy kolumna E jest pusta, używamy wyłącznie wariantów bez [N].
+Zdrobnienie `{NICK}`: w slotach A, B i C (od 26.10.2026 także w zdaniu A, obok pełnej nazwy rasy, nie zamiast niej), tylko w wariantach
+oznaczonych [N], tylko gdy kolumna E jest wpisana, najwyżej dwa razy w całym akapicie. Jedno zdanie nie zawiera pełnej nazwy rasy dwa razy. Gdy kolumna E jest pusta, używamy wyłącznie wariantów bez [N].
 Wartości z kolumny E użyte są dokładnie tak, jak wpisano w arkuszu, z wyjątkiem poprawek zatwierdzonych przez
 właścicielkę (arkusz `Rasy.xlsx` niezmieniony): Affenpinscher: `Affie` (w arkuszu `ffie`), Newfoundland: `Newfie`
 (w arkuszu `Newfies`), Central Asia Shepherd: `Alabay` (w arkuszu `Alabai, Alabay`).
@@ -17,9 +17,9 @@ Wpisy w kolumnie E, które są synonimami (np. Alsatian, Saint Bernard, Russian 
 jak zdrobnienia, bo to często wyszukiwane nazwy alternatywne rasy.
 
 **Slot A (otwarcie, nazwa rasy + słowa kluczowe)**
-- A1: This {BREED} dog memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of a {BREED}, made to remember a much-loved dog.
+- A1: This {BREED} dog memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of the breed, made to remember a much-loved dog.
 - A2: A ceramic memorial plaque for your {BREED} dog, decorated with a sketch-style portrait of the breed.
-- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of a {BREED} dog.
+- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of the breed.
 - A4: This ceramic pet memorial plaque features a sketch-style portrait of a {BREED}, created to honour a much-loved companion.
 - A5: A {BREED} dog memorial plaque in ceramic: a sketch-style portrait that keeps the memory of your dog close.
 
@@ -67,3 +67,11 @@ We would be honoured to help you say goodbye to your beloved dog with dignity.
 INTERNATIONAL ORDERS
 Our products are shipped from Poland, so import charges may apply in some countries. These charges do not apply to EU countries, the United Kingdom and the USA. If you have any doubts, please contact us for details.
 ```
+
+## Propozycje wariantów A [N] (do zatwierdzenia przez właścicielkę, generator ich NIE używa)
+
+Po zmianie reguły z 26.10.2026 zdrobnienie może być w zdaniu A. Poniższe propozycje nie są jeszcze w banku A.
+Każda ma pełną nazwę rasy raz i zdrobnienie raz. Po zatwierdzeniu przenieść do banku A jako `A6 [N]` itd.
+- PA1 [N]: Remember your beloved {BREED} with this ceramic tombstone plaque, a sketch-style portrait made to honour your faithful {NICK}.
+- PA2 [N]: This ceramic memorial plaque with a sketch-style portrait of the breed is made to remember your much-loved {BREED}, your faithful {NICK}.
+- PA3 [N]: A ceramic tombstone plaque for your {BREED}: a sketch-style portrait that keeps the memory of your dear {NICK} close.

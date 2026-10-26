@@ -15,7 +15,7 @@ Wzorzec tytułu 2, warianty akapitu A3B3C1, zdrobnienie: Amstaff
 
 **Opis:**
 ```
-Remember your American Staffordshire Terrier with this ceramic tombstone plaque, printed with a sketch-style portrait of an American Staffordshire Terrier dog. Use it as a grave marker or as a keepsake in a place of remembrance, a lasting tribute to your dog. If you would rather remember your own dog, send us a photo and we will print it instead.
+Remember your American Staffordshire Terrier with this ceramic tombstone plaque, printed with a sketch-style portrait of the breed. Use it as a grave marker or as a keepsake in a place of remembrance, a lasting tribute to your dog. If you would rather remember your own dog, send us a photo and we will print it instead.
 
 IN SHORT
 - Ceramic oval plaque, approx. 10.5 x 7.5 cm (4.13 x 2.95 in), approx. 0.5 cm (0.2 in) thick
@@ -346,7 +346,7 @@ Wzorzec tytułu 3, warianty akapitu A1B1C1, zdrobnienie: brak
 
 **Opis:**
 ```
-This Ragdoll cat memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of a Ragdoll, made to remember a much-loved cat. Place it on a grave or in any other place of remembrance, as a lasting tribute to the cat who shared your life. If you would rather remember your own cat, send us a photo and we will print it instead.
+This Ragdoll cat memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of the breed, made to remember a much-loved cat. Place it on a grave or in any other place of remembrance, as a lasting tribute to the cat who shared your life. If you would rather remember your own cat, send us a photo and we will print it instead.
 
 IN SHORT
 - Ceramic oval plaque, approx. 10.5 x 7.5 cm (4.13 x 2.95 in), approx. 0.5 cm (0.2 in) thick

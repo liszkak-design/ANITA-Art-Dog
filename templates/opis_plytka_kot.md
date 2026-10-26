@@ -9,12 +9,13 @@ Reszta (sekcje stałe) jest taka sama dla wszystkich ofert z płytkami.
 Akapit = zdanie A + zdanie B + zdanie C. Każdy slot ma kilka zatwierdzonych wariantów. Wariant wybierany jest
 deterministycznie po ID oferty, a sąsiednie oferty w partii różnią się co najmniej w dwóch slotach.
 Pełna nazwa rasy `{BREED}` musi być w zdaniu A. Zdrobnienie z kolumny E (tylko EN, tylko pies) wolno użyć
-najwyżej dwa razy, w zdaniu B lub C, nigdy w A. Koty i konie nie mają wpisów w kolumnie E.
+najwyżej dwa razy w całym akapicie, także w zdaniu A (obok pełnej nazwy rasy, nie zamiast niej; zasada z 26.10.2026).
+Koty i konie nie mają wpisów w kolumnie E. Jedno zdanie nie zawiera pełnej nazwy rasy dwa razy.
 
 **Slot A (otwarcie, nazwa rasy + słowa kluczowe)**
-- A1: This {BREED} cat memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of a {BREED}, made to remember a much-loved cat.
+- A1: This {BREED} cat memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of the breed, made to remember a much-loved cat.
 - A2: A ceramic memorial plaque for your {BREED} cat, decorated with a sketch-style portrait of the breed.
-- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of a {BREED} cat.
+- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of the breed.
 - A4: This ceramic pet memorial plaque features a sketch-style portrait of a {BREED} cat, created to honour a much-loved companion.
 - A5: A {BREED} cat memorial plaque in ceramic: a sketch-style portrait that keeps the memory of your cat close.
 
