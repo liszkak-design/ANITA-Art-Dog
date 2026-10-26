@@ -446,14 +446,18 @@ def apply_batch(n):
                 open(summary, "a").write(json.dumps({"listing_id": lid, "status": "błąd", "krok": s["id"], "odpowiedź": str(resp)[:300]}, ensure_ascii=False) + "\n")
                 sys.exit(f"{lid}: BŁĄD w kroku {s['id']}: {str(resp)[:300]}\nPrzerywam całą partię; po wyjaśnieniu uruchom ponownie (wykonane kroki zostaną pominięte).")
             time.sleep(0.15)
-        after = api.get(f"/v3/application/listings/{lid}?includes=Images,Videos,Translations,Personalization")
-        chk = {"cena_ok": after["price"] == live["price"], "stan_ok": after["quantity"] == live["quantity"], "status_ok": after["state"] == live["state"],
-               "zdjec": len(after.get("images", [])), "wideo": len(after.get("videos", [])),
-               "pytan": len(after["personalization"]["personalization_questions"]),
-               "tlumaczen": sum(1 for k, v in after["translations"].items() if v and k != "en-US"),
-               "who_made": after["who_made"]}
-        good = chk["cena_ok"] and chk["stan_ok"] and chk["status_ok"] and chk["zdjec"] == 7 and chk["wideo"] == 1 and chk["pytan"] == 5 \
-            and chk["tlumaczen"] == 8 and chk["who_made"] == "collective"
+        for attempt in range(4):  # odczyty Etsy bywają niespójne tuż po zapisie: powtarzamy, zanim uznamy niezgodność
+            after = api.get(f"/v3/application/listings/{lid}?includes=Images,Videos,Translations,Personalization")
+            chk = {"cena_ok": after["price"] == live["price"], "stan_ok": after["quantity"] == live["quantity"], "status_ok": after["state"] == live["state"],
+                   "zdjec": len(after.get("images", [])), "wideo": len(after.get("videos", [])),
+                   "pytan": len(after["personalization"]["personalization_questions"]),
+                   "tlumaczen": sum(1 for k, v in after["translations"].items() if v and k != "en-US"),
+                   "who_made": after["who_made"], "proba": attempt + 1}
+            good = chk["cena_ok"] and chk["stan_ok"] and chk["status_ok"] and chk["zdjec"] == 7 and chk["wideo"] == 1 and chk["pytan"] == 5 \
+                and chk["tlumaczen"] == 8 and chk["who_made"] == "collective"
+            if good:
+                break
+            time.sleep(3)
         zlog(lid, "weryfikacja", {"cena": live["price"], "stan": live["quantity"]}, chk, "ok" if good else "niezgodność")
         open(summary, "a").write(json.dumps({"listing_id": lid, "status": "ok" if good else "niezgodność", **chk}, ensure_ascii=False) + "\n")
         print(i, lid, "ok" if good else "NIEZGODNOŚĆ " + str(chk))
