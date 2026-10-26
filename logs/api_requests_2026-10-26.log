@@ -2,3 +2,7 @@
 2026-10-26T11:12:06 GET /v3/application/listings/678653467
 2026-10-26T11:12:13 GET /v3/application/users/me
 2026-10-26T14:41:31 GET /v3/application/openapi-ping
+2026-10-26T14:43:02 GET /v3/application/users/me
+2026-10-26T14:43:08 GET /v3/application/listings/678653467
+2026-10-26T14:43:08 GET /v3/application/shops/19255336/listings/678653467/properties
+2026-10-26T14:43:09 GET /v3/application/listings/678653467/inventory
