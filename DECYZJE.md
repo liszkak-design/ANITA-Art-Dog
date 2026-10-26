@@ -113,3 +113,8 @@ Ten plik zbiera ustalenia właścicielki sklepu Art-Dog. Obowiązuje razem z `CL
 * Polski szablon płytek (`templates/tlumaczenie_pl_plytka.md`) zatwierdzony przez właścicielkę. Zmiany z jej przeglądu: nagłówek sekcji "PAMIĄTKA PO TWOIM PRZYJACIELU" (zamiast "TRWAŁY HOŁD"), w bankach B bez słów "trwały, trwałe". Po polsku bez zdrobnień z kolumny K. Nazwa rasy w tekście zawsze w mianowniku (bez odmiany).
 * Pliki do sprawdzenia dla właścicielki: nagłówki sekcji muszą być wyświetlane w osobnej linii, treść w bloku kodu (jak w planach testu).
 * Kolejność tłumaczeń: polski, potem niemiecki i jeden kolejny język, na końcu pozostałe.
+
+### 10a\. Zatwierdzenia tłumaczeń (26.10.2026)
+
+* Właścicielka zatwierdziła szablony płytek we wszystkich 8 językach (PL, DE, NL, FR, IT, ES, PT, SV). To nie jest weryfikacja natywna. Portugalski: wariant europejski (pónei, Polónia, encomenda).
+* Zasada o Shared Secret zmieniona za zgodą właścicielki: patrz CLAUDE.md, sekcja "API Etsy".

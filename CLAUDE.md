@@ -2,7 +2,7 @@
 
 Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert piszesz po angielsku (potem tłumaczenia), chyba że poproszę inaczej.
 
-**Na początku każdej sesji przeczytaj `DECYZJE.md`.** Zawiera ustalone reguły treści, reguły nazw ras, zapisy w tytułach, zdjęcia i wideo oraz sprawy otwarte. Gdy `DECYZJE.md` jest sprzeczny z danymi z Etsy, obowiązuje `DECYZJE.md`.
+**Na początku każdej sesji przeczytaj `DECYZJE.md` i `STAN_PRAC.md`.** `DECYZJE.md` zawiera ustalone reguły treści, reguły nazw ras, zapisy w tytułach, zdjęcia i wideo oraz sprawy otwarte. `STAN_PRAC.md` opisuje, co jest gotowe, co zablokowane i co robić dalej. Gdy `DECYZJE.md` jest sprzeczny z danymi z Etsy, obowiązuje `DECYZJE.md`.
 
 ## Kontekst
 
@@ -42,7 +42,7 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 
 ## API Etsy (Open API v3)
 
-* Każde żądanie wymaga nagłówka `x-api-key`. W tym środowisku (keystring:shared\_secret) dodaje go proxy sieciowe. Shared Secret nie jest dla Ciebie dostępny i nie wolno go szukać ani wpisywać.
+* Każde żądanie wymaga nagłówka `x-api-key` (wartość `keystring:shared\_secret`). Zasada (zgoda właścicielki z 26.10.2026): Shared Secret jest w zmiennej środowiskowej `ETSY\_SHARED\_SECRET` (sekret sieciowy proxy nie przepuszcza nagłówka `Authorization`, więc oba nagłówki wysyłamy z kodu, patrz `scripts/etsy\_api.py`). Używaj go wyłącznie do złożenia nagłówka `x-api-key` w kodzie Pythona, nie jako argumentu polecenia. Nigdy go nie wypisuj, nie zapisuj w logach, plikach ani commitach i nie wysyłaj nigdzie poza `api.etsy.com`. Jeśli zmiennej nie ma (sesja ze starego środowiska), nagłówek może dodawać proxy.
 * Keystring (`client\_id` do OAuth) jest w zmiennej `ETSY\_KEYSTRING`. Używaj go tylko do adresu autoryzacji i wymiany kodu na token. Nie wypisuj go w czacie.
 * Operacje na ofertach wymagają tokenu OAuth (Bearer). Zakres: najpierw tylko odczyt (`listings\_r`, `shops\_r`), zapis (`listings\_w`) dopiero po kopii zapasowej i teście na jednej ofercie.
 * Potwierdzone w dokumentacji: `createListingTranslation`, `updateListingTranslation` (tytuł, opis, tagi, 8 języków), `uploadListingImage` (pole `alt\_text`, opcja nadpisania), `uploadListingVideo` (do 2 na ofertę), `updateListing`, edycja i usuwanie personalizacji.

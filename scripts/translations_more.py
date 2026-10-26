@@ -222,7 +222,7 @@ Encomende a placa tal como é apresentada ou personalize-a. Cada uma das opçõe
 
 Tem dúvidas sobre a personalização? Escreva-nos, teremos todo o gosto em ajudar.
 
-Será uma honra para nós ajudá-lo a despedir-se com dignidade {DO}.
+Será uma honra para nós ajudar a dar um adeus digno {AO}.
 
 ENCOMENDAS INTERNACIONAIS
 Os nossos produtos são enviados da Polónia, pelo que em alguns países podem ser aplicados custos de importação. Estes custos não se aplicam aos países da UE, ao Reino Unido nem aos Estados Unidos. Em caso de dúvida, contacte-nos para obter detalhes.''',
