@@ -1,6 +1,6 @@
 # Stan prac (aktualizowany na koniec sesji; czytaj razem z DECYZJE.md i CLAUDE.md)
 
-Ostatnia aktualizacja: 26.10.2026. Zakres: płytki ceramiczne "with a Photo" (299 ofert do optymalizacji).
+Ostatnia aktualizacja: 26.10.2026 (wieczór, po teście zapisu na Sphynxie). Zakres: płytki ceramiczne "with a Photo" (299 ofert do optymalizacji).
 
 ## Gotowe
 * Mapa ofert i folderów: `plans/mapa_koncowa.csv` (kolumny: źródło w eksporcie, gatunek, rasa z kolumny C, `rasa_id`, folder, EAN, decyzja OPTYMALIZUJ lub POMIŃ). Skrypty w `scripts/`.
@@ -10,7 +10,14 @@ Ostatnia aktualizacja: 26.10.2026. Zakres: płytki ceramiczne "with a Photo" (29
 * Generatory tytułu, opisu i tagów: `scripts/generators.py` (ziarno = listing ID).
 * Rasa Jagdterrier dodana do `data/Rasy.xlsx` (R331). Reguły dopasowania nazw: DECYZJE.md, sekcja 9a.
 
-## Zablokowane: dostęp do prywatnych funkcji API Etsy z sesji w chmurze
+## Test zapisu na Sphynxie (678653467): WYKONANY 26.10.2026
+* Skrypt `scripts/apply_test_sphynx.py` (dry-run domyślnie, `--apply` zapisuje), log `logs/zapis_678653467_2026-10-26.jsonl`, kopia przed zmianą `backup/678653467_2026-10-26.json`. Zapisane: tytuł, opis, 13 tagów, materiał, personalizacja (5 pytań), 7 zdjęć z alt textami, film, tłumaczenia 8 języków. Cena 16, stan 50 i status active bez zmian (sprawdzone po zapisie).
+* Do sprawdzenia przez właścicielkę w Etsy: kolejność i miniatura zdjęć po nadpisaniu slotu 1, wygląd personalizacji dla kupującego, tłumaczenia, film.
+* Pominięte w teście: SKU (zapis tylko przez uploadListingInventory z pełną tablicą products, ryzyko dla ceny i stanu), shopping basket summary (brak pola w API), GPSR, how it's made, occasion (nazwy pól niezweryfikowane).
+* Limity z dokumentacji personalizacji: pytanie max 45 zn., etykieta opcji listy max 20 zn. (nie 30), instrukcja max 120. Opcja "Original, background removed" skrócona do "No background". Pole "Name and dates": limit 50 znaków. Dokumentacja: developers.etsy.com/documentation/tutorials/personalization-migration/ (domena dozwolona).
+* Token OAuth ma teraz zakres listings_w (ważny 1 h); po utracie sesji autoryzację trzeba powtórzyć.
+
+## (Rozwiązane) Zablokowane: dostęp do prywatnych funkcji API Etsy z sesji w chmurze
 * Token OAuth (zakres `listings_r shops_r`) udało się uzyskać, ale zapytania z nagłówkiem `Authorization` do endpointów wymagających tokenu kończą się błędem "Access token is required". Proxy sesji w chmurze zarządza nagłówkami dla `api.etsy.com` (sekret sieciowy z `x-api-key`) i nie przepuszcza własnego `Authorization`. Odpowiedź wsparcia: dla jednego hosta można mieć tylko jeden zarządzany sekret, nie ma udokumentowanego przepuszczania drugiego nagłówka.
 * Obejście od wsparcia: nie trzymać Etsy w sekretach sieciowych, tylko wysyłać oba nagłówki z kodu. Do zrobienia przez właścicielkę w ustawieniach środowiska: usunąć sekret Etsy, dodać zmienną środowiskową `ETSY_SHARED_SECRET` (obok istniejącej `ETSY_KEYSTRING`), dopisać `api.etsy.com` do dozwolonych domen i otworzyć NOWĄ sesję. Skrypty (`scripts/etsy_api.py`, `scripts/etsy_auth.py`) są gotowe: gdy jest `ETSY_SHARED_SECRET`, same ustawiają `x-api-key` = `keystring:shared_secret`.
 * Zasada o Shared Secret w CLAUDE.md jest już zmieniona (zgoda 26.10.2026). W nowej sesji: sprawdź, czy jest `ETSY_SHARED_SECRET` (nie wypisuj wartości), autoryzacja OAuth (odczyt), sprawdzenie `users/me`, kopia zapasowa oferty 678653467 (`scripts/backup_listing.py`), test zapisu na jednej ofercie po zatwierdzeniu.
