@@ -4,7 +4,7 @@ Ostatnia aktualizacja: 26.10.2026. Zakres: płytki ceramiczne "with a Photo" (29
 
 ## Gotowe
 * Mapa ofert i folderów: `plans/mapa_koncowa.csv` (kolumny: źródło w eksporcie, gatunek, rasa z kolumny C, `rasa_id`, folder, EAN, decyzja OPTYMALIZUJ lub POMIŃ). Skrypty w `scripts/`.
-* Szablony (EN zatwierdzone): `templates/opis_plytka_*.md`, `templates/tytuly_tagi_plytka.md`. Tłumaczenia: PL zatwierdzony, DE i NL zatwierdzone przez właścicielkę (bez kontroli natywnej), pliki `templates/tlumaczenie_*_plytka.md`, generator `scripts/translations.py`. Do zrobienia: FR, IT, ES, PT, SV (forma grzecznościowa w DE, FR, NL, IT; nieformalna w ES, PT, SV; nagłówek analog polskiego "Pamiątka po Twoim przyjacielu"; w bankach B bez słów "trwały").
+* Szablony (EN zatwierdzone): `templates/opis_plytka_*.md`, `templates/tytuly_tagi_plytka.md`. Tłumaczenia: PL zatwierdzony, DE i NL zatwierdzone przez właścicielkę (bez kontroli natywnej), pliki `templates/tlumaczenie_*_plytka.md`, generator `scripts/translations.py`. Szkice FR, IT, ES, PT, SV gotowe (26.10.2026, do przeglądu właścicielki i kontroli natywnej): `templates/tlumaczenie_<kod>_plytka.md`, testy `plans/test_sfinks_678653467_<KOD>.md`, dane w `scripts/translations.py` i `scripts/translations_more.py`. Forma grzecznościowa w DE, FR, NL, IT; nieformalna w ES, PT, SV; nagłówek analog polskiego; w bankach B bez słów "trwały".
 * Film: `video/video-ceramic-plaques-anita.mp4` (zatwierdzony). Zdjęcie nieedytowane: `media/plytki_with_photo/original.jpg`.
 * Plan testu na jednej ofercie (Sphynx, listing 678653467): `plans/test_sfinks_678653467.md` oraz wersje PL, DE, NL.
 * Generatory tytułu, opisu i tagów: `scripts/generators.py` (ziarno = listing ID).
