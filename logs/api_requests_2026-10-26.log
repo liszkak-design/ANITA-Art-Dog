@@ -43,3 +43,6 @@
 2026-10-26T18:14:36 GET /v3/application/shops/19255336/listings/678653467/properties
 2026-10-26T18:14:44 PATCH /v3/application/shops/19255336/listings/678653467
 2026-10-26T18:14:44 GET /v3/application/listings/678653467
+2026-10-26T18:18:57 GET /v3/application/listings/678653467
+2026-10-26T18:18:58 GET /v3/application/shops/19255336/production-partners
+2026-10-26T18:18:58 GET /v3/application/shops/19255336
