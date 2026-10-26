@@ -46,3 +46,6 @@
 2026-10-26T18:18:57 GET /v3/application/listings/678653467
 2026-10-26T18:18:58 GET /v3/application/shops/19255336/production-partners
 2026-10-26T18:18:58 GET /v3/application/shops/19255336
+2026-10-26T18:21:59 GET /v3/application/listings/678653467
+2026-10-26T18:22:00 GET /v3/application/shops/19255336/listings/678653467/properties
+2026-10-26T18:22:00 GET /v3/application/shops/19255336/production-partners
