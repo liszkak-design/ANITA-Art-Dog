@@ -34,7 +34,7 @@ Najdłuższy tytuł wśród 299 ofert (z dopisaną odmianą sierści): 136 znak�
 
 Formy gatunku: kot: S=Katze, CS=Katzen, ACC=Ihre Katze, DAT=Ihrer Katze, GEN=Ihrer Katze; pies: S=Hund, CS=Hunde, ACC=Ihren Hund, DAT=Ihrem Hund, GEN=Ihres Hundes; koń: S=Pferd, CS=Pferde, ACC=Ihr Pferd, DAT=Ihrem Pferd, GEN=Ihres Pferdes; kucyk: S=Pony, CS=Pony, ACC=Ihr Pony, DAT=Ihrem Pony, GEN=Ihres Ponys
 
-## Sekcje stałe (wersja dla kota)
+## Sekcje stałe (szablon ze zmiennymi: {B} = rasa z arkusza, pozostałe zmienne to formy gatunku z tabeli powyżej)
 ```
 KURZ ZUSAMMENGEFASST
 - Ovale Keramikplatte, ca. 10,5 x 7,5 cm (4,13 x 2,95 Zoll), ca. 0,5 cm (0,2 Zoll) dick
@@ -45,18 +45,46 @@ KURZ ZUSAMMENGEFASST
 - Personalisierung möglich: Ihr Foto, Druckstil, Name und Daten
 
 ERINNERUNG AN IHREN FREUND
-Eine Keramikplatte ist eine behutsame und bleibende Art, die Erinnerung an Ihre Katze zu bewahren. Die glatte Kante braucht keine besondere Fassung, der hochwertige Druck ist auf lange Haltbarkeit ausgelegt, und die Personalisierung macht die Platte zu etwas ganz Persönlichem.
+Eine Keramikplatte ist eine behutsame und bleibende Art, die Erinnerung an {ACC} zu bewahren. Die glatte Kante braucht keine besondere Fassung, der hochwertige Druck ist auf lange Haltbarkeit ausgelegt, und die Personalisierung macht die Platte zu etwas ganz Persönlichem.
 
 PERSONALISIERUNG
 Bestellen Sie die Platte genau wie abgebildet oder personalisieren Sie sie. Jede der folgenden Optionen ist freiwillig.
 - Ihr Foto: Wir drucken jedes Foto, das Sie uns senden. Fügen Sie es bei der Bestellung im Personalisierungsfeld bei oder senden Sie es per Etsy-Nachricht.
 - Stil: Wählen Sie das Originalfoto, Farbe mit entferntem Hintergrund oder einen Bleistiftskizzen-Stil wie auf den Angebotsfotos.
-- Name und Daten: Fügen Sie den Namen Ihrer Katze hinzu, oder Name und Lebensdaten, oder lassen Sie die Platte ohne Schrift.
+- Name und Daten: Fügen Sie den Namen {GEN} hinzu, oder Name und Lebensdaten, oder lassen Sie die Platte ohne Schrift.
 - Ausrichtung: Eine Platte mit Ihrem Foto kann hoch- oder querformatig gestaltet werden.
 
 Haben Sie Fragen zur Personalisierung? Schreiben Sie uns, wir helfen gern.
 
-Es wäre uns eine Ehre, Sie dabei zu unterstützen, würdevoll von Ihrer Katze Abschied zu nehmen.
+Es wäre uns eine Ehre, Sie dabei zu unterstützen, würdevoll von {DAT} Abschied zu nehmen.
+
+INTERNATIONALE BESTELLUNGEN
+Unsere Produkte werden aus Polen versendet, daher können in einigen Ländern Einfuhrabgaben anfallen. Diese Abgaben gelten nicht für EU-Länder, das Vereinigte Königreich und die USA. Bei Fragen kontaktieren Sie uns gerne, wir nennen Ihnen die Details.
+```
+
+### Przykład wypełnienia dla psa (rasa: {B})
+```
+KURZ ZUSAMMENGEFASST
+- Ovale Keramikplatte, ca. 10,5 x 7,5 cm (4,13 x 2,95 Zoll), ca. 0,5 cm (0,2 Zoll) dick
+- Skizzenporträt (Rasse: {B}) oder mit Ihrem eigenen Foto
+- Wetterbeständiger Druck, der nicht verblasst
+- Glatte, abgerundete Kante, keine zusätzliche Fassung nötig
+- Ohne Loch oder Haken auf der Rückseite, mit handelsüblichem Universalkleber zu befestigen
+- Personalisierung möglich: Ihr Foto, Druckstil, Name und Daten
+
+ERINNERUNG AN IHREN FREUND
+Eine Keramikplatte ist eine behutsame und bleibende Art, die Erinnerung an Ihren Hund zu bewahren. Die glatte Kante braucht keine besondere Fassung, der hochwertige Druck ist auf lange Haltbarkeit ausgelegt, und die Personalisierung macht die Platte zu etwas ganz Persönlichem.
+
+PERSONALISIERUNG
+Bestellen Sie die Platte genau wie abgebildet oder personalisieren Sie sie. Jede der folgenden Optionen ist freiwillig.
+- Ihr Foto: Wir drucken jedes Foto, das Sie uns senden. Fügen Sie es bei der Bestellung im Personalisierungsfeld bei oder senden Sie es per Etsy-Nachricht.
+- Stil: Wählen Sie das Originalfoto, Farbe mit entferntem Hintergrund oder einen Bleistiftskizzen-Stil wie auf den Angebotsfotos.
+- Name und Daten: Fügen Sie den Namen Ihres Hundes hinzu, oder Name und Lebensdaten, oder lassen Sie die Platte ohne Schrift.
+- Ausrichtung: Eine Platte mit Ihrem Foto kann hoch- oder querformatig gestaltet werden.
+
+Haben Sie Fragen zur Personalisierung? Schreiben Sie uns, wir helfen gern.
+
+Es wäre uns eine Ehre, Sie dabei zu unterstützen, würdevoll von Ihrem Hund Abschied zu nehmen.
 
 INTERNATIONALE BESTELLUNGEN
 Unsere Produkte werden aus Polen versendet, daher können in einigen Ländern Einfuhrabgaben anfallen. Diese Abgaben gelten nicht für EU-Länder, das Vereinigte Königreich und die USA. Bei Fragen kontaktieren Sie uns gerne, wir nennen Ihnen die Details.

@@ -158,7 +158,8 @@ def main():
         md += "## Pierwszy akapit: banki\n**A**\n" + "\n".join(f"- A{i+1}: {t}" for i, t in enumerate(d["A"]))
         md += "\n\n**B**\n" + "\n".join(f"- B{i+1}: {t}" for i, t in enumerate(d["B"])) + "\n\n**C**\n" + "\n".join(f"- C{i+1}: {t}" for i, t in enumerate(d["C"]))
         md += "\n\nFormy gatunku: " + "; ".join(f"{k}: " + ", ".join(f"{a}={b}" for a, b in v.items()) for k, v in d["sp"].items()) + "\n\n"
-        md += "## Sekcje stałe (wersja dla kota)\n```\n" + fill_block(d["fixed"], d["sp"]["kot"], "{B}") + "\n```\n\n"
+        md += "## Sekcje stałe (szablon ze zmiennymi: {B} = rasa z arkusza, pozostałe zmienne to formy gatunku z tabeli powyżej)\n```\n" + d["fixed"] + "\n```\n\n"
+        md += "### Przykład wypełnienia dla psa (rasa: {B})\n```\n" + fill_block(d["fixed"], d["sp"]["pies"], "{B}") + "\n```\n\n"
         md += f"## Shopping basket summary\n{d['basket']}\n\n## Tagi (max 20 znaków)\n**Stałe:** " + ", ".join(f"{t} ({len(t)})" for t in d["core"]) + "\n"
         md += "**Gatunkowe:** " + "; ".join(f"{k}: {a} ({len(a)}), {b} ({len(b)})" for k, (a, b) in d["spec"].items()) + "\n"
         md += "**Pula:** " + ", ".join(f"{t} ({len(t)})" for t in d["pool"]) + "\n"
