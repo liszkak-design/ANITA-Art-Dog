@@ -16,7 +16,7 @@ Wartości z kolumny E użyte są dokładnie tak, jak wpisano w arkuszu, z wyjąt
 właścicielkę (arkusz `Rasy.xlsx` niezmieniony): Affenpinscher: `Affie` (w arkuszu `ffie`), Newfoundland: `Newfie`
 (w arkuszu `Newfies`), Central Asia Shepherd: `Alabay` (w arkuszu `Alabai, Alabay`).
 Wpisy w kolumnie E, które są synonimami (np. Alsatian, Saint Bernard, Russian Wolfhound; 27 z 45), NIE dostają zdań ze zdrobnieniem [N],
-ale mają synonim w zdaniu A (warianty [S] A12-A18, nowe, do przeglądu w partii 1: synonim zamiast nazwy rasy albo obok niej),
+ale mają synonim w zdaniu A (warianty [S] A12-A16, nowe, do przeglądu w partii 1: synonim zamiast nazwy rasy),
 żeby oferta była znajdowana po tych nazwach (decyzja 26.10.2026). Klasyfikacja: `data/nick_klasyfikacja.csv` (18 zdrobnień, 27 synonimów).
 
 **Slot A (otwarcie, nazwa rasy + słowa kluczowe)**
@@ -36,8 +36,6 @@ ale mają synonim w zdaniu A (warianty [S] A12-A18, nowe, do przeglądu w partii
 - A14 [S]: Remember your {SYN} with this ceramic tombstone plaque, printed with a sketch-style portrait of the dog.
 - A15 [S]: This ceramic pet memorial plaque features a sketch-style portrait of a {SYN}, created to honour a much-loved companion.
 - A16 [S]: A {SYN} dog memorial plaque in ceramic: a sketch-style portrait that keeps the memory of your dog close.
-- A17 [S]: Remember your {BREED}, also known as the {SYN}, with this ceramic tombstone plaque, printed with a sketch-style portrait of the dog.
-- A18 [S]: This ceramic pet memorial plaque features a sketch-style portrait of a {BREED}, also called the {SYN}, created to honour a much-loved companion.
 
 **Slot B (zastosowanie)**
 - B1: Place it on a grave or in any other place of remembrance, as a lasting tribute to the dog who shared your life.

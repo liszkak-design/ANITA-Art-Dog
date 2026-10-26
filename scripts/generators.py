@@ -36,12 +36,11 @@ def fixed_sections(species):
 def description(listing_id, species, breed, nick="", syn=""):
     b = banks(species)
     parts, chosen, nicks = [], {}, 0
-    overlap = bool(syn) and (breed.lower() in syn.lower() or syn.lower() in breed.lower())  # np. Bulldog / English Bulldog: bez zdań z obiema nazwami
     for slot in "ABC":
         # zdrobnienie [N]: także w A, max 2 w akapicie; synonim [S]: tylko w A, a gdy rasa ma synonim, zdanie A zawsze go zawiera
         opts = [(f, t) for f, t in b[slot]
                 if (f == "" and not (slot == "A" and syn)) or (f == "N" and nick and nicks < 2)
-                or (f == "S" and syn and slot == "A" and not ("{BREED}" in t and overlap))]
+                or (f == "S" and syn and slot == "A")]
         i = pick(listing_id, slot, len(opts))
         chosen[slot] = i
         nicks += opts[i][0] == "N"
