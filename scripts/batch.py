@@ -52,6 +52,11 @@ def rasy():
     return {(r[1], r[0]): dict(zip(h, r)) for r in ws.iter_rows(min_row=2, values_only=True) if r[0]}
 
 
+def nick_allowed():
+    """Zdrobnienie z kolumny E tylko dla wpisów sklasyfikowanych jako 'zdrobnienie' (synonimy i 'do decyzji' pomijamy)."""
+    return {r["rasa_id"] for r in csv.DictReader(open(ROOT / "data" / "nick_klasyfikacja.csv", encoding="utf-8")) if r["typ"] == "zdrobnienie"}
+
+
 def read_map():
     rows = [r for r in csv.DictReader(open(ROOT / "plans" / "mapa_koncowa.csv", encoding="utf-8")) if r["decyzja"] == "OPTYMALIZUJ"]
     ean = {r["zrodlo"]: r["ean"] for r in csv.DictReader(open(ROOT / "plans" / "mapa_plytki_with_photo.csv", encoding="utf-8"))}
@@ -176,7 +181,7 @@ def render(row, lid, R):
     sp = row["gatunek"]
     breed = row["rasa_kolumna_C"]
     rr = R[(sp, row["rasa_id"])]
-    nick = (rr.get("Potoczne EN") or "").strip()
+    nick = (rr.get("Potoczne EN") or "").strip() if row["rasa_id"] in nick_allowed() else ""
     desc, ch = gen.description(lid, sp, breed, nick)
     # banki mają na sztywno "a {BREED}": poprawna forma a/an zależnie od nazwy rasy
     desc = re.sub(r"\b([Aa]) (?=" + re.escape(breed) + r")",

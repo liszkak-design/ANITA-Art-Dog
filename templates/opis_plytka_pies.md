@@ -15,8 +15,9 @@ pełna nazwa rasy jest wtedy w tytule oferty i w sekcji IN SHORT (decyzja właś
 Wartości z kolumny E użyte są dokładnie tak, jak wpisano w arkuszu, z wyjątkiem poprawek zatwierdzonych przez
 właścicielkę (arkusz `Rasy.xlsx` niezmieniony): Affenpinscher: `Affie` (w arkuszu `ffie`), Newfoundland: `Newfie`
 (w arkuszu `Newfies`), Central Asia Shepherd: `Alabay` (w arkuszu `Alabai, Alabay`).
-Wpisy w kolumnie E, które są synonimami (np. Alsatian, Saint Bernard, Russian Wolfhound), są używane tak samo
-jak zdrobnienia, bo to często wyszukiwane nazwy alternatywne rasy.
+Wpisy w kolumnie E, które są synonimami (np. Alsatian, Saint Bernard, Russian Wolfhound), NIE dostają zdań ze zdrobnieniem
+(decyzja 26.10.2026). Klasyfikacja wszystkich 45 wpisów: `data/nick_klasyfikacja.csv` (zdrobnienie / synonim / do decyzji);
+zdania [N] używamy tylko dla typu "zdrobnienie".
 
 **Slot A (otwarcie, nazwa rasy + słowa kluczowe)**
 - A1: This {BREED} dog memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of the dog, made to remember a much-loved pet.

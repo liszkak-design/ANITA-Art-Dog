@@ -1,0 +1,46 @@
+rasa_id,gatunek,rasa_kolumna_C,kolumna_E,typ,uzywac_w_opisie,uwagi
+R005,pies,Rottweiler,Rottie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R006,pies,Bull Terrier,Bully,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R008,pies,Bulldog,English Bulldog,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R010,pies,German Shepherd,Alsatian,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R015,pies,Staffordshire Bull Terrier,Staffy,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R018,pies,Newfoundland,Newfie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R020,pies,French Bulldog,Frenchie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R027,pies,American Staffordshire Terrier,Amstaff,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R036,pies,St. Bernard,Saint Bernard,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R037,pies,Boston Terrier,American Gentleman,do decyzji,nie (do decyzji),"przydomek, nie zdrobnienie nazwy"
+R046,pies,Malinois Belgian Shepherd,Malinois Belgian Sheepdog,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R047,pies,Brussels Griffon,Griffon Bruxellois,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R048,pies,Neapolitan Mastiff,Mastino Napoletano,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R056,pies,Borzoi,Russian Wolfhound,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R058,pies,Fila Brasileiro,Brazilian Mastiff,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R082,pies,Scottish terrier,Scottie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R084,pies,Belgian Shepherd,Belgian Sheepdog,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R093,pies,Vizsla,Hungarian Short-haired Pointer,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R103,pies,Nova Scotia Duck Tolling Retriever,Tolling Retriever,do decyzji,nie (do decyzji),skrócona nazwa rasy
+R111,pies,Yorkshire Terrier,Yorkie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R120,pies,Pekingese,Peke,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R122,pies,West Highland White Terrier,Westie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R126,pies,Affenpinscher,Affie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R142,pies,Hovawart,Hovie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R149,pies,Basset Fauve de Bretagne,Fauve Dog,do decyzji,nie (do decyzji),niejasne brzmienie
+R152,pies,Bolognese,Bolo,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R155,pies,Central Asia Shepherd,Alabay,do decyzji,nie (do decyzji),regionalna nazwa rasy
+R165,pies,Spinone Italiano,Italian Spinone,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R175,pies,Old English Sheepdog,Bobtail,do decyzji,nie (do decyzji),"potoczna nazwa, także synonim"
+R180,pies,Romagna Water Dog,Lagotto Romagnolo,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R229,pies,American Eskimo,American Spitz,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R231,pies,Kangal,Anatolian Shepherd,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R236,pies,Australian Terrier,Aussie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R239,pies,Basque Shepherd,Basque Sheepdog,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R240,pies,Bergamasco Shepherd,Bergamasco Sheepdog,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R251,pies,Chesapeake Bay Retriever,Chessie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R253,pies,Cockapoo,Cockerpoo,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R254,pies,Coton de Tulear,Cotie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R275,pies,Bracco Italiano,Italian Pointer,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R279,pies,Kooikerhondje,Kooiker,do decyzji,nie (do decyzji),skrócona nazwa rasy
+R281,pies,Laekenois Belgian Shepherd,Laekenois Belgian Sheepdog,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
+R291,pies,Berger Picard,Picard,do decyzji,nie (do decyzji),skrócona nazwa rasy
+R292,pies,Portuguese Water Dog,Portie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R311,pies,Welsh Terrier,Welshie,zdrobnienie,tak,zdrobnienie lub potoczna skrócona forma nazwy
+R312,pies,Xolo dog,Mexican Hairless Dog,synonim,nie,"inna nazwa rasy (synonim, nazwa alternatywna lub wariant pisowni)"
