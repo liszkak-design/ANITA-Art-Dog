@@ -4,9 +4,9 @@ Ostatnia aktualizacja: 26.10.2026. Zakres: płytki ceramiczne "with a Photo" (29
 
 ## Gotowe
 * Mapa ofert i folderów: `plans/mapa_koncowa.csv` (kolumny: źródło w eksporcie, gatunek, rasa z kolumny C, `rasa_id`, folder, EAN, decyzja OPTYMALIZUJ lub POMIŃ). Skrypty w `scripts/`.
-* Szablony (EN zatwierdzone): `templates/opis_plytka_*.md`, `templates/tytuly_tagi_plytka.md`. Tłumaczenia: PL zatwierdzony, DE i NL zatwierdzone przez właścicielkę (bez kontroli natywnej), pliki `templates/tlumaczenie_*_plytka.md`, generator `scripts/translations.py`. Szablony wszystkich 8 języków zatwierdzone przez właścicielkę 26.10.2026 (bez kontroli natywnej; portugalski europejski): `templates/tlumaczenie_<kod>_plytka.md`, testy `plans/test_sfinks_678653467_<KOD>.md`, dane w `scripts/translations.py` i `scripts/translations_more.py`. Forma grzecznościowa w DE, FR, NL, IT; nieformalna w ES, PT, SV; nagłówek analog polskiego; w bankach B bez słów "trwały".
+* Szablony (EN zatwierdzone): `templates/opis_plytka_*.md`, `templates/tytuly_tagi_plytka.md`. Tłumaczenia wszystkich 8 języków zatwierdzone przez właścicielkę 26.10.2026 (bez kontroli natywnej; portugalski europejski): `templates/tlumaczenie_<kod>_plytka.md`, testy `plans/test_sfinks_678653467_<KOD>.md`, dane w `scripts/translations.py` i `scripts/translations_more.py`.
 * Film: `video/video-ceramic-plaques-anita.mp4` (zatwierdzony). Zdjęcie nieedytowane: `media/plytki_with_photo/original.jpg`.
-* Plan testu na jednej ofercie (Sphynx, listing 678653467): `plans/test_sfinks_678653467.md` oraz wersje PL, DE, NL.
+* Plan testu na jednej ofercie (Sphynx, listing 678653467): `plans/test_sfinks_678653467.md` oraz wersje we wszystkich 8 językach.
 * Generatory tytułu, opisu i tagów: `scripts/generators.py` (ziarno = listing ID).
 * Rasa Jagdterrier dodana do `data/Rasy.xlsx` (R331). Reguły dopasowania nazw: DECYZJE.md, sekcja 9a.
 
@@ -19,3 +19,8 @@ Ostatnia aktualizacja: 26.10.2026. Zakres: płytki ceramiczne "with a Photo" (29
 1. Kopia zapasowa i test na ofercie Sphynx (tytuł, opis, tagi, materiały: ceramic, 7 zdjęć nadpisane w kolejności 3, 4, 5, 2, 6, 7, original, alt texty, wideo, pola personalizacji, SKU tylko jeśli bezpieczne, tłumaczenie DE), kontrola w Etsy przez właścicielkę.
 2. Partie po maks. 50 ofert, log w `logs/`, próbka do sprawdzenia przed następną partią. Licznik zapytań: `logs/api_requests_<data>.log` (stop przy 8000 dziennie).
 3. Tłumaczenia pozostałych języków i ich wgranie po zatwierdzeniu.
+
+## Uruchomienie nowej sesji
+* Cała praca jest na gałęzi `claude/stoic-edison-coahbl` (to jedyna gałąź na GitHubie, brak gałęzi domyślnej z tymi plikami). Nową sesję trzeba zacząć z tej gałęzi (wskaż ją jako gałąź źródłową).
+* Zmienne środowiskowe (w tym `ETSY_SHARED_SECRET`) wczytują się tylko przy starcie sesji. Stara sesja ich nie widzi.
+* Pierwsza wiadomość w nowej sesji: "Kontynuujemy test na Sphynxie, przeczytaj STAN_PRAC.md".
