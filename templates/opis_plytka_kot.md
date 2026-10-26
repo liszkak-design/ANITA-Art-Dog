@@ -8,7 +8,7 @@ Reszta (sekcje stałe) jest taka sama dla wszystkich ofert z płytkami.
 
 Akapit = zdanie A + zdanie B + zdanie C. Każdy slot ma kilka zatwierdzonych wariantów. Wariant wybierany jest
 deterministycznie po ID oferty, a sąsiednie oferty w partii różnią się co najmniej w dwóch slotach.
-Pełna nazwa rasy `{BREED}` musi być w zdaniu A. Zdrobnienie z kolumny E (tylko EN, tylko pies) wolno użyć
+Pełna nazwa rasy `{BREED}` jest w zdaniu A (wyjątek: warianty [N] ze samym zdrobnieniem, tylko pies; nazwa rasy jest wtedy w tytule i w sekcji IN SHORT). Zdrobnienie z kolumny E (tylko EN, tylko pies) wolno użyć
 najwyżej dwa razy w całym akapicie, także w zdaniu A (zasada z 26.10.2026); zdrobnienie nie musi stać razem z nazwą rasy.
 Koty i konie nie mają wpisów w kolumnie E. Jedno zdanie nie zawiera pełnej nazwy rasy dwa razy.
 

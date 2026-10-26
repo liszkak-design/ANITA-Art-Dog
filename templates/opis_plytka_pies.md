@@ -10,7 +10,8 @@ w partii różnią się co najmniej w dwóch slotach. Pełna nazwa rasy `{BREED}
 
 Zdrobnienie `{NICK}`: w slotach A, B i C (od 26.10.2026 także w zdaniu A), tylko w wariantach oznaczonych [N], tylko gdy kolumna E
 jest wpisana, najwyżej dwa razy w całym akapicie. Zdrobnienie nie musi stać razem z nazwą rasy, może być w zdaniu samo. Jedno zdanie
-nie zawiera pełnej nazwy rasy dwa razy; zdanie A zawsze ma pełną nazwę rasy. Gdy kolumna E jest pusta, używamy wyłącznie wariantów bez [N].
+nie zawiera pełnej nazwy rasy dwa razy. Zdanie A (wariant [N]: A9-A11, nowe, do przeglądu w partii 1) może składać się tylko ze zdrobnienia, bez nazwy rasy:
+pełna nazwa rasy jest wtedy w tytule oferty i w sekcji IN SHORT (decyzja właścicielki 26.10.2026). Gdy kolumna E jest pusta, używamy wyłącznie wariantów bez [N].
 Wartości z kolumny E użyte są dokładnie tak, jak wpisano w arkuszu, z wyjątkiem poprawek zatwierdzonych przez
 właścicielkę (arkusz `Rasy.xlsx` niezmieniony): Affenpinscher: `Affie` (w arkuszu `ffie`), Newfoundland: `Newfie`
 (w arkuszu `Newfies`), Central Asia Shepherd: `Alabay` (w arkuszu `Alabai, Alabay`).
@@ -26,6 +27,9 @@ jak zdrobnienia, bo to często wyszukiwane nazwy alternatywne rasy.
 - A6 [N]: Remember your beloved {BREED} with this ceramic tombstone plaque, a sketch-style portrait made to honour your faithful {NICK}.
 - A7 [N]: This ceramic memorial plaque with a sketch-style portrait of the breed is made to remember your much-loved {BREED}, your faithful {NICK}.
 - A8 [N]: A ceramic tombstone plaque for your {BREED}: a sketch-style portrait that keeps the memory of your dear {NICK} close.
+- A9 [N]: A ceramic tombstone plaque with a sketch-style portrait, made to remember your much-loved {NICK}.
+- A10 [N]: Remember your faithful {NICK} with this ceramic memorial plaque, decorated with a sketch-style portrait of the dog.
+- A11 [N]: This ceramic plaque keeps the memory of your dear {NICK} close, with a sketch-style portrait of the dog.
 
 **Slot B (zastosowanie)**
 - B1: Place it on a grave or in any other place of remembrance, as a lasting tribute to the dog who shared your life.

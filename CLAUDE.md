@@ -30,7 +30,7 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 
 * Tytuł: nazwa rasy z kolumny C `Rasy.xlsx` na początku, potem typ produktu i cechy, do 140 znaków (cel 100-130), bez upychania.
 * Tagi: 13, max 20 znaków, bez nazw ras, różnorodne, bez powtórzeń.
-* Opis: pierwsze zdanie z pełną nazwą rasy, nie kopiuj tytułu. Pierwszy akapit składaj z zatwierdzonych banków zdań (otwarcie / zastosowanie / zdjęcie klienta), tak żeby oferty nie były kopią z podmienioną rasą (szczegóły w `templates/`). Zdrobnienia tylko z kolumny E (EN), także w pierwszym zdaniu, bez wymogu nazwy rasy w tym samym zdaniu, łącznie raz lub dwa razy w pierwszym akapicie; jedno zdanie nie zawiera pełnej nazwy rasy dwa razy.
+* Opis: pierwsze zdanie z pełną nazwą rasy (wyjątek: zdanie ze samym zdrobnieniem, bo nazwa rasy jest w tytule), nie kopiuj tytułu. Pierwszy akapit składaj z zatwierdzonych banków zdań (otwarcie / zastosowanie / zdjęcie klienta), tak żeby oferty nie były kopią z podmienioną rasą (szczegóły w `templates/`). Zdrobnienia tylko z kolumny E (EN), także w pierwszym zdaniu, bez wymogu nazwy rasy w tym samym zdaniu, łącznie raz lub dwa razy w pierwszym akapicie; jedno zdanie nie zawiera pełnej nazwy rasy dwa razy.
 * Alt text: opisowy, zgodny z tym, co widać, rasa jak w tytule oferty. Niezgodność zdjęcia z rasą oznacz do sprawdzenia.
 * Tłumaczenia: 8 języków (nl, fr, de, it, pl, pt, es, sv). Tłumacz szablony i słownik, nie każdą ofertę. Długość tagu sprawdzaj i zgłaszaj, nie obcinaj.
 * Zapisy typu mare, stallion, mother with puppies, hanging, big/smaller, cropped to cechy produktu, nie rasy (arkusz "Opisy statuetek").
