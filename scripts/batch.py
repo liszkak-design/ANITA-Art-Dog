@@ -187,6 +187,13 @@ def render(row, lid, R):
     desc = re.sub(r"\b(dog|cat|horse|pony)\s+\1\b", r"\1", desc, flags=re.I)  # np. "Mexican Hairless Dog dog" -> "... Dog"
     if syn:
         assert syn in desc.split("\n\n")[0], f"brak synonimu w pierwszym akapicie: {lid}"
+    # banki mają na sztywno "a {BREED}" / "a {SYN}": poprawna forma a/an zależnie od pierwszej litery nazwy
+    for name in {n for n in (breed, syn) if n}:
+        desc = re.sub(r"\b([Aa]) (?=" + re.escape(name) + r")",
+                      lambda m, name=name: (article(name).capitalize() if m.group(1) == "A" else article(name)) + " ", desc)
+    desc = re.sub(r"\b(dog|cat|horse|pony)\s+\1\b", r"\1", desc, flags=re.I)  # np. "Mexican Hairless Dog dog" -> "... Dog"
+    if syn:
+        assert syn in desc.split("\n\n")[0], f"brak synonimu w pierwszym akapicie: {lid}"
     # banki mają na sztywno "a {BREED}": poprawna forma a/an zależnie od nazwy rasy
     desc = re.sub(r"\b([Aa]) (?=" + re.escape(breed) + r")",
                   lambda m: (article(breed).capitalize() if m.group(1) == "A" else article(breed)) + " ", desc)
