@@ -277,7 +277,29 @@ def interleave(sorted_cands):
     return out
 
 
+def started(n):
+    return bool(glob.glob(str(ROOT / "logs" / f"partia_{n:03d}_*.jsonl")))
+
+
+def load_frozen(n):
+    """Zatwierdzona lista partii z plans/partia_00N.csv i _dryrun.json (apply nigdy nie przelicza partii od nowa)."""
+    csvp, jp = ROOT / "plans" / f"partia_{n:03d}.csv", ROOT / "plans" / f"partia_{n:03d}_dryrun.json"
+    if not csvp.exists() or not jp.exists():
+        sys.exit(f"BŁĄD: brak zatwierdzonego planu partii {n} (uruchom 'plan {n}' i zatwierdź)")
+    rows = {r["listing_id"]: r for r in csv.DictReader(open(csvp, encoding="utf-8"))}
+    batch = []
+    for x in json.load(open(jp, encoding="utf-8")):
+        r = rows[str(x["listing_id"])]
+        batch.append({"lid": x["listing_id"], "en": x["en"], "trans": x["tlumaczenia"],
+                      "row": {"ean": x["ean"], "tytul": r["tytul_przed"], "gatunek": x["gatunek"], "rasa_kolumna_C": x["rasa"]}})
+    if len(batch) != len(rows):
+        sys.exit("BŁĄD: lista CSV i JSON partii różnią się")
+    return batch
+
+
 def plan(n):
+    if started(n):
+        sys.exit(f"BŁĄD: partia {n} jest już rozpoczęta (są logi), nie nadpisuję zatwierdzonego planu")
     cands, R = build_candidates()
     ok = interleave(sorted([c for c in cands if not c["why"]], key=lambda c: (c["sales"], c["lid"])))
     batch, skipped = [], []
@@ -418,7 +440,8 @@ def apply_batch(n):
     tok = json.loads(api.TOKEN.read_text())
     if "listings_w" not in tok.get("scope", ""):
         sys.exit("BŁĄD: token bez listings_w")
-    batch, _ = plan(n)
+    batch = load_frozen(n)
+    print(f"partia {n}: {len(batch)} ofert z zatwierdzonego planu (bez przeliczania)")
     if len(batch) > BATCH_MAX:
         sys.exit("BŁĄD: partia większa niż 50")
     summary = ROOT / "logs" / f"partia_{n:03d}_{TODAY}.jsonl"
