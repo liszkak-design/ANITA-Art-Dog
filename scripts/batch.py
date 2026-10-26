@@ -445,8 +445,12 @@ def apply_batch(n):
     if len(batch) > BATCH_MAX:
         sys.exit("BŁĄD: partia większa niż 50")
     summary = ROOT / "logs" / f"partia_{n:03d}_{TODAY}.jsonl"
+    skip = {int(x) for a in sys.argv if a.startswith("--skip=") for x in a[7:].split(",")}
     for i, c in enumerate(batch, 1):
         lid = c["lid"]
+        if lid in skip:
+            print(i, lid, "POMINIĘTA na żądanie (--skip), do poprawki")
+            continue
         if is_done(lid):
             print(i, lid, "pomijam (już zrobiona)")
             continue
@@ -457,9 +461,16 @@ def apply_batch(n):
             open(summary, "a").write(json.dumps({"listing_id": lid, "status": "pominięta", "powod": pr}, ensure_ascii=False) + "\n")
             continue
         done = done_steps(lid)
+        resumed = bool(done - {"weryfikacja"})
         for s in steps_for(c):
             if s["id"] in done:
                 continue
+            if resumed and s["id"].startswith("zdjecie_"):  # wznowienie: zdjęcie mogło już wejść, a nie zdążyć się zalogować (bez duplikatów)
+                imgs = api.get(f"/v3/application/listings/{lid}?includes=Images").get("images", [])
+                if any(i["rank"] == int(s["fields"]["rank"]) and (i.get("alt_text") or "") == s["fields"]["alt_text"] for i in imgs):
+                    zlog(lid, s["id"], "backup/" + p.name, "już w ofercie (wykryte przy wznowieniu)", "ok")
+                    print(f"  {lid} {s['id']}: już w ofercie, pomijam")
+                    continue
             resp = send(s, c["row"]["ean"])
             if s["id"].startswith("tlumaczenie_") and not base.ok(resp) and "exist" in str(resp).lower():
                 resp = send({**s, "method": "PUT"}, c["row"]["ean"])
