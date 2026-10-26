@@ -1,0 +1,297 @@
+{
+ "listing_id": 678653467,
+ "uwagi_walidacji": [],
+ "pominiete": [
+  "SKU",
+  "shopping basket summary",
+  "GPSR",
+  "how it's made",
+  "occasion"
+ ],
+ "kroki": [
+  {
+   "id": "listing",
+   "method": "PATCH",
+   "path": "/v3/application/shops/19255336/listings/678653467",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx Cat Memorial Plaque, Personalized Ceramic Tombstone with Your Photo, Pet Loss Gift",
+    "description": "A Sphynx cat memorial plaque in ceramic: a sketch-style portrait that keeps the memory of your cat close. Use it as a grave marker or as a keepsake in a place of remembrance, a lasting tribute to your cat. Prefer your own cat's portrait? Attach a photo and we will print it on the plaque.\n\nIN SHORT\n- Ceramic oval plaque, approx. 10.5 x 7.5 cm (4.13 x 2.95 in), approx. 0.5 cm (0.2 in) thick\n- Sketch-style portrait of a Sphynx cat, or personalised with your own photo\n- Weather-resistant print that does not fade\n- Smooth, rounded edge, no extra frame or setting needed\n- No hole or hook on the back, attach it with any universal adhesive\n- Personalisation available: your photo, print style, name and dates\n\nA LASTING TRIBUTE\nA ceramic plaque is a gentle and lasting way to remember a cat who has passed away. The smooth edge needs no special frame, the high-quality print is made to last, and personalisation lets you make the plaque truly yours.\n\nPERSONALISATION\nOrder the plaque exactly as shown, or personalise it. Every option below is optional.\n- Your photo: we can print any photo you send us. Attach it in the personalisation box when ordering, or send it by Etsy message.\n- Style: choose the original photo, full colour with the background removed, or a pencil-sketch style like the one shown.\n- Name and dates: add your cat's name, or name and dates of life, or leave the plaque without text.\n- Orientation: a plaque with your photo can be placed vertically or horizontally.\n\nQuestions about personalising your plaque? Send us a message, we will gladly help.\n\nWe would be honoured to help you say goodbye to your beloved cat with dignity.\n\nINTERNATIONAL ORDERS\nOur products are shipped from Poland, so import charges may apply in some countries. These charges do not apply to EU countries, the United Kingdom and the USA. If you have any doubts, please contact us for details.",
+    "tags": "pet memorial plaque,grave marker,tombstone plaque,pet loss gift,custom photo plaque,cat memorial,cat grave marker,custom memorial,grave decoration,cemetery marker,photo on ceramic,headstone plaque,in loving memory",
+    "materials": "ceramic"
+   }
+  },
+  {
+   "id": "personalizacja",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/personalization",
+   "kind": "json",
+   "fields": {
+    "personalization_questions": [
+     {
+      "question_type": "dropdown",
+      "question_text": "Do you want to personalize the plaque?",
+      "required": false,
+      "options": [
+       {
+        "label": "No, as shown"
+       },
+       {
+        "label": "Yes, personalize it"
+       }
+      ]
+     },
+     {
+      "question_type": "unlabeled_upload",
+      "question_text": "Your photo (optional)",
+      "required": false,
+      "max_allowed_files": 1,
+      "instructions": "Attach a clear photo of your pet, or send it later by Etsy message. Leave empty if you chose No."
+     },
+     {
+      "question_type": "dropdown",
+      "question_text": "Print style (if personalizing)",
+      "required": false,
+      "options": [
+       {
+        "label": "Original photo"
+       },
+       {
+        "label": "No background"
+       },
+       {
+        "label": "Sketch style"
+       }
+      ]
+     },
+     {
+      "question_type": "text_input",
+      "question_text": "Name and dates (optional)",
+      "required": false,
+      "max_allowed_characters": 50,
+      "instructions": "Name, or name and dates, as they should appear, e.g. Felix 12/29/2013 - 11/9/2026. Leave empty for no text."
+     },
+     {
+      "question_type": "dropdown",
+      "question_text": "Plaque orientation (if own photo)",
+      "required": false,
+      "options": [
+       {
+        "label": "Vertical"
+       },
+       {
+        "label": "Horizontal"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "zdjecie_1_3.jpg",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/images",
+   "kind": "multipart",
+   "fields": {
+    "rank": "1",
+    "overwrite": "true",
+    "alt_text": "Oval ceramic memorial plaque with a sketch-style portrait of a Sphynx cat on a white marble surface"
+   },
+   "file": [
+    "image",
+    "3.jpg"
+   ]
+  },
+  {
+   "id": "zdjecie_2_4.jpg",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/images",
+   "kind": "multipart",
+   "fields": {
+    "rank": "2",
+    "overwrite": "false",
+    "alt_text": "Ceramic oval plaque with a Sphynx cat portrait seen at an angle, showing the smooth rounded edge"
+   },
+   "file": [
+    "image",
+    "4.jpg"
+   ]
+  },
+  {
+   "id": "zdjecie_3_5.jpg",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/images",
+   "kind": "multipart",
+   "fields": {
+    "rank": "3",
+    "overwrite": "false",
+    "alt_text": "Back of the ceramic plaque, flat and plain, with no hole or hook"
+   },
+   "file": [
+    "image",
+    "5.jpg"
+   ]
+  },
+  {
+   "id": "zdjecie_4_2.jpg",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/images",
+   "kind": "multipart",
+   "fields": {
+    "rank": "4",
+    "overwrite": "false",
+    "alt_text": "Sphynx cat memorial plaque with its size marked: 10.5 cm high and 7.5 cm wide (4.13 by 2.95 in)"
+   },
+   "file": [
+    "image",
+    "2.jpg"
+   ]
+  },
+  {
+   "id": "zdjecie_5_6.jpg",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/images",
+   "kind": "multipart",
+   "fields": {
+    "rank": "5",
+    "overwrite": "false",
+    "alt_text": "Ceramic plaque with a Sphynx cat portrait attached to a wooden urn engraved with the name Buddy and the dates 2005 to 2018, shown as an example of use"
+   },
+   "file": [
+    "image",
+    "6.jpg"
+   ]
+  },
+  {
+   "id": "zdjecie_6_7.jpg",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/images",
+   "kind": "multipart",
+   "fields": {
+    "rank": "6",
+    "overwrite": "false",
+    "alt_text": "Ceramic plaque with a Sphynx cat portrait set into a stone grave marker outdoors among autumn leaves"
+   },
+   "file": [
+    "image",
+    "7.jpg"
+   ]
+  },
+  {
+   "id": "zdjecie_7_original.jpg",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/images",
+   "kind": "multipart",
+   "fields": {
+    "rank": "7",
+    "overwrite": "false",
+    "alt_text": "Unedited photo of a finished ceramic oval plaque with a printed pet portrait"
+   },
+   "file": [
+    "image",
+    "original.jpg"
+   ]
+  },
+  {
+   "id": "wideo",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/videos",
+   "kind": "multipart",
+   "fields": {
+    "name": "video-ceramic-plaques-anita.mp4"
+   },
+   "file": [
+    "video",
+    "/home/user/ANITA-Art-Dog/video/video-ceramic-plaques-anita.mp4"
+   ]
+  },
+  {
+   "id": "tlumaczenie_de",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/de",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx Katzen-Gedenkplatte, personalisierte Keramik-Grabplatte mit Foto, Andenken an das Haustier",
+    "description": "Sphynx – Gedenkplatte aus Keramik: ein Skizzenporträt, das die Erinnerung an Ihre Katze bewahrt. Sie dient als Grabkennzeichnung oder als Erinnerungsstück an einem Ort des Gedenkens, eine Hommage an Ihre Katze. Lieber das Porträt Ihres eigenen Tieres? Fügen Sie ein Foto bei, und wir drucken es auf die Platte.\n\nKURZ ZUSAMMENGEFASST\n- Ovale Keramikplatte, ca. 10,5 x 7,5 cm (4,13 x 2,95 Zoll), ca. 0,5 cm (0,2 Zoll) dick\n- Skizzenporträt (Rasse: Sphynx) oder mit Ihrem eigenen Foto\n- Wetterbeständiger Druck, der nicht verblasst\n- Glatte, abgerundete Kante, keine zusätzliche Fassung nötig\n- Ohne Loch oder Haken auf der Rückseite, mit handelsüblichem Universalkleber zu befestigen\n- Personalisierung möglich: Ihr Foto, Druckstil, Name und Daten\n\nERINNERUNG AN IHREN FREUND\nEine Keramikplatte ist eine behutsame und bleibende Art, die Erinnerung an Ihre Katze zu bewahren. Die glatte Kante braucht keine besondere Fassung, der hochwertige Druck ist auf lange Haltbarkeit ausgelegt, und die Personalisierung macht die Platte zu etwas ganz Persönlichem.\n\nPERSONALISIERUNG\nBestellen Sie die Platte genau wie abgebildet oder personalisieren Sie sie. Jede der folgenden Optionen ist freiwillig.\n- Ihr Foto: Wir drucken jedes Foto, das Sie uns senden. Fügen Sie es bei der Bestellung im Personalisierungsfeld bei oder senden Sie es per Etsy-Nachricht.\n- Stil: Wählen Sie das Originalfoto, Farbe mit entferntem Hintergrund oder einen Bleistiftskizzen-Stil wie auf den Angebotsfotos.\n- Name und Daten: Fügen Sie den Namen Ihrer Katze hinzu, oder Name und Lebensdaten, oder lassen Sie die Platte ohne Schrift.\n- Ausrichtung: Eine Platte mit Ihrem Foto kann hoch- oder querformatig gestaltet werden.\n\nHaben Sie Fragen zur Personalisierung? Schreiben Sie uns, wir helfen gern.\n\nEs wäre uns eine Ehre, Sie dabei zu unterstützen, würdevoll von Ihrer Katze Abschied zu nehmen.\n\nINTERNATIONALE BESTELLUNGEN\nUnsere Produkte werden aus Polen versendet, daher können in einigen Ländern Einfuhrabgaben anfallen. Diese Abgaben gelten nicht für EU-Länder, das Vereinigte Königreich und die USA. Bei Fragen kontaktieren Sie uns gerne, wir nennen Ihnen die Details.",
+    "tags": "Gedenkplatte,Grabschild,Grabplatte,Trauergeschenk,Foto Gedenkplatte,Katzen Gedenkplatte,Katzen Grabschild,Andenken mit Foto,Grabdekoration,Friedhof Schild,Foto auf Keramik,Grabstein Platte,Zur Erinnerung"
+   }
+  },
+  {
+   "id": "tlumaczenie_nl",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/nl",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx gedenkplaat voor uw kat, gepersonaliseerde keramische grafplaat met foto, aandenken",
+    "description": "Sphynx – gedenkplaat van keramiek: een schetsportret dat de herinnering aan uw kat bewaart. Hij dient als grafmarkering of als aandenken op een plek van herinnering, een eerbetoon aan uw kat. Liever het portret van uw eigen dier? Voeg een foto toe en wij drukken die op de plaat.\n\nIN HET KORT\n- Ovale keramische plaat, ca. 10,5 x 7,5 cm (4,13 x 2,95 inch), ca. 0,5 cm (0,2 inch) dik\n- Portret in schetsstijl (ras: Sphynx) of met uw eigen foto\n- Weerbestendige print die niet verbleekt\n- Gladde, afgeronde rand, geen extra omlijsting nodig\n- Zonder gat of haakje aan de achterkant, te bevestigen met gewone universele lijm\n- Personalisatie mogelijk: uw foto, printstijl, naam en data\n\nHERINNERING AAN UW VRIEND\nEen keramische plaat is een zachte en blijvende manier om de herinnering aan uw kat te bewaren. De gladde rand heeft geen speciale omlijsting nodig, de hoogwaardige print is gemaakt om lang mee te gaan en met personalisatie maakt u de plaat helemaal van uzelf.\n\nPERSONALISATIE\nBestel de plaat precies zoals afgebeeld of personaliseer hem. Elke optie hieronder is vrijwillig.\n- Uw foto: wij drukken elke foto af die u ons stuurt. Voeg hem bij de bestelling toe in het personalisatieveld of stuur hem via een Etsy-bericht.\n- Stijl: kies de originele foto, volledige kleur met verwijderde achtergrond of een potloodschets-stijl zoals op de foto's bij dit aanbod.\n- Naam en data: voeg de naam van uw kat toe, of naam en levensdata, of laat de plaat zonder tekst.\n- Oriëntatie: een plaat met uw foto kan staand of liggend worden uitgevoerd.\n\nHeeft u vragen over personalisatie? Stuur ons een bericht, wij helpen u graag.\n\nHet zou ons een eer zijn om u te helpen op waardige wijze afscheid te nemen van uw kat.\n\nINTERNATIONALE BESTELLINGEN\nOnze producten worden vanuit Polen verzonden, daarom kunnen in sommige landen invoerkosten worden berekend. Deze kosten gelden niet voor EU-landen, het Verenigd Koninkrijk en de VS. Heeft u twijfels, neem dan contact met ons op voor details.",
+    "tags": "gedenkplaat,grafbordje,grafplaat,rouwcadeau,gedenkplaat met foto,katten gedenkplaat,kattengraf bordje,aandenken met foto,grafdecoratie,begraafplaats bord,foto op keramiek,grafsteen plaat,ter herinnering"
+   }
+  },
+  {
+   "id": "tlumaczenie_fr",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/fr",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx plaque commémorative pour chat, plaque funéraire en céramique personnalisée avec photo",
+    "description": "Sphynx – plaque commémorative en céramique : un portrait au style croquis qui garde vivant le souvenir de votre chat. Elle sert de marque de tombe ou de souvenir dans un lieu de recueillement, un hommage à votre chat. Vous préférez le portrait de votre propre chat ? Joignez une photo et nous l'imprimerons sur la plaque.\n\nEN BREF\n- Plaque ovale en céramique, env. 10,5 x 7,5 cm (4,13 x 2,95 po), épaisseur env. 0,5 cm (0,2 po)\n- Portrait au style croquis (race : Sphynx) ou avec votre propre photo\n- Impression résistante aux intempéries, qui ne se décolore pas\n- Bord lisse et arrondi, aucun cadre ni support supplémentaire nécessaire\n- Sans trou ni crochet au dos, à fixer avec une colle universelle\n- Personnalisation possible : votre photo, style d'impression, nom et dates\n\nSOUVENIR DE VOTRE AMI\nUne plaque en céramique est une manière douce et durable de garder vivant le souvenir de votre chat. Le bord lisse ne demande aucun cadre particulier, l'impression de haute qualité est conçue pour durer, et la personnalisation rend la plaque vraiment unique.\n\nPERSONNALISATION\nCommandez la plaque telle qu'elle est présentée, ou personnalisez-la. Chacune des options ci-dessous est facultative.\n- Votre photo : nous pouvons imprimer n'importe quelle photo que vous nous envoyez. Joignez-la dans le champ de personnalisation lors de la commande, ou envoyez-la par message Etsy.\n- Style : choisissez la photo d'origine, la couleur avec arrière-plan supprimé, ou un style crayon comme sur les photos de l'annonce.\n- Nom et dates : ajoutez le nom de votre chat, ou son nom et ses dates de vie, ou laissez la plaque sans texte.\n- Orientation : une plaque avec votre photo peut être placée à la verticale ou à l'horizontale.\n\nUne question sur la personnalisation ? Écrivez-nous, nous serons heureux de vous aider.\n\nCe sera un honneur pour nous de vous aider à dire adieu avec dignité à votre chat bien-aimé.\n\nCOMMANDES INTERNATIONALES\nNos produits sont expédiés depuis la Pologne ; des frais d'importation peuvent donc s'appliquer dans certains pays. Ils ne concernent pas les pays de l'UE, le Royaume-Uni ni les États-Unis. En cas de doute, contactez-nous pour obtenir des précisions.",
+    "tags": "plaque commémorative,plaque de tombe,plaque funéraire,cadeau deuil animal,plaque avec photo,plaque pour chat,tombe de chat,souvenir avec photo,décoration de tombe,plaque cimetière,photo sur céramique,plaque de sépulture,en mémoire"
+   }
+  },
+  {
+   "id": "tlumaczenie_it",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/it",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx targa commemorativa per gatto, targa funeraria in ceramica personalizzata con foto, ricordo",
+    "description": "Sphynx – targa commemorativa in ceramica: un ritratto in stile schizzo che conserva il ricordo del suo gatto. Serve come segno sulla tomba o come ricordo in un luogo di raccoglimento, un omaggio al suo gatto. Preferisce il ritratto del suo animale? Alleghi una foto e la stamperemo sulla targa.\n\nIN BREVE\n- Targa ovale in ceramica, circa 10,5 x 7,5 cm (4,13 x 2,95 pollici), spessore circa 0,5 cm (0,2 pollici)\n- Ritratto in stile schizzo (razza: Sphynx) oppure con la sua foto\n- Stampa resistente alle intemperie, non sbiadisce\n- Bordo liscio e arrotondato, nessuna cornice o supporto aggiuntivo necessario\n- Senza foro né gancio sul retro, da fissare con una colla universale\n- Personalizzazione disponibile: la sua foto, stile di stampa, nome e date\n\nRICORDO DEL SUO AMICO\nUna targa in ceramica è un modo delicato e duraturo per conservare il ricordo del suo gatto. Il bordo liscio non richiede una cornice speciale, la stampa di alta qualità è pensata per durare e la personalizzazione rende la targa davvero unica.\n\nPERSONALIZZAZIONE\nOrdini la targa esattamente come illustrata, oppure la personalizzi. Ognuna delle opzioni seguenti è facoltativa.\n- La sua foto: possiamo stampare qualsiasi foto ci invii. La alleghi nel campo di personalizzazione durante l'ordine, oppure ce la invii con un messaggio Etsy.\n- Stile: scelga la foto originale, il colore con sfondo rimosso oppure lo stile a matita come nelle foto dell'inserzione.\n- Nome e date: aggiunga il nome del suo gatto, oppure nome e date di vita, o lasci la targa senza testo.\n- Orientamento: una targa con la sua foto può essere posizionata in verticale o in orizzontale.\n\nHa domande sulla personalizzazione? Ci scriva, saremo lieti di aiutarla.\n\nSarà un onore per noi aiutarla a dire addio con dignità al suo gatto.\n\nORDINI INTERNAZIONALI\nI nostri prodotti vengono spediti dalla Polonia, quindi in alcuni paesi possono essere applicati costi di importazione. Questi costi non riguardano i paesi UE, il Regno Unito e gli Stati Uniti. In caso di dubbi, ci contatti per i dettagli.",
+    "tags": "targa commemorativa,targa per tomba,targa funeraria,regalo lutto animale,targa con foto,targa per gatto,tomba del gatto,ricordo con foto,decorazione tomba,targa cimitero,foto su ceramica,lapide con targa,in ricordo di"
+   }
+  },
+  {
+   "id": "tlumaczenie_pl",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/pl",
+   "kind": "form",
+   "fields": {
+    "title": "Sfinks płytka pamiątkowa dla kota, personalizowana płytka nagrobna ze zdjęciem, pamiątka po pupilu",
+    "description": "Sfinks – płytka pamiątkowa z ceramiki: szkicowy portret, który przywołuje pamięć o Twoim kocie. Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, hołd dla Twojego kota. Wolisz portret własnego kota? Załącz zdjęcie, a nadrukujemy je na płytce.\n\nW SKRÓCIE\n- Ceramiczna owalna płytka, ok. 10,5 x 7,5 cm (4,13 x 2,95 cala), grubość ok. 0,5 cm (0,2 cala)\n- Portret w stylu szkicu (rasa: Sfinks) albo z Twoim zdjęciem\n- Nadruk odporny na warunki atmosferyczne, nie blaknie\n- Gładka, zaokrąglona krawędź, nie potrzebuje dodatkowej oprawy\n- Z tyłu nie ma otworu ani haczyka, płytkę należy przykleić dowolnym klejem uniwersalnym\n- Dostępna personalizacja: Twoje zdjęcie, styl nadruku, imię i daty\n\nPAMIĄTKA PO TWOIM PRZYJACIELU\nCeramiczna płytka to delikatny i trwały sposób, by upamiętnić kota, który odszedł. Gładka krawędź nie wymaga specjalnej oprawy, nadruk wysokiej jakości jest wykonany tak, by służył latami, a personalizacja pozwala nadać płytce wyjątkowy charakter.\n\nPERSONALIZACJA\nZamów płytkę dokładnie taką, jak na zdjęciach, albo spersonalizuj ją. Każda z poniższych opcji jest dobrowolna.\n- Twoje zdjęcie: możemy nadrukować dowolne zdjęcie, które nam prześlesz. Załącz je w polu personalizacji przy zamówieniu lub wyślij wiadomością na Etsy.\n- Styl: wybierz oryginalne zdjęcie, pełny kolor z usuniętym tłem albo styl szkicu ołówkiem, taki jak na zdjęciach oferty.\n- Imię i daty: dodaj imię kota, albo imię i daty życia, albo zostaw płytkę bez napisu.\n- Orientacja: płytka z Twoim zdjęciem może być ustawiona pionowo lub poziomo.\n\nMasz pytania o personalizację płytki? Napisz do nas, chętnie pomożemy.\n\nBędzie dla nas zaszczytem, jeśli pomożemy Ci z godnością pożegnać ukochanego kota.\n\nZAMÓWIENIA MIĘDZYNARODOWE\nNasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać naliczone opłaty importowe. Opłaty nie dotyczą krajów UE, Wielkiej Brytanii ani USA. W razie wątpliwości skontaktuj się z nami, a podamy szczegóły.",
+    "tags": "płytka pamiątkowa,oznaczenie grobu,płytka nagrobna,pamiątka po pupilu,płytka ze zdjęciem,pamiątka po kocie,grób kota,pamiątka z nadrukiem,ozdoba grobu,tabliczka cmentarna,zdjęcie na ceramice,płyta nagrobna,ku pamięci"
+   }
+  },
+  {
+   "id": "tlumaczenie_pt",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/pt",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx placa comemorativa para gato, placa funerária em cerâmica personalizada com foto, lembrança",
+    "description": "Sphynx – placa comemorativa em cerâmica: um retrato em estilo esboço que guarda a memória do seu gato. Serve como marca de túmulo ou como lembrança num local de memória, uma homenagem ao seu gato. Prefere o retrato do seu próprio animal? Anexe uma foto e imprimiremos na placa.\n\nEM RESUMO\n- Placa oval em cerâmica, aprox. 10,5 x 7,5 cm (4,13 x 2,95 polegadas), aprox. 0,5 cm (0,2 polegadas) de espessura\n- Retrato em estilo esboço (raça: Sphynx) ou com a sua própria foto\n- Impressão resistente às intempéries, que não desbota\n- Borda lisa e arredondada, não precisa de moldura nem suporte adicional\n- Sem furo nem gancho na parte de trás, fixa-se com cola universal\n- Personalização disponível: a sua foto, estilo de impressão, nome e datas\n\nLEMBRANÇA DO SEU AMIGO\nUma placa de cerâmica é uma forma delicada e duradoura de guardar a memória do seu gato. A borda lisa não precisa de moldura especial, a impressão de alta qualidade foi pensada para durar e a personalização torna a placa verdadeiramente sua.\n\nPERSONALIZAÇÃO\nEncomende a placa tal como é apresentada ou personalize-a. Cada uma das opções abaixo é opcional.\n- A sua foto: podemos imprimir qualquer foto que nos envie. Anexe-a no campo de personalização ao fazer a encomenda ou envie-a por mensagem do Etsy.\n- Estilo: escolha a foto original, a cor com o fundo removido ou um estilo de desenho a lápis como nas fotos do anúncio.\n- Nome e datas: adicione o nome do seu gato, ou nome e datas de vida, ou deixe a placa sem texto.\n- Orientação: uma placa com a sua foto pode ser colocada na vertical ou na horizontal.\n\nTem dúvidas sobre a personalização? Escreva-nos, teremos todo o gosto em ajudar.\n\nSerá uma honra para nós ajudar a dar um adeus digno ao seu gato.\n\nENCOMENDAS INTERNACIONAIS\nOs nossos produtos são enviados da Polónia, pelo que em alguns países podem ser aplicados custos de importação. Estes custos não se aplicam aos países da UE, ao Reino Unido nem aos Estados Unidos. Em caso de dúvida, contacte-nos para obter detalhes.",
+    "tags": "placa comemorativa,placa para túmulo,placa funerária,presente luto pet,placa com foto,placa para gato,túmulo de gato,lembrança com foto,decoração túmulo,placa cemitério,foto em cerâmica,lápide com placa,em memória de"
+   }
+  },
+  {
+   "id": "tlumaczenie_es",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/es",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx placa conmemorativa para gato, placa funeraria de cerámica personalizada con foto, recuerdo",
+    "description": "Sphynx – placa conmemorativa de cerámica: un retrato estilo boceto que guarda el recuerdo de tu gato. Sirve como señal de tumba o como recuerdo en un lugar de homenaje, un tributo a tu gato. ¿Prefieres el retrato de tu propio gato? Adjunta una foto y la imprimiremos en la placa.\n\nEN RESUMEN\n- Placa oval de cerámica, aprox. 10,5 x 7,5 cm (4,13 x 2,95 pulgadas), aprox. 0,5 cm (0,2 pulgadas) de grosor\n- Retrato estilo boceto (raza: Sphynx) o con tu propia foto\n- Impresión resistente a la intemperie que no se desvanece\n- Borde liso y redondeado, no necesita marco ni soporte adicional\n- Sin agujero ni gancho en la parte trasera, se fija con pegamento universal\n- Personalización disponible: tu foto, estilo de impresión, nombre y fechas\n\nRECUERDO DE TU AMIGO\nUna placa de cerámica es una forma delicada y duradera de guardar el recuerdo de tu gato. El borde liso no necesita un marco especial, la impresión de alta calidad está pensada para durar y la personalización hace que la placa sea realmente tuya.\n\nPERSONALIZACIÓN\nPide la placa tal como se muestra o personalízala. Cada una de las opciones siguientes es voluntaria.\n- Tu foto: podemos imprimir cualquier foto que nos envíes. Adjúntala en el campo de personalización al hacer el pedido o envíala por mensaje de Etsy.\n- Estilo: elige la foto original, el color con el fondo eliminado o un estilo de dibujo a lápiz como el de las fotos del anuncio.\n- Nombre y fechas: añade el nombre de tu gato, o su nombre y fechas de vida, o deja la placa sin texto.\n- Orientación: una placa con tu foto puede colocarse en vertical o en horizontal.\n\n¿Tienes preguntas sobre la personalización? Escríbenos, estaremos encantados de ayudarte.\n\nSerá un honor para nosotros ayudarte a despedirte con dignidad de tu gato querido.\n\nPEDIDOS INTERNACIONALES\nNuestros productos se envían desde Polonia, por lo que en algunos países pueden aplicarse gastos de importación. Estos gastos no afectan a los países de la UE, el Reino Unido ni Estados Unidos. Si tienes dudas, contáctanos para conocer los detalles.",
+    "tags": "placa conmemorativa,placa para tumba,placa funeraria,regalo duelo mascota,placa con foto,placa para gato,tumba de gato,recuerdo con foto,decoración tumba,placa cementerio,foto en cerámica,lápida con placa,en memoria de"
+   }
+  },
+  {
+   "id": "tlumaczenie_sv",
+   "method": "POST",
+   "path": "/v3/application/shops/19255336/listings/678653467/translations/sv",
+   "kind": "form",
+   "fields": {
+    "title": "Sphynx minnesplatta för katt, personlig gravplatta i keramik med foto, minne",
+    "description": "Sphynx – minnesplatta i keramik: ett skissporträtt som bevarar minnet av din katt. Den fungerar som gravmarkering eller som minne på en minnesplats, en hyllning till din katt. Vill du hellre ha ett porträtt av ditt eget djur? Bifoga ett foto så trycker vi det på plattan.\n\nKORT OM PRODUKTEN\n- Oval keramikplatta, ca 10,5 x 7,5 cm (4,13 x 2,95 tum), ca 0,5 cm (0,2 tum) tjock\n- Porträtt i skissstil (ras: Sphynx) eller med ditt eget foto\n- Väderbeständigt tryck som inte bleknar\n- Slät, rundad kant, ingen extra ram eller hållare behövs\n- Utan hål eller krok på baksidan, fästs med universallim\n- Personligt tryck möjligt: ditt foto, tryckstil, namn och datum\n\nETT MINNE AV DIN VÄN\nEn keramikplatta är ett varsamt och varaktigt sätt att bevara minnet av din katt. Den släta kanten behöver ingen särskild ram, det högkvalitativa trycket är gjort för att hålla och med personligt tryck blir plattan helt din egen.\n\nPERSONLIGT TRYCK\nBeställ plattan precis som den visas, eller gör den personlig. Varje alternativ nedan är frivilligt.\n- Ditt foto: vi kan trycka vilket foto som helst som du skickar oss. Bifoga det i personaliseringsfältet när du beställer, eller skicka det i ett Etsy-meddelande.\n- Stil: välj originalfotot, färg med borttagen bakgrund eller en blyertsskiss i stil med bilderna i annonsen.\n- Namn och datum: lägg till namnet på din katt, eller namn och levnadsdatum, eller lämna plattan utan text.\n- Orientering: en platta med ditt foto kan placeras stående eller liggande.\n\nHar du frågor om personligt tryck? Skriv till oss, vi hjälper dig gärna.\n\nDet vore en ära för oss att hjälpa dig att ta ett värdigt farväl av din katt.\n\nINTERNATIONELLA BESTÄLLNINGAR\nVåra produkter skickas från Polen, så i vissa länder kan importavgifter tillkomma. Avgifterna gäller inte EU-länder, Storbritannien eller USA. Om du är osäker, kontakta oss så ger vi dig detaljerna.",
+    "tags": "minnesplatta,gravplatta,gravmarkering,present sorg djur,platta med foto,minnesplatta katt,katt grav,minne med foto,gravdekoration,kyrkogårdsskylt,foto på keramik,gravsten platta,till minne av"
+   }
+  }
+ ]
+}
