@@ -10,7 +10,7 @@ Forma grzecznościowa (zgodnie z ustaleniem). Nazwa rasy w tekście zawsze w mia
 5. {B} {CS}-Gedenkplatte mit Foto, personalisierte Keramik-Grabplatte, in liebevoller Erinnerung
 6. {B} Keramik-Gedenkplatte, individuelles Foto-Grabschild für Ihr Tier, Andenken an das Haustier
 
-Najdłuższy tytuł wśród 299 ofert (z dopisaną odmianą sierści): 136 znaków (limit 140).
+Najdłuższy tytuł wśród 299 ofert (z dopisaną odmianą sierści tam, gdzie oferta ją ma): 125 znaków (limit 140).
 
 ## Pierwszy akapit: banki
 **A**

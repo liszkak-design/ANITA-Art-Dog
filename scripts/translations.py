@@ -5,6 +5,7 @@ Usage: python3 -I scripts/translations.py
 """
 import csv
 import re
+import sys
 from pathlib import Path
 
 import openpyxl
@@ -126,6 +127,17 @@ Onze producten worden vanuit Polen verzonden, daarom kunnen in sommige landen in
     pool=['keramische plaat', 'plaat op maat', 'grafsteen huisdier', 'outdoor herdenking', 'herdenken in tuin', 'herinneringsstuk', 'condoleance cadeau', 'herinneringscadeau', 'ter herinnering', 'regenboogbrug', 'huisdier herinnering', 'foto op keramiek', 'huisdier condoleance', 'grafdecoratie', 'weerbestendige plaat', 'ovale gedenkplaat', 'huisdiergraf plaat', 'begraafplaats bord', 'rouw om huisdier', 'gedenkcadeau', 'huisdier herdenken', 'gedenkbordje', 'huisdier fotoplaat', 'aandenken met foto', 'grafsteen plaat', 'altijd in mijn hart', 'rouw aandenken', 'grafplaat keramiek', 'gedenktafel', 'huisdiergraf'])
 
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from translations_more import MORE  # noqa: E402
+
+L["de"]["feat"] = "langhaarig"
+L["nl"]["feat"] = "langharig"
+L.update(MORE)
+
+
+FEAT = re.compile(r"long|short|wire|smooth|fohlen|cropped|curly", re.I)
+
+
 def breed_names(col):
     ws = openpyxl.load_workbook(ROOT / "data" / "Rasy.xlsx", data_only=True)["Rasy"]
     h = [c.value for c in ws[1]]
@@ -146,15 +158,17 @@ def main():
         for r in rows:
             sp = d["sp"][r["gatunek"]]
             b = names[(r["gatunek"], r["rasa_id"])]
+            if FEAT.search(r["folder"] + " " + r["nazwa_w_tytule"]):  # offers whose title carries a coat or age word
+                b += " " + d["feat"]
             for t in d["titles"]:
-                x = fill(t, sp, b + " langhaarig" if code == "de" else b + " langharig")
+                x = fill(t, sp, b)
                 if len(x) > mx:
                     mx, ex = len(x), x
         all_tags = d["core"] + d["pool"] + [x for v in d["spec"].values() for x in v]
         long_tags = [(t, len(t)) for t in all_tags if len(t) > 20]
         md = f"# Tłumaczenie {d['name']}: płytka ceramiczna \"with a Photo\" (szkic Claude'a, wymaga kontroli osoby natywnej)\n\n"
         md += "Forma grzecznościowa (zgodnie z ustaleniem). Nazwa rasy w tekście zawsze w mianowniku, z arkusza Rasy (kolumna " + d["col"] + "). Zdrobnień nie używamy. Nagłówek sekcji to analog polskiego \"Pamiątka po Twoim przyjacielu\".\n\n"
-        md += "## Tytuł (6 wzorców)\n" + "\n".join(f"{i+1}. {t}" for i, t in enumerate(d["titles"])) + f"\n\nNajdłuższy tytuł wśród 299 ofert (z dopisaną odmianą sierści): {mx} znaków (limit 140).\n\n"
+        md += "## Tytuł (6 wzorców)\n" + "\n".join(f"{i+1}. {t}" for i, t in enumerate(d["titles"])) + f"\n\nNajdłuższy tytuł wśród 299 ofert (z dopisaną odmianą sierści tam, gdzie oferta ją ma): {mx} znaków (limit 140).\n\n"
         md += "## Pierwszy akapit: banki\n**A**\n" + "\n".join(f"- A{i+1}: {t}" for i, t in enumerate(d["A"]))
         md += "\n\n**B**\n" + "\n".join(f"- B{i+1}: {t}" for i, t in enumerate(d["B"])) + "\n\n**C**\n" + "\n".join(f"- C{i+1}: {t}" for i, t in enumerate(d["C"]))
         md += "\n\nFormy gatunku: " + "; ".join(f"{k}: " + ", ".join(f"{a}={b}" for a, b in v.items()) for k, v in d["sp"].items()) + "\n\n"

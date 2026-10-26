@@ -10,7 +10,7 @@ Forma grzecznościowa (zgodnie z ustaleniem). Nazwa rasy w tekście zawsze w mia
 5. {B} gedenkplaat voor {S} met foto, gepersonaliseerde keramische grafplaat, ter herinnering
 6. {B} keramische gedenkplaat, grafbordje met uw foto voor uw {S}, aandenken aan uw huisdier
 
-Najdłuższy tytuł wśród 299 ofert (z dopisaną odmianą sierści): 139 znaków (limit 140).
+Najdłuższy tytuł wśród 299 ofert (z dopisaną odmianą sierści tam, gdzie oferta ją ma): 129 znaków (limit 140).
 
 ## Pierwszy akapit: banki
 **A**
