@@ -1,4 +1,4 @@
-# Tłumaczenie testowe PL (szkic do sprawdzenia): Sphynx, listing 678653467
+# Tłumaczenie testowe PL (do sprawdzenia): Sphynx, listing 678653467
 
 Odpowiada angielskiemu planowi z `plans/test_sfinks_678653467.md` (te same warianty: tytuł 1, A5 + B3 + C2).
 
@@ -6,7 +6,8 @@ Odpowiada angielskiemu planowi z `plans/test_sfinks_678653467.md` (te same waria
 Sfinks płytka pamiątkowa dla kota, personalizowana płytka nagrobna ze zdjęciem, pamiątka po pupilu
 
 ## Opis
-Sfinks – płytka pamiątkowa z ceramiki: szkicowy portret, który przywołuje pamięć o Twoim kocie. Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, trwały hołd dla Twojego kota. Wolisz portret własnego kota? Załącz zdjęcie, a nadrukujemy je na płytce.
+```
+Sfinks – płytka pamiątkowa z ceramiki: szkicowy portret, który przywołuje pamięć o Twoim kocie. Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, hołd dla Twojego kota. Wolisz portret własnego kota? Załącz zdjęcie, a nadrukujemy je na płytce.
 
 W SKRÓCIE
 - Ceramiczna owalna płytka, ok. 10,5 x 7,5 cm (4,13 x 2,95 cala), grubość ok. 0,5 cm (0,2 cala)
@@ -16,7 +17,7 @@ W SKRÓCIE
 - Z tyłu nie ma otworu ani haczyka, płytkę należy przykleić dowolnym klejem uniwersalnym
 - Dostępna personalizacja: Twoje zdjęcie, styl nadruku, imię i daty
 
-TRWAŁY HOŁD
+PAMIĄTKA PO TWOIM PRZYJACIELU
 Ceramiczna płytka to delikatny i trwały sposób, by upamiętnić kota, który odszedł. Gładka krawędź nie wymaga specjalnej oprawy, nadruk wysokiej jakości jest wykonany tak, by służył latami, a personalizacja pozwala nadać płytce wyjątkowy charakter.
 
 PERSONALIZACJA
@@ -32,6 +33,7 @@ Będzie dla nas zaszczytem, jeśli pomożemy Ci z godnością pożegnać ukochan
 
 ZAMÓWIENIA MIĘDZYNARODOWE
 Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać naliczone opłaty importowe. Opłaty nie dotyczą krajów UE, Wielkiej Brytanii ani USA. W razie wątpliwości skontaktuj się z nami, a podamy szczegóły.
+```
 
 ## Tagi (13, każdy do 20 znaków)
 płytka pamiątkowa, oznaczenie grobu, płytka nagrobna, pamiątka po pupilu, płytka ze zdjęciem, pamiątka po kocie, grób kota, pamiątka z nadrukiem, ozdoba grobu, tabliczka cmentarna, zdjęcie na ceramice, płyta nagrobna, ku pamięci

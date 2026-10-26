@@ -22,9 +22,9 @@ Najdłuższy tytuł dla wszystkich 299 ofert (z dopisaną odmianą sierści) ma 
 - A5: {B} – płytka pamiątkowa z ceramiki: szkicowy portret, który przywołuje pamięć o Twoim {loc}.
 
 **B**
-- B1: Umieść ją na grobie lub w innym miejscu pamięci jako trwały hołd dla {gen}, który był częścią Twojego życia.
-- B2: Może oznaczać grób albo stanąć w cichym, ważnym dla Ciebie miejscu, jako trwałe przypomnienie o ukochanym {loc}.
-- B3: Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, trwały hołd dla Twojego {gen}.
+- B1: Umieść ją na grobie lub w innym miejscu pamięci jako hołd dla {gen}, który był częścią Twojego życia.
+- B2: Może oznaczać grób albo stanąć w cichym, ważnym dla Ciebie miejscu, jako przypomnienie o ukochanym {loc}.
+- B3: Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, hołd dla Twojego {gen}.
 - B4: Piękny hołd na grób lub w każde miejsce, w którym wspominasz swojego {gen}, odporny na warunki atmosferyczne.
 
 **C**
@@ -43,7 +43,7 @@ W SKRÓCIE
 - Z tyłu nie ma otworu ani haczyka, płytkę należy przykleić dowolnym klejem uniwersalnym
 - Dostępna personalizacja: Twoje zdjęcie, styl nadruku, imię i daty
 
-TRWAŁY HOŁD
+PAMIĄTKA PO TWOIM PRZYJACIELU
 Ceramiczna płytka to delikatny i trwały sposób, by upamiętnić {gen}, który odszedł. Gładka krawędź nie wymaga specjalnej oprawy, nadruk wysokiej jakości jest wykonany tak, by służył latami, a personalizacja pozwala nadać płytce wyjątkowy charakter.
 
 PERSONALIZACJA

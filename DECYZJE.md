@@ -107,3 +107,9 @@ Ten plik zbiera ustalenia właścicielki sklepu Art-Dog. Obowiązuje razem z `CL
 * Oferty bez pasującego folderu (Clydesdale `664826022`, Laekenois Dog `678580977`) pomijamy. Duplikaty produktu (dwie oferty Bengal na jednym folderze): optymalizujemy jedną, drugą pomijamy.
 * Foldery bez oferty (Cornish Rex, Smooth Fox Terrier): można wystawić nowe oferty.
 * Mapa końcowa płytek "with a Photo": `plans/mapa_koncowa.csv` (299 ofert do optymalizacji, 3 pominięte).
+
+## 10\. Tłumaczenia płytek ceramicznych (ustalenia z 26.10.2026)
+
+* Polski szablon płytek (`templates/tlumaczenie_pl_plytka.md`) zatwierdzony przez właścicielkę. Zmiany z jej przeglądu: nagłówek sekcji "PAMIĄTKA PO TWOIM PRZYJACIELU" (zamiast "TRWAŁY HOŁD"), w bankach B bez słów "trwały, trwałe". Po polsku bez zdrobnień z kolumny K. Nazwa rasy w tekście zawsze w mianowniku (bez odmiany).
+* Pliki do sprawdzenia dla właścicielki: nagłówki sekcji muszą być wyświetlane w osobnej linii, treść w bloku kodu (jak w planach testu).
+* Kolejność tłumaczeń: polski, potem niemiecki i jeden kolejny język, na końcu pozostałe.
