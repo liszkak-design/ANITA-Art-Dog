@@ -183,6 +183,7 @@ def render(row, lid, R):
                   lambda m: (article(breed).capitalize() if m.group(1) == "A" else article(breed)) + " ", desc)
     tit, tidx = gen.title(lid, sp, breed)
     tg = gen.tags(lid, sp)
+    assert breed in desc.split("\n\n")[0], f"brak pełnej nazwy rasy w pierwszym akapicie: {lid}"
     out = {"title": tit, "description": desc, "tags": tg, "materials": ["ceramic"], "alts": alts(breed, sp),
            "wzorzec_tytulu": tidx, "ABC": ch, "nick": nick}
     trans = {c: render_translation(c, lid, sp, rr, ch, tg, tidx) for c in LANGS}

@@ -16,7 +16,7 @@ w partii różnią się co najmniej w dwóch slotach. Pełna nazwa rasy `{BREED}
 **Slot A (otwarcie, nazwa rasy + słowa kluczowe)**
 - A1: This horse memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of a {BREED}, made to remember a much-loved horse.
 - A2: A ceramic memorial plaque for your horse, decorated with a sketch-style portrait of a {BREED}.
-- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of the breed.
+- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of the horse.
 - A4: This ceramic pet memorial plaque features a sketch-style portrait of a {BREED}, created to honour a much-loved companion.
 - A5: A horse memorial plaque in ceramic: a sketch-style portrait of a {BREED} that keeps the memory of your horse close.
 
@@ -40,7 +40,7 @@ z „pony" w miejsce „horse" (A LASTING TRIBUTE, imię w PERSONALISATION, zdan
 **Slot A**
 - A1: This pony memorial plaque is a ceramic tombstone plaque with a sketch-style portrait of a {BREED}, made to remember a much-loved pony.
 - A2: A ceramic memorial plaque for your pony, decorated with a sketch-style portrait of a {BREED}.
-- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of the breed.
+- A3: Remember your {BREED} with this ceramic tombstone plaque, printed with a sketch-style portrait of the pony.
 - A4: This ceramic pet memorial plaque features a sketch-style portrait of a {BREED}, created to honour a much-loved companion.
 - A5: A pony memorial plaque in ceramic: a sketch-style portrait of a {BREED} that keeps the memory of your pony close.
 
