@@ -4,9 +4,12 @@ Reads only unless a caller explicitly uses method POST/PUT/PATCH/DELETE (not use
 """
 import datetime
 import json
+import os
 import subprocess
 import sys
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -33,18 +36,39 @@ def _token():
     return t["access_token"]
 
 
-def get(path, retries=3):
+def api_key_header():
+    """x-api-key = keystring:shared_secret when the shared secret is available as ETSY_SHARED_SECRET.
+    Without it the network proxy is expected to inject the header (cloud network secret). Never printed or logged."""
+    sec = os.environ.get("ETSY_SHARED_SECRET")
+    return {"x-api-key": f"{os.environ['ETSY_KEYSTRING']}:{sec}"} if sec else {}
+
+
+def request(method, path, headers=None, data=None, retries=3):
+    """Single entry point for Etsy calls: counts the request in logs/, sends Authorization (and x-api-key if
+    available) from Python so that nothing secret appears in command-line arguments."""
     if _count_today() >= DAILY_STOP:
         raise RuntimeError("limit dzienny 8000 zapytań osiągnięty, przerywam")
+    h = {"Authorization": f"Bearer {_token()}", **api_key_header(), **(headers or {})}
+    d = {}
     for i in range(retries):
-        _log("GET", path)
-        r = subprocess.run(["curl", "-sS", "-m", "60", "https://api.etsy.com" + path,
-                            "-H", f"Authorization: Bearer {_token()}"], capture_output=True)
+        _log(method, path)
+        req = urllib.request.Request("https://api.etsy.com" + path, data=data, method=method, headers=h)
         try:
-            d = json.loads(r.stdout)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = r.read()
+        except urllib.error.HTTPError as e:
+            body = e.read()
+        except Exception as e:
+            body = json.dumps({"error": str(e)[:200]}).encode()
+        try:
+            d = json.loads(body) if body else {}
         except Exception:
-            d = {"error": r.stderr.decode()[:200]}
-        if not (isinstance(d, dict) and "error" in d and "rate" in str(d["error"]).lower()):
+            d = {"error": body[:200].decode("utf-8", "replace")}
+        if not (isinstance(d, dict) and "rate" in str(d.get("error", "")).lower()):
             return d
         time.sleep(2 * (i + 1))
     return d
+
+
+def get(path, retries=3):
+    return request("GET", path, retries=retries)

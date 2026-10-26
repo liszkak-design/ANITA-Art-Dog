@@ -6,10 +6,11 @@ The x-api-key header is added by the network proxy.
 """
 import json
 import os
-import subprocess
 import sys
 import time
+import urllib.error
 import urllib.parse
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -18,9 +19,16 @@ TOKEN_URL = "https://api.etsy.com/v3/public/oauth/token"
 
 
 def post(data):
-    r = subprocess.run(["curl", "-sS", "-m", "60", "-X", "POST", TOKEN_URL, "-H", "Content-Type: application/x-www-form-urlencoded",
-                        "--data", urllib.parse.urlencode(data)], capture_output=True)
-    return json.loads(r.stdout)
+    sec = os.environ.get("ETSY_SHARED_SECRET")
+    headers = {"Content-Type": "application/x-www-form-urlencoded"}
+    if sec:  # local / environment-variable mode; in the cloud proxy mode the proxy adds x-api-key
+        headers["x-api-key"] = f"{os.environ['ETSY_KEYSTRING']}:{sec}"
+    req = urllib.request.Request(TOKEN_URL, data=urllib.parse.urlencode(data).encode(), method="POST", headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        return json.loads(e.read() or b"{}")
 
 
 def save(tok, scope):
