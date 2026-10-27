@@ -32,6 +32,8 @@ SHOP_ID = base.SHOP_ID
 BATCH_MAX = 50
 TODAY = datetime.date.today()
 IDS_CSV = ROOT / "plans" / "listing_ids_sklep.csv"
+APPROVED_CSV = ROOT / "plans" / "zatwierdzone_dopasowania_zdjec.csv"  # oferty dopasowane przez zdjęcia, zatwierdzone przez właścicielkę
+ID_IMG_CSV = ROOT / "plans" / "id_po_obrazie.csv"  # cache: oferta z eksportu -> ID w Etsy rozstrzygnięte po zdjęciu
 STATUS_CSV = ROOT / "plans" / "partie_status.csv"
 EAN_BASE = "https://www.artdog.com.pl/allegro/zebraneEAN/"
 CACHE = base.CACHE.parent / "batch"
@@ -57,11 +59,47 @@ def e_class():
     return {r["rasa_id"]: r["typ"] for r in csv.DictReader(open(ROOT / "data" / "nick_klasyfikacja.csv", encoding="utf-8"))}
 
 
+def approved_photo_matches():
+    return {r["zrodlo"]: r for r in csv.DictReader(open(APPROVED_CSV, encoding="utf-8"))} if APPROVED_CSV.exists() else {}
+
+
+def img_key(url):
+    m = re.search(r"/il/([0-9a-f]+)/(\d+)/", url or "")
+    return m.groups() if m else None
+
+
+def export_image_url(zrodlo):
+    f, n = zrodlo.split(":")
+    return list(csv.DictReader(open(ROOT / "data" / f, encoding="utf-8-sig")))[int(n) - 2]["IMAGE1"]
+
+
+def resolve_id_by_image(zrodlo, ids):
+    """Oferty o identycznym tytule: ID wybieramy po zdjęciu (adres zdjęcia z eksportu = adres zdjęcia oferty w Etsy). Wynik w cache."""
+    cache = {r["zrodlo"]: r for r in csv.DictReader(open(ID_IMG_CSV, encoding="utf-8"))} if ID_IMG_CSV.exists() else {}
+    if zrodlo in cache:
+        return int(cache[zrodlo]["listing_id"]) if cache[zrodlo]["listing_id"] else None
+    want, hit = img_key(export_image_url(zrodlo)), []
+    for lid in ids:
+        imgs = api.get(f"/v3/application/listings/{lid}/images").get("results", [])
+        if any(img_key(i.get("url_fullxfull")) == want for i in imgs):
+            hit.append(lid)
+    res = hit[0] if len(hit) == 1 else None
+    cache[zrodlo] = {"zrodlo": zrodlo, "listing_id": res or "", "kandydaci": "/".join(map(str, ids))}
+    with open(ID_IMG_CSV, "w", encoding="utf-8", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=["zrodlo", "listing_id", "kandydaci"])
+        w.writeheader()
+        w.writerows(cache.values())
+    return res
+
+
 def read_map():
     rows = [r for r in csv.DictReader(open(ROOT / "plans" / "mapa_koncowa.csv", encoding="utf-8")) if r["decyzja"] == "OPTYMALIZUJ"]
     ean = {r["zrodlo"]: r["ean"] for r in csv.DictReader(open(ROOT / "plans" / "mapa_plytki_with_photo.csv", encoding="utf-8"))}
+    appr = approved_photo_matches()
     for r in rows:
         r["ean"] = ean.get(r["zrodlo"], "")
+        if not r["ean"] and r["zrodlo"] in appr:  # dopasowanie po zdjęciach zatwierdzone przez właścicielkę: EAN z nazwy folderu
+            r["ean"] = appr[r["zrodlo"]]["ean_z_folderu"]
     return rows
 
 
@@ -248,6 +286,9 @@ def build_candidates():
     for row in read_map():
         why = []
         ids = idx.get(row["tytul"], [])
+        if len(ids) > 1 and row["zrodlo"] in approved_photo_matches():
+            r_id = resolve_id_by_image(row["zrodlo"], ids)
+            ids = [r_id] if r_id else ids
         if len(ids) != 1:
             why.append(f"ID oferty: {len(ids)} dopasowań po tytule")
         lid = ids[0] if len(ids) == 1 else 0
@@ -308,7 +349,11 @@ def plan(n):
     if started(n):
         sys.exit(f"BŁĄD: partia {n} jest już rozpoczęta (są logi), nie nadpisuję zatwierdzonego planu")
     cands, R = build_candidates()
-    ok = interleave(sorted([c for c in cands if not c["why"]], key=lambda c: (c["sales"], c["lid"])))
+    appr = approved_photo_matches()
+    srt = lambda lst: interleave(sorted(lst, key=lambda c: (c["sales"], c["lid"])))
+    free = [c for c in cands if not c["why"]]
+    # najpierw oferty z zatwierdzonych dopasowań zdjęć (właścicielka kazała je dołączyć do kolejnej partii), potem reszta
+    ok = srt([c for c in free if c["row"]["zrodlo"] in appr]) + srt([c for c in free if c["row"]["zrodlo"] not in appr])
     batch, skipped = [], []
     for c in ok:
         if len(batch) == BATCH_MAX:
