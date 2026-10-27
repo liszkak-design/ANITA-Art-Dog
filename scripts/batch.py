@@ -274,7 +274,7 @@ def render(row, lid, R):
     fkey = row.get("klucz_odmiany", "")
     feat_en = feature_en(fkey) if fkey else ""
     e_val, typ = (rr.get("Potoczne EN") or "").strip(), e_class().get(row["rasa_id"], "")
-    nick, syn = (e_val if typ == "zdrobnienie" else ""), (e_val if typ == "synonim" else "")
+    nick, syn = (e_val if typ == "zdrobnienie" else ""), (e_val if typ == "synonim" and row.get("bez_synonimu") != "tak" else "")
     desc, ch = gen.description(lid, sp, breed, nick, syn)
     # banki mają na sztywno "a {BREED}" / "a {SYN}": poprawna forma a/an zależnie od pierwszej litery nazwy
     for name in {n for n in (breed, syn) if n}:
@@ -294,6 +294,9 @@ def render(row, lid, R):
     fw = feature_words().get(fkey, {}) if fkey else {}
     if fkey and not fw:
         raise ValueError(f"brak słów odmiany '{fkey}' w arkuszu Słowa stałe")
+    if row.get("nazwa_pl"):  # polska nazwa odmiany wskazana przez właścicielkę zastępuje nazwę z arkusza (bez dopisywania słowa odmiany)
+        rr = {**rr, "PL nazwa": row["nazwa_pl"]}
+        fw = {**fw, "pl": ""}
     trans = {c: render_translation(c, lid, sp, rr, ch, tg, tidx, fw.get(c, "")) for c in LANGS}
     return out, trans
 
@@ -385,7 +388,8 @@ def build_candidates():
             g0, rid = by_name[o["rasa_kolumna_C"]]
             row = {"zrodlo": f"wlasciciel:{lid}", "gatunek": g0, "nazwa_w_tytule": o["rasa_kolumna_C"], "rasa_kolumna_C": o["rasa_kolumna_C"],
                    "folder": f"{o['rasa_kolumna_C']} {o['ean']}", "metoda": "rozstrzygnięcie właścicielki", "do_decyzji": "", "rasa_id": rid,
-                   "decyzja": "OPTYMALIZUJ", "ean": o["ean"], "klucz_odmiany": o["klucz_odmiany"], "tytul": byid.get(lid, "")}
+                   "decyzja": "OPTYMALIZUJ", "ean": o["ean"], "klucz_odmiany": o["klucz_odmiany"], "tytul": byid.get(lid, ""),
+                   "nazwa_pl": o.get("nazwa_pl", ""), "bez_synonimu": o.get("bez_synonimu", "")}
             if lid not in byid:
                 why.append("oferta nie jest aktywna w sklepie")
             if is_done(lid):

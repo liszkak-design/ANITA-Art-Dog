@@ -1,14 +1,14 @@
-listing_id,rasa_kolumna_C,klucz_odmiany,ean,aktywne,uwagi
-664717946,Pointer,,5055882488304,tak,Pointer bez dopisków (właścicielka 27.10.2026)
-678588731,Brittany Spaniel,,5055882489431,tak,oferta miała błędne zdjęcie; rasa Brittany Spaniel (właścicielka 27.10.2026)
-678588611,Fox Terrier,Fox Terrier Smooth,5055882489424,tak,oferta miała błędne zdjęcia; Smooth Fox Terrier (właścicielka 27.10.2026)
-678557655,Fox Terrier,Fox Terrier Wire,5055882488205,tak,Fox Terrier Wirehaired (właścicielka 27.10.2026)
-678543805,Dachshund,,5055882487642,tak,Dachshund bez odmiany (właścicielka 27.10.2026)
-664720020,Dachshund,Dachshund Wire-haired,5055882488410,tak,Wirehaired Dachshund; EAN w wiadomości z literówką 055882488410 poprawiony na 5055882488410 (folder 96 Wirehaired Dachshund)
-664703588,English Pointer,,5055882487697,tak,wiersz R332 dodany 27.10.2026 (tłumaczenia: szkice Claude'a)
-664742594,German Longhaired Pointer,,5055882489165,tak,wiersz R333 dodany 27.10.2026 (tłumaczenia: szkice Claude'a)
-678673321,Haflinger,foal,5055882487291,tak,Haflinger Fohlen: słowo foal/źrebię z arkusza Opisy statuetek (właścicielka 27.10.2026)
-678662193,Kurilian Bobtail,Dachshund Long-haired,5055882486911,tak,Kurilian Bobtail Longhaired: słowa długowłosy z arkusza Słowa stałe (właścicielka 27.10.2026)
-678660657,Selkirk Rex,Chihuahua Short-haired,5055882486829,tak,Selkirk Rex Shorthaired: słowa krótkowłosy z arkusza Słowa stałe (właścicielka 27.10.2026)
-678660479,Selkirk Rex,Dachshund Long-haired,5055882486812,tak,Selkirk Rex Longhaired: słowa długowłosy z arkusza Słowa stałe (właścicielka 27.10.2026)
-678575503,Vizsla,Dachshund Wire-haired,5055882488915,nie,Wirehaired Vizsla: wstrzymana; polska nazwa rasy w arkuszu to 'Wyżeł węgierski krótkowłosy' (sprzeczne z odmianą szorstkowłosy), a synonim z kolumny E to 'Hungarian Short-haired Pointer'; do decyzji właścicielki
+listing_id,rasa_kolumna_C,klucz_odmiany,ean,aktywne,uwagi,nazwa_pl,bez_synonimu
+664717946,Pointer,,5055882488304,tak,Pointer bez dopisków (właścicielka 27.10.2026),,
+678588731,Brittany Spaniel,,5055882489431,tak,oferta miała błędne zdjęcie; rasa Brittany Spaniel (właścicielka 27.10.2026),,
+678588611,Fox Terrier,Fox Terrier Smooth,5055882489424,tak,oferta miała błędne zdjęcia; Smooth Fox Terrier (właścicielka 27.10.2026),,
+678557655,Fox Terrier,Fox Terrier Wire,5055882488205,tak,Fox Terrier Wirehaired (właścicielka 27.10.2026),,
+678543805,Dachshund,,5055882487642,tak,Dachshund bez odmiany (właścicielka 27.10.2026),,
+664720020,Dachshund,Dachshund Wire-haired,5055882488410,tak,Wirehaired Dachshund; EAN w wiadomości z literówką 055882488410 poprawiony na 5055882488410 (folder 96 Wirehaired Dachshund),,
+664703588,English Pointer,,5055882487697,tak,wiersz R332 dodany 27.10.2026 (tłumaczenia: szkice Claude'a),,
+664742594,German Longhaired Pointer,,5055882489165,tak,wiersz R333 dodany 27.10.2026 (tłumaczenia: szkice Claude'a),,
+678673321,Haflinger,foal,5055882487291,tak,Haflinger Fohlen: słowo foal/źrebię z arkusza Opisy statuetek (właścicielka 27.10.2026),,
+678662193,Kurilian Bobtail,Dachshund Long-haired,5055882486911,tak,Kurilian Bobtail Longhaired: słowa długowłosy z arkusza Słowa stałe (właścicielka 27.10.2026),,
+678660657,Selkirk Rex,Chihuahua Short-haired,5055882486829,tak,Selkirk Rex Shorthaired: słowa krótkowłosy z arkusza Słowa stałe (właścicielka 27.10.2026),,
+678660479,Selkirk Rex,Dachshund Long-haired,5055882486812,tak,Selkirk Rex Longhaired: słowa długowłosy z arkusza Słowa stałe (właścicielka 27.10.2026),,
+678575503,Vizsla,Dachshund Wire-haired,5055882488915,tak,"Wirehaired Vizsla: polska nazwa 'Wyżeł węgierski szorstkowłosy' (właścicielka 27.10.2026; w wiadomości 'szortskowłosy' uznane za literówkę), bez synonimu Hungarian Short-haired Pointer",Wyżeł węgierski szorstkowłosy,tak
