@@ -13,7 +13,7 @@ EtsyListingsDownload.csv:36,678675987,Freiberger,koń,0,wykluczona,już zoptymal
 EtsyListingsDownload.csv:37,678675763,Falabella,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:38,678675627,Danish Warmblood,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:39,664835744,Czech Warmblood,koń,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:40,664835598,Percheron,koń,0,wykluczona,brak EAN
+EtsyListingsDownload.csv:40,664835598,Percheron,koń,0,partia 5,
 EtsyListingsDownload.csv:41,664835468,Camargue Horse,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:42,678673441,Boulonnais Horse,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:43,678673321,Haflinger,koń,0,wykluczona,odmiana sierści/wiek/pony w nazwie: wymaga decyzji
@@ -32,7 +32,7 @@ EtsyListingsDownload.csv:55,678668059,Paso Fino,koń,0,wykluczona,już zoptymali
 EtsyListingsDownload.csv:56,678667283,Morgan Horse,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:57,678667119,Lipizzan,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:58,678666959,Irish Sport Horse,koń,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:59,678666343,Haflinger,koń,0,wykluczona,brak EAN
+EtsyListingsDownload.csv:59,678666343,Haflinger,koń,0,partia 5,
 EtsyListingsDownload.csv:60,664828462,Spanish Norman,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:61,664828084,Mustang,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:62,664826724,Icelandic Horse,koń,0,wykluczona,już zoptymalizowana
@@ -55,7 +55,7 @@ EtsyListingsDownload.csv:79,678660479,Selkirk Rex,kot,0,wykluczona,odmiana sier�
 EtsyListingsDownload.csv:80,664822916,Toyger,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:81,664822680,Laperm,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:82,664822558,Chausie,kot,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:83,664822276,Kurilian Bobtail,kot,0,wykluczona,brak EAN
+EtsyListingsDownload.csv:83,664822276,Kurilian Bobtail,kot,0,partia 5,
 EtsyListingsDownload.csv:84,664822086,Manx,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:85,664821764,Tonkinese,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:86,664821034,Siberian,kot,0,wykluczona,już zoptymalizowana
@@ -82,18 +82,18 @@ EtsyListingsDownload.csv:106,664814752,American Bobtail,kot,0,wykluczona,już zo
 EtsyListingsDownload.csv:107,0,Bengal,kot,0,wykluczona,ID oferty: 2 dopasowań po tytule
 EtsyListingsDownload.csv:108,664813212,Ragdoll,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:109,678587399,Australian Kelpie,pies,0,kandydat,
-EtsyListingsDownload.csv:110,678586639,Tosa Inu,pies,0,kandydat,
+EtsyListingsDownload.csv:110,678586639,Tosa Inu,pies,0,partia 5,
 EtsyListingsDownload.csv:111,678586511,Tornjak,pies,0,kandydat,
 EtsyListingsDownload.csv:112,678586177,Stabyhoun,pies,0,kandydat,
 EtsyListingsDownload.csv:113,678585959,Spanish Mastiff,pies,0,kandydat,
 EtsyListingsDownload.csv:114,678585507,Schapendoes,pies,0,kandydat,
-EtsyListingsDownload.csv:115,664746826,Bolonka,pies,0,wykluczona,brak EAN
-EtsyListingsDownload.csv:116,664746674,Rat Terrier,pies,0,partia 4,
-EtsyListingsDownload.csv:117,664746382,Welsh Terrier,pies,0,partia 4,
-EtsyListingsDownload.csv:118,664746248,Treeing Walker Coonhound,pies,0,partia 4,
-EtsyListingsDownload.csv:119,664744974,Sloughi,pies,0,partia 4,
-EtsyListingsDownload.csv:120,664744780,Schipperke,pies,0,partia 4,
-EtsyListingsDownload.csv:121,664744312,Peruvian Hairless Dog,pies,0,partia 4,
+EtsyListingsDownload.csv:115,664746826,Bolonka,pies,0,partia 5,
+EtsyListingsDownload.csv:116,664746674,Rat Terrier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:117,664746382,Welsh Terrier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:118,664746248,Treeing Walker Coonhound,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:119,664744974,Sloughi,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:120,664744780,Schipperke,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:121,664744312,Peruvian Hairless Dog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:122,664743798,Mudi,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:123,664743694,Komondor,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:124,664743054,Hovawart,pies,0,wykluczona,już zoptymalizowana
@@ -105,52 +105,52 @@ EtsyListingsDownload.csv:129,664742030,Eurasier,pies,0,wykluczona,już zoptymali
 EtsyListingsDownload.csv:130,678588731,Brittany Spaniel,pies,0,kandydat,
 EtsyListingsDownload.csv:131,0,Brittany Spaniel,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
 EtsyListingsDownload.csv:132,678588493,Pyrenean Mastiff,pies,0,kandydat,
-EtsyListingsDownload.csv:133,664748216,Boerboel,pies,0,partia 4,
+EtsyListingsDownload.csv:133,664748216,Boerboel,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:134,678582813,Dutch Shepherd,pies,0,kandydat,
 EtsyListingsDownload.csv:135,678581591,Bolognese,pies,0,kandydat,
-EtsyListingsDownload.csv:136,678581403,Spanish Water Dog,pies,0,kandydat,
-EtsyListingsDownload.csv:137,0,Black and Tan Coonhound,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
-EtsyListingsDownload.csv:138,678581125,Bergamasco Shepherd,pies,0,kandydat,
-EtsyListingsDownload.csv:140,678580533,Barbet,pies,0,kandydat,
+EtsyListingsDownload.csv:136,678581403,Spanish Water Dog,pies,0,partia 5,
+EtsyListingsDownload.csv:137,678581275,Black and Tan Coonhound,pies,0,partia 5,
+EtsyListingsDownload.csv:138,678581125,Bergamasco Shepherd,pies,0,partia 5,
+EtsyListingsDownload.csv:140,678580533,Barbet,pies,0,partia 5,
 EtsyListingsDownload.csv:141,664741734,Czechoslovakian Wolfdog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:142,664741480,Cirneco dell'Etna,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:143,664741342,Chesapeake Bay Retriever,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:144,664741190,Cardigan Welsh Corgi,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:145,664740952,Bracco Italiano,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:146,664740800,Boykin Spaniel,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:147,0,Laekenois Belgian Shepherd,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload.csv:147,664739976,Laekenois Belgian Shepherd,pies,0,partia 5,
 EtsyListingsDownload.csv:148,664739758,Biewer Yorkshire Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:149,664739448,Appenzell Cattle Dog,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:150,678580153,Catahoula Leopard Dog,pies,0,kandydat,
-EtsyListingsDownload.csv:151,678579961,American Hairless Terrier,pies,0,kandydat,
-EtsyListingsDownload.csv:152,0,Black and Tan Coonhound,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
-EtsyListingsDownload.csv:153,678575411,Romanian Mioritic Shepherd,pies,0,kandydat,
-EtsyListingsDownload.csv:154,678575293,Portuguese Water Dog,pies,0,kandydat,
-EtsyListingsDownload.csv:155,678574549,Danish-Swedish Farmdog,pies,0,kandydat,
-EtsyListingsDownload.csv:156,678573889,Skye Terrier,pies,0,kandydat,
+EtsyListingsDownload.csv:150,678580153,Catahoula Leopard Dog,pies,0,partia 5,
+EtsyListingsDownload.csv:151,678579961,American Hairless Terrier,pies,0,partia 5,
+EtsyListingsDownload.csv:152,678575793,Black and Tan Coonhound,pies,0,partia 5,
+EtsyListingsDownload.csv:153,678575411,Romanian Mioritic Shepherd,pies,0,partia 5,
+EtsyListingsDownload.csv:154,678575293,Portuguese Water Dog,pies,0,partia 5,
+EtsyListingsDownload.csv:155,678574549,Danish-Swedish Farmdog,pies,0,partia 5,
+EtsyListingsDownload.csv:156,678573889,Skye Terrier,pies,0,partia 5,
 EtsyListingsDownload.csv:157,664734226,Romagna Water Dog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:158,664734096,Kooikerhondje,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:159,664733764,Swedish Vallhund,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:160,678570923,Redbone Coonhound,pies,0,kandydat,
-EtsyListingsDownload.csv:161,678570799,Pyrenean Sheepdog,pies,0,kandydat,
+EtsyListingsDownload.csv:160,678570923,Redbone Coonhound,pies,0,partia 5,
+EtsyListingsDownload.csv:161,678570799,Pyrenean Sheepdog,pies,0,partia 5,
 EtsyListingsDownload.csv:162,664733522,Spinone Italiano,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:163,664729948,Deerhound,pies,0,wykluczona,brak EAN
+EtsyListingsDownload.csv:163,664729948,Deerhound,pies,0,partia 5,
 EtsyListingsDownload.csv:164,664729558,Parson Russell Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:165,664729432,Otterhound,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:166,678566835,Manchester Terrier,pies,0,kandydat,
-EtsyListingsDownload.csv:167,678566707,Kuvasz,pies,0,kandydat,
-EtsyListingsDownload.csv:168,678566443,Great Pyrenees,pies,0,kandydat,
-EtsyListingsDownload.csv:169,678566201,Basset Fauve de Bretagne,pies,0,kandydat,
-EtsyListingsDownload.csv:170,678565787,Havanese,pies,0,kandydat,
+EtsyListingsDownload.csv:166,678566835,Manchester Terrier,pies,0,partia 5,
+EtsyListingsDownload.csv:167,678566707,Kuvasz,pies,0,partia 5,
+EtsyListingsDownload.csv:168,678566443,Great Pyrenees,pies,0,partia 5,
+EtsyListingsDownload.csv:169,678566201,Basset Fauve de Bretagne,pies,0,partia 5,
+EtsyListingsDownload.csv:170,678565787,Havanese,pies,0,partia 5,
 EtsyListingsDownload.csv:171,664725554,Harrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:172,664725296,German Pinscher,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:173,664724596,Basque Shepherd,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:176,678565447,Austrian Pinscher,pies,0,kandydat,
-EtsyListingsDownload.csv:177,678565285,Australian Terrier,pies,0,kandydat,
-EtsyListingsDownload.csv:178,678564987,Entlebucher Mountain Dog,pies,0,kandydat,
+EtsyListingsDownload.csv:176,678565447,Austrian Pinscher,pies,0,partia 5,
+EtsyListingsDownload.csv:177,678565285,Australian Terrier,pies,0,partia 5,
+EtsyListingsDownload.csv:178,678564987,Entlebucher Mountain Dog,pies,0,partia 5,
 EtsyListingsDownload.csv:179,678564175,Curly Coated Retriever,pies,0,wykluczona,odmiana sierści/wiek/pony w nazwie: wymaga decyzji
-EtsyListingsDownload.csv:180,678563689,Glen of Imaal Terrier,pies,0,kandydat,
-EtsyListingsDownload.csv:181,664723604,Belgian Shepherd,pies,0,wykluczona,brak EAN
+EtsyListingsDownload.csv:180,678563689,Glen of Imaal Terrier,pies,0,partia 5,
+EtsyListingsDownload.csv:181,664723604,Belgian Shepherd,pies,0,partia 5,
 EtsyListingsDownload.csv:182,664723412,Icelandic Sheepdog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:183,664723192,Old English Sheepdog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:184,664723076,Norwegian Lundehund,pies,0,wykluczona,już zoptymalizowana
@@ -160,20 +160,20 @@ EtsyListingsDownload.csv:187,664722626,Dandie Dinmont Terrier,pies,0,wykluczona,
 EtsyListingsDownload.csv:188,664722414,Xolo dog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:189,664722300,Irish Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:190,664722192,Puli,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:191,678562893,Greater Swiss Mountain Dog,pies,0,kandydat,
-EtsyListingsDownload.csv:192,678562759,Sealyham Terrier,pies,0,kandydat,
-EtsyListingsDownload.csv:193,678561363,Ibizan Hound,pies,0,kandydat,
-EtsyListingsDownload.csv:194,678561135,Papillon,pies,0,partia 4,
-EtsyListingsDownload.csv:195,678561037,Clumber Spaniel,pies,0,partia 4,
-EtsyListingsDownload.csv:196,678560927,Leonberger,pies,0,partia 4,
+EtsyListingsDownload.csv:191,678562893,Greater Swiss Mountain Dog,pies,0,partia 5,
+EtsyListingsDownload.csv:192,678562759,Sealyham Terrier,pies,0,partia 5,
+EtsyListingsDownload.csv:193,678561363,Ibizan Hound,pies,0,partia 5,
+EtsyListingsDownload.csv:194,678561135,Papillon,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:195,678561037,Clumber Spaniel,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:196,678560927,Leonberger,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:197,664720458,Cesky Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:198,664719902,West Highland White Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:199,664718022,Polish Lowland Sheepdog,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:200,678560491,Tibetan Mastiff,pies,0,partia 4,
-EtsyListingsDownload.csv:201,678559233,Scottish terrier,pies,0,partia 4,
+EtsyListingsDownload.csv:200,678560491,Tibetan Mastiff,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:201,678559233,Scottish terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:202,678559001,Schnauzer,pies,0,wykluczona,odmiana sierści/wiek/pony w nazwie: wymaga decyzji
-EtsyListingsDownload.csv:203,678558927,Rhodesian Ridgeback,pies,0,partia 4,
-EtsyListingsDownload.csv:204,678558537,Norfolk Terrier,pies,0,partia 4,
+EtsyListingsDownload.csv:203,678558927,Rhodesian Ridgeback,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:204,678558537,Norfolk Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:205,664718616,Siberian Husky,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:206,664718510,Setter,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:207,664717946,Pointer,pies,0,wykluczona,Pointer: sprawdza właścicielka
@@ -182,119 +182,119 @@ EtsyListingsDownload.csv:209,664717440,Kerry Blue Terrier,pies,0,wykluczona,już
 EtsyListingsDownload.csv:210,664717324,Jack Russell Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:211,664715334,Fila Brasileiro,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:212,0,Fox Terrier,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
-EtsyListingsDownload.csv:213,678555201,English Cocker Spaniel,pies,0,partia 4,
+EtsyListingsDownload.csv:213,678555201,English Cocker Spaniel,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:214,664714278,Dogo Argentino,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:215,0,Dobermann,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
-EtsyListingsDownload.csv:216,678553283,Collie,pies,0,partia 4,
-EtsyListingsDownload.csv:217,0,Great Dane,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
-EtsyListingsDownload.csv:218,678549593,Chinese Crested,pies,0,partia 4,
-EtsyListingsDownload.csv:219,0,Chihuahua,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
-EtsyListingsDownload.csv:220,678549023,Bouvier,pies,0,partia 4,
-EtsyListingsDownload.csv:221,678548765,Bernese Mountain Dog,pies,0,partia 4,
-EtsyListingsDownload.csv:222,678548685,Belgian Shepherd,pies,0,wykluczona,brak EAN
-EtsyListingsDownload.csv:223,678548613,Bedlington Terrier,pies,0,partia 4,
-EtsyListingsDownload.csv:224,678548267,Azawakh,pies,0,partia 4,
-EtsyListingsDownload.csv:225,678548195,American Cocker Spaniel,pies,0,partia 4,
+EtsyListingsDownload.csv:215,664714166,Dobermann,pies,0,partia 5,
+EtsyListingsDownload.csv:216,678553283,Collie,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:217,664712552,Great Dane,pies,0,partia 5,
+EtsyListingsDownload.csv:218,678549593,Chinese Crested,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:219,678549499,Chihuahua,pies,0,partia 5,
+EtsyListingsDownload.csv:220,678549023,Bouvier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:221,678548765,Bernese Mountain Dog,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:222,678548685,Belgian Shepherd,pies,0,partia 5,
+EtsyListingsDownload.csv:223,678548613,Bedlington Terrier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:224,678548267,Azawakh,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:225,678548195,American Cocker Spaniel,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:226,664708464,Cavalier King Charles Spaniel,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:227,664708376,Caucasian Shepherd,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:228,0,Boxer,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload.csv:228,664708246,Boxer,pies,0,partia 5,
 EtsyListingsDownload.csv:229,664707414,Bearded Collie,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:230,664707102,American Bulldog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:231,664707034,Alaskan Malamute,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:232,664706924,Afghan Hound,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:233,678547155,Saluki,pies,0,partia 4,
+EtsyListingsDownload.csv:233,678547155,Saluki,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:234,664705080,Lhasa Apso,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:235,678546755,Poodle,pies,0,partia 4,
-EtsyListingsDownload.csv:236,678547341,Schnauzer,pies,0,wykluczona,brak EAN
+EtsyListingsDownload.csv:235,678546755,Poodle,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:236,678547341,Schnauzer,pies,0,partia 5,
 EtsyListingsDownload.csv:237,664704866,Griffon,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:238,678546425,Norwich Terrier,pies,0,partia 4,
-EtsyListingsDownload.csv:239,678546251,Malinois Belgian Shepherd,pies,0,partia 4,
-EtsyListingsDownload.csv:240,678545817,Greyhound,pies,0,partia 4,
+EtsyListingsDownload.csv:238,678546425,Norwich Terrier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:239,678546251,Malinois Belgian Shepherd,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:240,678545817,Greyhound,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:241,664706616,Weimaraner,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:242,664705560,Pit Bull,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:243,0,Dobermann,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload.csv:243,678543993,Dobermann,pies,0,partia 5,
 EtsyListingsDownload.csv:244,664705496,Pekingese,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:245,0,Great Dane,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload.csv:245,664704592,Great Dane,pies,0,partia 5,
 EtsyListingsDownload.csv:246,664703588,Pointer,pies,0,wykluczona,Pointer: sprawdza właścicielka
 EtsyListingsDownload.csv:247,664702986,Dogue de Bordeaux,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:248,0,Dachshund,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
-EtsyListingsDownload.csv:249,678543023,Cane Corso,pies,0,partia 4,
-EtsyListingsDownload.csv:250,678542941,Cairn Terrier,pies,0,partia 4,
-EtsyListingsDownload.csv:251,678542749,Bullmastiff,pies,0,partia 4,
-EtsyListingsDownload.csv:252,678542649,Briard,pies,0,partia 4,
-EtsyListingsDownload.csv:253,678542275,Bloodhound,pies,0,partia 4,
-EtsyListingsDownload.csv:254,678542203,Black Russian Terrier,pies,0,partia 4,
-EtsyListingsDownload.csv:255,678540511,Beagle,pies,0,partia 4,
+EtsyListingsDownload.csv:249,678543023,Cane Corso,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:250,678542941,Cairn Terrier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:251,678542749,Bullmastiff,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:252,678542649,Briard,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:253,678542275,Bloodhound,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:254,678542203,Black Russian Terrier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:255,678540511,Beagle,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:256,664699458,Bichon,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:258,664704538,Golden Retriever,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:259,664665982,American Staffordshire Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:267,678346201,American Paint Horse,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:268,678345165,Persian,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:337,678586991,Toy Fox Terrier,pies,1,kandydat,
-EtsyListingsDownload.csv:350,678542423,Borzoi,pies,0,partia 4,
+EtsyListingsDownload.csv:350,678542423,Borzoi,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:378,678588099,Pumi,pies,1,kandydat,
 EtsyListingsDownload.csv:510,664724118,Australian Shepherd,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:653,664724860,Keeshond,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:765,678547855,Yorkshire Terrier,pies,0,partia 4,
-EtsyListingsDownload.csv:1188,0,Labrador Retriever,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload.csv:765,678547855,Yorkshire Terrier,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:1188,664717536,Labrador Retriever,pies,0,partia 5,
 EtsyListingsDownload.csv:1294,664708566,Central Asia Shepherd,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1350,678575503,Vizsla,pies,0,wykluczona,odmiana sierści/wiek/pony w nazwie: wymaga decyzji
 EtsyListingsDownload.csv:1356,664741598,Coton de Tulear,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1360,664734706,Affenpinscher,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1366,664706448,Shiba Inu,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1447,664815958,Peterbald,kot,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:1469,0,Boxer,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload.csv:1469,664701570,Boxer,pies,1,partia 5,
 EtsyListingsDownload.csv:1484,678661061,Snowshoe,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1488,664717134,Irish Wolfhound,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:1496,678546325,Newfoundland,pies,0,partia 4,
-EtsyListingsDownload.csv:1517,678542487,Boston Terrier,pies,0,partia 4,
+EtsyListingsDownload.csv:1496,678546325,Newfoundland,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:1517,678542487,Boston Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1539,664703076,Bulldog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1542,678658497,Egyptian Mau,kot,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:1549,678584105,Jagdterrier,pies,0,kandydat,
-EtsyListingsDownload.csv:1675,0,Chihuahua,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload.csv:1549,678584105,Jagdterrier,pies,0,partia 5,
+EtsyListingsDownload.csv:1675,678543117,Chihuahua,pies,0,partia 5,
 EtsyListingsDownload.csv:1680,0,Dachshund,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule; odmiana sierści/wiek/pony w nazwie: wymaga decyzji
 EtsyListingsDownload.csv:1687,678671821,American Warmblood,koń,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1693,678652449,Maine Coon,kot,1,kandydat,
 EtsyListingsDownload.csv:1698,678661205,Somali,kot,2,kandydat,
-EtsyListingsDownload.csv:1699,678560409,Springer Spaniel,pies,0,partia 4,
-EtsyListingsDownload.csv:1700,664748022,Cockapoo,pies,0,partia 4,
+EtsyListingsDownload.csv:1699,678560409,Springer Spaniel,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:1700,664748022,Cockapoo,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1714,664706156,Samoyed,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1723,664820514,Nebelung,kot,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:1744,678546843,Pug,pies,0,partia 4,
+EtsyListingsDownload.csv:1744,678546843,Pug,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1753,678668189,Shire Horse,koń,1,kandydat,
 EtsyListingsDownload.csv:1761,664705922,St. Bernard,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1767,664746998,Russian Toy,pies,1,kandydat,
 EtsyListingsDownload.csv:1795,664707526,Beauceron,pies,1,kandydat,
 EtsyListingsDownload.csv:1846,678557767,German Wirehaired Pointer,pies,0,wykluczona,odmiana sierści/wiek/pony w nazwie: wymaga decyzji
-EtsyListingsDownload.csv:1873,678543909,Dalmatian,pies,0,partia 4,
-EtsyListingsDownload.csv:1899,678542357,Border Terrier,pies,0,partia 4,
+EtsyListingsDownload.csv:1873,678543909,Dalmatian,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload.csv:1899,678542357,Border Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1918,664705820,Rottweiler,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload.csv:1926,678580297,Kangal,pies,0,kandydat,
+EtsyListingsDownload.csv:1926,678580297,Kangal,pies,0,partia 5,
 EtsyListingsDownload.csv:1927,664717206,Italian Greyhound,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload.csv:1928,664814884,British Longhair,kot,0,wykluczona,odmiana sierści/wiek/pony w nazwie: wymaga decyzji
 EtsyListingsDownload.csv:1972,664812832,Exotic Shorthair,kot,0,wykluczona,odmiana sierści/wiek/pony w nazwie: wymaga decyzji
 EtsyListingsDownload.csv:1975,678672109,Australian Stock Horse,koń,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload1.csv:10,678574767,Berger Picard,pies,0,kandydat,
-EtsyListingsDownload1.csv:16,678560583,Pembroke Welsh Corgi,pies,0,partia 4,
+EtsyListingsDownload1.csv:10,678574767,Berger Picard,pies,0,partia 5,
+EtsyListingsDownload1.csv:16,678560583,Pembroke Welsh Corgi,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload1.csv:25,664706364,Shar Pei,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload1.csv:47,678574909,Japanese Spitz,pies,1,kandydat,
 EtsyListingsDownload1.csv:52,664819742,Korat,kot,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload1.csv:57,678542849,Bull Terrier,pies,0,partia 4,
+EtsyListingsDownload1.csv:57,678542849,Bull Terrier,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload1.csv:58,678586365,Thai Ridgeback,pies,0,kandydat,
 EtsyListingsDownload1.csv:61,664717842,Pharaoh Hound,pies,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload1.csv:90,678540433,Basset Hound,pies,0,wykluczona,brak EAN
-EtsyListingsDownload1.csv:94,678547595,Shih Tzu,pies,0,partia 4,
-EtsyListingsDownload1.csv:105,678545439,French Bulldog,pies,0,partia 4,
+EtsyListingsDownload1.csv:90,678540433,Basset Hound,pies,0,partia 5,
+EtsyListingsDownload1.csv:94,678547595,Shih Tzu,pies,0,wykluczona,już zoptymalizowana
+EtsyListingsDownload1.csv:105,678545439,French Bulldog,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload1.csv:117,678653993,Balinese,kot,2,kandydat,
 EtsyListingsDownload1.csv:118,678545523,German Shepherd,pies,1,kandydat,
-EtsyListingsDownload1.csv:131,678549689,Chow Chow,pies,0,partia 4,
+EtsyListingsDownload1.csv:131,678549689,Chow Chow,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload1.csv:142,664723492,Finnish Lapphund,pies,1,kandydat,
 EtsyListingsDownload1.csv:147,678655385,Turkish Angora,kot,0,wykluczona,już zoptymalizowana
-EtsyListingsDownload1.csv:151,678344255,Akita,pies,0,wykluczona,brak EAN
+EtsyListingsDownload1.csv:151,678344255,Akita,pies,0,partia 5,
 EtsyListingsDownload1.csv:154,678563343,Lowchen,pies,1,kandydat,
-EtsyListingsDownload1.csv:174,0,Labrador Retriever,pies,0,wykluczona,ID oferty: 2 dopasowań po tytule
+EtsyListingsDownload1.csv:174,664704960,Labrador Retriever,pies,0,partia 5,
 EtsyListingsDownload1.csv:176,664813370,Birman,kot,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload1.csv:178,678584855,Norwegian Elkhound,pies,0,kandydat,
-EtsyListingsDownload1.csv:180,678540327,Basenji,pies,0,partia 4,
+EtsyListingsDownload1.csv:180,678540327,Basenji,pies,0,wykluczona,już zoptymalizowana
 EtsyListingsDownload1.csv:182,678656711,Burmese,kot,4,kandydat,
-EtsyListingsDownload1.csv:193,678547789,Whippet,pies,0,partia 4,
+EtsyListingsDownload1.csv:193,678547789,Whippet,pies,0,wykluczona,już zoptymalizowana

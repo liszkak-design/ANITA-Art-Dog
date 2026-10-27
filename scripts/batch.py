@@ -222,14 +222,14 @@ def render(row, lid, R):
     e_val, typ = (rr.get("Potoczne EN") or "").strip(), e_class().get(row["rasa_id"], "")
     nick, syn = (e_val if typ == "zdrobnienie" else ""), (e_val if typ == "synonim" else "")
     desc, ch = gen.description(lid, sp, breed, nick, syn)
-    desc = re.sub(r"\b(dog|cat|horse|pony)\s+\1\b", r"\1", desc, flags=re.I)  # np. "Mexican Hairless Dog dog" -> "... Dog"
+    desc = re.sub(r"\b(\w*(?:dog|cat|horse|pony))\s+(?:dog|cat|horse|pony)\b", lambda m: m.group(1) if m.group(1).lower().endswith(m.group(0).split()[-1].lower()) else m.group(0), desc, flags=re.I)  # "Hairless Dog dog", "Sheepdog dog" -> bez powtórzenia
     if syn:
         assert syn in desc.split("\n\n")[0], f"brak synonimu w pierwszym akapicie: {lid}"
     # banki mają na sztywno "a {BREED}" / "a {SYN}": poprawna forma a/an zależnie od pierwszej litery nazwy
     for name in {n for n in (breed, syn) if n}:
         desc = re.sub(r"\b([Aa]) (?=" + re.escape(name) + r")",
                       lambda m, name=name: (article(name).capitalize() if m.group(1) == "A" else article(name)) + " ", desc)
-    desc = re.sub(r"\b(dog|cat|horse|pony)\s+\1\b", r"\1", desc, flags=re.I)  # np. "Mexican Hairless Dog dog" -> "... Dog"
+    desc = re.sub(r"\b(\w*(?:dog|cat|horse|pony))\s+(?:dog|cat|horse|pony)\b", lambda m: m.group(1) if m.group(1).lower().endswith(m.group(0).split()[-1].lower()) else m.group(0), desc, flags=re.I)  # "Hairless Dog dog", "Sheepdog dog" -> bez powtórzenia
     if syn:
         assert syn in desc.split("\n\n")[0], f"brak synonimu w pierwszym akapicie: {lid}"
     # banki mają na sztywno "a {BREED}": poprawna forma a/an zależnie od nazwy rasy
@@ -267,13 +267,17 @@ def check(en, trans, ean):
 
 def reachable(ean):
     for f in IMAGE_ORDER[:-1]:
-        req = urllib.request.Request(f"{EAN_BASE}{ean}/{f}", method="HEAD", headers=UA)
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                if r.status != 200:
-                    return f"{f}: {r.status}"
-        except Exception as e:
-            return f"{f}: {str(e)[:60]}"
+        err = ""
+        for attempt in range(3):  # chwilowe błędy serwera zdjęć nie wykluczają oferty
+            try:
+                with urllib.request.urlopen(urllib.request.Request(f"{EAN_BASE}{ean}/{f}", method="HEAD", headers=UA), timeout=30) as r:
+                    err = "" if r.status == 200 else f"{f}: {r.status}"
+                break
+            except Exception as e:
+                err = f"{f}: {str(e)[:60]}"
+                time.sleep(2 * (attempt + 1))
+        if err:
+            return err
     return ""
 
 
