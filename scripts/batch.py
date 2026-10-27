@@ -130,6 +130,19 @@ def resolve_id_by_image(zrodlo, ids):
     return res
 
 
+def cached_id_by_image():
+    """ID ofert rozstrzygnięte po zdjęciu (cache); ma pierwszeństwo przed dopasowaniem po tytule, bo tytuł zmienia się po optymalizacji siostrzanej oferty."""
+    if not ID_IMG_CSV.exists():
+        return {}
+    return {r["zrodlo"]: int(r["listing_id"]) for r in csv.DictReader(open(ID_IMG_CSV, encoding="utf-8")) if r["listing_id"]}
+
+
+def skipped_by_decision():
+    """Oferty pomijane decyzją właścicielki (plans/listing_ids_znane.csv, uwagi 'brak pasującego folderu')."""
+    p = ROOT / "plans" / "listing_ids_znane.csv"
+    return {int(r["listing_id"]) for r in csv.DictReader(open(p, encoding="utf-8")) if "brak pasującego folderu" in r["uwagi"]} if p.exists() else set()
+
+
 def read_map():
     rows = [r for r in csv.DictReader(open(ROOT / "plans" / "mapa_koncowa.csv", encoding="utf-8")) if r["decyzja"] == "OPTYMALIZUJ"]
     ean = {r["zrodlo"]: r["ean"] for r in csv.DictReader(open(ROOT / "plans" / "mapa_plytki_with_photo.csv", encoding="utf-8"))}
@@ -328,9 +341,12 @@ def build_candidates():
     idx = title_index()
     sold = sales()
     cands = []
+    cache_img, skip_ids = cached_id_by_image(), skipped_by_decision()
     for row in read_map():
         why = []
         ids = idx.get(row["tytul"], [])
+        if row["zrodlo"] in cache_img:  # rozstrzygnięcie po zdjęciu ma pierwszeństwo przed tytułem
+            ids = [cache_img[row["zrodlo"]]]
         if len(ids) > 1 and row["zrodlo"] in approved_photo_matches():
             r_id = resolve_id_by_image(row["zrodlo"], ids)
             ids = [r_id] if r_id else ids
@@ -339,6 +355,8 @@ def build_candidates():
         lid = ids[0] if len(ids) == 1 else 0
         if lid and is_done(lid):
             why.append("już zoptymalizowana")
+        if lid in skip_ids:
+            why.append("pominięta decyzją właścicielki (brak pasującego folderu)")
         res = feature_residue(row)
         if FEAT.search(res):
             if re.fullmatch(r"\W*cropped\W*", res, re.I):
