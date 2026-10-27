@@ -41,10 +41,12 @@ IMAGE_ORDER = base.IMAGE_ORDER
 LANGS = base.LANGS
 MATERIAL_PROPERTY, CERAMIC_VALUE = 148789511893, 83
 UA = {"User-Agent": "ArtDog-Etsy-Tool/1.0"}  # serwer artdog.com.pl odrzuca domyślny UA Pythona (403)
-FEAT = re.compile(r"long|short|wire|smooth|fohlen|cropped|curly|pony|kucyk", re.I)
+FEAT = re.compile(r"long|short|wire|smooth|fohlen|cropped|curly", re.I)
+OVERRIDES_CSV = ROOT / "plans" / "dopasowania_wlasciciela.csv"  # rozstrzygnięcia właścicielki: oferta (ID) -> rasa, odmiana, EAN
 EXCLUDE_BREEDS = {"Pointer", "German Pointer"}
-SP_EN = {"kot": "cat", "pies": "dog", "koń": "horse"}
-PL_FORMS = {"kot": dict(gen="kota", loc="kocie"), "pies": dict(gen="psa", loc="psie"), "koń": dict(gen="konia", loc="koniu")}
+SP_EN = {"kot": "cat", "pies": "dog", "koń": "horse", "kucyk": "pony"}
+PL_FORMS = {"kot": dict(gen="kota", loc="kocie"), "pies": dict(gen="psa", loc="psie"), "koń": dict(gen="konia", loc="koniu"),
+            "kucyk": dict(gen="kucyka", loc="kucyku")}
 
 
 # ---------- dane wejściowe ----------
@@ -52,6 +54,36 @@ def rasy():
     ws = openpyxl.load_workbook(ROOT / "data" / "Rasy.xlsx", data_only=True)["Rasy"]
     h = [c.value for c in ws[1]]
     return {(r[1], r[0]): dict(zip(h, r)) for r in ws.iter_rows(min_row=2, values_only=True) if r[0]}
+
+
+def owner_overrides():
+    return list(csv.DictReader(open(OVERRIDES_CSV, encoding="utf-8"))) if OVERRIDES_CSV.exists() else []
+
+
+def species_of(row):
+    return "kucyk" if row["gatunek"] == "koń" and "pony" in row["rasa_kolumna_C"].lower() else row["gatunek"]
+
+
+def feature_words():
+    """Słowa odmian z arkusza 'Słowa stałe': klucz EN -> {kod języka: słowo}. Nawiasy z uwagami usuwamy, poza niemieckim małe litery."""
+    ws = openpyxl.load_workbook(ROOT / "data" / "Rasy.xlsx", data_only=True)["Słowa stałe"]
+    cols = dict(nl=2, fr=4, de=6, it=8, pl=10, pt=12, es=14, sv=16)
+    out = {}
+    for r in ws.iter_rows(min_row=2, values_only=True):
+        if r[0]:
+            out[r[0]] = {c: (lambda w: w if c == "de" else w.lower())(re.sub(r"\s*\(.*?\)", "", str(r[i] or "")).strip()) for c, i in cols.items()}
+    return out
+
+
+def feature_en(key):
+    """Angielskie słowo odmiany do tytułu: 'Fox Terrier Smooth' -> 'Smooth', 'Dachshund Wire-haired' -> 'Wire-haired', 'cropped ears' -> 'Cropped Ears'."""
+    return "Cropped Ears" if key.lower().endswith("ears") and key.lower().startswith("cropped") else key.split()[-1]
+
+
+def feature_residue(row):
+    """Tekst nazwy z oferty i folderu po odjęciu nazwy rasy z kolumny C (reszta to ewentualna odmiana: Longhaired, Fohlen, Cropped)."""
+    folder = re.sub(r"^\d+\.?\s*|\s*\d{13}\s*$", "", row["folder"])
+    return re.sub(re.escape(row["rasa_kolumna_C"]), "", row["nazwa_w_tytule"] + " " + folder, flags=re.I)
 
 
 def e_class():
@@ -182,7 +214,7 @@ def parse_pl():
     stal, pula = tg.split("**Pula**")
     core = re.findall(r"→ (.+?) \(\d+\)$", stal, re.M)
     spec = {}
-    for k, w in (("kot", "cat"), ("pies", "dog"), ("koń", "horse")):
+    for k, w in (("kot", "cat"), ("pies", "dog"), ("koń", "horse"), ("kucyk", "pony")):
         m = re.search(r"^- " + w + r": (.+?) \(\d+\), (.+?) \(\d+\)$", stal, re.M)
         spec[k] = (m.group(1), m.group(2))
     return dict(titles=titles, A=banks["A"], B=banks["B"], C=banks["C"], fixed=fixed, core=core, spec=spec,
@@ -192,7 +224,7 @@ def parse_pl():
 PL = None
 
 
-def render_translation(code, lid, species, row, ch, en_tags, title_idx):
+def render_translation(code, lid, species, row, ch, en_tags, title_idx, feat=""):
     """Tłumaczenie z szablonów i słownika; indeksy wariantów jak w angielskim (N-warianty zdrobnień: losowo wśród 4 zwykłych)."""
     global PL
     pick = lambda slot, n: ch[slot] if ch[slot] < n else gen.pick(lid, slot + "t", n)
@@ -200,7 +232,7 @@ def render_translation(code, lid, species, row, ch, en_tags, title_idx):
         PL = PL or parse_pl()
         d, b = PL, row["PL nazwa"]
         sp = PL_FORMS[species]
-        fill = lambda t: re.sub(r"\s+", " ", t.replace("{B}", b).format(**sp)).strip()
+        fill = lambda t, bb=None: re.sub(r"\s+", " ", t.replace("{B}", bb or b).format(**sp)).strip()
         fixed = d["fixed"].replace("{B}", b)
         for k, v in sp.items():
             fixed = fixed.replace("{" + k + "}", v)
@@ -208,39 +240,42 @@ def render_translation(code, lid, species, row, ch, en_tags, title_idx):
         d = T.L[code]
         b = row[d["col"]]
         sp = d["sp"][species]
-        fill = lambda t: T.fill(t, sp, b)
+        fill = lambda t, bb=None: T.fill(t, sp, bb or b)
         fixed = T.fill_block(d["fixed"], sp, b)
     par = " ".join(fill(d[s][pick(s, len(d[s]))]) for s in "ABC")
     tg = list(d["core"]) + list(d["spec"][species]) + [d["pool"][T.POOL_EN.index(x)] for x in en_tags[7:]]
-    return {"title": fill(d["titles"][title_idx - 1]), "description": par + "\n\n" + fixed, "tags": tg}
+    title_name = (b + " " + feat).strip() if feat else None  # odmiana tylko w tytule, nie w opisie
+    return {"title": fill(d["titles"][title_idx - 1], title_name), "description": par + "\n\n" + fixed, "tags": tg}
 
 
 def render(row, lid, R):
-    sp = row["gatunek"]
+    g0, sp = row["gatunek"], species_of(row)
     breed = row["rasa_kolumna_C"]
-    rr = R[(sp, row["rasa_id"])]
+    rr = R[(g0, row["rasa_id"])]
+    fkey = row.get("klucz_odmiany", "")
+    feat_en = feature_en(fkey) if fkey else ""
     e_val, typ = (rr.get("Potoczne EN") or "").strip(), e_class().get(row["rasa_id"], "")
     nick, syn = (e_val if typ == "zdrobnienie" else ""), (e_val if typ == "synonim" else "")
     desc, ch = gen.description(lid, sp, breed, nick, syn)
-    desc = re.sub(r"\b(\w*(?:dog|cat|horse|pony))\s+(?:dog|cat|horse|pony)\b", lambda m: m.group(1) if m.group(1).lower().endswith(m.group(0).split()[-1].lower()) else m.group(0), desc, flags=re.I)  # "Hairless Dog dog", "Sheepdog dog" -> bez powtórzenia
-    if syn:
-        assert syn in desc.split("\n\n")[0], f"brak synonimu w pierwszym akapicie: {lid}"
     # banki mają na sztywno "a {BREED}" / "a {SYN}": poprawna forma a/an zależnie od pierwszej litery nazwy
     for name in {n for n in (breed, syn) if n}:
         desc = re.sub(r"\b([Aa]) (?=" + re.escape(name) + r")",
                       lambda m, name=name: (article(name).capitalize() if m.group(1) == "A" else article(name)) + " ", desc)
-    desc = re.sub(r"\b(\w*(?:dog|cat|horse|pony))\s+(?:dog|cat|horse|pony)\b", lambda m: m.group(1) if m.group(1).lower().endswith(m.group(0).split()[-1].lower()) else m.group(0), desc, flags=re.I)  # "Hairless Dog dog", "Sheepdog dog" -> bez powtórzenia
+    # "Hairless Dog dog", "Sheepdog dog", "Ocicat cat" -> bez powtórzenia
+    desc = re.sub(r"\b(\w*(?:dog|cat|horse|pony))\s+(?:dog|cat|horse|pony)\b",
+                  lambda m: m.group(1) if m.group(1).lower().endswith(m.group(0).split()[-1].lower()) else m.group(0), desc, flags=re.I)
     if syn:
         assert syn in desc.split("\n\n")[0], f"brak synonimu w pierwszym akapicie: {lid}"
-    # banki mają na sztywno "a {BREED}": poprawna forma a/an zależnie od nazwy rasy
-    desc = re.sub(r"\b([Aa]) (?=" + re.escape(breed) + r")",
-                  lambda m: (article(breed).capitalize() if m.group(1) == "A" else article(breed)) + " ", desc)
-    tit, tidx = gen.title(lid, sp, breed)
-    tg = gen.tags(lid, sp)
     assert breed in desc, f"brak pełnej nazwy rasy w opisie: {lid}"  # zdanie A może być samym zdrobnieniem, rasa jest w IN SHORT
-    out = {"title": tit, "description": desc, "tags": tg, "materials": ["ceramic"], "alts": alts(breed, sp),
-           "wzorzec_tytulu": tidx, "ABC": ch, "nick": nick, "synonim": syn}
-    trans = {c: render_translation(c, lid, sp, rr, ch, tg, tidx) for c in LANGS}
+    tit, tidx = gen.title(lid, sp, breed, feat_en)
+    tg = gen.tags(lid, sp)
+    out = {"title": tit, "description": desc, "tags": tg, "materials": ["ceramic"],
+           "alts": alts((breed + " " + feat_en).strip(), sp), "wzorzec_tytulu": tidx, "ABC": ch, "nick": nick, "synonim": syn,
+           "odmiana": fkey}
+    fw = feature_words().get(fkey, {}) if fkey else {}
+    if fkey and not fw:
+        raise ValueError(f"brak słów odmiany '{fkey}' w arkuszu Słowa stałe")
+    trans = {c: render_translation(c, lid, sp, rr, ch, tg, tidx, fw.get(c, "")) for c in LANGS}
     return out, trans
 
 
@@ -298,8 +333,12 @@ def build_candidates():
         lid = ids[0] if len(ids) == 1 else 0
         if lid and is_done(lid):
             why.append("już zoptymalizowana")
-        if FEAT.search(row["nazwa_w_tytule"] + " " + row["folder"]):
-            why.append("odmiana sierści/wiek/pony w nazwie: wymaga decyzji")
+        res = feature_residue(row)
+        if FEAT.search(res):
+            if re.fullmatch(r"\W*cropped\W*", res, re.I):
+                row["klucz_odmiany"] = "cropped ears"  # Schnauzer Cropped: słowa w arkuszu Słowa stałe (decyzja właścicielki: odmiana w tytule, nie w opisie)
+            else:
+                why.append("odmiana sierści/wiek w nazwie: brak słów w arkuszu, wymaga decyzji")
         if row["do_decyzji"]:
             why.append("do decyzji: " + row["do_decyzji"])
         if row["rasa_kolumna_C"] in EXCLUDE_BREEDS:
@@ -310,6 +349,27 @@ def build_candidates():
         elif any(not rr.get(c) for c in ["PL nazwa"] + [T.L[l]["col"] for l in LANGS if l != "pl"]):
             why.append("brak tłumaczenia nazwy rasy")
         cands.append({"row": row, "lid": lid, "sales": sold.get(lid, 0), "why": why})
+    # rozstrzygnięcia właścicielki (oferta wskazana ID): wchodzą zamiast wierszy mapy o tym samym ID lub z niejednoznacznym ID tej rasy
+    ov = [o for o in owner_overrides() if o["aktywne"] == "tak"]
+    if ov:
+        ovl, covered = {int(o["listing_id"]) for o in ov}, {o["rasa_kolumna_C"] for o in ov}
+        cands = [c for c in cands if c["lid"] not in ovl and not (c["lid"] == 0 and c["row"]["rasa_kolumna_C"] in covered)]
+        byid = {int(r["listing_id"]): r["title"] for r in csv.DictReader(open(IDS_CSV, encoding="utf-8"))}
+        by_name = {v["Nazwa EN (główna)"]: (k[0], k[1]) for k, v in R.items()}
+        for o in ov:
+            lid, why = int(o["listing_id"]), []
+            g0, rid = by_name[o["rasa_kolumna_C"]]
+            row = {"zrodlo": f"wlasciciel:{lid}", "gatunek": g0, "nazwa_w_tytule": o["rasa_kolumna_C"], "rasa_kolumna_C": o["rasa_kolumna_C"],
+                   "folder": f"{o['rasa_kolumna_C']} {o['ean']}", "metoda": "rozstrzygnięcie właścicielki", "do_decyzji": "", "rasa_id": rid,
+                   "decyzja": "OPTYMALIZUJ", "ean": o["ean"], "klucz_odmiany": o["klucz_odmiany"], "tytul": byid.get(lid, "")}
+            if lid not in byid:
+                why.append("oferta nie jest aktywna w sklepie")
+            if is_done(lid):
+                why.append("już zoptymalizowana")
+            rr = R[(g0, rid)]
+            if any(not rr.get(c) for c in ["PL nazwa"] + [T.L[l]["col"] for l in LANGS if l != "pl"]):
+                why.append("brak tłumaczenia nazwy rasy")
+            cands.append({"row": row, "lid": lid, "sales": sold.get(lid, 0), "why": why})
     return cands, R
 
 
@@ -385,11 +445,11 @@ def plan(n):
     p = ROOT / "plans" / f"partia_{n:03d}.csv"
     with open(p, "w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)
-        w.writerow(["lp", "listing_id", "zrodlo", "gatunek", "rasa", "ean", "sprzedaz_szt", "tytul_przed", "tytul_po", "wzorzec_tytulu", "ABC", "zdrobnienie", "tagi"])
+        w.writerow(["lp", "listing_id", "zrodlo", "gatunek", "rasa", "ean", "sprzedaz_szt", "tytul_przed", "tytul_po", "wzorzec_tytulu", "ABC", "zdrobnienie", "synonim", "odmiana", "tagi"])
         for i, c in enumerate(batch, 1):
             r, e = c["row"], c["en"]
             w.writerow([i, c["lid"], r["zrodlo"], r["gatunek"], r["rasa_kolumna_C"], r["ean"], c["sales"], r["tytul"], e["title"],
-                        e["wzorzec_tytulu"], "".join(f"{k}{v + 1}" for k, v in e["ABC"].items()), e["nick"], "; ".join(e["tags"])])
+                        e["wzorzec_tytulu"], "".join(f"{k}{v + 1}" for k, v in e["ABC"].items()), e["nick"], e["synonim"], e["odmiana"], "; ".join(e["tags"])])
     dry = [{"listing_id": c["lid"], "zrodlo": c["row"]["zrodlo"], "ean": c["row"]["ean"], "gatunek": c["row"]["gatunek"],
             "rasa": c["row"]["rasa_kolumna_C"], "en": c["en"], "tlumaczenia": c["trans"]} for c in batch]
     (ROOT / "plans" / f"partia_{n:03d}_dryrun.json").write_text(json.dumps(dry, ensure_ascii=False, indent=1))

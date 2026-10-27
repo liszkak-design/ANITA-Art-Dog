@@ -9,8 +9,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TPL = ROOT / "templates"
-SPECIES_FILE = {"kot": "opis_plytka_kot.md", "pies": "opis_plytka_pies.md", "koń": "opis_plytka_kon.md"}
-SPECIES_WORD = {"kot": "Cat", "pies": "Dog", "koń": "Horse"}
+SPECIES_FILE = {"kot": "opis_plytka_kot.md", "pies": "opis_plytka_pies.md", "koń": "opis_plytka_kon.md", "kucyk": "opis_plytka_kon.md"}
+SPECIES_WORD = {"kot": "Cat", "pies": "Dog", "koń": "Horse", "kucyk": "Pony"}
 STOP = {"pet", "for", "in", "on", "my", "of", "a"}
 
 
@@ -20,7 +20,10 @@ def pick(listing_id, slot, n):
 
 def banks(species):
     text = (TPL / SPECIES_FILE[species]).read_text(encoding="utf-8")
-    text = text.split("## 1a.")[0] if species == "koń" else text  # pony variants are separate
+    if species == "koń":
+        text = text.split("## 1a.")[0]  # warianty kucyków osobno
+    elif species == "kucyk":
+        text = text.split("## 1a.")[1].split("## 2.")[0]  # banki A/B/C dla kucyków (Shetland Pony, Fell Pony, Falabella)
     out = {"A": [], "B": [], "C": []}
     for m in re.finditer(r"^- ([ABC])\d+(?: \[([NS])\])?: (.*)$", text, re.M):
         out[m.group(1)].append((m.group(2) or "", m.group(3)))  # flaga: "" zwykły, "N" zdrobnienie, "S" synonim
@@ -30,7 +33,8 @@ def banks(species):
 def fixed_sections(species):
     text = (TPL / SPECIES_FILE[species]).read_text(encoding="utf-8")
     block = text.split("## 2.", 1)[1]
-    return re.search(r"```\n(.*?)\n```", block, re.S).group(1)
+    fixed = re.search(r"```\n(.*?)\n```", block, re.S).group(1)
+    return fixed.replace("horse", "pony") if species == "kucyk" else fixed  # sekcje stałe kucyka: "pony" w miejsce "horse"
 
 
 def description(listing_id, species, breed, nick="", syn=""):
@@ -53,10 +57,12 @@ def title(listing_id, species, breed, feature=""):
     pats = re.findall(r"^\d\. (\{B\}.*)$", text, re.M)
     i = pick(listing_id, "T", len(pats))
     s = SPECIES_WORD[species]
+    pat = pats[i]
     if s.lower() in breed.lower():
         s = ""
+        pat = pat.replace("for Your {S}", "for Your Pet")  # bez gatunku nie zostawiamy "for Your," w tytule
     name = (breed + " " + feature).strip()
-    t = re.sub(r"\s+", " ", pats[i].replace("{B}", name).replace("{S}", s)).replace(" ,", ",")
+    t = re.sub(r"\s+", " ", pat.replace("{B}", name).replace("{S}", s)).replace(" ,", ",")
     return t, i + 1
 
 
