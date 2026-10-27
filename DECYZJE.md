@@ -34,7 +34,7 @@ Ten plik zbiera ustalenia właścicielki sklepu Art-Dog. Obowiązuje razem z `CL
   * Egyptian Cat = Egyptian Mau. Spitz = Japanese Spitz. Staffordshire Terrier = Staffordshire Bull Terrier.
   * Bichon, Setter, Griffon, Cat zostają jako nazwy ogólne. Bay Horse i Retired Race Horse traktujemy jak nazwy ras.
   * Oferty "The New Set Of" to oferty custom pod konkretnego klienta. Nie podlegają optymalizacji.
-* Zawsze do sprawdzenia przez właścicielkę ze zdjęciem produktu (Code nie przypisuje rasy sam): Pointer (możliwe English Pointer), German Pointer (German Wirehaired Pointer lub German Shorthaired Pointer). Wiersze English Pointer i German Shorthaired Pointer usunięto z arkusza (brak ofert). Jeśli zdjęcie wskaże taką rasę, trzeba najpierw dodać wiersz.
+* Pointery rozstrzygnięte przez właścicielkę 27.10.2026: oferta 664703588 = English Pointer (wiersz R332, szkice tłumaczeń Claude'a), 678557767 = German Wirehaired Pointer, 664742594 = German Longhaired Pointer (wiersz R333, szkice tłumaczeń Claude'a), 664717946 = Pointer bez dopisków (R035). Wiersz German Pointer (R266) zostaje w arkuszu.
 
 ## 4\. Zapisy w tytułach ofert, które NIE są nazwami ras
 
@@ -99,7 +99,7 @@ Ten plik zbiera ustalenia właścicielki sklepu Art-Dog. Obowiązuje razem z `CL
 * Nazwa w tytule oferty lub folderu serwera, której nie ma w kolumnie C, jest dopasowywana wg poniższych rozstrzygnięć. Obowiązuje zawsze nazwa z kolumny C.
   * Akita Inu = Akita. Russian Tsvetnaya Bolonka = Bolonka. Catahoula Cur = Catahoula Leopard Dog. Laekenois Dog = Laekenois Belgian Shepherd. Scottish Deerhound = Deerhound. Basset (folder) i Basset Hound = Basset Hound. Tosa (folder) = Tosa Inu. Pyrenean Shepherd = Pyrenean Sheepdog.
   * Schnauzer Cropped = Schnauzer (Cropped to cecha produktu, nie rasa).
-  * Wirehaired, Longhaired, Shorthaired, Smooth, Fohlen i podobne w nazwach folderów to cecha (długość lub rodzaj sierści, wiek), nie osobna rasa, jak przy Chihuahua i Dachshund. Dlatego: Wirehaired Vizsla = Vizsla, German Longhaired Pointer = German Pointer, Wirehaired Dachshund i Smooth Fox Terrier = Dachshund i Fox Terrier, Kurilian Bobtail Longhaired i Selkirk Rex Longhaired lub Shorthaired = Kurilian Bobtail i Selkirk Rex, Haflinger Fohlen = Haflinger.
+  * Wirehaired, Longhaired, Shorthaired, Smooth, Fohlen i podobne w nazwach folderów to cecha (długość lub rodzaj sierści, wiek), nie osobna rasa, jak przy Chihuahua i Dachshund. Dlatego: Wirehaired Vizsla = Vizsla, German Longhaired Pointer = osobna rasa (R333, od 27.10.2026; wcześniej: German Pointer), Wirehaired Dachshund i Smooth Fox Terrier = Dachshund i Fox Terrier, Kurilian Bobtail Longhaired i Selkirk Rex Longhaired lub Shorthaired = Kurilian Bobtail i Selkirk Rex, Haflinger Fohlen = Haflinger.
   * Percheron to osobna rasa (R222), nie Belgian Horse.
   * Jagdterrier dodany do `Rasy.xlsx` jako R331 (tłumaczenia to szkice Claude'a, do sprawdzenia).
 * Dwie oferty tej samej rasy z różnymi grafikami (np. Boxer z uszami przyciętymi i naturalnymi) dopasowujemy do dwóch folderów porównując zdjęcie oferty z `1.jpg` w folderze (`scripts/match_by_image.py`). To tylko dopasowanie oferty do folderu, rasy ze zdjęcia nie ustalamy.

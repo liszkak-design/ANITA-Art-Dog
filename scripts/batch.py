@@ -72,11 +72,17 @@ def feature_words():
     for r in ws.iter_rows(min_row=2, values_only=True):
         if r[0]:
             out[r[0]] = {c: (lambda w: w if c == "de" else w.lower())(re.sub(r"\s*\(.*?\)", "", str(r[i] or "")).strip()) for c, i in cols.items()}
+    # "foal" (źrebię) z arkusza "Opisy statuetek": kolumny PL, DE, FR, ES, NL, IT, PT, SV
+    for r in openpyxl.load_workbook(ROOT / "data" / "Rasy.xlsx", data_only=True)["Opisy statuetek"].iter_rows(min_row=2, values_only=True):
+        if r[0] and str(r[0]).startswith("foal"):
+            out["foal"] = {c: (lambda w: w if c == "de" else w.lower())(str(r[i] or "").strip()) for c, i in dict(pl=5, de=6, fr=7, es=8, nl=9, it=10, pt=11, sv=12).items()}
     return out
 
 
 def feature_en(key):
     """Angielskie słowo odmiany do tytułu: 'Fox Terrier Smooth' -> 'Smooth', 'Dachshund Wire-haired' -> 'Wire-haired', 'cropped ears' -> 'Cropped Ears'."""
+    if key == "foal":
+        return "Foal"
     return "Cropped Ears" if key.lower().endswith("ears") and key.lower().startswith("cropped") else key.split()[-1]
 
 
