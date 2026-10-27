@@ -78,3 +78,8 @@
 2026-10-27T08:22:55 PUT /v3/application/shops/19255336/listings/664746248/properties/148789511893
 2026-10-27T08:22:56 PATCH /v3/application/shops/19255336/listings/664746248
 2026-10-27T08:22:57 POST /v3/application/shops/19255336/listings/664746248/personalization
+2026-10-27T08:23:01 POST /v3/application/shops/19255336/listings/664746248/images
+2026-10-27T08:23:05 POST /v3/application/shops/19255336/listings/664746248/images
+2026-10-27T08:23:07 POST /v3/application/shops/19255336/listings/664746248/images
+2026-10-27T08:23:13 POST /v3/application/shops/19255336/listings/664746248/images
+2026-10-27T08:23:19 POST /v3/application/shops/19255336/listings/664746248/images
