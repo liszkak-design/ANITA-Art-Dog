@@ -505,7 +505,8 @@ def plan(n, size):
         sys.exit(f"BŁĄD: partia {n} jest już rozpoczęta, nie nadpisuję planu")
     cs, fw = candidates()
     idx = index_rows()
-    free = interleave(sorted([c for c in cs if not c["why"]], key=lambda c: (c["sales"], c["lid"])))
+    only = {int(x) for a in sys.argv if a.startswith("--lid=") for x in a[6:].split(",")}  # np. pilot na wskazanej ofercie
+    free = interleave(sorted([c for c in cs if not c["why"] and (not only or c["lid"] in only)], key=lambda c: (c["sales"], c["lid"])))
     batch, skipped = [], []
     for c in free:
         if len(batch) == size:
