@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Film o personalizacji urny dla psa (1920x1080, 30 kl./s, bez dźwięku, 15 s). Używa funkcji z render.py.
-Użycie: python3 -I render_urn_dog.py WYJŚCIE.mp4 [--frames-dir KATALOG --at T [T ...]]
+"""Film o personalizacji urny (dog | cat | horse), 1920x1080, 30 kl./s, bez dźwięku, 15 s. Używa funkcji z render.py.
+Zdjęcia: assets_urn/<gatunek>/<gatunek>-1.jpg (kolor z tłem), -2.jpg (bez tła), -3.jpg (szkic).
+Użycie: python3 -I render_urn.py GATUNEK WYJŚCIE.mp4 [--frames-dir KATALOG --at T [T ...]]
 """
 import subprocess
 import sys
@@ -12,9 +13,14 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import render as R  # noqa: E402
 
+SPECIES = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in ("dog", "cat", "horse") else "dog"
+# plaque (paw or horseshoe) centre in the 2000 px photos, and the number of breeds shown on the end card
+CFG = {"dog": dict(plaque=(737, 1144), breeds="200", tx=1090), "cat": dict(plaque=(737, 1144), breeds="50", tx=1090),
+       "horse": dict(plaque=(727, 1149), breeds="50", tx=1040)}[SPECIES]
+
 W, H, FPS = R.W, R.H, R.FPS
 FADE = R.FADE
-ASSETS = HERE / "assets_urn_dog"
+ASSETS = HERE / "assets_urn" / SPECIES
 FULL_CROP = (130, 280, 1870, 1790)  # the whole urn (photos are 2000x1999)
 FRAG_CROP = (1020, 280, 1870, 1790)  # right part of the urn: plaque, name tag, edge of the paw
 S = [0.0, 2.0, 5.8, 9.3, 12.9, 15.0]  # scene boundaries; each scene fades fully to white before the next
@@ -25,7 +31,7 @@ def ease(x):
 
 
 def load(name):
-    return Image.open(ASSETS / f"dog-{name}.jpg").convert("RGB")
+    return Image.open(ASSETS / f"{SPECIES}-{name}.jpg").convert("RGB")
 
 
 def panel(name, height, crop):
@@ -109,12 +115,12 @@ def scene2(t):
 
 URN = load(3)
 FRAME = 900
-ZOOM_CENTER = {"tag": (1408, 1542), "paw": (737, 1144)}
+ZOOM_CENTER = {"tag": (1408, 1542), "paw": CFG["plaque"]}
 ZOOM_TO = {"tag": 3.4, "paw": 2.3}
-TX = {"tag": R.text_block("NAME AND DATES", ["Name and dates", "*of your beloved dog*"],
-                          "Optional – added to the small plaque", 1090, H // 2),
+TX = {"tag": R.text_block("NAME AND DATES", ["Name and dates", f"*of your beloved {SPECIES}*"],
+                          "Optional – added to the small plaque", CFG["tx"], H // 2),
       "paw": R.text_block("YOUR OWN WORDS", ["Your own quote,", "*if you wish*"],
-                          "Add a short quote or message of your own", 1090, H // 2)}
+                          "Add a short quote or message of your own", CFG["tx"], H // 2)}
 
 
 def zoom_scene(which):
@@ -130,7 +136,7 @@ def zoom_scene(which):
 
 
 _lg, _lh = R.logo(380, W // 2, 0)
-_et = R.end_texts(_lh + 50)
+_et = R.end_texts(_lh + 50, CFG["breeds"])
 _boxes = [b for b in (_lg.getbbox(), _et.getbbox()) if b]
 _dy = H // 2 - (min(b[1] for b in _boxes) + max(b[3] for b in _boxes)) // 2
 LOGO, ETXT = ImageChops.offset(_lg, 0, _dy), ImageChops.offset(_et, 0, _dy)
@@ -162,7 +168,7 @@ def frame(t):
 
 
 def main():
-    args = sys.argv[1:]
+    args = sys.argv[2:]
     if "--at" in args:
         d = Path(args[args.index("--frames-dir") + 1])
         d.mkdir(parents=True, exist_ok=True)

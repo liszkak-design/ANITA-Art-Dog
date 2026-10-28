@@ -128,7 +128,7 @@ def logo(width, cx, y):
     return layer, h
 
 
-def end_texts(y):
+def end_texts(y, breeds="200"):
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     f = playfair(56, True)
@@ -142,7 +142,7 @@ def end_texts(y):
     d.text(((W - f2.getlength(t2)) / 2, y), t2, font=f2, fill=blend(DARK, 0.9))
     y += 70
     f3 = opensans(22, 600)
-    t3 = "200 BREEDS  ·  ORIGINAL DESIGNS  ·  HANDMADE"
+    t3 = f"{breeds} BREEDS  ·  ORIGINAL DESIGNS  ·  HANDMADE"
     w3 = sum(f3.getlength(c) + 4 for c in t3)
     draw_runs(d, (W - w3) / 2, y, [(t3, f3)], GOLD, spacing=4)
     return layer
