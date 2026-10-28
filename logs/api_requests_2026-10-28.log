@@ -133,3 +133,12 @@
 2026-10-28T08:26:59 POST /v3/application/shops/19255336/listings/678585017/images
 2026-10-28T08:27:15 GET /v3/application/listings/678585017
 2026-10-28T08:27:16 GET /v3/application/users/me
+2026-10-28T08:27:39 GET /v3/application/listings/678585017
+2026-10-28T08:27:39 GET /v3/application/shops/19255336/listings/678585017/properties
+2026-10-28T08:27:40 GET /v3/application/listings/678585017/inventory
+2026-10-28T08:27:40 GET /v3/application/listings/678585017
+2026-10-28T08:27:40 GET /v3/application/listings/678585017
+2026-10-28T08:27:42 POST /v3/application/shops/19255336/listings/678585017/images
+2026-10-28T08:27:46 GET /v3/application/listings/678585017
+2026-10-28T08:27:47 POST /v3/application/shops/19255336/listings/678585017/images
+2026-10-28T08:27:49 POST /v3/application/shops/19255336/listings/678585017/videos
