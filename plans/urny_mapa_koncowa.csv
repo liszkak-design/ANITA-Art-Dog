@@ -124,7 +124,7 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 660307462,pies,Bearded Collie,56. Bearded Collie 5056739235485,5056739235485,rasa 1:1,1.0,1.0,bearded-collie-5056739235485.mp4
 660356874,pies,Beauceron,57. Beauceron 5056739235492,5056739235492,rasa 1:1,1.0,1.0,beauceron-5056739235492.mp4
 678504669,pies,Bedlington,58. Bedlington 5056739235508,5056739235508,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.992,0.992,bedlington-5056739235508.mp4
-660303860,pies,Bedlington,,,"BRAK FOLDERU: właścicielka odrzuciła dopasowanie do '155. Laekenois Dog' (28.10.2026), do decyzji",0,0,
+660303860,pies,Bedlington,58. Bedlington 5056739235508,5056739235508,"nazwa z tytułu (właścicielka 28.10.2026: zdjęcie w Etsy błędne, Afghan Hound; wspólny folder z ofertą 678504669)",1.0,1.0,bedlington-5056739235508.mp4
 660371494,pies,Belgian Sheepdog,117. Belgian Sheepdog 5056739236093,5056739236093,nazwa w grupie,1.0,1.0,belgian-sheepdog-5056739236093.mp4
 660307894,pies,Belgian Shepherd,59. Belgian Shepherd 5056739235515,5056739235515,nazwa w grupie,1.0,1.0,belgian-shepherd-5056739235515.mp4
 674220883,pies,Bergamasco Shepherd,156. Bergamasco Shepherd 5056739236482,5056739236482,rasa 1:1,1.0,1.0,bergamasco-shepherd-5056739236482.mp4
