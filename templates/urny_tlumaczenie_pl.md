@@ -34,17 +34,17 @@ Cytat na łapce/podkowie zostaje po angielsku (decyzja: tylko EN).
 
 ## Sekcje stałe (kot; pies, koń, kucyk: podmiana formy gatunku, koń/kucyk: "płytka w kształcie podkowy")
 ```
-URNA W SKRÓCIE
+NAJWAŻNIEJSZE INFORMACJE O URNIE
 - Ręcznie robiona drewniana urna na prochy zwierzęcia, z litego drewna i sklejki, malowana na brązowo
 - Owalna ceramiczna płytka z nadrukiem szkicowego portretu (rasa: {B}), ok. 7,5 x 10,5 cm (2,95 x 4,13 cala), na stałe przymocowana
 - Płytka w kształcie łapy z grawerowanym cytatem oraz tabliczka z imieniem i datami
 - Wymiary zewnętrzne: 21 x 29 x 22 cm (8,3 x 11,4 x 8,7 cala)
 - Wymiary wewnętrzne: 14 x 21 x 15,5 cm (5,5 x 8,3 x 6,1 cala), pojemność ok. 4,5 litra (275 cali sześciennych)
 - Mosiężne uchwyty i rzeźbione ozdoby z drewna
-- Zdejmowane wieczko, niezaklejone: aby zamknąć je szczelnie, przyklej je dowolnym klejem uniwersalnym
+- Zdejmowane wieczko, które nie jest szczelne: aby zamknąć urnę szczelnie, przyklej je dowolnym klejem uniwersalnym
 
 MIEJSCE PAMIĘCI
-Utrata {gen} to jeden z najsmutniejszych dni. Ta urna to ciche, trwałe miejsce, by mieć Twojego {gen} blisko. Mosiężne uchwyty i rzeźbione ozdoby nadają jej klasyczny, ponadczasowy wygląd, a grawer jest wykonany na malowanej sklejce, dlatego każda urna powstaje dla jednego zwierzaka.
+Odejście {gen} to jeden z najtrudniejszych momentów w życiu. Ta urna daje spokojne, godne miejsce w Twoim domu, w którym ukochany towarzysz zostaje blisko Ciebie. Mosiężne uchwyty i rzeźbione ozdoby nadają jej klasyczny, ponadczasowy charakter, a grawer jest wykonany na malowanej sklejce, dlatego każda urna powstaje z myślą o jednym zwierzaku.
 
 PERSONALIZACJA
 Każda urna powstaje na zamówienie. Podaj nam:
@@ -62,10 +62,8 @@ ZAMÓWIENIA MIĘDZYNARODOWE
 Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać naliczone opłaty importowe. Opłaty nie dotyczą krajów UE, Wielkiej Brytanii ani USA. W razie wątpliwości skontaktuj się z nami, a podamy szczegóły.
 ```
 
-## Pytania personalizacyjne (PL, do sprawdzenia; czy Etsy przyjmie tłumaczenie pól personalizacji, sprawdzę w teście)
-1. Imię 2. Daty 3. Cytat na płytce (opcjonalnie): "Zostaw puste, aby użyć cytatu domyślnego, albo wpisz dokładny tekst do wygrawerowania na płytce w kształcie łapy."
-4. Zdjęcie pupila: "Prześlij zdjęcie w wysokiej rozdzielczości. Im lepsza jakość zdjęcia, tym lepiej wyglądać będzie nadruk na płytce."
-5. Jak wydrukować zdjęcie? Kolor + tło / Kolor, bez tła / Szkic ołówkiem
+## Pytania personalizacyjne
+Nie tłumaczymy (Etsy nie ma miejsca na tłumaczenia pól personalizacji; decyzja 28.10.2026).
 
 ## Shopping basket summary
 Drewniana urna z ceramiczną płytką
