@@ -79,7 +79,7 @@ PAW = {  # "w kształcie łapy" -> podkowy (konie i kucyki), dla każdego język
 }
 # rozstrzygnięcia właścicielki (28.10.2026): oferta -> ID rasy w Rasy.xlsx; długość sierści jak przy płytkach (słowa z arkusza "Słowa stałe")
 OWNER_RID = {660268116: "R027", 660320524: "R048", 660383022: "R333", 674161421: "R035"}
-HOLD = {660384830: "tytuł Sloughi, a folder serwera to 182. Saluki (dopasowanie po zdjęciu, brak folderu Sloughi): wymaga decyzji właścicielki"}
+HOLD = {}  # 660384830 Sloughi zwolniona 28.10.2026: folder "182. Saluki" ma błąd w nazwie, rasa to Sloughi (właścicielka)
 GENERIC_FEATURE = {"long": "Dachshund Long-haired", "short": "Chihuahua Short-haired"}
 NAME_COL = dict(nl="NL nazwa", fr="FR nazwa", de="DE nazwa", it="IT nazwa", pl="PL nazwa", pt="PT nazwa", es="ES nazwa", sv="SV nazwa")
 FEATURE_EN = {"cropped ears": "Cropped Ears", "uncropped (natural) ears": "Natural Ears", "foal": "Foal"}
