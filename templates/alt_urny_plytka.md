@@ -13,3 +13,16 @@ Sześć istniejących zdjęć w każdej ofercie (kolejność 1-6, bez wymiany zd
 | 6 | Widok na wnętrze urny i zdjęty dekiel. | View of the inside of the urn with the lid removed. |
 
 Siódme zdjęcie (dodawane na końcu, nieedytowane "original", osobne dla psów, kotów i koni): alt text do ustalenia po otrzymaniu zdjęć.
+
+## Zdjęcie 7 (oryginał bez edycji) – propozycje EN, bez treści grawerunków (do akceptacji)
+
+- Pies: "Front of the wooden urn with a paw-shaped plaque, an oval ceramic plaque with a printed photo of a dog, and a nameplate with a name and dates."
+- Kot: "Front of the wooden urn with a paw-shaped plaque, an oval ceramic plaque with a printed photo of a cat, and a nameplate with a name and dates."
+- Koń: "Front of the wooden urn with a horseshoe-shaped plaque, an oval ceramic plaque with a printed sketch-style portrait of a horse, and a nameplate with a name and dates."
+
+## Ustalenia właścicielki (28.10.2026)
+
+- Cytat domyślny na łapce: "You left paw prints on my heart". Podkowa (konie): "If love could have saved you, you would have lived forever."
+- Drewno: tylko "solid wood and plywood, painted brown" (bez brzozy/sosny w tekstach). Liczby wzorów: nie podawać. Słowo "handmade": tak.
+- Personalizacja: jak w ofercie 660269548 (5 pytań), dla koni "paw-shape" → "horseshoe-shaped".
+- Właściwość Materials: jak w 660269548 (Ceramic, Brass, Pine, Birch).

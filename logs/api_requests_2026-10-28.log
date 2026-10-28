@@ -504,3 +504,14 @@
 2026-10-28T12:37:53 GET /v3/application/listings/674148205/images
 2026-10-28T12:37:54 GET /v3/application/listings/678504669/images
 2026-10-28T12:52:40 GET /v3/application/listings/660303860
+2026-10-28T13:53:25 GET /v3/application/listings/660378584
+2026-10-28T13:53:25 GET /v3/application/shops/19255336/listings/660378584/properties
+2026-10-28T13:53:26 GET /v3/application/listings/660825346
+2026-10-28T13:53:26 GET /v3/application/shops/19255336/listings/660825346/properties
+2026-10-28T13:53:26 GET /v3/application/listings/660784138
+2026-10-28T13:53:27 GET /v3/application/shops/19255336/listings/660784138/properties
+2026-10-28T14:01:48 GET /v3/application/listings/660269548
+2026-10-28T14:01:48 GET /v3/application/shops/0/listings/660269548/personalization
+2026-10-28T14:01:52 GET /v3/application/shops/19255336/listings/660269548/personalization
+2026-10-28T14:01:53 GET /v3/application/shops/19255336/listings/660269548/properties
+2026-10-28T14:01:56 GET /v3/application/listings/660269548
