@@ -19,10 +19,10 @@ Formy gatunku: kot: S=gatto, P=il suo gatto, DEL=del suo gatto, AL=al suo gatto;
 - A2: Urna in legno fatta a mano per {P} (razza: {B}), decorata con una targa in ceramica con ritratto in stile schizzo e una targa con una citazione.
 - A3: Un ricordo {DEL}, razza: {B}: urna in legno fatta a mano con targa in ceramica con ritratto, citazione incisa, nome e date.
 - A4: Urna personalizzata con targa in ceramica con ritratto in stile schizzo, razza: {B}. Creata per rendere omaggio a un compagno amato.
-- A5: Quando arriva il giorno più triste, questa urna fatta a mano (razza: {B}) offre un luogo sereno e duraturo per le ceneri {DEL}. (koń i kucyk: "Quando arriva il giorno più triste, questa urna fatta a mano (razza: {B}) offre un luogo sereno e duraturo dove tenere {P} vicino a sé.")
+- A5: Quando arriva il giorno più triste, questa urna fatta a mano (razza: {B}) offre un luogo sereno e dignitoso per le ceneri {DEL}. (koń i kucyk: "Quando arriva il giorno più triste, questa urna fatta a mano (razza: {B}) offre un luogo sereno e dignitoso dove tenere {P} vicino a sé.")
 
 **B**
-- B1: La collochi in casa in un luogo tranquillo, come un omaggio duraturo {AL}, che è stato parte della sua vita.
+- B1: La collochi in casa in un luogo tranquillo, come un omaggio {AL}, che è stato parte della sua vita.
 - B2: Può stare ovunque lei ricordi {P}, come un dolce ricordo del suo compagno amato.
 - B3: Un luogo degno per le ceneri {DEL}, pensato per essere tenuto vicino, a casa. (koń i kucyk: "Un luogo degno dove tenere {P} vicino, a casa.")
 

@@ -19,10 +19,10 @@ Formy gatunku: kot: S=gato, P=o seu gato, DO=do seu gato, AO=ao seu gato; pies: 
 - A2: Urna de madeira feita à mão para {P} (raça: {B}), decorada com uma placa de cerâmica com retrato em estilo esboço e uma placa com citação.
 - A3: Uma lembrança {DO}, raça: {B}: urna de madeira feita à mão com placa de cerâmica com retrato, citação gravada, nome e datas.
 - A4: Urna personalizada com placa de cerâmica com retrato em estilo esboço, raça: {B}. Criada para homenagear um companheiro querido.
-- A5: Quando chega o dia mais triste, esta urna feita à mão (raça: {B}) oferece um lugar sereno e duradouro para as cinzas {DO}. (koń i kucyk: "Quando chega o dia mais triste, esta urna feita à mão (raça: {B}) oferece um lugar sereno e duradouro para ter {P} sempre por perto.")
+- A5: Quando chega o dia mais triste, esta urna feita à mão (raça: {B}) oferece um lugar sereno e digno para as cinzas {DO}. (koń i kucyk: "Quando chega o dia mais triste, esta urna feita à mão (raça: {B}) oferece um lugar sereno e digno para ter {P} sempre por perto.")
 
 **B**
-- B1: Coloque-a em casa num lugar tranquilo, como uma homenagem duradoura {AO}, que fez parte da sua vida.
+- B1: Coloque-a em casa num lugar tranquilo, como uma homenagem {AO}, que fez parte da sua vida.
 - B2: Pode ficar em qualquer lugar onde se lembre {DO}, como uma suave recordação do seu companheiro querido.
 - B3: Um lugar digno para as cinzas {DO}, pensado para ficar por perto, em casa. (koń i kucyk: "Um lugar digno para ter {P} por perto, em casa.")
 

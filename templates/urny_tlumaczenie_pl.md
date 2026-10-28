@@ -19,10 +19,10 @@ Cytat na łapce/podkowie zostaje po angielsku (decyzja: tylko EN).
 - A2: Ręcznie robiona drewniana urna dla Twojego {gen} (rasa: {B}), ozdobiona ceramiczną płytką ze szkicowym portretem i płytką z cytatem.
 - A3: Pamiątka po Twoim {loc}, rasa: {B}: ręcznie robiona drewniana urna z ceramiczną płytką z portretem, grawerowanym cytatem oraz imieniem i datami.
 - A4: Spersonalizowana urna z ceramiczną płytką ze szkicowym portretem, rasa: {B}. Stworzona, by oddać hołd ukochanemu towarzyszowi.
-- A5: Gdy nadejdzie najsmutniejszy dzień, ta ręcznie robiona urna (rasa: {B}) zapewnia ciche, trwałe miejsce dla prochów Twojego {gen}. (koń i kucyk: "...zapewnia ciche, trwałe miejsce, by mieć Twojego {gen} blisko.")
+- A5: Gdy nadejdzie najsmutniejszy dzień, ta ręcznie robiona urna (rasa: {B}) zapewnia ciche i godne miejsce dla prochów Twojego {gen}. (koń i kucyk: "...zapewnia ciche i godne miejsce, by mieć Twojego {gen} blisko.")
 
 **B**
-- B1: Postaw ją w domu w cichym miejscu, jako trwały hołd dla {gen}, który był częścią Twojego życia.
+- B1: Postaw ją w domu w cichym miejscu, jako hołd dla {gen}, który był częścią Twojego życia.
 - B2: Może stanąć wszędzie tam, gdzie wspominasz swojego {gen}, jako delikatne przypomnienie o ukochanym towarzyszu.
 - B3: Odpowiednie miejsce na prochy Twojego {gen}, stworzone, by mieć je blisko, w domu. (koń i kucyk: "Odpowiednie miejsce, by mieć Twojego {gen} blisko, w domu.")
 

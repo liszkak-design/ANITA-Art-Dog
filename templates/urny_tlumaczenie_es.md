@@ -19,10 +19,10 @@ Formy gatunku: kot: S=gato; pies: S=perro; koń: S=caballo; kucyk: S=pony
 - A2: Urna de madera hecha a mano para tu {S} (raza: {B}), decorada con una placa de cerámica con retrato estilo boceto y una placa con una cita.
 - A3: Un recuerdo de tu {S}, raza: {B}: urna de madera hecha a mano con placa de cerámica con retrato, cita grabada, nombre y fechas.
 - A4: Urna personalizada con placa de cerámica con retrato estilo boceto, raza: {B}. Creada para rendir homenaje a un compañero querido.
-- A5: Cuando llega el día más triste, esta urna hecha a mano (raza: {B}) ofrece un lugar sereno y duradero para las cenizas de tu {S}. (koń i kucyk: "Cuando llega el día más triste, esta urna hecha a mano (raza: {B}) ofrece un lugar sereno y duradero para tener a tu {S} siempre cerca.")
+- A5: Cuando llega el día más triste, esta urna hecha a mano (raza: {B}) ofrece un lugar sereno y digno para las cenizas de tu {S}. (koń i kucyk: "Cuando llega el día más triste, esta urna hecha a mano (raza: {B}) ofrece un lugar sereno y digno para tener a tu {S} siempre cerca.")
 
 **B**
-- B1: Colócala en casa, en un lugar tranquilo, como un homenaje duradero a tu {S}, que fue parte de tu vida.
+- B1: Colócala en casa, en un lugar tranquilo, como un homenaje a tu {S}, que fue parte de tu vida.
 - B2: Puede estar en cualquier lugar donde recuerdes a tu {S}, como un suave recuerdo de tu compañero querido.
 - B3: Un lugar digno para las cenizas de tu {S}, pensado para tenerlas cerca, en casa. (koń i kucyk: "Un lugar digno para tener a tu {S} cerca, en casa.")
 

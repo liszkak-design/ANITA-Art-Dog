@@ -21,10 +21,10 @@ Złożenia: {CS}urne = Hundeurne / Katzenurne / Pferdeurne / Ponyurne, {CS}asche
 - A2: Handgefertigte Holzurne für {ACC} (Rasse: {B}), verziert mit einer Keramikplatte mit Skizzenporträt und einer Platte mit Zitat.
 - A3: Erinnerung an {ACC}, Rasse: {B}: handgefertigte Holzurne mit Keramikplatte mit Porträt, graviertem Zitat sowie Namen und Daten.
 - A4: Personalisierte Urne mit Keramikplatte mit Skizzenporträt, Rasse: {B}. Geschaffen, um einem geliebten Begleiter die letzte Ehre zu erweisen.
-- A5: Wenn der traurigste Tag kommt, bietet diese handgefertigte Urne (Rasse: {B}) einen ruhigen, bleibenden Ort für die Asche {GEN}. (Pferd und Pony: "...einen ruhigen, bleibenden Ort, um {ACC} nah bei sich zu haben.")
+- A5: Wenn der traurigste Tag kommt, bietet diese handgefertigte Urne (Rasse: {B}) einen ruhigen und würdevollen Ort für die Asche {GEN}. (Pferd und Pony: "...einen ruhigen und würdevollen Ort, um {ACC} nah bei sich zu haben.")
 
 **B**
-- B1: Stellen Sie sie zu Hause an einen ruhigen Ort, als bleibende Hommage an Ihren Liebling, der Teil Ihres Lebens war.
+- B1: Stellen Sie sie zu Hause an einen ruhigen Ort, als Hommage an Ihren Liebling, der Teil Ihres Lebens war.
 - B2: Sie kann überall dort stehen, wo Sie sich an {ACC} erinnern, als sanfte Erinnerung an Ihren geliebten Begleiter.
 - B3: Ein würdiger Platz für die Asche {GEN}, gemacht, um sie zu Hause nah bei sich zu haben. (Pferd und Pony: "Ein würdiger Platz, um {ACC} zu Hause nah bei sich zu haben.")
 

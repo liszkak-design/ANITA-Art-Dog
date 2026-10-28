@@ -20,10 +20,10 @@ Złożenia: {CS}urn = hondenurn / kattenurn / paardenurn / ponyurn, {CS}as = hon
 - A2: Handgemaakte houten urn voor uw {S} (ras: {B}), versierd met een keramische plaat met schetsportret en een plaat met citaat.
 - A3: Aandenken aan uw {S}, ras: {B}: handgemaakte houten urn met keramische plaat met portret, gegraveerd citaat en naam en data.
 - A4: Gepersonaliseerde urn met keramische plaat met schetsportret, ras: {B}. Gemaakt om een geliefde metgezel te eren.
-- A5: Wanneer de droevigste dag komt, biedt deze handgemaakte urn (ras: {B}) een rustige, blijvende plek voor de as van uw {S}. (paard en pony: "...een rustige, blijvende plek om uw {S} dichtbij te houden.")
+- A5: Wanneer de droevigste dag komt, biedt deze handgemaakte urn (ras: {B}) een rustige en waardige plek voor de as van uw {S}. (paard en pony: "...een rustige en waardige plek om uw {S} dichtbij te houden.")
 
 **B**
-- B1: Zet hem thuis op een rustige plek, als blijvend eerbetoon aan uw geliefde dier dat deel uitmaakte van uw leven.
+- B1: Zet hem thuis op een rustige plek, als eerbetoon aan uw geliefde dier dat deel uitmaakte van uw leven.
 - B2: Hij kan overal staan waar u aan uw {S} denkt, als zachte herinnering aan uw geliefde metgezel.
 - B3: Een passende plek voor de as van uw {S}, gemaakt om thuis dichtbij te houden. (paard en pony: "Een passende plek om uw {S} thuis dichtbij te houden.")
 

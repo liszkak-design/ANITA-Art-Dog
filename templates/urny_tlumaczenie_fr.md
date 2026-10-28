@@ -19,10 +19,10 @@ Formy gatunku: kot: S=chat; pies: S=chien; koń: S=cheval; kucyk: S=poney
 - A2: Urne en bois faite main pour votre {S} (race : {B}), ornée d'une plaque en céramique au portrait en style croquis et d'une plaque avec une citation.
 - A3: Un souvenir de votre {S}, race : {B} : urne en bois faite main avec plaque en céramique au portrait, citation gravée, nom et dates.
 - A4: Urne personnalisée avec plaque en céramique au portrait en style croquis, race : {B}. Créée pour rendre hommage à un compagnon bien-aimé.
-- A5: Quand arrive le jour le plus triste, cette urne faite main (race : {B}) offre un lieu paisible et durable pour les cendres de votre {S}. (koń i kucyk: "Quand arrive le jour le plus triste, cette urne faite main (race : {B}) offre un lieu paisible et durable pour garder votre {S} près de vous.")
+- A5: Quand arrive le jour le plus triste, cette urne faite main (race : {B}) offre un lieu paisible et digne pour les cendres de votre {S}. (koń i kucyk: "Quand arrive le jour le plus triste, cette urne faite main (race : {B}) offre un lieu paisible et digne pour garder votre {S} près de vous.")
 
 **B**
-- B1: Placez-la chez vous dans un endroit calme, comme un hommage durable à votre {S}, qui a fait partie de votre vie.
+- B1: Placez-la chez vous dans un endroit calme, comme un hommage à votre {S}, qui a fait partie de votre vie.
 - B2: Elle peut trouver sa place partout où vous pensez à votre {S}, comme un doux rappel de votre compagnon bien-aimé.
 - B3: Un lieu digne pour les cendres de votre {S}, conçu pour rester près de vous, à la maison. (koń i kucyk: "Un lieu digne pour garder votre {S} près de vous, à la maison.")
 

@@ -19,10 +19,10 @@ Formy gatunku: kot: S=katt; pies: S=hund; koń: S=häst; kucyk: S=ponny
 - A2: Handgjord träurna för din {S} (ras: {B}), dekorerad med en keramikplatta med porträtt i skissstil och en platta med ett citat.
 - A3: Ett minne av din {S}, ras: {B}: handgjord träurna med keramikplatta med porträtt, ingraverat citat samt namn och datum.
 - A4: Personlig urna med keramikplatta med porträtt i skissstil, ras: {B}. Skapad för att hedra en älskad följeslagare.
-- A5: När den sorgligaste dagen kommer erbjuder den här handgjorda urnan (ras: {B}) en lugn och varaktig plats för askan efter din {S}. (koń i kucyk: "När den sorgligaste dagen kommer erbjuder den här handgjorda urnan (ras: {B}) en lugn och varaktig plats där du kan ha din {S} nära.")
+- A5: När den sorgligaste dagen kommer erbjuder den här handgjorda urnan (ras: {B}) en lugn och värdig plats för askan efter din {S}. (koń i kucyk: "När den sorgligaste dagen kommer erbjuder den här handgjorda urnan (ras: {B}) en lugn och värdig plats där du kan ha din {S} nära.")
 
 **B**
-- B1: Placera den hemma på en lugn plats, som en varaktig hyllning till din {S}, som var en del av ditt liv.
+- B1: Placera den hemma på en lugn plats, som en hyllning till din {S}, som var en del av ditt liv.
 - B2: Den kan stå var du än minns din {S}, som en mild påminnelse om din älskade följeslagare.
 - B3: En värdig plats för askan efter din {S}, gjord för att stå nära dig hemma. (koń i kucyk: "En värdig plats där du kan ha din {S} nära, hemma.")
 
