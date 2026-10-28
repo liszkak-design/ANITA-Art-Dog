@@ -6,7 +6,7 @@
 Domyślnie dry-run. Teksty z zatwierdzonych szablonów: templates/urny_propozycja_tekstow.md (pies), urny_koty_konie.md,
 urny_tlumaczenie_<jezyk>.md, alt_urny_plytka.md. Każda oferta jest zapisywana raz (wpis "weryfikacja" ok w logs/zapis_<id>_*.jsonl).
 Kroki oferty: tytuł/opis/tagi, właściwość Materials, how it's made, personalizacja (5 pytań), zdjęcie 1 z serwera (nadpisanie slotu 1),
-alt texty zdjęć 2-6 (przez listing_image_id), zdjęcie 7 (original), film uniwersalny, film rasy, 8 tłumaczeń.
+alt texty zdjęć 2-6 (przez listing_image_id), zdjęcie 7 (original), film gatunku (pies/kot/koń), film rasy, 8 tłumaczeń.
 Pominięte (ręcznie w Etsy): SKU, GPSR, shopping basket summary. Pola personalizacji nie są tłumaczone.
 """
 import csv
@@ -42,7 +42,8 @@ INDEX_CSV = ROOT / "plans" / "urny_foldery_index.csv"
 REPORT_CSV = ROOT / "plans" / "urny_raport.csv"
 EAN_BASE = B.EAN_BASE
 VIDEO_BASE = "https://www.artdog.com.pl/VIDEO/IV%20tura/"
-UNIVERSAL_VIDEO = ROOT / "video" / "video-urny-uniwersalny.mp4"  # do dostarczenia przez właścicielkę
+SPECIES_VIDEO = {"pies": ROOT / "video" / "video-urn-dogs-anita.mp4", "kot": ROOT / "video" / "video-urn-cats-anita.mp4",
+                 "koń": ROOT / "video" / "video-urn-horses-anita.mp4", "kucyk": ROOT / "video" / "video-urn-horses-anita.mp4"}  # film 1: wg gatunku (28.10.2026)
 ORIGINALS = {"pies": "original_pies.jpg", "kot": "original_kot.jpg", "koń": "original_kon.jpg", "kucyk": "original_kon.jpg"}
 CACHE = B.CACHE.parent / "urny"
 LANG_ALL = ["pl", "de", "nl", "fr", "it", "pt", "es", "sv"]
@@ -496,7 +497,7 @@ def raport():
                 st["powód: " + x.split(":")[0]] += 1
     print(dict(st))
     miss = [l for l in LANG_ALL if load_lang(l) is None]
-    print("brak szablonów tłumaczeń:", miss or "żadnych", "| film uniwersalny:", "jest" if UNIVERSAL_VIDEO.exists() else "BRAK (" + str(UNIVERSAL_VIDEO.relative_to(ROOT)) + ")")
+    print("brak szablonów tłumaczeń:", miss or "żadnych", "| filmy gatunków:", {k: v.exists() for k, v in SPECIES_VIDEO.items()})
 
 
 def plan(n, size):
@@ -531,7 +532,7 @@ def plan(n, size):
             e = c["en"]
             w.writerow([i, c["lid"], c["species"], c["breed"], c["row"]["ean"], c["sales"], e["title"], e["wzorzec_tytulu"],
                         "".join(f"{k}{v}" for k, v in e["ABC"].items()), e["nick"], e["synonim"], e["odmiana"], "; ".join(e["tags"]), c["row"]["film_bez_brand"]])
-    dry = [{"listing_id": c["lid"], "ean": c["row"]["ean"], "gatunek": c["species"], "rasa": c["breed"], "film_url": c["video"], "en": c["en"], "tlumaczenia": c["trans"]} for c in batch]
+    dry = [{"listing_id": c["lid"], "ean": c["row"]["ean"], "gatunek": c["species"], "rasa": c["breed"], "film_url": c["video"], "film1": SPECIES_VIDEO[c["species"]].name, "en": c["en"], "tlumaczenia": c["trans"]} for c in batch]
     (ROOT / "plans" / f"partia_urny_{n:03d}_dryrun.json").write_text(json.dumps(dry, ensure_ascii=False, indent=1))
     print(f"partia {n}: {len(batch)} ofert; wykluczonych w tym kroku {len(skipped)}; języki w tłumaczeniach: {sorted({k for c in batch for k in c['trans']})}")
     print("gatunki:", dict(Counter(c["species"] for c in batch)), "sprzedaż (szt.): min", min(c["sales"] for c in batch), "max", max(c["sales"] for c in batch))
@@ -570,7 +571,8 @@ def steps_for(c):
         s.append({"id": f"alt_{k}", "method": "POST", "path": b + "/images", "kind": "alt_existing", "rank": k, "fields": {"alt_text": en["alts"][k]}})
     s.append({"id": "zdjecie_7_original", "method": "POST", "path": b + "/images", "kind": "image", "rank": 7, "src": "original",
               "fields": {"rank": "7", "overwrite": "false", "alt_text": en["alts"][7]}})
-    s.append({"id": "wideo_1_uniwersalny", "method": "POST", "path": b + "/videos", "kind": "video", "src": str(UNIVERSAL_VIDEO), "fields": {"name": UNIVERSAL_VIDEO.name}})
+    s.append({"id": "wideo_1_gatunek", "method": "POST", "path": b + "/videos", "kind": "video", "src": str(SPECIES_VIDEO[c["gatunek"]]),
+              "fields": {"name": SPECIES_VIDEO[c["gatunek"]].name}})
     s.append({"id": "wideo_2_rasa", "method": "POST", "path": b + "/videos", "kind": "video", "src": c["film_url"], "fields": {"name": c["film_name"]}})
     for code in LANG_ALL:
         d = trans[code]
@@ -658,8 +660,9 @@ def apply_batch(n):
     batch = load_frozen(n)
     if len(batch) > BATCH_MAX:
         sys.exit("BŁĄD: partia większa niż 50")
-    if not UNIVERSAL_VIDEO.exists():
-        sys.exit(f"BŁĄD: brak filmu uniwersalnego ({UNIVERSAL_VIDEO.relative_to(ROOT)}); film jest pierwszy w ofercie, nie zaczynam bez niego")
+    for sp in {c["gatunek"] for c in batch}:
+        if not SPECIES_VIDEO[sp].exists():
+            sys.exit(f"BŁĄD: brak filmu dla gatunku {sp} ({SPECIES_VIDEO[sp].relative_to(ROOT)}); film jest pierwszy w ofercie, nie zaczynam bez niego")
     miss = [l for l in LANG_ALL if any(l not in c["trans"] for c in batch)]
     if miss:
         sys.exit("BŁĄD: brak tłumaczeń w planie: " + ",".join(miss))
@@ -694,7 +697,7 @@ def apply_batch(n):
                     continue
             if resumed and s["kind"] == "video" and api.get(f"/v3/application/listings/{lid}?includes=Videos").get("videos"):
                 vids = api.get(f"/v3/application/listings/{lid}?includes=Videos").get("videos", [])
-                if len(vids) >= (1 if s["id"] == "wideo_1_uniwersalny" else 2):
+                if len(vids) >= (1 if s["id"] == "wideo_1_gatunek" else 2):
                     zlog(lid, s["id"], "backup/" + p.name, "już w ofercie (wykryte przy wznowieniu)", "ok")
                     continue
             resp = alt_existing(s, c, ids_before) if s["kind"] == "alt_existing" else send(s, c)
