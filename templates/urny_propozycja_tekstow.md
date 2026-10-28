@@ -41,18 +41,31 @@ Nie używamy `cat ashes` przy psach i koniach ani odwrotnie (obecnie wszystkie u
 ## 4. Pierwszy akapit (banki A + B + C, wariant po ID oferty)
 
 Wersja dla psa; dla kota i konia podmieniamy gatunek, a dla koni "paw-shaped" → "horseshoe-shaped". Pełna nazwa rasy w zdaniu A, żadne zdanie nie ma jej dwa razy.
-Zdrobnienia [N] tylko z kolumny E (zdrobnienia), synonimy [S] zamiast nazwy rasy w zdaniu A, łącznie max dwa razy w akapicie.
 
-**A (otwarcie)**
-- A1: This {BREED} dog urn is a handmade wooden urn for ashes, with a ceramic plaque showing a portrait of the dog, made to remember a much-loved pet.
-- A2: A handmade wooden urn for your {BREED}, decorated with a ceramic plaque with a portrait of the breed and a plaque with a quote.
-- A3: Remember your {BREED} with this handmade wooden urn for dog ashes, with a ceramic photo plaque, an engraved quote, and a name and dates.
-- A4: This personalised pet urn features a ceramic plaque with a portrait of a {BREED}, created to honour a much-loved companion.
+**Zasada wyboru zdania A (decyzja 28.10.2026):** jeśli w `Rasy.xlsx` kolumna E ma wpis, zdanie A losujemy wyłącznie spośród wariantów używających tego wpisu:
+zdrobnienie → warianty [N], synonim → warianty [S] (klasyfikacja `data/nick_klasyfikacja.csv`). Gdy kolumna E jest pusta, losujemy z wariantów bez [N]/[S].
+Zdrobnienia [N] także w B i C, łącznie max dwa razy w akapicie.
+
+**A (otwarcie), bez NICK/SYN**
+- A1: This {BREED} dog urn is a handmade wooden urn for ashes, with a ceramic plaque showing a sketch-style portrait of the dog, made to remember a much-loved pet.
+- A2: A handmade wooden urn for your {BREED}, decorated with a ceramic plaque with a sketch-style portrait of the breed and a plaque with a quote.
+- A3: Remember your {BREED} with this handmade wooden urn for dog ashes, with a ceramic portrait plaque, an engraved quote, and a name and dates.
+- A4: This personalised pet urn features a ceramic plaque with a sketch-style portrait of a {BREED}, created to honour a much-loved companion.
 - A5: When the saddest day comes, this handmade {BREED} urn offers a quiet, lasting place for the ashes of your dog.
+
+**A, gdy jest zdrobnienie [N]**
 - A6 [N]: Remember your beloved {BREED} with this handmade wooden urn, made to honour your faithful {NICK}.
-- A7 [N]: A handmade wooden urn with a ceramic portrait plaque, made to remember your much-loved {NICK}.
-- A8 [S]: This {SYN} dog urn is a handmade wooden urn for ashes, with a ceramic plaque showing a portrait of the dog.
-- A9 [S]: A handmade wooden urn for your {SYN}, with a ceramic portrait plaque, an engraved quote, and a name and dates.
+- A7 [N]: A handmade wooden urn with a ceramic sketch-style portrait plaque, made to remember your much-loved {NICK}.
+- A8 [N]: This handmade wooden urn keeps your dear {NICK} close, with a ceramic portrait plaque, an engraved quote, and a name and dates.
+- A9 [N]: A personalised wooden urn for your {BREED}, made as a lasting place for your faithful {NICK}.
+- A10 [N]: When the saddest day comes, this handmade urn offers a quiet, lasting place for the ashes of your {NICK}.
+
+**A, gdy jest synonim [S]**
+- A11 [S]: This {SYN} dog urn is a handmade wooden urn for ashes, with a ceramic plaque showing a sketch-style portrait of the dog.
+- A12 [S]: A handmade wooden urn for your {SYN}, with a ceramic portrait plaque, an engraved quote, and a name and dates.
+- A13 [S]: Remember your {SYN} with this handmade wooden urn for dog ashes, with a sketch-style portrait on a ceramic plaque.
+- A14 [S]: This personalised {SYN} urn features a ceramic plaque with a sketch-style portrait, created to honour a much-loved companion.
+- A15 [S]: When the saddest day comes, this handmade {SYN} urn offers a quiet, lasting place for the ashes of your dog.
 
 **B (zastosowanie)**
 - B1: Keep it at home in a quiet place, a lasting tribute to the dog who shared your life.
@@ -60,24 +73,24 @@ Zdrobnienia [N] tylko z kolumny E (zdrobnienia), synonimy [S] zamiast nazwy rasy
 - B3: A fitting place for your dog's ashes, made to be kept close at home.
 - B4 [N]: Keep it close as a lasting tribute to your faithful {NICK}.
 
-**C (zdjęcie klienta)**
-- C1: If you would rather remember your own dog, send us a photo and we will print it on the plaque instead.
-- C2: Prefer your own dog's portrait? Attach a photo and we will print it on the ceramic plaque.
-- C3: The plaque can also be printed with a photo of your own dog.
-- C4 [N]: You can also have your own {NICK} on the plaque: attach a photo and we will print it.
+**C (pełna personalizacja)**
+- C1: Every urn is made to order: add your dog's name and dates, choose the quote, or send us your own photo and we will print it on the plaque instead.
+- C2: Make it truly yours: the nameplate, the quote and the plaque photo can all be personalised to remember your own dog.
+- C3: You can personalise the name, dates and quote, and have the plaque printed with a photo of your own dog.
+- C4: Tell us the name, dates and quote you would like, and attach a photo if you wish to see your own dog on the plaque.
+- C5 [N]: Add your dog's name and dates, choose the quote, or send us a photo to remember your own {NICK} on the plaque.
 
 ## 5. Sekcje stałe (wersja dla psa)
 
 ```
 THE URN AT A GLANCE
 - Handmade wooden urn for pet ashes, made of solid wood and plywood, painted brown
-- Oval ceramic plaque with a printed portrait of a {BREED}, approx. 7.5 x 10.5 cm (2.95 x 4.13 in), permanently attached
+- Oval ceramic plaque with a printed sketch-style portrait of a {BREED}, approx. 7.5 x 10.5 cm (2.95 x 4.13 in), permanently attached
 - Paw-shaped plaque with an engraved quote, and a nameplate with the name and dates
 - External size: 21 x 29 x 22 cm (8.3 x 11.4 x 8.7 in)
 - Internal size: 14 x 21 x 15.5 cm (5.5 x 8.3 x 6.1 in), capacity approx. 4.5 litres (275 cubic inches)
 - Brass handles and carved wooden decorations
 - Removable lid, not sealed: glue it with any all-purpose glue to close it tightly
-- The photo print on the ceramic plaque does not fade
 
 A PLACE OF REMEMBRANCE
 Losing a dog is one of the saddest days. This urn is a quiet, lasting place to keep your dog close. The brass handles and carved decorations give it a classic, timeless look, and the engravings are applied to painted plywood, so every urn is made for one dog only.
@@ -87,7 +100,7 @@ Every urn is made to order. Please tell us:
 - Name: the name of your pet, as it should appear on the nameplate.
 - Dates: dates of birth and death, in any format you like.
 - Quote: the paw-shaped plaque carries "You left paw prints on my heart" unless you give us your own exact wording.
-- Plaque photo: the plaque shows the portrait you see, or we print your own photo.
+- Plaque photo: the plaque shows the sketch-style portrait you see, or we print your own photo.
 - Print style: original photo, full colour with the background removed, or pencil sketch.
 
 Questions about personalising your urn? Send us a message, we will gladly help.
@@ -98,6 +111,6 @@ INTERNATIONAL ORDERS
 Our products are shipped from Poland, so import charges may apply in some countries. These charges do not apply to EU countries, the United Kingdom and the USA. If you have any doubts, please contact us for details.
 ```
 
-Do potwierdzenia: czy domyślny wydruk na płytce to rysunek/portret rasy (używam "portrait"), czy zdjęcie.
+Domyślny wydruk na płytce: szkic (potwierdzone 28.10.2026). Pojemność 4.5 l potwierdzona.
 
 ## 6. Alt text 7. zdjęcia: patrz `templates/alt_urny_plytka.md` (zaakceptowane).
