@@ -40,6 +40,7 @@ UA = B.UA
 MAP_CSV = ROOT / "plans" / "urny_mapa_koncowa.csv"
 INDEX_CSV = ROOT / "plans" / "urny_foldery_index.csv"
 REPORT_CSV = ROOT / "plans" / "urny_raport.csv"
+VIEWS_CSV = ROOT / "plans" / "urny_wyswietlenia.csv"  # cache: liczba wyświetleń ofert (sprzedaż urn w eksporcie = 0), kolejność partii: najmniej popularne najpierw
 EAN_BASE = B.EAN_BASE
 VIDEO_BASE = "https://www.artdog.com.pl/VIDEO/IV%20tura/"
 SPECIES_VIDEO = {"pies": ROOT / "video" / "video-urn-dogs-anita.mp4", "kot": ROOT / "video" / "video-urn-cats-anita.mp4",
@@ -364,6 +365,7 @@ def candidates():
     fw = B.feature_words()
     pm, by_c = breed_lookup(R)
     idx, ids, sold = index_rows(), fetch_ids_csv(), B.sales()
+    views = {int(r["listing_id"]): int(r["wyswietlenia"]) for r in csv.DictReader(open(VIEWS_CSV, encoding="utf-8"))} if VIEWS_CSV.exists() else {}
     nick_cls = B.e_class()
     out = []
     for row in csv.DictReader(open(MAP_CSV, encoding="utf-8")):
@@ -397,7 +399,7 @@ def candidates():
         if row["ean"] not in idx:
             why.append("EAN bez folderu w indeksie")
         out.append({"row": row, "lid": lid, "rr": rr, "rid": rid, "breed": breed, "species": sp, "key": key, "why": why,
-                    "sales": sold.get(lid, 0), "typ": nick_cls.get(rid, "") if rid else ""})
+                    "sales": sold.get(lid, 0), "views": views.get(lid), "rank": (sold.get(lid, 0), views.get(lid, 0)), "typ": nick_cls.get(rid, "") if rid else ""})
     return out, fw
 
 
@@ -462,7 +464,7 @@ def interleave(cs):
     out, i = [], 0
     while i < len(cs):
         j = i
-        while j < len(cs) and cs[j]["sales"] == cs[i]["sales"]:
+        while j < len(cs) and cs[j]["rank"] == cs[i]["rank"]:
             j += 1
         g = {s: [c for c in cs[i:j] if c["species"] == s] for s in ("pies", "kot", "koń", "kucyk")}
         while any(g.values()):
@@ -500,13 +502,25 @@ def raport():
     print("brak szablonów tłumaczeń:", miss or "żadnych", "| filmy gatunków:", {k: v.exists() for k, v in SPECIES_VIDEO.items()})
 
 
+def fetch_views():
+    """Odczyt liczby wyświetleń każdej oferty urn (tylko odczyt, ok. 300 zapytań) -> plans/urny_wyswietlenia.csv."""
+    cs, _ = candidates()
+    with open(VIEWS_CSV, "w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["listing_id", "wyswietlenia", "ulubione"])
+        for c in cs:
+            l = api.get(f"/v3/application/listings/{c['lid']}")
+            w.writerow([c["lid"], l.get("views", 0), l.get("num_favorers", 0)])
+    print("zapisano", VIEWS_CSV.relative_to(ROOT))
+
+
 def plan(n, size):
     if started(n):
         sys.exit(f"BŁĄD: partia {n} jest już rozpoczęta, nie nadpisuję planu")
     cs, fw = candidates()
     idx = index_rows()
     only = {int(x) for a in sys.argv if a.startswith("--lid=") for x in a[6:].split(",")}  # np. pilot na wskazanej ofercie
-    free = interleave(sorted([c for c in cs if not c["why"] and (not only or c["lid"] in only)], key=lambda c: (c["sales"], c["lid"])))
+    free = interleave(sorted([c for c in cs if not c["why"] and (not only or c["lid"] in only)], key=lambda c: (c["rank"], c["lid"])))
     batch, skipped = [], []
     for c in free:
         if len(batch) == size:
@@ -528,10 +542,10 @@ def plan(n, size):
     p = ROOT / "plans" / f"partia_urny_{n:03d}.csv"
     with open(p, "w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)
-        w.writerow(["lp", "listing_id", "gatunek", "rasa", "ean", "sprzedaz_szt", "tytul_po", "wzorzec_tytulu", "ABC", "zdrobnienie", "synonim", "odmiana", "tagi", "film"])
+        w.writerow(["lp", "listing_id", "gatunek", "rasa", "ean", "sprzedaz_szt", "wyswietlenia", "tytul_po", "wzorzec_tytulu", "ABC", "zdrobnienie", "synonim", "odmiana", "tagi", "film"])
         for i, c in enumerate(batch, 1):
             e = c["en"]
-            w.writerow([i, c["lid"], c["species"], c["breed"], c["row"]["ean"], c["sales"], e["title"], e["wzorzec_tytulu"],
+            w.writerow([i, c["lid"], c["species"], c["breed"], c["row"]["ean"], c["sales"], c["views"], e["title"], e["wzorzec_tytulu"],
                         "".join(f"{k}{v}" for k, v in e["ABC"].items()), e["nick"], e["synonim"], e["odmiana"], "; ".join(e["tags"]), c["row"]["film_bez_brand"]])
     dry = [{"listing_id": c["lid"], "ean": c["row"]["ean"], "gatunek": c["species"], "rasa": c["breed"], "film_url": c["video"], "film1": SPECIES_VIDEO[c["species"]].name, "en": c["en"], "tlumaczenia": c["trans"]} for c in batch]
     (ROOT / "plans" / f"partia_urny_{n:03d}_dryrun.json").write_text(json.dumps(dry, ensure_ascii=False, indent=1))
@@ -745,6 +759,8 @@ def main():
     cmd = sys.argv[1]
     if cmd == "raport":
         raport()
+    elif cmd == "wyswietlenia":
+        fetch_views()
     elif cmd == "plan":
         size = next((int(a[7:]) for a in sys.argv if a.startswith("--size=")), BATCH_MAX)
         plan(int(sys.argv[2]), min(size, BATCH_MAX))
