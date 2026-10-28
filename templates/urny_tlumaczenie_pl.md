@@ -34,7 +34,7 @@ Cytat na łapce/podkowie zostaje po angielsku (decyzja: tylko EN).
 
 ## Sekcje stałe (kot; pies, koń, kucyk: podmiana formy gatunku, koń/kucyk: "płytka w kształcie podkowy")
 ```
-NAJWAŻNIEJSZE INFORMACJE O URNIE
+CO WARTO WIEDZIEĆ O URNIE
 - Ręcznie robiona drewniana urna na prochy zwierzęcia, z litego drewna i sklejki, malowana na brązowo
 - Owalna ceramiczna płytka z nadrukiem szkicowego portretu (rasa: {B}), ok. 7,5 x 10,5 cm (2,95 x 4,13 cala), na stałe przymocowana
 - Płytka w kształcie łapy z grawerowanym cytatem oraz tabliczka z imieniem i datami
@@ -44,7 +44,7 @@ NAJWAŻNIEJSZE INFORMACJE O URNIE
 - Zdejmowane wieczko, które nie jest szczelne: aby zamknąć urnę szczelnie, przyklej je dowolnym klejem uniwersalnym
 
 MIEJSCE PAMIĘCI
-Odejście {gen} to jeden z najtrudniejszych momentów w życiu. Ta urna daje spokojne, godne miejsce w Twoim domu, w którym ukochany towarzysz zostaje blisko Ciebie. Mosiężne uchwyty i rzeźbione ozdoby nadają jej klasyczny, ponadczasowy charakter, a grawer jest wykonany na malowanej sklejce, dlatego każda urna powstaje z myślą o jednym zwierzaku.
+Odejście {gen} to jeden z najtrudniejszych momentów w życiu. Ta urna daje piękne i godne miejsce w Twoim domu, w którym ukochany towarzysz zostaje blisko Ciebie. Mosiężne uchwyty i rzeźbione ozdoby nadają jej klasyczny, ponadczasowy charakter, a grawer jest wykonany na malowanej sklejce - każda urna powstaje z myślą o jednym zwierzaku.
 
 PERSONALIZACJA
 Każda urna powstaje na zamówienie. Podaj nam:
