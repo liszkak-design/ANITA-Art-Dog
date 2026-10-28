@@ -23,7 +23,7 @@ live = api.get(f"/v3/application/listings/{lid}?includes=Translations")
 todo = []
 for code, d in trans.items():
     cur = live["translations"].get(code) or {}
-    same = html.unescape(cur.get("title", "")) == d["title"] and cur.get("description", "").replace("\r", "").strip() == d["description"].strip() \
+    same = html.unescape(cur.get("title", "")) == d["title"] and html.unescape(cur.get("description", "")).replace("\r", "").strip() == d["description"].strip() \
         and list(cur.get("tags", [])) == d["tags"]
     print(code, "bez zmian" if same else "RÓŻNI SIĘ")
     if not same:
