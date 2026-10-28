@@ -3,7 +3,7 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674666535,kot,American Bobtail,16. American Bobtail 5056739241011,5056739241011,rasa 1:1,1.0,1.0,american-bobtail-5056739241011.mp4
 660835704,kot,American Curl Cat,26. American Curl Cat 5056739241110,5056739241110,rasa 1:1,1.0,1.0,american-curl-cat-5056739241110.mp4
 660825762,kot,American Shorthair,8. American Shorthair 5056739240939,5056739240939,rasa 1:1,1.0,1.0,american-shorthair-5056739240939.mp4
-660826780,kot,Balinese,14. Balinese left 5056739240991,5056739240991,zdjęcia (resztki),0.784,0.784,balinese-left-5056739240991.mp4
+660826780,kot,Balinese,14. Balinese left 5056739240991,5056739240991,zdjęcia (resztki) (zatwierdzone: właścicielka 28.10.2026),0.784,0.784,balinese-left-5056739240991.mp4
 674666317,kot,Bengal,15. Bengal 5056739241004,5056739241004,rasa 1:1,1.0,1.0,bengal-5056739241004.mp4
 674665007,kot,Birman,7. Birman 5056739240922,5056739240922,rasa 1:1,1.0,1.0,birman-5056739240922.mp4
 674675075,kot,Bombay Cat,27. Bombay Cat 5056739241127,5056739241127,rasa 1:1,1.0,1.0,bombay-cat-5056739241127.mp4
@@ -21,8 +21,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674680159,kot,Himalayan Cat,31. Himalayan Cat 5056739241165,5056739241165,rasa 1:1,1.0,1.0,himalayan-cat-5056739241165.mp4
 674680325,kot,Japanese Bobtail Cat,32. Japanese Bobtail Cat 5056739241172,5056739241172,rasa 1:1,1.0,1.0,japanese-bobtail-cat-5056739241172.mp4
 674680533,kot,Korat Cat,33. Korat Cat 5056739241189,5056739241189,rasa 1:1,1.0,1.0,korat-cat-5056739241189.mp4
-674687761,kot,Kurilian Bobtail,45. Kurilian bobtail 5056739241301,5056739241301,zdjęcia (grupa),0.974,0.426,kurilian-bobtail-5056739241301.mp4
-674687981,kot,Kurilian Bobtail Longhaired,46. Kurilian bobtail 5056739241318,5056739241318,zdjęcia (grupa),0.965,0.452,kurilian-bobtail-5056739241318.mp4
+674687761,kot,Kurilian Bobtail,45. Kurilian bobtail 5056739241301,5056739241301,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.974,0.426,kurilian-bobtail-5056739241301.mp4
+674687981,kot,Kurilian Bobtail Longhaired,46. Kurilian bobtail 5056739241318,5056739241318,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.965,0.452,kurilian-bobtail-5056739241318.mp4
 674688247,kot,LaPerm Cat,48. LaPerm Cat 5056739241332,5056739241332,rasa 1:1,1.0,1.0,laperm-cat-5056739241332.mp4
 674661349,kot,Maine Coon,2. Maine Coon 5056739240878,5056739240878,rasa 1:1,1.0,1.0,maine-coon-5056739240878.mp4
 660848142,kot,Manx Cat,44. Manx Cat 5056739241295,5056739241295,rasa 1:1,1.0,1.0,manx-cat-5056739241295.mp4
@@ -37,8 +37,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674674415,kot,Russian Blue,23. Russian Blue 5056739241080,5056739241080,rasa 1:1,1.0,1.0,russian-blue-5056739241080.mp4
 660834562,kot,Savannah,19. Savannah 5056739241042,5056739241042,rasa 1:1,1.0,1.0,savannah-5056739241042.mp4
 674674567,kot,Scottish Fold,24. Scottish Fold 5056739241097,5056739241097,rasa 1:1,1.0,1.0,scottish-fold-5056739241097.mp4
-660842528,kot,Selkirk Rex Cat Longhaired,36. Selkirk Rex Cat 5056739241219,5056739241219,zdjęcia (grupa),0.981,0.361,selkirk-rex-cat-5056739241219.mp4
-660842730,kot,Selkirk Rex Cat Shorthaired,37. Selkirk Rex Cat 5056739241226,5056739241226,zdjęcia (grupa),0.739,-0.019,selkirk-rex-cat-5056739241226.mp4
+660842528,kot,Selkirk Rex Cat Longhaired,36. Selkirk Rex Cat 5056739241219,5056739241219,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.981,0.361,selkirk-rex-cat-5056739241219.mp4
+660842730,kot,Selkirk Rex Cat Shorthaired,37. Selkirk Rex Cat 5056739241226,5056739241226,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.739,-0.019,selkirk-rex-cat-5056739241226.mp4
 674664527,kot,Siamese,4. Siamese 5056739240892,5056739240892,rasa 1:1,1.0,1.0,siamese-5056739240892.mp4
 660842926,kot,Siberian Cat,38. Siberian Cat 5056739241233,5056739241233,rasa 1:1,1.0,1.0,siberian-cat-5056739241233.mp4
 674682469,kot,Singapura Cat,39. Singapura Cat 5056739241240,5056739241240,rasa 1:1,1.0,1.0,singapura-cat-5056739241240.mp4
@@ -123,8 +123,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674108985,pies,Beagle,5. Beagle 5056739234976,5056739234976,rasa 1:1,1.0,1.0,beagle-5056739234976.mp4
 660307462,pies,Bearded Collie,56. Bearded Collie 5056739235485,5056739235485,rasa 1:1,1.0,1.0,bearded-collie-5056739235485.mp4
 660356874,pies,Beauceron,57. Beauceron 5056739235492,5056739235492,rasa 1:1,1.0,1.0,beauceron-5056739235492.mp4
-678504669,pies,Bedlington,58. Bedlington 5056739235508,5056739235508,zdjęcia (grupa),0.992,0.992,bedlington-5056739235508.mp4
-660303860,pies,Bedlington,155. Laekenois Dog 5056739236475,5056739236475,zdjęcia (resztki),0.743,0.259,laekenois-dog-5056739236475.mp4
+678504669,pies,Bedlington,58. Bedlington 5056739235508,5056739235508,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.992,0.992,bedlington-5056739235508.mp4
+660303860,pies,Bedlington,,,"BRAK FOLDERU: właścicielka odrzuciła dopasowanie do '155. Laekenois Dog' (28.10.2026), do decyzji",0,0,
 660371494,pies,Belgian Sheepdog,117. Belgian Sheepdog 5056739236093,5056739236093,nazwa w grupie,1.0,1.0,belgian-sheepdog-5056739236093.mp4
 660307894,pies,Belgian Shepherd,59. Belgian Shepherd 5056739235515,5056739235515,nazwa w grupie,1.0,1.0,belgian-shepherd-5056739235515.mp4
 674220883,pies,Bergamasco Shepherd,156. Bergamasco Shepherd 5056739236482,5056739236482,rasa 1:1,1.0,1.0,bergamasco-shepherd-5056739236482.mp4
@@ -133,8 +133,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674109045,pies,Bichon,6. Bichon 5056739234983,5056739234983,rasa 1:1,1.0,1.0,bichon-5056739234983.mp4
 660379988,pies,Biewer Yorkshire Terrier,154. Biewer Yorkshire Terrier 5056739236468,5056739236468,rasa 1:1,1.0,1.0,biewer-yorkshire-terrier-5056739236468.mp4
 674109101,pies,Black Russian Terrier,7. Black Russian Terrier 5056739234990,5056739234990,rasa 1:1,1.0,1.0,black-russian-terrier-5056739234990.mp4
-660378742,pies,Black and Tan Coonhound,148. Black and Tan Coonhound 5056739236406,5056739236406,zdjęcia (grupa),0.993,0.532,black-and-tan-coonhound-5056739236406.mp4
-660380646,pies,Black and Tan Coonhound,157. Black and Tan Coonhound 5056739236499,5056739236499,zdjęcia (grupa),0.979,0.51,black-and-tan-coonhound-5056739236499.mp4
+660378742,pies,Black and Tan Coonhound,148. Black and Tan Coonhound 5056739236406,5056739236406,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.993,0.532,black-and-tan-coonhound-5056739236406.mp4
+660380646,pies,Black and Tan Coonhound,157. Black and Tan Coonhound 5056739236499,5056739236499,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.979,0.51,black-and-tan-coonhound-5056739236499.mp4
 660268536,pies,Bloodhound,8. Bloodhound 5056739235003,5056739235003,rasa 1:1,1.0,1.0,bloodhound-5056739235003.mp4
 674612613,pies,Boerboel,199. Boerboel 5056739236918,5056739236918,rasa 1:1,1.0,1.0,boerboel-5056739236918.mp4
 660380984,pies,Bolognese,159. Bolognese 5056739236512,5056739236512,rasa 1:1,1.0,1.0,bolognese-5056739236512.mp4
@@ -170,8 +170,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 660381920,pies,Coton de Tulear,165. Coton de Tulear 5056739236574,5056739236574,rasa 1:1,1.0,1.0,coton-de-tulear-5056739236574.mp4
 674199733,pies,Curly Coated Retriever,114. Curly Coated Retriever 5056739236062,5056739236062,rasa 1:1,1.0,1.0,curly-coated-retriever-5056739236062.mp4
 660382138,pies,Czechoslovakian Wolfdog,166. Czechoslovakian Wolfdog 5056739236581,5056739236581,rasa 1:1,1.0,1.0,czechoslovakian-wolfdog-5056739236581.mp4
-660322582,pies,Dachshund,96. Dachshund 5056739235881,5056739235881,zdjęcia (grupa),0.977,0.526,dachshund-5056739235881.mp4
-660269108,pies,Dachshund,19. Dachshund 5056739235119,5056739235119,zdjęcia (grupa),0.861,0.375,dachshund-5056739235119.mp4
+660322582,pies,Dachshund,96. Dachshund 5056739235881,5056739235881,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.977,0.526,dachshund-5056739235881.mp4
+660269108,pies,Dachshund,19. Dachshund 5056739235119,5056739235119,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.861,0.375,dachshund-5056739235119.mp4
 660269182,pies,Dalmatian,20. Dalmatian 5056739235126,5056739235126,rasa 1:1,1.0,1.0,dalmatian-5056739235126.mp4
 674198725,pies,Dandie Dinmont Terrier,108. Dandie Dinmont Terrier 5056739236000,5056739236000,rasa 1:1,1.0,1.0,dandie-dinmont-terrier-5056739236000.mp4
 674216355,pies,Danish Swedish Farmdog,138. Danish Swedish Farmdog 5056739236307,5056739236307,rasa 1:1,1.0,1.0,danish-swedish-farmdog-5056739236307.mp4
@@ -188,8 +188,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 660382508,pies,Eurasier,168. Eurasier 5056739236604,5056739236604,rasa 1:1,1.0,1.0,eurasier-5056739236604.mp4
 674159571,pies,Fila Brasileiro,74. Fila Brasileiro 5056739235669,5056739235669,rasa 1:1,1.0,1.0,fila-brasileiro-5056739235669.mp4
 674200057,pies,Finnish Lapphund,116. Finnish Lapphund 5056739236086,5056739236086,rasa 1:1,1.0,1.0,finnish-lapphund-5056739236086.mp4
-660772806,pies,Fox Terrier,197. Fox Terrier 5056739236895,5056739236895,zdjęcia (grupa),0.989,0.174,fox-terrier-5056739236895.mp4
-674159897,pies,Fox Terrier,75. Fox Terrier 5056739235676,5056739235676,zdjęcia (grupa),0.992,0.186,fox-terrier-5056739235676.mp4
+660772806,pies,Fox Terrier,197. Fox Terrier 5056739236895,5056739236895,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.989,0.174,fox-terrier-5056739236895.mp4
+674159897,pies,Fox Terrier,75. Fox Terrier 5056739235676,5056739235676,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.992,0.186,fox-terrier-5056739235676.mp4
 660269548,pies,French Bulldog,25. French Bulldog 5056739235171,5056739235171,rasa 1:1,1.0,1.0,french-bulldog-5056739235171.mp4
 674223007,pies,French Spaniel,169. French Spaniel 5056739236611,5056739236611,rasa 1:1,1.0,1.0,french-spaniel-5056739236611.mp4
 660373196,pies,German Pinscher,126. German Pinscher 5056739236185,5056739236185,rasa 1:1,1.0,1.0,german-pinscher-5056739236185.mp4
@@ -221,8 +221,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674224013,pies,Komondor,175. Komondor 5056739236673,5056739236673,rasa 1:1,1.0,1.0,komondor-5056739236673.mp4
 660376630,pies,Kooikerhondje,142. Kooikerhondje 5056739236345,5056739236345,rasa 1:1,1.0,1.0,kooikerhondje-5056739236345.mp4
 674214265,pies,Kuvasz,129. Kuvasz 5056739236215,5056739236215,rasa 1:1,1.0,1.0,kuvasz-5056739236215.mp4
-660320352,pies,Labrador Retriever,81. Labrador Retriever 5056739235737,5056739235737,zdjęcia (grupa),0.763,0.126,labrador-retriever-5056739235737.mp4
-660269960,pies,Labrador Retriever,31. Labrador Retriever 5056739235232,5056739235232,zdjęcia (grupa),0.979,0.446,labrador-retriever-5056739235232.mp4
+660320352,pies,Labrador Retriever,81. Labrador Retriever 5056739235737,5056739235737,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.763,0.126,labrador-retriever-5056739235737.mp4
+660269960,pies,Labrador Retriever,31. Labrador Retriever 5056739235232,5056739235232,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.979,0.446,labrador-retriever-5056739235232.mp4
 674199213,pies,Lakeland Terrier,111. Lakeland Terrier 5056739236031,5056739236031,rasa 1:1,1.0,1.0,lakeland-terrier-5056739236031.mp4
 660324830,pies,Leonberger,97. Leonberger 5056739235898,5056739235898,rasa 1:1,1.0,1.0,leonberger-5056739235898.mp4
 674110545,pies,Lhasa Apso,32. Lhasa Apso 5056739235249,5056739235249,rasa 1:1,1.0,1.0,lhasa-apso-5056739235249.mp4
@@ -263,7 +263,7 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 660772540,pies,Russian Toy,194. Russian Toy 5056739236864,5056739236864,rasa 1:1,1.0,1.0,russian-toy-5056739236864.mp4
 674612043,pies,Russian Tsvetnaya Bolonka,193. Russian Tsvetnaya Bolonka 5056739236857,5056739236857,nazwa (nierozpoznana rasa),1.0,1.0,russian-tsvetnaya-bolonka-5056739236857.mp4
 674142929,pies,Saint Bernard,41. Saint Bernard 5056739235331,5056739235331,rasa 1:1,1.0,1.0,saint-bernard-5056739235331.mp4
-674143025,pies,Saluki,42. Saluki 5056739235348,5056739235348,zdjęcia (grupa),0.999,0.524,saluki-5056739235348.mp4
+674143025,pies,Saluki,42. Saluki 5056739235348,5056739235348,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.999,0.524,saluki-5056739235348.mp4
 660302788,pies,Samoyed,43. Samoyed 5056739235355,5056739235355,rasa 1:1,1.0,1.0,samoyed-5056739235355.mp4
 660384572,pies,Schapendoes,180. Schapendoes 5056739236727,5056739236727,rasa 1:1,1.0,1.0,schapendoes-5056739236727.mp4
 674225085,pies,Schipperke,181. Schipperke 5056739236734,5056739236734,rasa 1:1,1.0,1.0,schipperke-5056739236734.mp4
@@ -278,7 +278,7 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674143627,pies,Shih Tzu,47. Shih Tzu 5056739235393,5056739235393,rasa 1:1,1.0,1.0,shih-tzu-5056739235393.mp4
 660321752,pies,Siberian Husky,91. Siberian Husky 5056739235836,5056739235836,rasa 1:1,1.0,1.0,siberian-husky-5056739235836.mp4
 660375340,pies,Skye Terrier,136. Skye Terrier 5056739236284,5056739236284,rasa 1:1,1.0,1.0,skye-terrier-5056739236284.mp4
-660384830,pies,Sloughi,182. Saluki 5056739236741,5056739236741,zdjęcia (resztki),0.599,-0.059,saluki-5056739236741.mp4
+660384830,pies,Sloughi,182. Saluki 5056739236741,5056739236741,zdjęcia (resztki) (zatwierdzone: właścicielka 28.10.2026),0.599,-0.059,saluki-5056739236741.mp4
 674610479,pies,Spanish Mastiff,183. Spanish Mastiff 5056739236758,5056739236758,rasa 1:1,1.0,1.0,spanish-mastiff-5056739236758.mp4
 660380804,pies,Spanish Water Dog,158. Spanish Water Dog 5056739236505,5056739236505,rasa 1:1,1.0,1.0,spanish-water-dog-5056739236505.mp4
 674216185,pies,Spinone Italiano,137. Spinone Italiano 5056739236291,5056739236291,rasa 1:1,1.0,1.0,spinone-italiano-5056739236291.mp4
