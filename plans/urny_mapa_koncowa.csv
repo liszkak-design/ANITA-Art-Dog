@@ -100,7 +100,7 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 660778100,koń,Thoroughbred,21. Thoroughbred 5056739241561,5056739241561,rasa 1:1,1.0,1.0,thoroughbred-5056739241561.mp4
 674629861,koń,Zweibrucker,50. Zweibrücker 5056739241851,5056739241851,rasa 1:1,1.0,1.0,zweibrucker-5056739241851.mp4
 660378584,pies,Affenpinscher,147. Affenpinscher 5056739236390,5056739236390,rasa 1:1,1.0,1.0,affenpinscher-5056739236390.mp4
-674148205,pies,Afghan Hound,51. Afghan Hound 5056739235430,5056739235430,rasa 1:1,1.0,1.0,afghan-hound-5056739235430.mp4
+674148205,pies,Afghan Hound,51. Afghan Hound 5056739235430,5056739235430,"rasa 1:1; właścicielka 28.10.2026: tytuł prawidłowy, zdjęcie nr 1 błędne (zostanie nadpisane)",1.0,1.0,afghan-hound-5056739235430.mp4
 659881748,pies,Akita Inu,1. Akita Inu 5056739234938,5056739234938,nazwa (nierozpoznana rasa),1.0,1.0,akita-inu-5056739234938.mp4
 674144383,pies,Alaskan Malamute,52. Alaskan Malamute 5056739235447,5056739235447,rasa 1:1,1.0,1.0,alaskan-malamute-5056739235447.mp4
 674147817,pies,American Bulldog,53. American Bulldog 5056739235454,5056739235454,rasa 1:1,1.0,1.0,american-bulldog-5056739235454.mp4
@@ -123,8 +123,8 @@ listing_id,gatunek,nazwa_w_tytule,folder,ean,metoda,wynik,przewaga,film_bez_bran
 674108985,pies,Beagle,5. Beagle 5056739234976,5056739234976,rasa 1:1,1.0,1.0,beagle-5056739234976.mp4
 660307462,pies,Bearded Collie,56. Bearded Collie 5056739235485,5056739235485,rasa 1:1,1.0,1.0,bearded-collie-5056739235485.mp4
 660356874,pies,Beauceron,57. Beauceron 5056739235492,5056739235492,rasa 1:1,1.0,1.0,beauceron-5056739235492.mp4
-678504669,pies,Bedlington,58. Bedlington 5056739235508,5056739235508,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026),0.992,0.992,bedlington-5056739235508.mp4
-660303860,pies,Bedlington,58. Bedlington 5056739235508,5056739235508,"nazwa z tytułu (właścicielka 28.10.2026: zdjęcie w Etsy błędne, Afghan Hound; wspólny folder z ofertą 678504669)",1.0,1.0,bedlington-5056739235508.mp4
+678504669,pies,Bedlington,58. Bedlington 5056739235508,5056739235508,zdjęcia (grupa) (zatwierdzone: właścicielka 28.10.2026); właścicielka 28.10.2026: zdjęcie i tytuł prawidłowe,0.992,0.992,bedlington-5056739235508.mp4
+660303860,pies,Bedlington,,,POMINIĘTA: duplikat usuwany przez właścicielkę (28.10.2026),0,0,
 660371494,pies,Belgian Sheepdog,117. Belgian Sheepdog 5056739236093,5056739236093,nazwa w grupie,1.0,1.0,belgian-sheepdog-5056739236093.mp4
 660307894,pies,Belgian Shepherd,59. Belgian Shepherd 5056739235515,5056739235515,nazwa w grupie,1.0,1.0,belgian-shepherd-5056739235515.mp4
 674220883,pies,Bergamasco Shepherd,156. Bergamasco Shepherd 5056739236482,5056739236482,rasa 1:1,1.0,1.0,bergamasco-shepherd-5056739236482.mp4
