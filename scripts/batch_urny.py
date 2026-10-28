@@ -59,12 +59,25 @@ FORMS = {  # formy gatunku w tłumaczeniach (jak w szablonach)
            "koń": dict(S="Pferd", CS="Pferde", ACC="Ihr Pferd", DAT="Ihrem Pferd", GEN="Ihres Pferdes"),
            "kucyk": dict(S="Pony", CS="Pony", ACC="Ihr Pony", DAT="Ihrem Pony", GEN="Ihres Ponys")},
     "nl": {"kot": dict(S="kat", CS="katten"), "pies": dict(S="hond", CS="honden"), "koń": dict(S="paard", CS="paarden"), "kucyk": dict(S="pony", CS="pony")},
+    "fr": {"kot": dict(S="chat"), "pies": dict(S="chien"), "koń": dict(S="cheval"), "kucyk": dict(S="poney")},
+    "es": {"kot": dict(S="gato"), "pies": dict(S="perro"), "koń": dict(S="caballo"), "kucyk": dict(S="pony")},
+    "sv": {"kot": dict(S="katt"), "pies": dict(S="hund"), "koń": dict(S="häst"), "kucyk": dict(S="ponny")},
+    "it": {sp: dict(S=n, P="il suo " + n, DEL="del suo " + n, AL="al suo " + n) for sp, n in (("kot", "gatto"), ("pies", "cane"), ("koń", "cavallo"), ("kucyk", "pony"))},
+    "pt": {sp: dict(S=n, P="o seu " + n, DO="do seu " + n, AO="ao seu " + n) for sp, n in (("kot", "gato"), ("pies", "cão"), ("koń", "cavalo"), ("kucyk", "pónei"))},
 }
 PAW = {  # "w kształcie łapy" -> podkowy (konie i kucyki), dla każdego języka
     "pl": [("łapy", "podkowy")],
     "de": [("Pfotenförmige", "Hufeisenförmige"), ("pfotenförmige", "hufeisenförmige")],
     "nl": [("Pootvormige", "Hoefijzervormige"), ("pootvormige", "hoefijzervormige")],
+    "fr": [("en forme de patte", "en forme de fer à cheval")],
+    "it": [("a forma di zampa", "a forma di ferro di cavallo")],
+    "pt": [("em forma de pata", "em forma de ferradura")],
+    "es": [("en forma de huella", "en forma de herradura")],
+    "sv": [("Tassformad", "Hästskoformad"), ("tassformade", "hästskoformade"), ("tassformad", "hästskoformad")],
 }
+# rozstrzygnięcia właścicielki (28.10.2026): oferta -> ID rasy w Rasy.xlsx; długość sierści jak przy płytkach (słowa z arkusza "Słowa stałe")
+OWNER_RID = {660268116: "R027", 660320524: "R048", 660383022: "R333", 674161421: "R035"}
+GENERIC_FEATURE = {"long": "Dachshund Long-haired", "short": "Chihuahua Short-haired"}
 NAME_COL = dict(nl="NL nazwa", fr="FR nazwa", de="DE nazwa", it="IT nazwa", pl="PL nazwa", pt="PT nazwa", es="ES nazwa", sv="SV nazwa")
 FEATURE_EN = {"cropped ears": "Cropped Ears", "uncropped (natural) ears": "Natural Ears", "foal": "Foal"}
 SPECIES_TAG_ORDER = ["pies", "kot", "koń", "kucyk"]
@@ -329,11 +342,7 @@ def resolve(row, R, fw, pm, by_c):
     rr = R[(g, rid)]
     if key in ("long", "short"):
         cand = [k for k in fw if k.lower().startswith(rr["Nazwa EN (główna)"].lower()) and ("long" if key == "long" else "short") in k.lower()]
-        if cand:
-            key = cand[0]
-        else:
-            why.append(f"odmiana '{row['nazwa_w_tytule']}': brak słów w arkuszu Słowa stałe, wymaga decyzji")
-            key = ""
+        key = cand[0] if cand else GENERIC_FEATURE[key]  # jak przy płytkach: Selkirk Rex, Kurilian Bobtail
     return rid, key or "", why
 
 
@@ -366,12 +375,14 @@ def candidates():
         if B.is_done(lid):
             why.append("już zoptymalizowana")
         rid, key, w2 = resolve(row, R, fw, pm, by_c)
+        if lid in OWNER_RID:
+            rid, w2 = OWNER_RID[lid], []
         why += w2
         if rid:
             rr = R[(row["gatunek"], rid)]
             breed = rr["Nazwa EN (główna)"]
             sp = "kucyk" if row["gatunek"] == "koń" and "pony" in breed.lower() else row["gatunek"]
-            if breed in B.EXCLUDE_BREEDS:
+            if breed in B.EXCLUDE_BREEDS and lid not in OWNER_RID:
                 why.append("Pointer: sprawdza właścicielka")
             miss = [c for c in [NAME_COL[l] for l in LANG_ALL] if not rr.get(c)]
             if miss:

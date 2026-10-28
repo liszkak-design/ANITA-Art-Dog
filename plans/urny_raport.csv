@@ -22,7 +22,7 @@ listing_id,gatunek,nazwa_w_tytule,rasa_xlsx,ean,sprzedaz,status,powody
 674680325,kot,Japanese Bobtail Cat,Japanese Bobtail,5056739241172,0,kandydat,
 674680533,kot,Korat Cat,Korat,5056739241189,0,kandydat,
 674687761,kot,Kurilian Bobtail,Kurilian Bobtail,5056739241301,0,kandydat,
-674687981,kot,Kurilian Bobtail Longhaired,Kurilian Bobtail,5056739241318,0,wymaga decyzji,"odmiana 'Kurilian Bobtail Longhaired': brak słów w arkuszu Słowa stałe, wymaga decyzji"
+674687981,kot,Kurilian Bobtail Longhaired,Kurilian Bobtail,5056739241318,0,kandydat,
 674688247,kot,LaPerm Cat,Laperm,5056739241332,0,kandydat,
 674661349,kot,Maine Coon,Maine Coon,5056739240878,2,kandydat,
 660848142,kot,Manx Cat,Manx,5056739241295,0,kandydat,
@@ -37,8 +37,8 @@ listing_id,gatunek,nazwa_w_tytule,rasa_xlsx,ean,sprzedaz,status,powody
 674674415,kot,Russian Blue,Russian Blue,5056739241080,0,kandydat,
 660834562,kot,Savannah,Savannah,5056739241042,0,kandydat,
 674674567,kot,Scottish Fold,Scottish Fold,5056739241097,3,kandydat,
-660842528,kot,Selkirk Rex Cat Longhaired,Selkirk Rex,5056739241219,0,wymaga decyzji,"odmiana 'Selkirk Rex Cat Longhaired': brak słów w arkuszu Słowa stałe, wymaga decyzji"
-660842730,kot,Selkirk Rex Cat Shorthaired,Selkirk Rex,5056739241226,0,wymaga decyzji,"odmiana 'Selkirk Rex Cat Shorthaired': brak słów w arkuszu Słowa stałe, wymaga decyzji"
+660842528,kot,Selkirk Rex Cat Longhaired,Selkirk Rex,5056739241219,0,kandydat,
+660842730,kot,Selkirk Rex Cat Shorthaired,Selkirk Rex,5056739241226,0,kandydat,
 674664527,kot,Siamese,Siamese,5056739240892,0,kandydat,
 660842926,kot,Siberian Cat,Siberian,5056739241233,0,kandydat,
 674682469,kot,Singapura Cat,Singapura,5056739241240,0,kandydat,
@@ -107,7 +107,7 @@ listing_id,gatunek,nazwa_w_tytule,rasa_xlsx,ean,sprzedaz,status,powody
 660269722,pies,American Cocker spaniel,American Cocker Spaniel,5056739235461,0,kandydat,
 660358354,pies,American Eskimo Dog,American Eskimo,5056739236017,0,kandydat,
 674219489,pies,American Hairless Terrier,American Hairless Terrier,5056739236413,0,kandydat,
-660268116,pies,Amstaff,,5056739234945,0,wymaga decyzji,rasa nierozpoznana: Amstaff
+660268116,pies,Amstaff,American Staffordshire Terrier,5056739234945,0,kandydat,
 674219791,pies,Anatolian Shepherd Dog,Kangal,5056739236437,0,kandydat,
 660379566,pies,Appenzeller,Appenzell Cattle Dog,5056739236444,1,kandydat,
 674611831,pies,Australian Kelpie,Australian Kelpie,5056739236833,0,kandydat,
@@ -194,7 +194,7 @@ listing_id,gatunek,nazwa_w_tytule,rasa_xlsx,ean,sprzedaz,status,powody
 660373196,pies,German Pinscher,German Pinscher,5056739236185,0,kandydat,
 674110171,pies,German Shepherd,German Shepherd,5056739235188,0,kandydat,
 674160219,pies,German Wirehaired Pointer,German Wirehaired Pointer,5056739235683,0,kandydat,
-660383022,pies,German pointer,German Pointer,5056739236635,0,wymaga decyzji,Pointer: sprawdza właścicielka
+660383022,pies,German pointer,German Longhaired Pointer,5056739236635,0,kandydat,
 660358514,pies,Glen of Imaal Terrier,Glen of Imaal Terrier,5056739236024,0,kandydat,
 660269664,pies,Golden Retriever,Golden Retriever,5056739235195,0,kandydat,
 674223505,pies,Gordon setter,Gordon setter,5056739236642,0,kandydat,
@@ -228,7 +228,7 @@ listing_id,gatunek,nazwa_w_tytule,rasa_xlsx,ean,sprzedaz,status,powody
 660358066,pies,Lowchen,Lowchen,5056739235997,0,kandydat,
 660270056,pies,Malinois,Malinois Belgian Shepherd,5056739235256,0,kandydat,
 660373934,pies,Manchester Terrier,Manchester Terrier,5056739236222,0,kandydat,
-660320524,pies,Mastino Neapolitano,,5056739235744,0,wymaga decyzji,rasa nierozpoznana: Mastino Neapolitano
+660320524,pies,Mastino Neapolitano,Neapolitan Mastiff,5056739235744,0,kandydat,
 660383840,pies,Mudi,Mudi,5056739236680,0,kandydat,
 674110685,pies,Newfoundland,Newfoundland,5056739235263,0,kandydat,
 660320684,pies,Norfolk Terrier,Norfolk Terrier,5056739235751,0,kandydat,
@@ -244,7 +244,7 @@ listing_id,gatunek,nazwa_w_tytule,rasa_xlsx,ean,sprzedaz,status,powody
 660384408,pies,Peruvian Hairless Dog,Peruvian Hairless Dog,5056739236710,0,kandydat,
 674161321,pies,Pharaoh Hound,Pharaoh Hound,5056739235768,0,kandydat,
 660302130,pies,Pit Bull,Pit Bull,5056739235294,0,kandydat,
-674161421,pies,Pointer,Pointer,5056739235775,0,wymaga decyzji,Pointer: sprawdza właścicielka
+674161421,pies,Pointer,Pointer,5056739235775,0,kandydat,
 660321126,pies,Polish Lowland SheepDog,Polish Lowland Sheepdog,5056739235782,0,kandydat,
 674142553,pies,Poodle,Poodle,5056739235300,0,kandydat,
 660377962,pies,Portuguese Water Dog,Portuguese Water Dog,5056739236369,0,kandydat,
