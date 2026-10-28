@@ -616,6 +616,14 @@ def apply_batch(n):
                     print(f"  {lid} {s['id']}: już w ofercie, pomijam")
                     continue
             resp = send(s, c["row"]["ean"])
+            if s["id"].startswith("zdjecie_") and not base.ok(resp) and re.search(r"reset|timed out|timeout|disconnect|closed", str(resp), re.I):
+                # błąd sieciowy przy wgrywaniu zdjęcia: zdjęcie mogło wejść mimo zgubionej odpowiedzi, więc najpierw sprawdzamy ofertę, potem jedna ponowna próba
+                time.sleep(5)
+                imgs = api.get(f"/v3/application/listings/{lid}?includes=Images").get("images", [])
+                if any(i["rank"] == int(s["fields"]["rank"]) and (i.get("alt_text") or "") == s["fields"]["alt_text"] for i in imgs):
+                    resp = {"ok": "zdjęcie już w ofercie po błędzie sieciowym"}
+                else:
+                    resp = send(s, c["row"]["ean"])
             if s["id"].startswith("tlumaczenie_") and not base.ok(resp) and "exist" in str(resp).lower():
                 resp = send({**s, "method": "PUT"}, c["row"]["ean"])
             st = "ok" if base.ok(resp) else "błąd"
