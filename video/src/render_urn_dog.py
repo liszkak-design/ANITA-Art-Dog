@@ -15,7 +15,8 @@ import render as R  # noqa: E402
 W, H, FPS = R.W, R.H, R.FPS
 FADE = R.FADE
 ASSETS = HERE / "assets_urn_dog"
-PANEL_CROP = (1060, 720, 1750, 1690)  # plaque + name tag fragment of the urn photos (2000x1999)
+FULL_CROP = (130, 280, 1870, 1790)  # the whole urn (photos are 2000x1999)
+FRAG_CROP = (1020, 280, 1870, 1790)  # right part of the urn: plaque, name tag, edge of the paw
 S = [0.0, 2.0, 5.8, 9.3, 12.9, 15.0]  # scene boundaries; each scene fades fully to white before the next
 
 
@@ -27,8 +28,8 @@ def load(name):
     return Image.open(ASSETS / f"dog-{name}.jpg").convert("RGB")
 
 
-def panel(name, height):
-    im = load(name).crop(PANEL_CROP)
+def panel(name, height, crop):
+    im = load(name).crop(crop)
     w = round(im.width * height / im.height)
     return im.resize((w, height), Image.LANCZOS).convert("RGBA")
 
@@ -80,21 +81,27 @@ def _head():
 
 
 HEAD2 = _head()
-PH = 600
-P = {1: panel(1, PH), 2: panel(2, PH), 3: panel(3, PH)}
-XL, XM, XR, CY = W // 2 - 640, W // 2, W // 2 + 640, 655
-CAP = {1: R.caption("Sketch style", XL, 975), 2: R.caption("Original photo", XM, 975),
-       3: R.caption("Colour, background removed", XR, 975)}
+PH = 620
+P = {1: panel(1, PH, FULL_CROP), 2: panel(2, PH, FRAG_CROP), 3: panel(3, PH, FRAG_CROP)}
+GAP = 70
+X0 = (W - (P[1].width + P[2].width + P[3].width + 2 * GAP)) // 2
+X1 = X0 + P[1].width // 2
+X2 = X0 + P[1].width + GAP + P[2].width // 2
+X3 = X0 + P[1].width + GAP + P[2].width + GAP + P[3].width // 2
+X2_START = X1 + 200  # fully hidden behind the whole urn
+CY = 655
+CAP = {1: R.caption("Original photo", X1, 985), 2: R.caption("Colour, background removed", X2, 985),
+       3: R.caption("Sketch style", X3, 985)}
 
 
 def scene2(t):
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     put_text(layer, HEAD2, t, 0.0)
-    a3 = ease((t - 1.7) / 0.8)  # panel 3 slides out from under panel 2 towards the right
-    put(layer, P[3], XM + (XR - XM) * a3, CY, 1.0 if t >= 1.7 else 0.0)
-    a2 = ease((t - 1.0) / 0.8)  # panel 2 slides out from under panel 1 to the centre
-    put(layer, P[2], XL + (XM - XL) * a2, CY, 1.0 if t >= 1.0 else 0.0)
-    put(layer, P[1], XL, CY, ease((t - 0.2) / FADE))
+    a3 = ease((t - 1.7) / 0.8)  # fragment 3 slides out from under fragment 2 to the right
+    put(layer, P[3], X2 + (X3 - X2) * a3, CY, 1.0 if t >= 1.7 else 0.0)
+    a2 = ease((t - 1.0) / 0.8)  # fragment 2 slides out from under the whole urn 1
+    put(layer, P[2], X2_START + (X2 - X2_START) * a2, CY, 1.0 if t >= 1.0 else 0.0)
+    put(layer, P[1], X1, CY, ease((t - 0.2) / FADE))
     for i, ta in ((1, 0.5), (2, 1.8), (3, 2.5)):
         put_text(layer, CAP[i], t, ta)
     return layer
@@ -102,10 +109,10 @@ def scene2(t):
 
 URN = load(3)
 FRAME = 900
-ZOOM_CENTER = {"tag": (1408, 1542), "paw": (725, 1232)}
-ZOOM_TO = {"tag": 3.4, "paw": 2.5}
-TX = {"tag": R.text_block("NAME AND DATES", ["Name and dates,", "*if you wish*"],
-                          "Add your pet's name and dates of life on the small plaque", 1090, H // 2),
+ZOOM_CENTER = {"tag": (1408, 1542), "paw": (737, 1144)}
+ZOOM_TO = {"tag": 3.4, "paw": 2.3}
+TX = {"tag": R.text_block("NAME AND DATES", ["Name and dates", "*of your beloved dog*"],
+                          "Optional – added to the small plaque", 1090, H // 2),
       "paw": R.text_block("YOUR OWN WORDS", ["Your own quote,", "*if you wish*"],
                           "Add a short quote or message of your own", 1090, H // 2)}
 
