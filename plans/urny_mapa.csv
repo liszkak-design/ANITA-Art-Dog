@@ -1,0 +1,308 @@
+gatunek,rasa_id,rasa_kolumna_C,listing_id,nazwa_w_tytule,korzen,folder,ean,status,dopasowanie_oferty,dopasowanie_folderu
+kot,R049,Persian,659883198,Persian,097,1. Persian Cat 5056739240861,5056739240861,1:1,exact,exact
+kot,R050,Scottish Fold,674674567,Scottish Fold,097,24. Scottish Fold 5056739241097,5056739241097,1:1,exact,exact
+kot,R061,Maine Coon,674661349,Maine Coon,097,2. Maine Coon 5056739240878,5056739240878,1:1,exact,exact
+kot,R099,Burmese,674679569,Burma Cat,097,28. Burma Cat 5056739241134,5056739241134,1:1,exact,exact
+kot,R101,Somali,660847624,Somali Cat,097,41. Somali Cat 5056739241264,5056739241264,1:1,exact,exact
+kot,R102,Balinese,660826780,Balinese,,,,brak folderu,exact,
+kot,R137,Selkirk Rex,660842730,Selkirk Rex Cat Shorthaired,097,36. Selkirk Rex Cat 5056739241219,5056739241219,wiele,exact,exact
+kot,R137,Selkirk Rex,660842730,Selkirk Rex Cat Shorthaired,097,37. Selkirk Rex Cat 5056739241226,5056739241226,wiele,exact,exact
+kot,R137,Selkirk Rex,660842528,Selkirk Rex Cat Longhaired,097,36. Selkirk Rex Cat 5056739241219,5056739241219,wiele,exact,exact
+kot,R137,Selkirk Rex,660842528,Selkirk Rex Cat Longhaired,097,37. Selkirk Rex Cat 5056739241226,5056739241226,wiele,exact,exact
+kot,R140,Bengal,674666317,Bengal,097,15. Bengal 5056739241004,5056739241004,1:1,exact,exact
+kot,R145,Sphynx,660826124,Sphynx,097,10. Sphynx 5056739240953,5056739240953,1:1,exact,exact
+kot,R146,Abyssinian,660825346,Abyssinian,097,5. Abyssinian 5056739240908,5056739240908,1:1,exact,exact
+kot,R147,American Curl,660835704,American Curl Cat,097,26. American Curl Cat 5056739241110,5056739241110,1:1,exact,exact
+kot,R148,American Shorthair,660825762,American Shorthair,097,8. American Shorthair 5056739240939,5056739240939,1:1,exact,exact
+kot,R150,Birman,674665007,Birman,097,7. Birman 5056739240922,5056739240922,1:1,exact,exact
+kot,R153,Bombay,674675075,Bombay Cat,097,27. Bombay Cat 5056739241127,5056739241127,1:1,exact,exact
+kot,R154,British Shorthair,674665665,British Shorthair,097,11. British Shorthair 5056739240960,5056739240960,1:1,exact,exact
+kot,R156,Chartreux,660835556,Charteux,097,25. Chartreux 5056739241103,5056739241103,1:1,exact,exact
+kot,R158,Devon Rex,674665983,Devon Rex,097,13. Devon Rex 5056739240984,5056739240984,1:1,exact,exact
+kot,R160,Egyptian Mau,660840446,Egyptian Mau Cat,097,29. Egyptian Mau Cat 5056739241141,5056739241141,1:1,exact,exact
+kot,R163,Havana Brown,674681493,Havana Brown Cat,097,30. Havana brown Cat 5056739241158,5056739241158,1:1,exact,exact
+kot,R164,Himalayan,674680159,Himalayan Cat,097,31. Himalayan Cat 5056739241165,5056739241165,1:1,exact,exact
+kot,R166,Japanese Bobtail,674680325,Japanese Bobtail Cat,097,32. Japanese Bobtail Cat 5056739241172,5056739241172,1:1,exact,exact
+kot,R168,Korat,674680533,Korat Cat,097,33. Korat Cat 5056739241189,5056739241189,1:1,exact,exact
+kot,R169,Kurilian Bobtail,674687761,Kurilian Bobtail,097,45. Kurilian bobtail 5056739241301,5056739241301,wiele,exact,exact
+kot,R169,Kurilian Bobtail,674687761,Kurilian Bobtail,097,46. Kurilian bobtail 5056739241318,5056739241318,wiele,exact,exact
+kot,R169,Kurilian Bobtail,674687981,Kurilian Bobtail Longhaired,097,45. Kurilian bobtail 5056739241301,5056739241301,wiele,exact,exact
+kot,R169,Kurilian Bobtail,674687981,Kurilian Bobtail Longhaired,097,46. Kurilian bobtail 5056739241318,5056739241318,wiele,exact,exact
+kot,R171,Laperm,674688247,LaPerm Cat,097,48. LaPerm Cat 5056739241332,5056739241332,1:1,exact,exact
+kot,R172,Manx,660848142,Manx Cat,097,44. Manx Cat 5056739241295,5056739241295,1:1,exact,exact
+kot,R173,Nebelung,660841474,Nebelung Cat,097,35. Nebelung Cat 5056739241202,5056739241202,1:1,exact,exact
+kot,R174,Norwegian Forest Cat,674674065,Norwegian Forest Cat,097,21. Norwegian Forest Cat 5056739241066,5056739241066,1:1,exact,exact
+kot,R176,Oriental,660825908,Oriental Cat,097,9. Oriental Cat 5056739240946,5056739240946,1:1,exact,exact
+kot,R178,Peterbald,660835004,Peterbald,097,22. Peterbald 5056739241073,5056739241073,1:1,exact,exact
+kot,R179,Ragdoll,674664841,Ragdoll,097,6. Ragdoll 5056739240915,5056739240915,1:1,exact,exact
+kot,R181,Russian Blue,674674415,Russian Blue,097,23. Russian Blue 5056739241080,5056739241080,1:1,exact,exact
+kot,R183,Savannah,660834562,Savannah,097,19. Savannah 5056739241042,5056739241042,1:1,exact,exact
+kot,R185,Siamese,674664527,Siamese,097,4. Siamese 5056739240892,5056739240892,1:1,exact,exact
+kot,R186,Siberian,660842926,Siberian Cat,097,38. Siberian Cat 5056739241233,5056739241233,1:1,exact,exact
+kot,R187,Singapura,674682469,Singapura Cat,097,39. Singapura Cat 5056739241240,5056739241240,1:1,exact,exact
+kot,R188,Snowshoe,674686903,Snowshoe Cat,097,40. Snowshoe Cat 5056739241257,5056739241257,1:1,exact,exact
+kot,R190,Toyger,660848980,Toyger Cat,097,49. Toyger Cat 5056739241349,5056739241349,1:1,exact,exact
+kot,R191,Turkish Angora,674673953,Turkish Angora Cat,097,20. Turkish Angora Cat 5056739241059,5056739241059,1:1,exact,exact
+kot,R192,Turkish Van,674687449,Turkish Van Cat,097,43. Turkish Van Cat 5056739241288,5056739241288,1:1,exact,exact
+kot,R205,Cornish Rex,660826446,Cornish Rex,097,12. Cornish Rex 5056739240977,5056739240977,1:1,exact,exact
+kot,R228,American Bobtail,674666535,American Bobtail,097,16. American Bobtail 5056739241011,5056739241011,1:1,exact,exact
+kot,R244,British Longhair,674666723,British Longhair,097,17. British Longhair 5056739241028,5056739241028,1:1,exact,exact
+kot,R250,Chausie,660848688,Chausie,097,47. Chausie 5056739241325,5056739241325,1:1,exact,exact
+kot,R263,Exotic Shorthair,674664375,Exotic shorthair,097,3. Exotic Shorthair 5056739240885,5056739240885,1:1,exact,exact
+kot,R271,Highland Lynx,660849152,Highland Lynx,097,50. Highland Lynx 5056739241356,5056739241356,1:1,exact,exact
+kot,R284,Munchkin,660841340,Munchkin Cat,097,34. Munchkin Cat 5056739241196,5056739241196,1:1,exact,exact
+kot,R288,Ocicat,660834376,Ocicat,097,18. Ocicat 5056739241035,5056739241035,1:1,exact,exact
+kot,R308,Tonkinese,674687255,Tonkinese Cat,097,42. Tonkinese Cat 5056739241271,5056739241271,1:1,exact,exact
+koń,R007,Andalusian Horse,674613479,Andalusian Horse,098,4. Andalusian 5056739241394,5056739241394,1:1,exact,exact
+koń,R009,Hanoverian Horse,660783486,Hanoverian,098,22. Hanoverian 5056739241578,5056739241578,1:1,exact,exact
+koń,R011,Friesian Horse,660774688,Friesian Horse,098,11. Friesian Horse 5056739241462,5056739241462,1:1,exact,exact
+koń,R012,Arabian Horse,660774070,Arab Horse,098,6. Arab Horse 5056739241417,5056739241417,1:1,exact,exact
+koń,R014,American Quarter Horse,674613329,American Quarter Horse,098,2. American Quarter Horse 5056739241370,5056739241370,1:1,exact,exact
+koń,R029,Belgian Horse,674613737,Belgian Horse,098,7. Belgian Horse 5056739241424,5056739241424,1:1,exact,exact
+koń,R040,Fjord Horse,660774548,Fjord Horse,098,10. Fjord Horse 5056739241455,5056739241455,1:1,exact,exact
+koń,R060,Shire Horse,660777848,Shire Horse,098,19. Shire Horse 5056739241547,5056739241547,1:1,exact,exact
+koń,R066,Selle Français,674629755,Selle Francais,098,49. Selle Francais 5056739241844,5056739241844,1:1,exact,exact
+koń,R072,American Paint Horse,673724439,American Paint Horse,098,1. American Paint Horse 5056739241363,5056739241363,1:1,exact,exact
+koń,R125,Fell Pony,674623377,Fell pony,098,23. Fell Pony 5056739241585,5056739241585,1:1,exact,exact
+koń,R132,Haflinger,674627677,Haflinger Fohlen,098,12. Haflinger 5056739241479,5056739241479,wiele,exact,exact
+koń,R132,Haflinger,674627677,Haflinger Fohlen,098,34. Haflinger Fohlen 5056739241691,5056739241691,wiele,exact,exact
+koń,R132,Haflinger,660774782,Haflinger,098,12. Haflinger 5056739241479,5056739241479,wiele,exact,exact
+koń,R132,Haflinger,660774782,Haflinger,098,34. Haflinger Fohlen 5056739241691,5056739241691,wiele,exact,exact
+koń,R141,Clydesdale,660774312,Clydesdale,098,9. Clydesdale 5056739241448,5056739241448,1:1,exact,exact
+koń,R184,Shetland Pony,674623485,Shetland pony,098,24. Shetland Pony 5056739241592,5056739241592,1:1,exact,exact
+koń,R193,Akhal-Teke,660784138,Akhal-Teke,098,25. Akhal-Teke 5056739241608,5056739241608,1:1,exact,exact
+koń,R194,American Saddlebred,660773804,American Saddlebred Horse,098,3. American Saddlebred 5056739241387,5056739241387,1:1,exact,exact
+koń,R195,American Warmblood,674623683,American Warmblood,098,26. American Warmblood 5056739241615,5056739241615,1:1,exact,exact
+koń,R196,Appaloosa,660773974,Appaloosa,098,5. Appaloosa 5056739241400,5056739241400,1:1,exact,exact
+koń,R197,Ardennes Horse,674623773,Ardennes horse,098,27. Ardennes Horse 5056739241622,5056739241622,1:1,exact,exact
+koń,R198,Australian Stock Horse,674625069,Australian Stock Horse,098,28. Australian Stock Horse 5056739241639,5056739241639,1:1,exact,exact
+koń,R199,Azteca Horse,674625455,Azteca horse,098,30. Azteca Horse 5056739241653,5056739241653,1:1,exact,exact
+koń,R200,Barb Horse,660786192,Barb horse,098,31. Barb Horse 5056739241660,5056739241660,1:1,exact,exact
+koń,R201,Basque Mountain Horse,674625839,Basque Mountain Horse,098,32. Basque Mountain Horse 5056739241677,5056739241677,1:1,exact,exact
+koń,R202,Boulonnais Horse,674627955,Boulonnais horse,098,35. Boulonnais Horse 5056739241707,5056739241707,1:1,exact,exact
+koń,R203,Camargue Horse,674628125,Camargue horse,098,36. Camargue Horse 5056739241714,5056739241714,1:1,exact,exact
+koń,R204,Canadian Horse,660774244,Canadian Horse,098,8. Canadian Horse 5056739241431,5056739241431,1:1,exact,exact
+koń,R206,Czech Warmblood,660789122,Czech Warmblood,098,38. Czech Warmblood 5056739241738,5056739241738,1:1,exact,exact
+koń,R207,Danish Warmblood,674628537,Danish Warmblood,098,39. Danish Warmblood 5056739241745,5056739241745,1:1,exact,exact
+koń,R208,Falabella,660789362,Falabella,098,40. Falabella 5056739241752,5056739241752,1:1,exact,exact
+koń,R209,Freiberger,674628757,Freiberger,098,41. Freiberger 5056739241769,5056739241769,1:1,exact,exact
+koń,R210,Giara Horse,674628873,Giara horse,098,42. Giara Horse 5056739241776,5056739241776,1:1,exact,exact
+koń,R211,Henson Horse,674628999,Henson horse,098,43. Henson Horse 5056739241783,5056739241783,1:1,exact,exact
+koń,R212,Holsteiner Horse,660789884,Holsteiner horse,098,44. Holsteiner Horse 5056739241790,5056739241790,1:1,exact,exact
+koń,R213,Icelandic Horse,660774890,Icelandic Horse,098,13. Icelandic Horse 5056739241486,5056739241486,1:1,exact,exact
+koń,R214,Irish Sport Horse,660774994,Irish Sport Horse,098,14. Irish Sport 5056739241493,5056739241493,1:1,exact,exact
+koń,R215,Lipizzan,674614629,Lipizzan,098,15. Lipizzan 5056739241509,5056739241509,1:1,exact,exact
+koń,R216,Morgan Horse,660775260,Morgan Horse,098,16. Morgan Horse 5056739241516,5056739241516,1:1,exact,exact
+koń,R217,Mustang,660775358,Mustang,098,17. Mustang 5056739241523,5056739241523,1:1,exact,exact
+koń,R218,Namib Desert Horse,674629297,Namib Desert Horse,098,45. Namib Desert Horse 5056739241806,5056739241806,1:1,exact,exact
+koń,R219,Noriker,674629405,Noriker,098,46. Noriker 5056739241813,5056739241813,1:1,exact,exact
+koń,R220,Orlov Trotter,660790234,Orlov Trotter,098,47. Orlov Trotter 5056739241820,5056739241820,1:1,exact,exact
+koń,R221,Paso Fino,674615395,Paso Fino,098,18. Paso Fino 5056739241530,5056739241530,1:1,exact,exact
+koń,R223,Pintabian,660790322,Pintabian,098,48. Pintabian 5056739241837,5056739241837,1:1,exact,exact
+koń,R224,Spanish Norman,674617363,Spanish Norman,098,20. Spanish Norman 5056739241554,5056739241554,1:1,exact,exact
+koń,R225,Thoroughbred,660778100,Thoroughbred,098,21. Thoroughbred 5056739241561,5056739241561,1:1,exact,exact
+koń,R226,Zweibrücker,674629861,Zweibrucker,098,50. Zweibrücker 5056739241851,5056739241851,1:1,exact,exact
+koń,R328,Bay Horse,674626095,Bay horse,098,33. Bay Horse 5056739241684,5056739241684,1:1,exact,exact
+koń,R329,Retired Race Horse,660785862,Retired Race Horse,098,29. Retired Race Horse 5056739241646,5056739241646,1:1,exact,exact
+pies,R001,Great Dane,674108651,Great Dane,091,28. Great Dane 5056739235201,5056739235201,1:1,exact,exact
+pies,R002,Labrador Retriever,660320352,Labrador Retriever,091,31. Labrador Retriever 5056739235232,5056739235232,wiele,exact,exact
+pies,R002,Labrador Retriever,660320352,Labrador Retriever,091,81. Labrador Retriever 5056739235737,5056739235737,wiele,exact,exact
+pies,R002,Labrador Retriever,660269960,Labrador Retriever,091,31. Labrador Retriever 5056739235232,5056739235232,wiele,exact,exact
+pies,R002,Labrador Retriever,660269960,Labrador Retriever,091,81. Labrador Retriever 5056739235737,5056739235737,wiele,exact,exact
+pies,R003,Dobermann,660269244,Doberman,091,21. Doberman 5056739235133,5056739235133,1:1,exact,exact
+pies,R004,Boxer,660268730,Boxer,091,12. Boxer 5056739235041,5056739235041,1:1,exact,exact
+pies,R005,Rottweiler,674142835,Rottweiler,091,40. Rottweiler 5056739235324,5056739235324,1:1,exact,exact
+pies,R006,Bull Terrier,660268898,Bull Terrier,091,15. Bullterrier 5056739235072,5056739235072,1:1,exact,exact
+pies,R008,Bulldog,674109989,English Bulldog,091,23. English Bulldog 5056739235157,5056739235157,1:1,exact,exact
+pies,R010,German Shepherd,674110171,German Shepherd,091,26. German Shepherd 5056739235188,5056739235188,1:1,exact,exact
+pies,R013,Pug,674142627,Pug,091,39. Pug 5056739235317,5056739235317,1:1,exact,exact
+pies,R016,Dogue de Bordeaux,660269344,Dog de Bordeaux,091,22. Dogue de Bordeaux 5056739235140,5056739235140,1:1,exact,exact
+pies,R017,Cane Corso,660269024,Cane Corso,091,17. Cane Corso 5056739235096,5056739235096,1:1,exact,exact
+pies,R018,Newfoundland,674110685,Newfoundland,091,34. Newfoundland 5056739235263,5056739235263,1:1,exact,exact
+pies,R020,French Bulldog,660269548,French Bulldog,091,25. French Bulldog 5056739235171,5056739235171,1:1,exact,exact
+pies,R023,Bedlington Terrier,678504669,Bedlington,091,58. Bedlington 5056739235508,5056739235508,wiele,exact,exact
+pies,R023,Bedlington Terrier,660303860,Bedlington,091,58. Bedlington 5056739235508,5056739235508,wiele,exact,exact
+pies,R024,Irish Wolfhound,660319824,Irish Wolfhound,091,77. Irish Wolfhound 5056739235690,5056739235690,1:1,exact,exact
+pies,R025,Dachshund,660322582,Dachshund,091,19. Dachshund 5056739235119,5056739235119,wiele,exact,exact
+pies,R025,Dachshund,660322582,Dachshund,091,96. Dachshund 5056739235881,5056739235881,wiele,exact,exact
+pies,R025,Dachshund,660269108,Dachshund,091,19. Dachshund 5056739235119,5056739235119,wiele,exact,exact
+pies,R025,Dachshund,660269108,Dachshund,091,96. Dachshund 5056739235881,5056739235881,wiele,exact,exact
+pies,R026,Siberian Husky,660321752,Siberian Husky,091,91. Siberian Husky 5056739235836,5056739235836,1:1,exact,exact
+pies,R027,American Staffordshire Terrier,660268116,Amstaff,091,2. Amstaff 5056739234945,5056739234945,1:1,exact,exact
+pies,R028,Whippet,674143939,Whippet,091,49. Whippet 5056739235416,5056739235416,1:1,exact,exact
+pies,R031,Weimaraner,674143811,Weimaraner,091,48. Weimaraner 5056739235409,5056739235409,1:1,exact,exact
+pies,R032,Golden Retriever,660269664,Golden Retriever,091,27. Golden Retriever 5056739235195,5056739235195,1:1,exact,exact
+pies,R034,Schnauzer,674143245,Schnauzer,091,44. Schnauzer 5056739235362,5056739235362,1:1,exact,exact
+pies,R035,Pointer,674161421,Pointer,091,85. Pointer 5056739235775,5056739235775,1:1,exact,exact
+pies,R036,St. Bernard,674142929,Saint Bernard,091,41. Saint Bernard 5056739235331,5056739235331,1:1,exact,exact
+pies,R037,Boston Terrier,674109261,Boston Terrier,091,11. Boston Terrier 5056739235034,5056739235034,1:1,exact,exact
+pies,R038,Border Terrier,660268600,Border Terrier,091,9. Border Terrier 5056739235010,5056739235010,1:1,exact,exact
+pies,R039,Chihuahua,660331594,Chihuahua,091,18. Chihuahua 5056739235102,5056739235102,wiele,exact,exact
+pies,R039,Chihuahua,660331594,Chihuahua,091,66. Chihuahua long haired 5056739235584,5056739235584,wiele,exact,exact
+pies,R039,Chihuahua,674149927,Chihuahua long haired,091,18. Chihuahua 5056739235102,5056739235102,wiele,exact,exact
+pies,R039,Chihuahua,674149927,Chihuahua long haired,091,66. Chihuahua long haired 5056739235584,5056739235584,wiele,exact,exact
+pies,R041,Chinese Crested,660309686,Chinese Crested Dog,091,67. Chinese Crested Dog 5056739235591,5056739235591,1:1,exact,exact
+pies,R042,Norwich Terrier,674141111,Norwich Terrier,091,35. Norwich Terrier 5056739235270,5056739235270,1:1,exact,exact
+pies,R043,Afghan Hound,674148205,Afghan Hound,091,51. Afghan Hound 5056739235430,5056739235430,1:1,exact,exact
+pies,R044,Pharaoh Hound,674161321,Pharaoh Hound,091,84. Pharaoh Hound 5056739235768,5056739235768,1:1,exact,exact
+pies,R045,Basset Hound,674108833,Basset Hound,091,4. Basset Hound 5056739234969,5056739234969,1:1,exact,exact
+pies,R046,Malinois Belgian Shepherd,660270056,Malinois,091,33. Malinois 5056739235256,5056739235256,1:1,exact,exact
+pies,R048,Neapolitan Mastiff,660320524,Mastino Neapolitano,091,82. Mastino Neapolitano 5056739235744,5056739235744,1:1,exact,exact
+pies,R051,Chow Chow,674158645,Chow Chow,091,68. Chow Chow 5056739235607,5056739235607,1:1,exact,exact
+pies,R052,Jack Russell Terrier,660320054,Jack Russel,091,79. Jack Russel 5056739235713,5056739235713,1:1,exact,exact
+pies,R053,Poodle,674142553,Poodle,091,38. Poodle 5056739235300,5056739235300,1:1,exact,exact
+pies,R054,Beagle,674108985,Beagle,091,5. Beagle 5056739234976,5056739234976,1:1,exact,exact
+pies,R056,Borzoi,674171113,Borzoi,091,10. Borzoi 5056739235027,5056739235027,1:1,exact,exact
+pies,R057,English Cocker Spaniel,660318954,English Cocker Spaniel,091,73. English Cocker Spaniel 5056739235652,5056739235652,1:1,exact,exact
+pies,R058,Fila Brasileiro,674159571,Fila Brasileiro,091,74. Fila Brasileiro 5056739235669,5056739235669,1:1,exact,exact
+pies,R059,Collie,660318504,Collie,091,69. Collie 5056739235614,5056739235614,1:1,exact,exact
+pies,R062,Bernese Mountain Dog,674197499,Bernese Mountain Dog,091,60. Bernese Mountain Dog 5056739235522,5056739235522,1:1,exact,exact
+pies,R064,American Bulldog,674147817,American Bulldog,091,53. American Bulldog 5056739235454,5056739235454,1:1,exact,exact
+pies,R065,Bloodhound,660268536,Bloodhound,091,8. Bloodhound 5056739235003,5056739235003,1:1,exact,exact
+pies,R069,Black Russian Terrier,674109101,Black Russian Terrier,091,7. Black Russian Terrier 5056739234990,5056739234990,1:1,exact,exact
+pies,R070,Shar Pei,660303020,Shar Pei,091,45. Shar Pei 5056739235379,5056739235379,1:1,exact,exact
+pies,R073,Dogo Argentino,674159337,Dogo Argentino,091,72. Dogo Argentino 5056739235645,5056739235645,1:1,exact,exact
+pies,R074,Saluki,674143025,Saluki,091,42. Saluki 5056739235348,5056739235348,wiele,exact,exact
+pies,R074,Saluki,674143025,Saluki,091,182. Saluki 5056739236741,5056739236741,wiele,exact,exact
+pies,R080,Bullmastiff,674109405,Bullmastiff,091,14. Bullmastiff 5056739235065,5056739235065,1:1,exact,exact
+pies,R081,Fox Terrier,660772806,Fox Terrier,091,75. Fox Terrier 5056739235676,5056739235676,wiele,exact,exact
+pies,R081,Fox Terrier,660772806,Fox Terrier,091,197. Fox Terrier 5056739236895,5056739236895,wiele,exact,exact
+pies,R081,Fox Terrier,674159897,Fox Terrier,091,75. Fox Terrier 5056739235676,5056739235676,wiele,exact,exact
+pies,R081,Fox Terrier,674159897,Fox Terrier,091,197. Fox Terrier 5056739236895,5056739236895,wiele,exact,exact
+pies,R082,Scottish terrier,660321494,Scottish terrier,091,89. Scottish terrier 5056739235812,5056739235812,1:1,exact,exact
+pies,R083,Shih Tzu,674143627,Shih Tzu,091,47. Shih Tzu 5056739235393,5056739235393,1:1,exact,exact
+pies,R084,Belgian Shepherd,660371494,Belgian Sheepdog,091,59. Belgian Shepherd 5056739235515,5056739235515,wiele,exact,exact
+pies,R084,Belgian Shepherd,660371494,Belgian Sheepdog,091,117. Belgian Sheepdog 5056739236093,5056739236093,wiele,exact,exact
+pies,R084,Belgian Shepherd,660307894,Belgian Shepherd,091,59. Belgian Shepherd 5056739235515,5056739235515,wiele,exact,exact
+pies,R084,Belgian Shepherd,660307894,Belgian Shepherd,091,117. Belgian Sheepdog 5056739236093,5056739236093,wiele,exact,exact
+pies,R085,Bouvier,674148659,Bouvier,091,61. Bouvier 5056739235539,5056739235539,1:1,exact,exact
+pies,R086,Pembroke Welsh Corgi,660322360,Welsh Corgi,091,94. Welsh Corgi 5056739235867,5056739235867,1:1,exact,exact
+pies,R087,Cavalier King Charles Spaniel,674149429,Cavalier,091,64. Cavalier 5056739235560,5056739235560,1:1,exact,exact
+pies,R088,Greyhound,660269784,Greyhound,091,29. Greyhound 5056739235218,5056739235218,1:1,exact,exact
+pies,R089,Pit Bull,660302130,Pit Bull,091,37. Pit Bull 5056739235294,5056739235294,1:1,exact,exact
+pies,R090,Shiba Inu,674143499,Shiba Inu,091,46. Shiba Inu 5056739235386,5056739235386,1:1,exact,exact
+pies,R091,Spanish Mastiff,674610479,Spanish Mastiff,091,183. Spanish Mastiff 5056739236758,5056739236758,1:1,exact,exact
+pies,R092,Springer Spaniel,660322054,Springer Spaniel,091,92. Springer Spaniel 5056739235843,5056739235843,1:1,exact,exact
+pies,R093,Vizsla,674218895,Vizsla,091,146. Vizsla 5056739236383,5056739236383,1:1,exact,exact
+pies,R094,Alaskan Malamute,674144383,Alaskan Malamute,091,52. Alaskan Malamute 5056739235447,5056739235447,1:1,exact,exact
+pies,R095,Boerboel,674612613,Boerboel,091,199. Boerboel 5056739236918,5056739236918,1:1,exact,exact
+pies,R096,German Wirehaired Pointer,674160219,German Wirehaired Pointer,091,76. German Wirehaired Pointer 5056739235683,5056739235683,1:1,exact,exact
+pies,R097,Italian Greyhound,678504737,Italian Greyhound,091,78. Italian Greyhound 5056739235706,5056739235706,1:1,exact,exact
+pies,R098,Appenzell Cattle Dog,660379566,Appenzeller,091,152. Appenzeller 5056739236444,5056739236444,1:1,exact,exact
+pies,R100,Bearded Collie,660307462,Bearded Collie,091,56. Bearded Collie 5056739235485,5056739235485,1:1,exact,exact
+pies,R103,Nova Scotia Duck Tolling Retriever,660384246,Nova Scotia Duck Tolling Retriever,091,178. Nova Scotia Duck Tolling Retriever 5056739236703,5056739236703,1:1,exact,exact
+pies,R104,Toy Fox Terrier,660771506,Toy Fox Terrier,091,188. Toy Fox Terrier 5056739236802,5056739236802,1:1,exact,exact
+pies,R105,Beauceron,660356874,Beauceron,091,57. Beauceron 5056739235492,5056739235492,1:1,exact,exact
+pies,R106,Finnish Lapphund,674200057,Finnish Lapphund,091,116. Finnish Lapphund 5056739236086,5056739236086,1:1,exact,exact
+pies,R107,Japanese Spitz,674216949,Japanese Spitz,091,141. Japanese Spitz 5056739236338,5056739236338,1:1,exact,exact
+pies,R108,Lowchen,660358066,Lowchen,091,107. Lowchen 5056739235997,5056739235997,1:1,exact,exact
+pies,R109,Pumi,660772650,Pumi,091,195. Pumi 5056739236871,5056739236871,1:1,exact,exact
+pies,R110,Russian Toy,660772540,Russian Toy,091,194. Russian Toy 5056739236864,5056739236864,1:1,exact,exact
+pies,R111,Yorkshire Terrier,660303740,Yorkshire Terrier,091,50. Yorkshire Terrier 5056739235423,5056739235423,1:1,exact,exact
+pies,R112,Polish Lowland Sheepdog,660321126,Polish Lowland SheepDog,091,86. Polish Lowland SheepDog 5056739235782,5056739235782,1:1,exact,exact
+pies,R113,Norfolk Terrier,660320684,Norfolk Terrier,091,83. Norfolk Terrier 5056739235751,5056739235751,1:1,exact,exact
+pies,R114,Basenji,674108777,Basenji,091,3. Basenji 5056739234952,5056739234952,1:1,exact,exact
+pies,R115,Briard,660268794,Briard,091,13. Briard 5056739235058,5056739235058,1:1,exact,exact
+pies,R116,Cesky Terrier,674163905,Cesky Terrier,091,100. Cesky Terrier 5056739235928,5056739235928,1:1,exact,exact
+pies,R117,Kerry Blue Terrier,674160745,Kerry Blue Terrier,091,80. Kerry Blue Terrier 5056739235720,5056739235720,1:1,exact,exact
+pies,R118,Lhasa Apso,674110545,Lhasa Apso,091,32. Lhasa Apso 5056739235249,5056739235249,1:1,exact,exact
+pies,R119,Papillon,660323238,Papillon,091,99. Papillon 5056739235911,5056739235911,1:1,exact,exact
+pies,R120,Pekingese,660301988,Pekingese,091,36. Pekingese 5056739235287,5056739235287,1:1,exact,exact
+pies,R121,Rhodesian Ridgeback,674161711,Rhodesian Ridgeback,091,87. Rhodesian Ridgeback 5056739235799,5056739235799,1:1,exact,exact
+pies,R122,West Highland White Terrier,660322464,West Highland White Terrier,091,95. West Highland White Terrier 5056739235874,5056739235874,1:1,exact,exact
+pies,R123,American Cocker Spaniel,660269722,American Cocker spaniel,091,54. American Cocker spaniel 5056739235461,5056739235461,1:1,exact,exact
+pies,R124,Cairn Terrier,674109513,Cairn Terrier,091,16. Cairn Terrier 5056739235089,5056739235089,1:1,exact,exact
+pies,R126,Affenpinscher,660378584,Affenpinscher,091,147. Affenpinscher 5056739236390,5056739236390,1:1,exact,exact
+pies,R128,Caucasian Shepherd,674149159,Caucasian Shepherd Dog,091,63. Caucasian Shepherd Dog 5056739235553,5056739235553,1:1,exact,exact
+pies,R130,Azawakh,674197103,Azawakh,091,55. Azawakh 5056739235478,5056739235478,1:1,exact,exact
+pies,R131,Dalmatian,660269182,Dalmatian,091,20. Dalmatian 5056739235126,5056739235126,1:1,exact,exact
+pies,R133,Havanese,674213147,Havanese,091,123. Havanese 5056739236154,5056739236154,1:1,exact,exact
+pies,R134,Ibizan Hound,674164547,Ibizan Hound,091,101. Ibizan Hound 5056739235935,5056739235935,1:1,exact,exact
+pies,R136,Leonberger,660324830,Leonberger,091,97. Leonberger 5056739235898,5056739235898,1:1,exact,exact
+pies,R138,Skye Terrier,660375340,Skye Terrier,091,136. Skye Terrier 5056739236284,5056739236284,1:1,exact,exact
+pies,R139,Tibetan Mastiff,674162717,Tibetan Mastiff,091,93. Tibetan Mastiff 5056739235850,5056739235850,1:1,exact,exact
+pies,R142,Hovawart,660383316,Hovawart,091,173. Hovawart 5056739236659,5056739236659,1:1,exact,exact
+pies,R149,Basset Fauve de Bretagne,674213501,Basset Fauve de Bretagne,091,125. Basset Fauve de Bretagne 5056739236178,5056739236178,1:1,exact,exact
+pies,R151,Black and Tan Coonhound,660378742,Black and Tan Coonhound,091,148. Black and Tan Coonhound 5056739236406,5056739236406,wiele,exact,exact
+pies,R151,Black and Tan Coonhound,660378742,Black and Tan Coonhound,091,157. Black and Tan Coonhound 5056739236499,5056739236499,wiele,exact,exact
+pies,R151,Black and Tan Coonhound,660380646,Black and Tan Coonhound,091,148. Black and Tan Coonhound 5056739236406,5056739236406,wiele,exact,exact
+pies,R151,Black and Tan Coonhound,660380646,Black and Tan Coonhound,091,157. Black and Tan Coonhound 5056739236499,5056739236499,wiele,exact,exact
+pies,R152,Bolognese,660380984,Bolognese,091,159. Bolognese 5056739236512,5056739236512,1:1,exact,exact
+pies,R155,Central Asia Shepherd,674149565,Central Asian Shepherd Dog,091,65. Central Asian Shepherd Dog 5056739235577,5056739235577,1:1,fuzzy:central asia shepherd,fuzzy:central asia shepherd
+pies,R157,Clumber Spaniel,660323100,Clumber Spaniel,091,98. Clumber Spaniel 5056739235904,5056739235904,1:1,exact,exact
+pies,R161,Eurasier,660382508,Eurasier,091,168. Eurasier 5056739236604,5056739236604,1:1,exact,exact
+pies,R162,German Pinscher,660373196,German Pinscher,091,126. German Pinscher 5056739236185,5056739236185,1:1,exact,exact
+pies,R165,Spinone Italiano,674216185,Spinone Italiano,091,137. Spinone Italiano 5056739236291,5056739236291,1:1,exact,exact
+pies,R167,Komondor,674224013,Komondor,091,175. Komondor 5056739236673,5056739236673,1:1,exact,exact
+pies,R170,Lakeland Terrier,674199213,Lakeland Terrier,091,111. Lakeland Terrier 5056739236031,5056739236031,1:1,exact,exact
+pies,R175,Old English Sheepdog,674199585,Old English Sheepdog,091,113. Old English Sheepdog 5056739236055,5056739236055,1:1,exact,exact
+pies,R177,Otterhound,660374088,Otterhound,091,131. Otterhound 5056739236239,5056739236239,1:1,exact,exact
+pies,R180,Romagna Water Dog,674217689,Romagna Water Dog,091,143. Romagna Water Dog 5056739236352,5056739236352,1:1,exact,exact
+pies,R182,Samoyed,660302788,Samoyed,091,43. Samoyed 5056739235355,5056739235355,1:1,exact,exact
+pies,R189,Tosa Inu,660771426,Tosa Inu,091,187. Tosa Inu 5056739236796,5056739236796,1:1,exact,exact
+pies,R229,American Eskimo,660358354,American Eskimo Dog,091,109. American Eskimo Dog 5056739236017,5056739236017,1:1,exact,exact
+pies,R230,American Hairless Terrier,674219489,American Hairless Terrier,091,149. American Hairless Terrier 5056739236413,5056739236413,1:1,exact,exact
+pies,R231,Kangal,674219791,Anatolian Shepherd Dog,091,151. Anatolian Shepherd Dog 5056739236437,5056739236437,1:1,exact,exact
+pies,R233,Australian Kelpie,674611831,Australian Kelpie,091,191. Australian Kelpie 5056739236833,5056739236833,1:1,exact,exact
+pies,R234,Australian Shepherd,660371836,Australian Shepherd,091,119. Australian Shepherd 5056739236116,5056739236116,1:1,exact,exact
+pies,R236,Australian Terrier,674212401,Australian Terrier,091,120. Australian Terrier 5056739236123,5056739236123,1:1,exact,exact
+pies,R237,Austrian Pinscher,660372124,Austrian Pinscher,091,121. Austrian Pinscher 5056739236130,5056739236130,1:1,exact,exact
+pies,R238,Barbet,674220179,Barbet,091,153. Barbet 5056739236451,5056739236451,1:1,exact,exact
+pies,R239,Basque Shepherd,674212793,Basque Shepherd Dog,091,122. Basque Shepherd Dog 5056739236147,5056739236147,1:1,exact,exact
+pies,R240,Bergamasco Shepherd,674220883,Bergamasco Shepherd,091,156. Bergamasco Shepherd 5056739236482,5056739236482,1:1,exact,exact
+pies,R241,Biewer Yorkshire Terrier,660379988,Biewer Yorkshire Terrier,091,154. Biewer Yorkshire Terrier 5056739236468,5056739236468,1:1,exact,exact
+pies,R243,Boykin Spaniel,674221535,Boykin Spaniel,091,160. Boykin Spaniel 5056739236529,5056739236529,1:1,exact,exact
+pies,R245,Brittany Spaniel,660772916,Brittany Spaniel,091,198. Brittany Spaniel 5056739236901,5056739236901,1:1,exact,exact
+pies,R248,Cardigan Welsh Corgi,660381478,Cardigan Welsh Corgi,091,162. Cardigan Welsh Corgi 5056739236543,5056739236543,1:1,exact,exact
+pies,R251,Chesapeake Bay Retriever,674222031,Chesapeake Bay Retriever,091,163. Chesapeake Bay Retriever 5056739236550,5056739236550,1:1,exact,exact
+pies,R252,Cirneco dell'Etna,674222163,Cirneco dell'Etna,091,164. Cirneco dell'Etna 5056739236567,5056739236567,1:1,exact,exact
+pies,R253,Cockapoo,674612709,Cockapoo,091,200. Cockapoo 5056739236925,5056739236925,1:1,exact,exact
+pies,R254,Coton de Tulear,660381920,Coton de Tulear,091,165. Coton de Tulear 5056739236574,5056739236574,1:1,exact,exact
+pies,R255,Curly Coated Retriever,674199733,Curly Coated Retriever,091,114. Curly Coated Retriever 5056739236062,5056739236062,1:1,exact,exact
+pies,R256,Czechoslovakian Wolfdog,660382138,Czechoslovakian Wolfdog,091,166. Czechoslovakian Wolfdog 5056739236581,5056739236581,1:1,exact,exact
+pies,R257,Dandie Dinmont Terrier,674198725,Dandie Dinmont Terrier,091,108. Dandie Dinmont Terrier 5056739236000,5056739236000,1:1,exact,exact
+pies,R258,Danish-Swedish Farmdog,674216355,Danish Swedish Farmdog,091,138. Danish Swedish Farmdog 5056739236307,5056739236307,1:1,exact,exact
+pies,R260,Dutch Shepherd,660382354,Dutch Shepherd,091,167. Dutch Shepherd 5056739236598,5056739236598,1:1,exact,exact
+pies,R261,English setter,674223179,English setter,091,170. English setter 5056739236628,5056739236628,1:1,exact,exact
+pies,R262,Entlebucher Mountain Dog,674212095,Entlebucher Mountain Dog,091,118. Entlebucher Mountain Dog 5056739236109,5056739236109,1:1,exact,exact
+pies,R264,French Spaniel,674223007,French Spaniel,091,169. French Spaniel 5056739236611,5056739236611,1:1,exact,exact
+pies,R267,Glen of Imaal Terrier,660358514,Glen of Imaal Terrier,091,110. Glen of Imaal Terrier 5056739236024,5056739236024,1:1,exact,exact
+pies,R268,Gordon setter,674223505,Gordon setter,091,172. Gordon setter 5056739236642,5056739236642,1:1,exact,exact
+pies,R269,Greater Swiss Mountain Dog,674197933,Greater Swiss Mountain Dog,091,103. Greater Swiss Mountain Dog 5056739235959,5056739235959,1:1,exact,exact
+pies,R270,Harrier,674214101,Harrier,091,128. Harrier 5056739236208,5056739236208,1:1,exact,exact
+pies,R272,Icelandic Sheepdog,660359362,Icelandic Sheepdog,091,115. Icelandic Sheepdog 5056739236079,5056739236079,1:1,exact,exact
+pies,R273,Irish Terrier,674198103,Irish Terrier,091,105. Irish Terrier 5056739235973,5056739235973,1:1,exact,exact
+pies,R275,Bracco Italiano,660381328,Bracco Italiano,091,161. Bracco Italiano 5056739236536,5056739236536,1:1,exact,exact
+pies,R277,Keeshond,660372912,Keeshond,091,124. Keeshond 5056739236161,5056739236161,1:1,exact,exact
+pies,R279,Kooikerhondje,660376630,Kooikerhondje,091,142. Kooikerhondje 5056739236345,5056739236345,1:1,exact,exact
+pies,R280,Kuvasz,674214265,Kuvasz,091,129. Kuvasz 5056739236215,5056739236215,1:1,exact,exact
+pies,R282,Manchester Terrier,660373934,Manchester Terrier,091,130. Manchester Terrier 5056739236222,5056739236222,1:1,exact,exact
+pies,R283,Mudi,660383840,Mudi,091,176. Mudi 5056739236680,5056739236680,1:1,exact,exact
+pies,R286,Norwegian Elkhound,660384076,Norwegian Elkhound,091,177. Norwegian Elkhound 5056739236697,5056739236697,1:1,exact,exact
+pies,R287,Norwegian Lundehund,660358914,Norwegian Lundehund,091,112. Norwegian Lundehund 5056739236048,5056739236048,1:1,exact,exact
+pies,R289,Parson Russell Terrier,660374260,Parson Russell Terrier,091,132. Parson Russell Terrier 5056739236246,5056739236246,1:1,exact,exact
+pies,R290,Peruvian Hairless Dog,660384408,Peruvian Hairless Dog,091,179. Peruvian Hairless Dog 5056739236710,5056739236710,1:1,exact,exact
+pies,R291,Berger Picard,674216697,Berger Picard,091,140. Berger Picard 5056739236321,5056739236321,1:1,exact,exact
+pies,R292,Portuguese Water Dog,660377962,Portuguese Water Dog,091,144. Portuguese Water Dog 5056739236369,5056739236369,1:1,exact,exact
+pies,R293,Puli,678505043,Puli,091,104. Puli 5056739235966,5056739235966,1:1,exact,exact
+pies,R294,Pyrenean Mastiff,674612341,Pyrenean Mastiff,091,196. Pyrenean Mastiff 5056739236888,5056739236888,1:1,exact,exact
+pies,R295,Great Pyrenees,660373340,Great Pyrenees,091,127. Great Pyrenees 5056739236192,5056739236192,1:1,exact,exact
+pies,R297,Rat Terrier,674611949,Rat Terrier,091,192. Rat Terrier 5056739236840,5056739236840,1:1,exact,exact
+pies,R298,Redbone Coonhound,674215031,Redbone Coonhound,091,134. Redbone Coonhound 5056739236260,5056739236260,1:1,exact,exact
+pies,R299,Romanian Mioritic Shepherd,674218717,Romanian Mioritic Shepherd Dog,091,145. Romanian Mioritic Shepherd Dog 5056739236376,5056739236376,1:1,exact,exact
+pies,R300,Schapendoes,660384572,Schapendoes,091,180. Schapendoes 5056739236727,5056739236727,1:1,exact,exact
+pies,R301,Schipperke,674225085,Schipperke,091,181. Schipperke 5056739236734,5056739236734,1:1,exact,exact
+pies,R302,Sealyham Terrier,660357316,Sealyham Terrier,091,102. Sealyham Terrier 5056739235942,5056739235942,1:1,exact,exact
+pies,R303,Sloughi,660384830,Sloughi,,,,brak folderu,exact,
+pies,R304,Spanish Water Dog,660380804,Spanish Water Dog,091,158. Spanish Water Dog 5056739236505,5056739236505,1:1,exact,exact
+pies,R305,Stabyhoun,660771138,Stabyhoun,091,184. Stabyhoun 5056739236765,5056739236765,1:1,exact,exact
+pies,R306,Swedish Vallhund,674216505,Swedish Vallhund,091,139. Swedish Vallhund 5056739236314,5056739236314,1:1,exact,exact
+pies,R307,Thai Ridgeback,674610695,Thai Ridgeback,091,185. Thai Ridgeback 5056739236772,5056739236772,1:1,exact,exact
+pies,R309,Tornjak,674610803,Tornjak,091,186. Tornjak 5056739236789,5056739236789,1:1,exact,exact
+pies,R310,Treeing Walker Coonhound,660772108,Treeing Walker Coonhound,091,189. Treeing Walker Coonhound 5056739236819,5056739236819,1:1,exact,exact
+pies,R311,Welsh Terrier,674611735,Welsh Terrier,091,190. Welsh Terrier 5056739236826,5056739236826,1:1,exact,exact
+pies,R312,Xolo dog,674198439,Xoloitzcuintli,091,106. Xoloitzcuintli 5056739235980,5056739235980,1:1,fuzzy:xoloitzcuintle,fuzzy:xoloitzcuintle
+pies,R325,Bichon,674109045,Bichon,091,6. Bichon 5056739234983,5056739234983,1:1,exact,exact
+pies,R326,Setter,674162167,Setter,091,90. Setter 5056739235829,5056739235829,1:1,exact,exact
+pies,R327,Griffon,674110419,Griffon,091,30. Griffon 5056739235225,5056739235225,1:1,exact,exact
+pies,R331,Jagdterrier,674223755,Jagdterrier,091,174. Jagdterrier 5056739236666,5056739236666,1:1,exact,exact
