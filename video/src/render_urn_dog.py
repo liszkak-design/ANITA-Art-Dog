@@ -52,7 +52,7 @@ def put_text(layer, text_layer, t, start, slide=True):
 
 
 def zoom_crop(img, z, center, size):
-    half = 1000 / z
+    half = min(img.width, img.height) / 2 / z
     cx = min(max(center[0], half), img.width - half)
     cy = min(max(center[1], half), img.height - half)
     return img.resize((size, size), Image.LANCZOS, box=(cx - half, cy - half, cx + half, cy + half)).convert("RGBA")
@@ -115,7 +115,7 @@ def zoom_scene(which):
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         e = ease((t - 0.4) / 2.2)
         z = 1 + (ZOOM_TO[which] - 1) * e
-        c = (1000 + (ZOOM_CENTER[which][0] - 1000) * e, 1000 + (ZOOM_CENTER[which][1] - 1000) * e)
+        c = (1000 + (ZOOM_CENTER[which][0] - 1000) * e, 999.5 + (ZOOM_CENTER[which][1] - 999.5) * e)
         put(layer, zoom_crop(URN, z, c, FRAME), 540, H // 2, ease(t / FADE))
         put_text(layer, TX[which], t, 1.0)
         return layer
