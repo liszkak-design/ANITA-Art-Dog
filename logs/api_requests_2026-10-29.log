@@ -888,3 +888,14 @@
 2026-10-29T08:20:34 POST /v3/application/shops/19255336/listings/673724439/images
 2026-10-29T08:20:35 POST /v3/application/shops/19255336/listings/673724439/videos
 2026-10-29T08:20:50 GET /v3/application/listings/660384830
+2026-10-29T08:20:54 POST /v3/application/shops/19255336/listings/673724439/videos
+2026-10-29T08:21:03 POST /v3/application/shops/19255336/listings/673724439/translations/pl
+2026-10-29T08:21:03 POST /v3/application/shops/19255336/listings/673724439/translations/de
+2026-10-29T08:21:04 POST /v3/application/shops/19255336/listings/673724439/translations/nl
+2026-10-29T08:21:05 POST /v3/application/shops/19255336/listings/673724439/translations/fr
+2026-10-29T08:21:06 POST /v3/application/shops/19255336/listings/673724439/translations/it
+2026-10-29T08:21:07 POST /v3/application/shops/19255336/listings/673724439/translations/pt
+2026-10-29T08:21:08 POST /v3/application/shops/19255336/listings/673724439/translations/es
+2026-10-29T08:21:08 POST /v3/application/shops/19255336/listings/673724439/translations/sv
+2026-10-29T08:21:09 GET /v3/application/listings/673724439
+2026-10-29T08:21:09 GET /v3/application/shops/19255336/listings/673724439/properties
