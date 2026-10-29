@@ -134,7 +134,7 @@ def main():
     enc = None
     if not a.diag:
         enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}", "-r", str(fps),
-                                "-i", "-", "-an", "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p", "-crf", "15",
+                                "-i", "-", "-an", "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p", "-crf", "15", "-colorspace", "bt470bg", "-color_range", "tv",
                                 "-movflags", "+faststart", a.out], stdin=subprocess.PIPE)
     for i, fr in enumerate(read_frames(a.inp, w, h)):
         if i < nmax:
