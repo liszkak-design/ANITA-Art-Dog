@@ -647,7 +647,7 @@ def alt_existing(step, c, ids_before):
     img = next((i for i in live_images(lid) if i["rank"] == k), None)
     if not img:
         return {"error": f"brak zdjęcia o randze {k}"}
-    if (img.get("alt_text") or "") == step["fields"]["alt_text"]:
+    if html.unescape(img.get("alt_text") or "") == step["fields"]["alt_text"]:
         return {"ok": "alt już ustawiony"}
     if ids_before.get(k) and ids_before[k] != img["listing_image_id"]:
         return {"error": f"zdjęcie {k} zmieniło id przed zapisem alt"}
@@ -714,7 +714,7 @@ def apply_batch(n):
                 continue
             if resumed and s["kind"] == "image":
                 imgs = live_images(lid)
-                if any(im["rank"] == s["rank"] and (im.get("alt_text") or "") == s["fields"]["alt_text"] for im in imgs):
+                if any(im["rank"] == s["rank"] and html.unescape(im.get("alt_text") or "") == s["fields"]["alt_text"] for im in imgs):
                     zlog(lid, s["id"], "backup/" + p.name, "już w ofercie (wykryte przy wznowieniu)", "ok")
                     continue
             if resumed and s["kind"] == "video" and api.get(f"/v3/application/listings/{lid}?includes=Videos").get("videos"):
@@ -726,7 +726,7 @@ def apply_batch(n):
             if s["kind"] in ("image", "video") and not base.ok(resp) and re.search(r"reset|timed out|timeout|disconnect|closed", str(resp), re.I):
                 time.sleep(5)
                 imgs = live_images(lid)
-                if s["kind"] == "image" and any(im["rank"] == s["rank"] and (im.get("alt_text") or "") == s["fields"]["alt_text"] for im in imgs):
+                if s["kind"] == "image" and any(im["rank"] == s["rank"] and html.unescape(im.get("alt_text") or "") == s["fields"]["alt_text"] for im in imgs):
                     resp = {"ok": "zdjęcie już w ofercie po błędzie sieciowym"}
                 elif s["kind"] == "image":
                     resp = send(s, c)
@@ -744,7 +744,7 @@ def apply_batch(n):
             imgs = sorted(after.get("images", []), key=lambda x: x["rank"])
             mat = next((pp for pp in props.get("results", []) if pp["property_id"] == B.MATERIAL_PROPERTY), {})
             chk = {"cena_ok": after["price"] == live["price"], "stan_ok": after["quantity"] == live["quantity"], "status_ok": after["state"] == live["state"],
-                   "zdjec": len(imgs), "alt_ok": all((im.get("alt_text") or "") == c["en"]["alts"][im["rank"]] for im in imgs) if len(imgs) == 7 else False,
+                   "zdjec": len(imgs), "alt_ok": all(html.unescape(im.get("alt_text") or "") == c["en"]["alts"][im["rank"]] for im in imgs) if len(imgs) == 7 else False,
                    "kolejnosc_ok": [im["listing_image_id"] for im in imgs[1:6]] == [ids_before[k] for k in range(2, 7)] if len(imgs) == 7 else False,
                    "wideo": len(after.get("videos", [])), "pytan": len(after["personalization"]["personalization_questions"]),
                    "tlumaczen": sum(1 for k, v in after["translations"].items() if v and k != "en-US"), "who_made": after["who_made"],
