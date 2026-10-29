@@ -19,6 +19,10 @@ TOKEN_URL = "https://api.etsy.com/v3/public/oauth/token"
 
 
 def post(data):
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import etsy_api  # wspólny licznik limitu: odświeżanie tokenu też liczy się do 8000 w oknie 24 h
+    etsy_api.check_limit()
+    etsy_api._log("POST", "/v3/public/oauth/token")
     sec = os.environ.get("ETSY_SHARED_SECRET")
     headers = {"Content-Type": "application/x-www-form-urlencoded"}
     if sec:  # local / environment-variable mode; in the cloud proxy mode the proxy adds x-api-key

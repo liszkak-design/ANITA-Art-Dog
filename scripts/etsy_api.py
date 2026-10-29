@@ -55,14 +55,25 @@ def api_key_header():
     return {"x-api-key": f"{os.environ['ETSY_KEYSTRING']}:{sec}"} if sec else {}
 
 
+def check_limit():
+    """Wspólna kontrola limitu dla WSZYSTKICH wywołań Etsy (odczyty, zapisy, odświeżanie tokenu): stop przy 8000 w oknie 24 h, ostrzeżenie od 7000."""
+    n = _count_today()
+    if n >= DAILY_STOP:
+        raise RuntimeError(f"limit 8000 zapytań w oknie 24 h osiągnięty ({n}), przerywam")
+    if n >= 7000:
+        print(f"UWAGA: {n} zapytań w ostatnich 24 h (stop przy {DAILY_STOP}, limit Etsy 10 000)", file=sys.stderr)
+    return n
+
+
 def request(method, path, headers=None, data=None, retries=3):
     """Single entry point for Etsy calls: counts the request in logs/, sends Authorization (and x-api-key if
     available) from Python so that nothing secret appears in command-line arguments."""
-    if _count_today() >= DAILY_STOP:
-        raise RuntimeError("limit dzienny 8000 zapytań osiągnięty, przerywam")
+    check_limit()
     h = {"Authorization": f"Bearer {_token()}", **api_key_header(), **(headers or {})}
     d = {}
     for i in range(retries):
+        if i:
+            check_limit()  # ponowne próby też liczą się do limitu
         _log(method, path)
         req = urllib.request.Request("https://api.etsy.com" + path, data=data, method=method, headers=h)
         try:
