@@ -18,8 +18,20 @@ DAILY_STOP = 8000
 
 
 def _count_today():
-    p = ROOT / "logs" / f"api_requests_{datetime.date.today()}.log"
-    return sum(1 for _ in open(p)) if p.exists() else 0
+    """Zapytania z ostatnich 24 godzin (okno kroczące: Etsy liczy limit dobowy w oknie kroczącym, a nie od północy; 29.10.2026 stało się to
+    przyczyną 'Exceeded daily rate limit' przy 7198 zapytaniach z datą dzisiejszą i ok. 10 700 w ostatnich 24 h)."""
+    limit = datetime.datetime.now() - datetime.timedelta(hours=24)
+    n = 0
+    for d in (datetime.date.today() - datetime.timedelta(days=1), datetime.date.today()):
+        p = ROOT / "logs" / f"api_requests_{d}.log"
+        if p.exists():
+            for line in open(p):
+                try:
+                    if datetime.datetime.fromisoformat(line.split()[0]) > limit:
+                        n += 1
+                except ValueError:
+                    pass
+    return n
 
 
 def _log(method, path):
