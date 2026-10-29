@@ -1,0 +1,24 @@
+{"id": "szkic", "info": 4605567054, "status": "ok", "time": "2026-10-29T11:30:37"}
+{"id": "wlasciwosc_200", "info": "", "status": "ok", "time": "2026-10-29T11:30:37"}
+{"id": "wlasciwosc_46803063641", "info": "", "status": "ok", "time": "2026-10-29T11:30:38"}
+{"id": "wlasciwosc_148789511893", "info": "", "status": "ok", "time": "2026-10-29T11:30:39"}
+{"id": "how_its_made", "info": "", "status": "ok", "time": "2026-10-29T11:30:39"}
+{"id": "personalizacja", "info": "", "status": "ok", "time": "2026-10-29T11:30:40"}
+{"id": "zdjecie_1", "info": "", "status": "ok", "time": "2026-10-29T11:30:48"}
+{"id": "zdjecie_2", "info": "", "status": "ok", "time": "2026-10-29T11:30:51"}
+{"id": "zdjecie_3", "info": "", "status": "ok", "time": "2026-10-29T11:30:55"}
+{"id": "zdjecie_4", "info": "", "status": "ok", "time": "2026-10-29T11:30:58"}
+{"id": "zdjecie_5", "info": "", "status": "ok", "time": "2026-10-29T11:31:01"}
+{"id": "zdjecie_6", "info": "", "status": "ok", "time": "2026-10-29T11:31:06"}
+{"id": "zdjecie_7_original", "info": "", "status": "ok", "time": "2026-10-29T11:31:07"}
+{"id": "wideo_1_gatunek", "info": "", "status": "ok", "time": "2026-10-29T11:31:12"}
+{"id": "wideo_2_rasa", "info": "", "status": "ok", "time": "2026-10-29T11:31:26"}
+{"id": "tlumaczenie_pl", "info": "", "status": "ok", "time": "2026-10-29T11:31:27"}
+{"id": "tlumaczenie_de", "info": "", "status": "ok", "time": "2026-10-29T11:31:28"}
+{"id": "tlumaczenie_nl", "info": "", "status": "ok", "time": "2026-10-29T11:31:29"}
+{"id": "tlumaczenie_fr", "info": "", "status": "ok", "time": "2026-10-29T11:31:29"}
+{"id": "tlumaczenie_it", "info": "", "status": "ok", "time": "2026-10-29T11:31:30"}
+{"id": "tlumaczenie_pt", "info": "", "status": "ok", "time": "2026-10-29T11:31:31"}
+{"id": "tlumaczenie_es", "info": "", "status": "ok", "time": "2026-10-29T11:31:32"}
+{"id": "tlumaczenie_sv", "info": "", "status": "ok", "time": "2026-10-29T11:31:32"}
+{"id": "weryfikacja", "info": {"stan": "draft", "tytul_ok": true, "zdjec": 7, "alt_ok": true, "wideo": 2, "pytan": 5, "tlumaczen": 8, "cena": 12900, "ilosc": 50}, "status": "ok", "time": "2026-10-29T11:31:33"}
