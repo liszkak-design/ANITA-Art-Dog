@@ -21,7 +21,7 @@ THE URN AT A GLANCE / A PLACE OF REMEMBRANCE / PERSONALISATION / INTERNATIONAL O
 Wzorce 2, 4, 6 nie mówią o tabliczce, więc pasują do obu wariantów. Dachshund wire dostaje "Wire-haired" (jak przy płytkach).
 
 ## 3. Tagi (13, max 20 zn., bez ras, bez powtórzeń)
-**Stałe (7):** pet urn for ashes (17), personalized urn (16), wooden urn (10), bronze relief urn (16), pet loss gift (13), dog ashes urn (14), dog memorial (12).
+**Stałe (7):** pet urn for ashes (17), personalized urn (16), wooden urn (10), bronze relief urn (17), pet loss gift (13), dog ashes urn (13), dog memorial (12).
 **Pula (6 losowanych, bez wspólnych słów kluczowych):** cremation urn (13), memorial urn (12), urn with name (13), engraved urn (12), handmade urn (12), cold cast bronze (16), bronze dog relief (17), keepsake urn (12), brass handle urn (16), in loving memory (16), rainbow bridge (14), pet bereavement (15), custom pet urn (14), always in my heart (18), pet remembrance (15), urn with quote (14, tylko wariant A), urn with dates (14).
 Materiały (tagi tekstowe): **wood, brass handles, cold cast bronze relief** (zamiast "cold cast bronze bust").
 
