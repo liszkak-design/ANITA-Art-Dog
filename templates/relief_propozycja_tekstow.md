@@ -7,23 +7,23 @@ Zasady: bez rozmiaru reliefu w tytule i tekście; bez wagi zwierzęcia; bez gatu
 ## 1. Nagłówki (jak zatwierdzone przy urnach z płytką)
 THE URN AT A GLANCE / A PLACE OF REMEMBRANCE / PERSONALISATION / INTERNATIONAL ORDERS
 
-## 2. Tytuły (zaczynają się od rasy, limit 140 zn., wzorzec losowany po ID oferty, każdy wzorzec ma wersję A i B)
+## 2. Tytuły (zaczynają się od rasy, limit 140 zn., wzorzec losowany po ID oferty; wersja A z tabliczką, B bez tabliczki; bez "bronze", "cold cast" i bez materiału reliefu; zmiana 30.10.2026)
 
 | # | Wariant A (z tabliczką) | Wariant B (bez tabliczki) |
 |---|---|---|
-| 1 | {BREED} {S} Urn for Ashes, Handmade Wooden Urn with Cold Cast Bronze Relief, Engraved Name, Dates and Quote | {BREED} {S} Urn for Ashes, Handmade Wooden Urn with Cold Cast Bronze Relief, Name and Dates on Request |
-| 2 | {BREED} Pet Urn, Personalized Wooden Cremation Urn with Bronze Relief of the Breed, Pet Loss Gift | (jak A) |
-| 3 | {BREED} {S} Memorial Urn, Handmade Wood Urn with Bronze Relief and Engraved Nameplate, Personalised Keepsake | {BREED} {S} Memorial Urn, Handmade Wood Urn with Bronze Relief, Optional Nameplate, Personalised Keepsake |
-| 4 | {BREED} Urn for {S} Ashes, Engraved Wooden Keepsake Urn with Cold Cast Bronze Relief, Sympathy Gift | (jak A) |
-| 5 | {BREED} {S} Cremation Urn, Wooden Pet Urn with Bronze Relief, Custom Name, Dates and Quote | {BREED} {S} Cremation Urn, Wooden Pet Urn with Bronze Relief, Name and Dates on Request |
-| 6 | {BREED} Ashes Urn for Your {S}, Handmade Personalised Urn with Bronze Relief Portrait, Pet Loss Gift | (jak A) |
+| 1 | {BREED} {S} Urn for Ashes, Personalized Wooden Memorial Urn with Engraved Name, Dates and Quote | {BREED} {S} Urn for Ashes, Personalized Wooden Memorial Urn, Name and Dates on Request |
+| 2 | {BREED} Cremation Urn for Your {S}, Elegant Handmade Wooden Keepsake with Breed Portrait, Pet Loss Gift | (jak A) |
+| 3 | {BREED} {S} Memorial Urn with Custom Engraved Nameplate, Handmade Wooden Pet Urn, Sympathy Gift | {BREED} {S} Memorial Urn with Optional Nameplate, Handmade Wooden Pet Urn, Sympathy Gift |
+| 4 | {BREED} Urn for {S} Ashes, Elegant Wooden Pet Memorial, Personalised with Name and Quote | {BREED} Urn for {S} Ashes, Elegant Wooden Pet Memorial, Name and Dates on Request |
+| 5 | {BREED} {S} Urn, Custom Wooden Cremation Urn for Pet Ashes, Engraved Name, Dates and Quote | {BREED} {S} Urn, Custom Wooden Cremation Urn for Pet Ashes, Name and Dates on Request |
+| 6 | {BREED} Ashes Urn for Your {S}, Handmade Personalised Wooden Memorial, In Loving Memory Pet Loss Gift | (jak A) |
 
-Wzorce 2, 4, 6 nie mówią o tabliczce, więc pasują do obu wariantów. Dachshund wire dostaje "Wire-haired" (jak przy płytkach).
+Wzorce 2 i 6 nie mówią o tabliczce, więc pasują do obu wariantów. W wzorcach 2 i 6 jest "Breed Portrait" / brak odniesienia do reliefu w ogóle; do potwierdzenia, czy "Breed Portrait" jest OK. Dachshund wire dostaje "Wire-haired".
 
-## 3. Tagi (13, max 20 zn., bez ras, bez powtórzeń)
-**Stałe (7):** pet urn for ashes (17), personalized urn (16), wooden urn (10), bronze relief urn (17), pet loss gift (13), dog ashes urn (13), dog memorial (12).
-**Pula (6 losowanych, bez wspólnych słów kluczowych):** cremation urn (13), memorial urn (12), urn with name (13), engraved urn (12), handmade urn (12), cold cast bronze (16), bronze dog relief (17), keepsake urn (12), brass handle urn (16), in loving memory (16), rainbow bridge (14), pet bereavement (15), custom pet urn (14), always in my heart (18), pet remembrance (15), urn with quote (14, tylko wariant A), urn with dates (14).
-Materiały (tagi tekstowe): **wood, brass handles, cold cast bronze relief** (zamiast "cold cast bronze bust").
+## 3. Tagi (13, max 20 zn., bez ras, bez materiałów i uchwytów, bez powtórzeń; zmiana 30.10.2026)
+**Stałe (7):** urn for pet ashes (17), personalized urn (16), wooden urn (10), cremation urn (13), pet loss gift (13), elegant dog urn (15), dog memorial (12).
+**Pula (6 losowanych, bez wspólnych słów kluczowych ze stałymi i między sobą):** handmade urn (12), keepsake box (12), in loving memory (16), rainbow bridge (14), pet bereavement (15), custom pet urn (14), always in my heart (18), pet remembrance (15), urn with quote (14, tylko wariant A), oraz nowe propozycje ogólnych pojęć: pet sympathy (12), faithful friend (15), furry friend (12), last goodbye (12), pet funeral (11), best friend (11), pet tribute (11), forever loved (13).
+Materiały (tagi tekstowe): **wood, brass handles, cold cast bronze relief** (to pole materiałów, nie tagi wyszukiwania; zostaje po poprzednich ustaleniach).
 
 ## 4. Pierwszy akapit (banki A + B + C)
 
@@ -73,7 +73,7 @@ Materiały (tagi tekstowe): **wood, brass handles, cold cast bronze relief** (za
 ```
 THE URN AT A GLANCE
 - Handmade wooden urn for pet ashes, made of solid wood and plywood, painted brown
-- Relief portrait of a {BREED}, cast in cold cast bronze (a mix of resin and bronze powder); the relief is not personalised
+- Relief portrait of a {BREED}, cast in cold cast bronze (a mix of resin and bronze powder); the relief cannot be personalised
 - [A] Engraved nameplate with the name, dates and quote, and a delicate graphic of a paw held in a human hand
 - [B] As shown, the urn has no engraving; a small engraved nameplate with the name and dates can be added on request and is included in the price
 - External size: 21 x 29 x 22 cm (8.3 x 11.4 x 8.7 in)
@@ -82,20 +82,20 @@ THE URN AT A GLANCE
 - Removable lid, not sealed: glue it with any all-purpose glue to close it tightly
 
 A PLACE OF REMEMBRANCE
-Losing a dog is one of the saddest days. This urn is a quiet, lasting place to keep your dog close. The brass handles and carved decorations give it a classic, timeless look, and the relief portrait is made with great care for the details that are characteristic of the breed.
+Saying goodbye to a dog who was part of the family is never easy. This urn gives your companion a dignified place at home, where the memories of walks, play and quiet evenings can stay close. The brass handles and carved decorations give it a classic, timeless look, and the relief portrait of the breed is made with great care for the details that are characteristic of the breed.
 
 PERSONALISATION   [A]
 Every urn is made to order. Please tell us:
 - Name: the name of your dog, as it should appear on the nameplate.
 - Dates: dates of birth and death, in any format you like.
 - Quote: the nameplate carries "When I needed a hand, you gave me your paw" unless you give us your own exact wording.
-The bronze relief portrait is not personalised. Personalisation is always included in the price.
+The relief cannot be personalised. Personalisation is always included in the price.
 
 PERSONALISATION   [B]
 The urn is made to order. If you would like a small engraved nameplate, please tell us:
 - Name: the name of your dog, as it should appear on the nameplate.
 - Dates: dates of birth and death, in any format you like.
-The nameplate always fits and is included in the price. The bronze relief portrait is not personalised.
+The nameplate always fits and is included in the price. The relief cannot be personalised.
 
 Questions about personalising your urn? Send us a message, we will gladly help.
 
