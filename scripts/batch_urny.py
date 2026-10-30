@@ -653,7 +653,16 @@ def alt_existing(step, c, ids_before):
         return {"error": f"zdjęcie {k} zmieniło id przed zapisem alt"}
     f = {"listing_image_id": str(img["listing_image_id"]), "rank": str(k), "overwrite": "true", "alt_text": step["fields"]["alt_text"]}
     data = "&".join(f"{a}={urllib.parse.quote(b)}" for a, b in f.items()).encode()
-    return api.request("POST", step["path"], headers={"Content-Type": "application/x-www-form-urlencoded"}, data=data, retries=1)
+    resp = {}
+    for attempt in range(3):  # 30.10.2026: raz odpowiedź była ok, a alt text nie zapisał się; sprawdzamy po zapisie i powtarzamy
+        resp = api.request("POST", step["path"], headers={"Content-Type": "application/x-www-form-urlencoded"}, data=data, retries=1)
+        if not (isinstance(resp, dict) and "error" not in resp):
+            return resp
+        time.sleep(2)
+        chk = next((i for i in live_images(lid) if i["rank"] == k), None)
+        if chk and html.unescape(chk.get("alt_text") or "") == step["fields"]["alt_text"]:
+            return resp
+    return {"error": f"alt text zdjęcia {k} nie zapisał się po 3 próbach"}
 
 
 def preflight(c, live, ids):
