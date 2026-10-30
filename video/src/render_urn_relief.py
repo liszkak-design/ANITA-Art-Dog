@@ -63,9 +63,14 @@ PW = 1000  # width of the urn silhouette on screen
 PCX, PBOTTOM = 90 + PW // 2, 940
 
 
+ROTATE = {4: 0.43}  # degrees, counter-clockwise
+
+
 def urn_tile(n):
     """Photo cropped to the urn silhouette and scaled to a common silhouette width; the urns are aligned at the bottom centre."""
     im = load(n)
+    if n in ROTATE:  # the photo is slightly tilted compared to the others
+        im = im.rotate(ROTATE[n], Image.BICUBIC, fillcolor=(255, 255, 255))
     a = np.asarray(im).astype(int)
     ys, xs = np.where((255 - a.min(axis=2)) > 40)
     box = (xs.min() - 12, ys.min() - 12, xs.max() + 13, ys.max() + 13)
@@ -90,7 +95,7 @@ def scene2(t):
 
 # ---------------------------------------------------------------- scene 3: camera over the urn with the plaque
 URN = load(5)
-FW, FH = 1000, 667
+FW, FH = 840, 560
 FCX, FCY = 90 + FW // 2, H // 2
 KEYS = [(0.0, 1000, 666, 2000), (0.9, 1330, 585, 560), (3.2, 1330, 585, 560), (4.2, 1330, 830, 560), (6.5, 1330, 830, 560)]
 
@@ -112,8 +117,8 @@ def view(t):
     return URN.resize((FW, FH), Image.LANCZOS, box=(cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2)).convert("RGBA")
 
 
-TXB = {"nd": R.text_block("NAME AND DATES", ["Your dog's", "*name and dates*"], "Engraved on the plaque", 1200, H // 2, max_w=640),
-       "quote": R.text_block("YOUR OWN WORDS", ["Your own quote,", "*if you wish*"], "Changed on request", 1200, H // 2, max_w=640)}
+TXB = {"nd": R.text_block("NAME AND DATES", ["Your dog's", "*name and dates*"], "Engraved on the plaque", 1010, H // 2, max_w=820, title_size=96),
+       "quote": R.text_block("YOUR OWN WORDS", ["Your own quote,", "*if you wish*"], "Changed on request", 1010, H // 2, max_w=820, title_size=96)}
 
 
 def scene3(t):
