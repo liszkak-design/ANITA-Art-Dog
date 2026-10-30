@@ -13,12 +13,14 @@ Liczba słów po nazwie rasy podana w nawiasie; rasy 1-4-wyrazowe (np. Basset Fa
 5. {BREED} Dog Urn, Custom Wooden Cremation Urn, Name, Dates and Quote (10)
 6. {BREED} Ashes Urn for Your Dog, Handmade Personalised Wooden Memorial (9)
 
+Słowa odmian w tytule (decyzja 30.10.2026): Cropped Ears (Boxer 661086082, Doberman 661028156, Great Dane 661092134, Schnauzer 674937239), Long-haired / Short-haired (Chihuahua 674927183 / 674865781), Smooth-haired / Long-haired / Wire-haired (Dachshund 661025192 / 674868753 / 661100430); nigdy Natural Ears.
+
 Gdy nazwa rasy zawiera "dog"/"hound" (np. Bernese Mountain Dog, Afghan Hound): słowo "Dog" w tytule jest pomijane jak dotąd ("for Your Dog" → "for Your Pet").
 
 ## 2. Tagi (13, max 20 zn., bez ras, bez materiałów i uchwytów, bez powtórzeń)
 **Stałe (7), jak w urnach z reliefem:** urn for pet ashes (17), personalized urn (16), wooden urn (10), cremation urn (13), pet loss gift (13), elegant dog urn (15), dog memorial (12).
 **Pula (6 losowanych):** handmade urn (12), keepsake box (12), in loving memory (16), rainbow bridge (14), pet bereavement (15), custom pet urn (14), always in my heart (18), pet remembrance (15), pet sympathy (12), faithful friend (15), furry friend (12), last goodbye (12), pet funeral (11), best friend (11), pet tribute (11), forever loved (13), urn with quote (14), oraz dwa nowe, specyficzne dla tej urny z nadrukiem: **urn with photo** (14), **photo urn** (9).
-Materiały tekstowe w ofercie zostają: wood, brass handles, ceramic plate (płytka ceramiczna jest). Materials (lista Etsy): Ceramic, Brass, Pine, Birch jak w urnach z płytką.
+Materiały tekstowe w ofercie zostają: wood, brass handles, ceramic plate (płytka ceramiczna jest). Materials (lista Etsy): Ceramic, Brass, Pine, Birch jak w urnach z płytką (potwierdzone).
 
 ## 3. Pierwszy akapit (banki A + B + C)
 **A bez NICK/SYN**
@@ -84,10 +86,10 @@ We would be honoured to help you say goodbye to your beloved dog with dignity.
 INTERNATIONAL ORDERS
 Our products are shipped from Poland, so import charges may apply in some countries. These charges do not apply to EU countries, the United Kingdom and the USA. If you have any doubts, please contact us for details.
 ```
-(Wzorzec "Personalisation is always included in the price" nie jest dodany, bo przy tej urnie nie ma takiego ustalenia; do potwierdzenia.)
+(Personalizacja jest w cenie, ale zdania o tym NIE dodajemy: decyzja właścicielki 30.10.2026.)
 
 ## 5. Pytania personalizacyjne Etsy (5, jak w urnie z płytką, z mniejszą listą stylów)
 1. Name (wymagane, 50) 2. Dates (wymagane, 50) 3. Quote on the plaque (optional), 600, instrukcja: "Leave empty for the default quote, or type the exact text you'd like engraved on the paw-shaped plaque." 4. Pet photo (wgranie 1 pliku), instrukcja: "Please upload a high-resolution image. The better the photo quality, the better the print will look on the plaque." 5. How should we print the photo? Color + background / Color, no background (etykieta max 20 znaków).
 
 ## 6. Alt texty
-1: "Wooden urn for ashes with an oval ceramic plaque showing a geometric portrait of a {BREED} dog, a paw-shaped plaque with a quote, and a name and dates." 2-6: jak przy urnach z płytką (uchwyt, uchwyt pod kątem, listwa, narożnik, wnętrze). Zdjęć nie wymieniamy (do potwierdzenia).
+1: "Wooden urn for ashes with an oval ceramic plaque showing a geometric portrait of a {BREED} dog, a paw-shaped plaque with a quote, and a name and dates." 2-6: jak przy urnach z płytką (uchwyt, uchwyt pod kątem, listwa, narożnik, wnętrze). Zdjęć nie wymieniamy (potwierdzone 30.10.2026), tylko dopisujemy alt texty.
