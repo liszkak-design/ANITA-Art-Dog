@@ -4,9 +4,9 @@ Status: szkic. Polski sprawdza właścicielka. Wszystkie oferty to psy ({gen} = 
 
 ## Tytuł (6 wzorców)
 1. {B} urna na prochy psa, personalizowana drewniana pamiątka z płytką ze zdjęciem
-2. {B} urna kremacyjna dla psa, elegancka drewniana pamiątka z Twoim zdjęciem
+2. {B} urna kremacyjna dla psa, wyjątkowa drewniana pamiątka z Twoim zdjęciem
 3. {B} urna pamiątkowa dla psa, drewniana pamiątka z imieniem i cytatem
-4. {B} urna na prochy psa, elegancka drewniana pamiątka, personalizowana zdjęciem
+4. {B} urna na prochy psa, wyjątkowa drewniana pamiątka, personalizowana zdjęciem
 5. {B} urna dla psa, drewniana urna kremacyjna na zamówienie, imię, daty i cytat
 6. {B} urna na prochy Twojego psa, ręcznie robiona personalizowana drewniana pamiątka
 
@@ -60,6 +60,6 @@ Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać n
 ```
 
 ## Tagi (max 20 znaków)
-**Stałe:** urna dla zwierzaka (18), urna personalizowana (20), drewniana urna (14), urna kremacyjna (15), pamiątka po pupilu (18), elegancka urna (14), pamiątka po psie (16) (EN: urn for pet ashes, personalized urn, wooden urn, cremation urn, pet loss gift, elegant dog urn, dog memorial)
+**Stałe:** urna dla zwierzaka (18), urna personalizowana (20), drewniana urna (14), urna kremacyjna (15), pamiątka po pupilu (18), wyjątkowa urna (14), pamiątka po psie (16) (EN: urn for pet ashes, personalized urn, wooden urn, cremation urn, pet loss gift, unique dog urn, dog memorial)
 **Pula:** urna ręcznie robiona (20), szkatułka pamiątkowa (20), ku pamięci (10), tęczowy most (12), żałoba po pupilu (16), urna na zamówienie (18), zawsze w sercu (14), pamięć o pupilu (15), po stracie psa (14), wierny przyjaciel (17), futrzany przyjaciel (19), ostatnie pożegnanie (19), pogrzeb zwierzaka (17), najlepszy przyjaciel (20), hołd dla pupila (15), kochany na zawsze (17), urna z cytatem (14), urna ze zdjęciem (16), urna z fotografią (17)
 Materiały (tagi tekstowe, EN): wood, brass handles, ceramic plate

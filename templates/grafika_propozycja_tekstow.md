@@ -7,9 +7,9 @@ Zasady jak w urnach z płytką i z reliefem: banki A/B/C, NICK/SYN w zdaniu A, "
 Liczba słów po nazwie rasy podana w nawiasie; rasy 1-4-wyrazowe (np. Basset Fauve De Bretagne, West Highland White Terrier) i dopiski (Cropped Ears) zwiększają sumę, dlatego fallback.
 
 1. {BREED} Dog Urn for Ashes, Personalized Wooden Memorial with Photo Plaque (10)
-2. {BREED} Cremation Urn for Dog, Elegant Wooden Keepsake with Your Photo (10)
+2. {BREED} Cremation Urn for Dog, Unique Wooden Keepsake with Your Photo (10)
 3. {BREED} Dog Memorial Urn, Custom Wooden Keepsake with Name and Quote (10)
-4. {BREED} Urn for Dog Ashes, Elegant Wooden Memorial, Personalised with Photo (10)
+4. {BREED} Urn for Dog Ashes, Unique Wooden Memorial, Personalised with Photo (10)
 5. {BREED} Dog Urn, Custom Wooden Cremation Urn, Name, Dates and Quote (10)
 6. {BREED} Ashes Urn for Your Dog, Handmade Personalised Wooden Memorial (9)
 
@@ -18,7 +18,7 @@ Słowa odmian w tytule (decyzja 30.10.2026): Cropped Ears (Boxer 661086082, Dobe
 Gdy nazwa rasy zawiera "dog"/"hound" (np. Bernese Mountain Dog, Afghan Hound): słowo "Dog" w tytule jest pomijane jak dotąd ("for Your Dog" → "for Your Pet").
 
 ## 2. Tagi (13, max 20 zn., bez ras, bez materiałów i uchwytów, bez powtórzeń)
-**Stałe (7), jak w urnach z reliefem:** urn for pet ashes (17), personalized urn (16), wooden urn (10), cremation urn (13), pet loss gift (13), elegant dog urn (15), dog memorial (12).
+**Stałe (7), jak w urnach z reliefem, ale "unique dog urn" zamiast "elegant dog urn" (zmiana 30.10.2026: "elegant" nie pasuje do urny z nadrukiem):** urn for pet ashes (17), personalized urn (16), wooden urn (10), cremation urn (13), pet loss gift (13), unique dog urn (14), dog memorial (12).
 **Pula (6 losowanych):** handmade urn (12), keepsake box (12), in loving memory (16), rainbow bridge (14), pet bereavement (15), custom pet urn (14), always in my heart (18), pet remembrance (15), pet sympathy (12), faithful friend (15), furry friend (12), last goodbye (12), pet funeral (11), best friend (11), pet tribute (11), forever loved (13), urn with quote (14), oraz dwa nowe, specyficzne dla tej urny z nadrukiem: **urn with photo** (14), **photo urn** (9).
 Materiały tekstowe w ofercie zostają: wood, brass handles, ceramic plate (płytka ceramiczna jest). Materials (lista Etsy): Ceramic, Brass, Pine, Birch jak w urnach z płytką (potwierdzone).
 
