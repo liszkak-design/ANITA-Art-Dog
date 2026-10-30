@@ -7,8 +7,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-import numpy as np
-from PIL import Image, ImageChops
+from PIL import Image, ImageChops, ImageDraw
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -18,7 +17,7 @@ W, H, FPS = R.W, R.H, R.FPS
 FADE = R.FADE
 SPECIES = "dog"
 ASSETS = HERE / "assets_urn_ceramic" / SPECIES
-S = [0.0, 2.0, 7.0, 12.9, 15.0]
+S = [0.0, 2.0, 5.8, 12.9, 15.0]
 BREEDS = "100"
 ease = R.ease
 
@@ -57,34 +56,50 @@ def scene1(t):
     return layer
 
 
-# ---------------------------------------------------------------- scene 2: breed portrait -> your photo -> background removed
-CROP = (130, 300, 1890, 1840)  # the whole urn (photos are 2000x2000)
-PW = 1000
-IMGS = []
-for n in (1, 2, 3):
-    im = load(n).crop(CROP)
-    IMGS.append(im.resize((PW, round(im.height * PW / im.width)), Image.LANCZOS).convert("RGBA"))
-PCX, PCY = 90 + PW // 2, 520
-TX2 = 1160
-CAPS = ["Standard: 1 of 100 portraits", "Optional: your original photo", "Optional: background removed"]
-_blocks = [R.text_block("CHOOSE YOUR PORTRAIT", ["Breed portrait,", "*or your own photo*"], c, TX2, H // 2, max_w=700, title_size=76) for c in CAPS]
-_static = R.text_block("CHOOSE YOUR PORTRAIT", ["Breed portrait,", "*or your own photo*"], " ", TX2, H // 2, max_w=700, title_size=76)
-SUB_BAND = (0, 650, W, 780)
-SUBL = []
-for b in _blocks:
-    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    lay.paste(b.crop(SUB_BAND), (SUB_BAND[0], SUB_BAND[1]))
-    SUBL.append(lay)
+# ---------------------------------------------------------------- scene 2: breed portrait, then the photo options slide out from under it
+FULL_CROP = (130, 300, 1890, 1840)  # the whole urn (photos are 2000x2000)
+FRAG_CROP = (1020, 300, 1890, 1840)  # right part of the urn: oval portrait and name plate
+
+
+def panel(n, height, crop):
+    im = load(n).crop(crop)
+    return im.resize((round(im.width * height / im.height), height), Image.LANCZOS).convert("RGBA")
+
+
+def _head():
+    head = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(head)
+    R.draw_runs(d, 150, 110, [("CHOOSE YOUR PORTRAIT", R.opensans(26, 600))], R.GOLD, spacing=4)
+    R.draw_runs(d, 150, 160, [("Breed portrait, ", R.playfair(76)), ("or your own photo", R.playfair(76, True))], R.DARK)
+    d.rectangle([150, 270, 240, 272], fill=R.GOLD)
+    d.text((150, 292), "Standard: 1 of 100 breed portraits · your photo is optional", font=R.opensans(28, 400), fill=R.blend(R.DARK, 0.85))
+    return head
+
+
+HEAD2 = _head()
+PH = 620
+P = {1: panel(1, PH, FULL_CROP), 2: panel(2, PH, FRAG_CROP), 3: panel(3, PH, FRAG_CROP)}
+GAP = 70
+X0 = (W - (P[1].width + P[2].width + P[3].width + 2 * GAP)) // 2
+X1 = X0 + P[1].width // 2
+X2 = X0 + P[1].width + GAP + P[2].width // 2
+X3 = X0 + P[1].width + GAP + P[2].width + GAP + P[3].width // 2
+X2_START = X1 + 200  # fully hidden behind the whole urn
+CY = 655
+CAP = {1: R.caption("Breed portrait", X1, 985), 2: R.caption("Your original photo", X2, 985),
+       3: R.caption("Background removed", X3, 985)}
 
 
 def scene2(t):
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    put(layer, IMGS[0], PCX, PCY, ease((t - 0.2) / FADE))
-    put(layer, IMGS[1], PCX, PCY, ease((t - 1.4) / 0.6))
-    put(layer, IMGS[2], PCX, PCY, ease((t - 2.9) / 0.6))
-    put_text(layer, _static, t, 0.2)
-    for i, (a0, a1) in enumerate(((0.3, 1.5), (1.4, 3.0), (2.9, None))):
-        put_text(layer, SUBL[i], t, a0, a1, slide=False)
+    put_text(layer, HEAD2, t, 0.0)
+    a3 = ease((t - 1.7) / 0.8)  # panel 3 slides out from under panel 2 to the right
+    put(layer, P[3], X2 + (X3 - X2) * a3, CY, 1.0 if t >= 1.7 else 0.0)
+    a2 = ease((t - 1.0) / 0.8)  # panel 2 slides out from under the whole urn
+    put(layer, P[2], X2_START + (X2 - X2_START) * a2, CY, 1.0 if t >= 1.0 else 0.0)
+    put(layer, P[1], X1, CY, ease((t - 0.2) / FADE))
+    for i, ta in ((1, 0.5), (2, 1.8), (3, 2.5)):
+        put_text(layer, CAP[i], t, ta)
     return layer
 
 
@@ -92,7 +107,7 @@ def scene2(t):
 URN = load(3)
 FW, FH = 840, 560
 FCX, FCY = 90 + FW // 2, H // 2
-KEYS = [(0.0, 1000, 1000, 2000), (0.9, 1411, 1521, 760), (2.9, 1411, 1521, 760), (3.9, 735, 1150, 900), (5.9, 735, 1150, 900)]
+KEYS = [(0.0, 1000, 1000, 2000), (0.9, 1411, 1521, 760), (3.2, 1411, 1521, 760), (4.2, 665, 1200, 1120), (7.0, 665, 1200, 1120)]
 
 
 def cam(t):
@@ -119,8 +134,8 @@ TXB = {"nd": R.text_block("NAME AND DATES", ["Your dog's", "*name and dates*"], 
 def scene3(t):
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     put(layer, view(t), FCX, FCY, ease(t / FADE))
-    put_text(layer, TXB["nd"], t, 1.0, 3.0)
-    put_text(layer, TXB["quote"], t, 4.0)
+    put_text(layer, TXB["nd"], t, 1.0, 3.3)
+    put_text(layer, TXB["quote"], t, 4.3)
     return layer
 
 
