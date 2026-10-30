@@ -49,6 +49,7 @@ OWNER_EAN = {1380245139: "5056739246375", 1380245821: "5056739246399"}  # popraw
 OWNER_VIDEO2 = {1380245821: ROTTWEILER_FIX}
 NAME_FIX = {"Borzoi Russian Wolfhound": "Borzoi", "Mastino Napoletano": "Neapolitan Mastiff", "Staffordshire Bullterrier": "Staffordshire Bull Terrier"}
 FEATURE_OFFER = {1380247435: "Dachshund Wire-haired"}  # Dachshund wire: "Wire-haired" w tytule
+TOP4 = {1366245946, 1380250289, 1380245821, 1366250756}  # German Shepherd, Dogue de Bordeaux, Rottweiler, Golden Retriever: na końcu
 LANG_ALL = U.LANG_ALL
 QUOTE = "When I needed a hand, you gave me your paw"
 TODAY = datetime.date.today()
@@ -450,7 +451,7 @@ def plan(n, size):
         if len(batch) == size:
             break
     views = {r["id"]: int(r["views"]) for r in csv.DictReader(open(GROUP, encoding="utf-8"))}
-    batch.sort(key=lambda c: views.get(str(c["lid"]), 0))
+    batch.sort(key=lambda c: (c["lid"] in TOP4, views.get(str(c["lid"]), 0)))  # najpopularniejsze (top 4) na końcu
     p = ROOT / "plans" / f"partia_relief_{n:03d}.csv"
     with open(p, "w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)

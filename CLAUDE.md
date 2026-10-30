@@ -29,6 +29,7 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 ## Zasady treści (szczegóły w DECYZJE.md, punkt 5)
 
 * Tytuł: nazwa rasy z kolumny C `Rasy.xlsx` na początku, potem typ produktu i cechy, do 140 znaków (cel 100-130), bez upychania.
+  Dla kolejnych grup produktów (ustalenie 30.10.2026, podpowiedź z Etsy "Tips to improve your title"): rozważ tytuł do 14 słów. Zatwierdzone już grupy (płytki, urny z płytką, urny z reliefem) zostają bez zmian.
 * Tagi: 13, max 20 znaków, bez nazw ras, różnorodne, bez powtórzeń.
 * Opis: pierwsze zdanie z pełną nazwą rasy (wyjątek: zdanie ze samym zdrobnieniem, bo nazwa rasy jest w tytule), nie kopiuj tytułu. Pierwszy akapit składaj z zatwierdzonych banków zdań (otwarcie / zastosowanie / zdjęcie klienta), tak żeby oferty nie były kopią z podmienioną rasą (szczegóły w `templates/`). Zdrobnienia tylko z kolumny E (EN), także w pierwszym zdaniu, bez wymogu nazwy rasy w tym samym zdaniu, łącznie raz lub dwa razy w pierwszym akapicie; jedno zdanie nie zawiera pełnej nazwy rasy dwa razy.
 * Alt text: opisowy, zgodny z tym, co widać, rasa jak w tytule oferty. Niezgodność zdjęcia z rasą oznacz do sprawdzenia.
