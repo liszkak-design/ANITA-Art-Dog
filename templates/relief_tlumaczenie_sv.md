@@ -1,4 +1,4 @@
-# Tłumaczenie Svenska: urny z reliefem "Custom urn for dog's ashes" (szkic Claude'a na podstawie polskiego, do sprawdzenia przez właścicielkę razem z polskim, 30.10.2026; wymaga kontroli osoby natywnej)
+# Tłumaczenie Svenska: urny z reliefem "Custom urn for dog's ashes" (zatwierdzone przez właścicielkę 30.10.2026; wykonane na podstawie polskiego i zatwierdzonego angielskiego; bez weryfikacji osoby natywnej)
 
 Forma: du. Podstawa: `relief_tlumaczenie_pl.md` (po uwagach właścicielki) i zatwierdzone teksty EN. Tylko psy. Wariant A = z tabliczką, B = bez tabliczki na zdjęciu (wiersze oznaczone [A] i [B]). Wzorca 3 tytułu w wersji B nie ma (jak w PL).
 Cytat zostaje po angielsku. Pól personalizacji nie tłumaczymy. Bez rozmiaru reliefu. Relief (płaskorzeźba) zawsze jako relief/bas-relief, nigdy popiersie.

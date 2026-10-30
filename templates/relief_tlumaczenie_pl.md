@@ -1,6 +1,6 @@
 # Tłumaczenie na polski: urny z reliefem "Custom urn for dog's ashes" (szkic Claude'a, do sprawdzenia przez właścicielkę, 29.10.2026)
 
-Status: szkic. Polski sprawdza właścicielka, nic nie ma statusu "zatwierdzone" bez jej potwierdzenia. Wszystkie oferty to psy ({gen} = psa, {loc} = psie). `{B}` = kolumna "PL nazwa" arkusza Rasy.
+Status: uwagi właścicielki wprowadzone 30.10.2026; tłumaczenia na 7 języków powstały na tej wersji i zostały przez właścicielkę zatwierdzone; sam polski czeka na jej wyraźne potwierdzenie. Wszystkie oferty to psy ({gen} = psa, {loc} = psie). `{B}` = kolumna "PL nazwa" arkusza Rasy.
 Bez słów "trwały, trwałe" (decyzja z płytek). Płaskorzeźba, nie popiersie. Cytat po angielsku. Bez rozmiaru reliefu.
 
 ## Tytuł (6 wzorców, odpowiedniki nowych angielskich; A = z tabliczką, B = bez tabliczki na zdjęciu)
