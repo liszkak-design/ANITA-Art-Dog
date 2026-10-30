@@ -7,13 +7,12 @@ Bez słów "trwały, trwałe" (decyzja z płytek). Płaskorzeźba, nie popiersie
 A:
 1. {B} urna na prochy psa, personalizowana drewniana urna pamiątkowa z grawerowanym imieniem, datami i cytatem
 2. {B} urna kremacyjna dla Twojego psa, elegancka ręcznie robiona drewniana urna z portretem rasy, pamiątka po pupilu
-3. {B} urna pamiątkowa z personalizowaną grawerowaną tabliczką, ręcznie robiona drewniana urna dla psa, wyrazy współczucia
+3. {B} urna pamiątkowa z personalizowaną grawerowaną tabliczką, ręcznie robiona drewniana urna dla psa, pamiątka po ukochanym psie
 4. {B} urna na prochy psa, elegancka drewniana pamiątka, personalizowana imieniem i cytatem
 5. {B} urna dla psa, drewniana urna kremacyjna na zamówienie, grawer imienia, dat i cytatu
 6. {B} urna na prochy Twojego psa, ręcznie robiona personalizowana drewniana pamiątka, ku pamięci ukochanego pupila
-B (wzorce 2 i 6 jak w A):
+B (wzorce 2 i 6 jak w A; wzorca 3 w wersji B nie ma: dla ofert B, którym wypadnie wzorzec 3, generator losuje inny wzorzec B):
 1. {B} urna na prochy psa, personalizowana drewniana urna pamiątkowa, imię i daty na życzenie
-3. {B} urna pamiątkowa z tabliczką na życzenie, ręcznie robiona drewniana urna dla psa, wyrazy współczucia
 4. {B} urna na prochy psa, elegancka drewniana pamiątka, imię i daty na życzenie
 5. {B} urna dla psa, drewniana urna kremacyjna na zamówienie, imię i daty na życzenie
 
@@ -23,10 +22,10 @@ B (wzorce 2 i 6 jak w A):
 - A2: Ręcznie robiona drewniana urna dla Twojego psa (rasa: {B}), ozdobiona szczegółową płaskorzeźbą z brązu odlewanego na zimno.
 - A3: Pamiątka po Twoim psie, rasa: {B}: ręcznie robiona drewniana urna z płaskorzeźbą, która oddaje charakter rasy.
 - A4: Spersonalizowana urna z płaskorzeźbą z brązu, rasa: {B}. Stworzona, by oddać hołd ukochanemu towarzyszowi.
-- A5: Gdy nadejdzie najsmutniejszy dzień, ta ręcznie robiona urna (rasa: {B}) zapewnia ciche i godne miejsce dla prochów Twojego psa.
+- A5: Gdy nadejdzie najsmutniejszy dzień, ta ręcznie robiona urna (rasa: {B}) będzie pięknym i godnym miejscem dla prochów Twojego psa.
 
 **B**
-- B1: Postaw ją w domu w cichym miejscu, jako hołd dla psa, który był częścią Twojego życia.
+- B1: Postaw ją w domu w wybranym miejscu, jako hołd dla psa, który był częścią Twojego życia.
 - B2: Może stanąć wszędzie tam, gdzie wspominasz swojego psa, jako delikatne przypomnienie o ukochanym towarzyszu.
 - B3: Odpowiednie miejsce na prochy Twojego psa, stworzone, by mieć je blisko, w domu.
 
@@ -40,7 +39,7 @@ B (wzorce 2 i 6 jak w A):
 - C1: Małą grawerowaną tabliczkę z imieniem i datami Twojego psa możemy dodać na życzenie, zawsze w cenie urny.
 - C2: Chcesz nadać jej osobisty charakter? Dodamy tabliczkę z imieniem i datami Twojego psa bez dodatkowej opłaty.
 - C3: Urna może mieć też tabliczkę z imieniem i datami Twojego psa: wystarczy napisać przy zamówieniu, jest wliczona w cenę.
-- C4: Podaj imię i daty, jeśli chcesz je mieć wygrawerowane na małej tabliczce, która zawsze jest w cenie.
+- C4: Jeśli chcesz, podaj imię i daty - zostaną wygrawerowane na małej tabliczce obok wizerunku psa. Tabliczka imienna jest zawsze w cenie.
 
 ## Sekcje stałe (wiersze oznaczone [A] i [B] tylko w danym wariancie)
 ```
@@ -80,7 +79,7 @@ Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać n
 
 ## Tagi (max 20 znaków; odpowiedniki nowej bazy EN)
 **Stałe:** urna dla zwierzaka (18), urna personalizowana (20), drewniana urna (14), urna kremacyjna (15), pamiątka po pupilu (18), elegancka urna (14), pamiątka po psie (16) (EN: urn for pet ashes, personalized urn, wooden urn, cremation urn, pet loss gift, elegant dog urn, dog memorial)
-**Pula:** urna ręcznie robiona (20), szkatułka pamiątkowa (20), ku pamięci (10), tęczowy most (12), żałoba po pupilu (16), urna na zamówienie (18), zawsze w sercu (14), pamięć o pupilu (15), wyrazy współczucia (18), wierny przyjaciel (17), futrzany przyjaciel (19), ostatnie pożegnanie (19), pogrzeb zwierzaka (17), najlepszy przyjaciel (20), hołd dla pupila (15), kochany na zawsze (17), urna z cytatem (14, tylko A)
+**Pula:** urna ręcznie robiona (20), szkatułka pamiątkowa (20), ku pamięci (10), tęczowy most (12), żałoba po pupilu (16), urna na zamówienie (18), zawsze w sercu (14), pamięć o pupilu (15), po stracie psa (14), wierny przyjaciel (17), futrzany przyjaciel (19), ostatnie pożegnanie (19), pogrzeb zwierzaka (17), najlepszy przyjaciel (20), hołd dla pupila (15), kochany na zawsze (17), urna z cytatem (14, tylko A)
 Materiały (tagi tekstowe, EN): wood, brass handles, cold cast bronze relief
 
 ## Pytania personalizacyjne: nie tłumaczymy (Etsy nie ma na to miejsca).
