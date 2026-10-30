@@ -104,7 +104,7 @@ def scene2(t):
 
 
 # ---------------------------------------------------------------- scene 3: camera over the urn (name plate, then the quote plaque)
-URN = load(3)
+URN = load(1)  # urn with the geometric breed portrait
 FW, FH = 840, 560
 FCX, FCY = 90 + FW // 2, H // 2
 KEYS = [(0.0, 1000, 1000, 2000), (0.9, 1411, 1521, 760), (3.2, 1411, 1521, 760), (4.2, 665, 1200, 1120), (7.0, 665, 1200, 1120)]
