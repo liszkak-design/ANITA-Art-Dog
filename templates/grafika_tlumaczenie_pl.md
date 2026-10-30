@@ -1,20 +1,20 @@
 # Tłumaczenie na polski: urny z płytką "with Graphics", psy (szkic Claude'a, do sprawdzenia przez właścicielkę, 30.10.2026)
 
-Status: szkic. Polski sprawdza właścicielka. Wszystkie oferty to psy ({gen} = psa, {loc} = psie). `{B}` = kolumna "PL nazwa" arkusza Rasy. Bez zdrobnień i synonimów (tylko A1-A5), bez "trwały/trwałe", bez "ciche miejsce". Cytat po angielsku.
+Status: poprawki właścicielki 30.10.2026 wprowadzone (daty życia, C1 w dwóch zdaniach, C3 z nadrukowanym zdjęciem); EN zatwierdzony. Polski sprawdza właścicielka. Wszystkie oferty to psy ({gen} = psa, {loc} = psie). `{B}` = kolumna "PL nazwa" arkusza Rasy. Bez zdrobnień i synonimów (tylko A1-A5), bez "trwały/trwałe", bez "ciche miejsce". Cytat po angielsku.
 
 ## Tytuł (6 wzorców)
 1. {B} urna na prochy psa, personalizowana drewniana pamiątka z płytką ze zdjęciem
 2. {B} urna kremacyjna dla psa, wyjątkowa drewniana pamiątka z Twoim zdjęciem
 3. {B} urna pamiątkowa dla psa, drewniana pamiątka z imieniem i cytatem
 4. {B} urna na prochy psa, wyjątkowa drewniana pamiątka, personalizowana zdjęciem
-5. {B} urna dla psa, drewniana urna kremacyjna na zamówienie, imię, daty i cytat
+5. {B} urna dla psa, drewniana urna kremacyjna na zamówienie, imię, daty życia i cytat
 6. {B} urna na prochy Twojego psa, ręcznie robiona personalizowana drewniana pamiątka
 
 ## Pierwszy akapit: banki
 **A**
 - A1: {B}: ręcznie robiona drewniana urna na prochy z płytką ceramiczną z geometrycznym portretem rasy, stworzona na pamiątkę ukochanego pupila.
 - A2: Ręcznie robiona drewniana urna dla Twojego psa (rasa: {B}), ozdobiona płytką ceramiczną z nowoczesnym geometrycznym portretem rasy i płytką z cytatem.
-- A3: Pamiątka po Twoim psie, rasa: {B}: ręcznie robiona drewniana urna z płytką z portretem, grawerowanym cytatem oraz imieniem i datami.
+- A3: Pamiątka po Twoim psie, rasa: {B}: ręcznie robiona drewniana urna z płytką z portretem, grawerowanym cytatem oraz imieniem i datami życia.
 - A4: Spersonalizowana urna z płytką ceramiczną z geometrycznym portretem rasy ({B}). Stworzona, by oddać hołd ukochanemu towarzyszowi.
 - A5: Gdy nadejdzie najsmutniejszy dzień, ta ręcznie robiona urna (rasa: {B}) będzie pięknym i godnym miejscem dla prochów Twojego psa.
 
@@ -24,17 +24,17 @@ Status: szkic. Polski sprawdza właścicielka. Wszystkie oferty to psy ({gen} = 
 - B3: Odpowiednie miejsce na prochy Twojego psa, stworzone, by mieć je blisko, w domu.
 
 **C**
-- C1: Każda urna powstaje na zamówienie: dodaj imię i daty psa, zostaw cytat albo wybierz własny, a możesz też przesłać własne zdjęcie, które nadrukujemy na płytce.
+- C1: Każda urna powstaje na zamówienie: dodaj imię i daty życia psa, zostaw cytat albo wybierz własny. Możesz też przesłać własne zdjęcie, które nadrukujemy na płytce.
 - C2: Spraw, by była naprawdę wyjątkowa: tabliczkę, cytat i obraz na płytce można spersonalizować, by upamiętnić Twojego psa.
-- C3: Możesz spersonalizować imię, daty i cytat oraz zamówić płytkę z nadrukiem zdjęcia własnego psa.
-- C4: Podaj imię, daty i cytat, jakie chcesz, a jeśli chcesz zobaczyć na płytce własnego psa, załącz zdjęcie.
+- C3: Możesz spersonalizować imię, daty życia i cytat oraz zamówić płytkę z nadrukowanym zdjęciem własnego psa.
+- C4: Podaj imię, daty życia i cytat, jakie chcesz, a jeśli chcesz zobaczyć na płytce własnego psa, załącz zdjęcie.
 
 ## Sekcje stałe
 ```
 CO WARTO WIEDZIEĆ O URNIE
 - Ręcznie robiona drewniana urna na prochy zwierzęcia, z litego drewna i sklejki, malowana na brązowo
 - Owalna płytka ceramiczna z geometrycznym portretem rasy ({B}) albo z Twoim zdjęciem nadrukowanym w kolorze lub w kolorze z usuniętym tłem, ok. 7,5 x 10,5 cm (2,95 x 4,13 cala), na stałe przymocowana
-- Płytka w kształcie łapy z grawerowanym cytatem oraz tabliczka z imieniem i datami
+- Płytka w kształcie łapy z grawerowanym cytatem oraz tabliczka z imieniem i datami życia
 - Wymiary zewnętrzne: 21 x 29 x 22 cm (8,3 x 11,4 x 8,7 cala)
 - Wymiary wewnętrzne: 14 x 21 x 15,5 cm (5,5 x 8,3 x 6,1 cala), pojemność ok. 4,5 litra (275 cali sześciennych)
 - Mosiężne uchwyty i rzeźbione ozdoby z drewna
@@ -46,7 +46,7 @@ Pożegnanie z psem, który był członkiem rodziny, nigdy nie jest łatwe. Ta ur
 PERSONALIZACJA
 Każda urna powstaje na zamówienie. Podaj nam:
 - Imię: imię Twojego psa, tak jak ma się pojawić na tabliczce.
-- Daty: daty urodzenia i śmierci, w dowolnym formacie.
+- Daty życia: daty urodzenia i śmierci, w dowolnym formacie.
 - Cytat: płytka w kształcie łapy zawiera napis "You left paw prints on my heart" (tylko po angielsku), chyba że podasz własne, dokładne brzmienie.
 - Obraz na płytce: płytka przedstawia geometryczny portret rasy albo nadrukujemy Twoje zdjęcie.
 - Styl nadruku (dla własnego zdjęcia): w kolorze albo w kolorze z usuniętym tłem.
