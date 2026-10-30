@@ -48,8 +48,8 @@ def load(n):
 
 
 # ---------------------------------------------------------------- scene 1
-T1 = R.text_block("PERSONALISATION", ["How to customize", "*your urn*"],
-                  "Optional – order as shown, or make it your own", W // 2, H // 2, max_w=1100, title_size=104, centered=True)
+T1 = R.text_block("PERSONALISATION", ["How to customize the", "*engravings on your urn*"],
+                  "Optional – order as shown, or make it your own", W // 2, H // 2, max_w=1300, title_size=96, centered=True)
 
 
 def scene1(t):
@@ -75,8 +75,8 @@ def urn_tile(n):
 
 
 TILES = [urn_tile(n) for n in range(1, 6)]
-T2 = R.text_block("CHOOSE YOUR URN", [f"*{DESIGNS} designs*", "to choose from"],
-                  "Pick the portrait that suits your dog", 1260, H // 2, max_w=600, title_size=86)
+T2 = R.text_block("THE URN", ["Choose your", "*breed*"],
+                  f"{DESIGNS} designs to choose from", 1260, H // 2, max_w=600, title_size=86)
 STARTS2 = [0.2 + i * 0.85 for i in range(5)]
 
 
