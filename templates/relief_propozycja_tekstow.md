@@ -115,4 +115,4 @@ Our products are shipped from Poland, so import charges may apply in some countr
 **B:** 1. Name (optional), instrukcja: "Optional: the name for a small engraved nameplate, included in the price." 2. Dates (optional), instrukcja: "Optional: dates in any format for the nameplate."
 
 ## 8. Filmy
-Film 1: `video/video-urn-relief-anita.mp4` (brak pliku, czeka na Twój film). Film 2: z folderu rasy na serwerze, bez "brand"; wyjątki: 1380245821 (Rottweiler) drugi film = `video/poprawki/rottweiler-5056739246399.mp4`; 1380245139 (Rottweiler) dostaje produkt EAN 5056739246375.
+Film 1: `video/video-urn-relief-dogs-anita.mp4` (brak pliku, czeka na Twój film). Film 2: z folderu rasy na serwerze, bez "brand"; wyjątki: 1380245821 (Rottweiler) drugi film = `video/poprawki/rottweiler-5056739246399.mp4`; 1380245139 (Rottweiler) dostaje produkt EAN 5056739246375.
