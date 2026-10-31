@@ -12,7 +12,7 @@ Zasady jak dotąd: banki A/B/C, NICK/SYN w zdaniu A (tylko EN), "handmade", bez 
 5. {BREED} Wooden Urn for Your {SP}, Engraved Plaques and Silver Plated Breed Relief
 6. {BREED} {SP} Ashes Urn, Personalised Wooden Memorial with Silver Relief Portrait
 
-Przykłady: "Boxer Urn for Dog Ashes with Silver Plated Relief, Handmade Wooden Memorial" (12 słów); "Maine Coon Memorial Urn with Silver Relief Portrait, Personalized Wooden Keepsake for Your Cat" (13); "Friesian Horse Ashes Urn, Personalised Wooden Memorial with Silver Relief Portrait" (11 przy pominięciu "Horse" po rasie nie dotyczy: Friesian Horse zawiera Horse).
+Przykłady: "Boxer Urn for Dog Ashes with Silver Plated Relief, Handmade Wooden Memorial" (12 słów); "Maine Coon Memorial Urn with Silver Relief Portrait, Personalized Wooden Keepsake for Your Cat" (13); "Friesian Horse Ashes Urn, Personalised Wooden Memorial with Silver Relief Portrait" (11; nazwa rasy zawiera już "Horse", więc nie powtarzamy gatunku).
 
 ## 2. Tagi (13, max 20 zn., bez ras, bez powtórzeń)
 **Stałe (7):** silver plated urn (17), {sp} ashes urn (dog ashes urn 14 / cat ashes urn 13 / horse ashes urn 15), engraved pet urn (16), wooden pet urn (14), pet memorial urn (16), custom cremation urn (20), urn with relief (15).
