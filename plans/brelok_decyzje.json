@@ -29,7 +29,7 @@
   "1394182233": "Spinone Italiano",
   "659836252": "Rough Collie"
  },
- "film_1": "video/video-urn-brelok-dogs-anita.mp4 (dla wszystkich: psy, koty, konie; plik jeszcze nie dostarczony do repozytorium)",
+ "film_1": "video/video-urn-brelok-dogs-anita.mp4 (z gałęzi stoic-edison, skopiowany 31.10.2026)",
  "film_2": "z folderu 089 (plik bez 'brand'), poza ofertami z listy bez_filmu_2",
  "zdjecie_7": "tylko psy: media/urny_brelok/original_pies.jpg",
  "rasa_id_reczny": {
@@ -51,7 +51,8 @@
   "673609753": "Dachshund Wire-haired",
   "659759682": "Dachshund Smooth-haired",
   "659830146": "Collie Smooth",
-  "659836252": "Collie Rough (w EN nazwa Rough Collie)"
+  "659836252": "Collie Rough (w EN nazwa Rough Collie)",
+  "1394178949": "Ibizan Hound Wire-haired (wyjątek: zgodne ze zdjęciem; słowa odmiany z 'Dachshund Wire-haired')"
  },
  "nazwa_bez_tlumaczen": {
   "1380181530": "Lagotto Romagnolo (taka sama we wszystkich językach)",
@@ -60,7 +61,6 @@
  "synonim_en": {
   "1380176110": "Old English Sheepdog (tylko w opisie EN; w tytule i tłumaczeniach Bobtail)"
  },
- "uwagi_otwarte": [
-  "1394178949 Ibizan Hound wirehaired: R134 bez słowa odmiany (brak frazy w arkuszu 'Słowa stałe'), do potwierdzenia"
- ]
+ "uwagi_otwarte": [],
+ "tagi_stale_zmiana": "31.10.2026: pierwszy tag stały 'silver plated urn' zastąpiony przez 'pet memorial'"
 }

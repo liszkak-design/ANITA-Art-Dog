@@ -2,7 +2,7 @@
 
 Produkt: jak dotychczasowe urny (drewno lite i sklejka malowana na brązowo, mosiężne uchwyty, rzeźbione ozdoby, 21 x 29 x 22 cm, wnętrze 14 x 21 x 15,5 cm, 4,5 L, wieczko nie jest szczelne). Mały relief rasy z stopu cynku i aluminium pokryty warstwą srebra (bez wymiarów reliefu; relief nie podlega personalizacji). Na przodzie dwie małe tabliczki (imię, daty) i duża tabliczka z cytatem (domyślny cytat ze zdjęcia, opcjonalny w personalizacji).
 Zasady jak dotąd: banki A/B/C, NICK/SYN w zdaniu A (tylko EN), "handmade", bez wagi i gatunku drewna, cytat po angielsku, bez zdania o personalizacji w cenie. **Teksty NOWE: inne tytuły, tagi, banki i sekcje niż w urnach z płytką, z reliefem cold cast i z Graphics (prośba właścicielki 31.10.2026). Tytuł do 14 słów.**
-`{BREED}` = kolumna C Rasy.xlsx (z odmianą w tytule), `{sp}` = dog / cat / horse (w tytule `{SP}` = Dog / Cat / Horse, pomijane gdy nazwa rasy zawiera dog/hound itp., wtedy "for Your Pet"). Bobtail: w tytule Bobtail, synonim EN "Old English Sheepdog" ([S]). Lagotto Romagnolo i Spitz bez zmian we wszystkich językach.
+`{BREED}` = kolumna C Rasy.xlsx (z odmianą w tytule), `{sp}` = dog / cat / horse (w tytule `{SP}` = Dog / Cat / Horse, pomijane gdy nazwa rasy zawiera dog/hound itp., wtedy "for Your Pet"). Ibizan Hound 1394178949: wyjątkowo "Wire-haired" w tytule (zgodne ze zdjęciem; słowo odmiany jak przy Dachshund Wire-haired). Bobtail: w tytule Bobtail, synonim EN "Old English Sheepdog" ([S]). Lagotto Romagnolo i Spitz bez zmian we wszystkich językach.
 
 ## 1. Tytuły (rasa na początku; wzorzec losowany po ID oferty; generator bierze pierwszy wzorzec od wylosowanego mieszczący się w 14 słowach i 140 znakach)
 1. {BREED} Urn for {SP} Ashes with Silver Plated Relief, Handmade Wooden Memorial
@@ -15,7 +15,7 @@ Zasady jak dotąd: banki A/B/C, NICK/SYN w zdaniu A (tylko EN), "handmade", bez 
 Przykłady: "Boxer Urn for Dog Ashes with Silver Plated Relief, Handmade Wooden Memorial" (12 słów); "Maine Coon Memorial Urn with Silver Relief Portrait, Personalized Wooden Keepsake for Your Cat" (13); "Friesian Horse Ashes Urn, Personalised Wooden Memorial with Silver Relief Portrait" (11; nazwa rasy zawiera już "Horse", więc nie powtarzamy gatunku).
 
 ## 2. Tagi (13, max 20 zn., bez ras, bez powtórzeń)
-**Stałe (7):** silver plated urn (17), {sp} ashes urn (dog ashes urn 14 / cat ashes urn 13 / horse ashes urn 15), engraved pet urn (16), wooden pet urn (14), pet memorial urn (16), custom cremation urn (20), urn with relief (15).
+**Stałe (7):** pet memorial (12), {sp} ashes urn (dog ashes urn 14 / cat ashes urn 13 / horse ashes urn 15), engraved pet urn (16), wooden pet urn (14), pet memorial urn (16), custom cremation urn (20), urn with relief (15).
 **Pula (6 losowanych, bez wspólnych słów kluczowych ze stałymi i między sobą):** pet loss keepsake (17), sympathy gift (13), remembrance urn (15), forever in my heart (19), heartfelt tribute (17), companion memorial (18), handcrafted urn (15), loving memory gift (18), loyal friend (12), farewell keepsake (17), cherished companion (19), breed portrait (14), urn with name (13), engraved quote (14), bereavement gift (16), silver breed relief (19).
 Materiały tekstowe w ofercie: **wood, brass handles, silver plated metal relief**. Materials (lista Etsy): Brass, Pine, Birch, Metal.
 
