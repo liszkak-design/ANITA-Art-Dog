@@ -1,11 +1,11 @@
 # Tłumaczenie na polski: urna z małą posrebrzaną płaskorzeźbą (psy, koty, konie; szkic Claude'a do sprawdzenia przez właścicielkę, 31.10.2026)
 
-Status: EN zatwierdzony przez właścicielkę 31.10.2026 (z poprawkami: tag stały "pet memorial", Ibizan Hound Wire-haired). Polski sprawdza właścicielka. Gatunek przez formy: `{gen}` = psa / kota / konia, `{loc}` = psie / kocie / koniu. `{B}` = kolumna "PL nazwa" arkusza Rasy (z odmianą w tytule). Bez zdrobnień i synonimów (tylko A1-A5), bez "trwały/trwałe", bez "ciche miejsce", wszędzie "daty życia". Cytat po angielsku. Bobtail, Lagotto Romagnolo i Spitz bez zmian nazwy.
+Status: poprawki właścicielki 31.10.2026 wprowadzone (tytuły, A2 bez "bogato", tagi: urna z grawerem, pamiątka po {loc}, wyjątkowa urna); EN zatwierdzony przez właścicielkę 31.10.2026 (z poprawkami: tag stały "pet memorial", Ibizan Hound Wire-haired). Polski sprawdza właścicielka. Gatunek przez formy: `{gen}` = psa / kota / konia, `{loc}` = psie / kocie / koniu. `{B}` = kolumna "PL nazwa" arkusza Rasy (z odmianą w tytule). Bez zdrobnień i synonimów (tylko A1-A5), bez "trwały/trwałe", bez "ciche miejsce", wszędzie "daty życia". Cytat po angielsku. Bobtail, Lagotto Romagnolo i Spitz bez zmian nazwy.
 
 ## Tytuł (6 wzorców)
-1. {B} urna na prochy {gen} z posrebrzanym reliefem, ręcznie robiona drewniana pamiątka
-2. {B} urna pamiątkowa z posrebrzanym portretem rasy, personalizowana drewniana pamiątka po {loc}
-3. {B} urna kremacyjna dla {gen}, ręcznie robione drewno z posrebrzanym reliefem i grawerowanym cytatem
+1. {B} drewniana urna na prochy {gen} z posrebrzanym reliefem, ręcznie robiona pamiątka
+2. {B} urna z posrebrzanym portretem rasy, personalizowana drewniana pamiątka po {loc}
+3. {B} urna kremacyjna dla {gen}, ręcznie robiona, drewniana z posrebrzanym reliefem i grawerowanym cytatem
 4. {B} urna na prochy {gen}, posrebrzany portret rasy, własne imię, daty życia i cytat
 5. {B} drewniana urna dla {gen}, grawerowane tabliczki i posrebrzany relief rasy
 6. {B} urna na prochy {gen}, personalizowana drewniana pamiątka z posrebrzanym portretem rasy
@@ -13,7 +13,7 @@ Status: EN zatwierdzony przez właścicielkę 31.10.2026 (z poprawkami: tag sta�
 ## Pierwszy akapit: banki
 **A**
 - A1: Ręcznie robiona drewniana urna na prochy {gen} (rasa: {B}), ozdobiona małym posrebrzanym reliefem rasy oraz grawerowanymi tabliczkami z imieniem, datami życia i cytatem.
-- A2: Bogato szczegółowy, posrebrzany relief rasy {B} zdobi przód tej ręcznie robionej drewnianej urny, stworzonej na prochy ukochanego {gen}.
+- A2: Szczegółowy, posrebrzany relief rasy {B} zdobi przód tej ręcznie robionej drewnianej urny, stworzonej na prochy ukochanego {gen}.
 - A3: Zachowaj pamięć o swoim {loc}, rasa {B}: ręcznie robiona drewniana urna z małym posrebrzanym reliefem rasy oraz tabliczkami z imieniem, datami życia i kilkoma słowami pamięci.
 - A4: Wykonana na zamówienie, z posrebrzanym reliefem rasy {B}: ta drewniana urna daje prochom Twojego {gen} godne miejsce.
 - A5: Gdy przyjdzie czas pożegnania, ta ręcznie robiona drewniana urna (rasa: {B}) z posrebrzanym reliefem będzie godnym miejscem na prochy ukochanego pupila.
@@ -59,6 +59,6 @@ Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać n
 ```
 
 ## Tagi (max 20 znaków)
-**Stałe:** upamiętnienie pupila (20), urna na prochy {gen} (psa 18, kota 19, konia 20), grawerowana urna (16), drewniana urna (14), urna pamiątkowa (15), urna kremacyjna (15), urna z reliefem (15) (EN: pet memorial, {sp} ashes urn, engraved pet urn, wooden pet urn, pet memorial urn, custom cremation urn, urn with relief)
-**Pula:** pamiątka po pupilu (18), pożegnalna pamiątka (19), urna wspomnień (14), na zawsze w sercu (17), hołd z serca (12), pamięć o towarzyszu (19), urna ręcznie robiona (20), prezent ku pamięci (18), wierny przyjaciel (17), pamiątka pożegnania (19), ukochany towarzysz (18), portret rasy (12), urna z imieniem (15), grawerowany cytat (17), prezent po stracie (18), srebrny relief rasy (19)
+**Stałe:** upamiętnienie pupila (20), urna na prochy {gen} (psa 18, kota 19, konia 20), urna z grawerem (15), drewniana urna (14), urna pamiątkowa (15), urna kremacyjna (15), pamiątka po {loc} (psie 16, kocie 17, koniu 17) (EN: pet memorial, {sp} ashes urn, engraved pet urn, wooden pet urn, pet memorial urn, custom cremation urn, urn with relief)
+**Pula:** pamiątka po pupilu (18), pożegnalna pamiątka (19), wyjątkowa urna (14), na zawsze w sercu (17), hołd z serca (12), pamięć o towarzyszu (19), urna ręcznie robiona (20), prezent ku pamięci (18), wierny przyjaciel (17), pamiątka pożegnania (19), ukochany towarzysz (18), portret rasy (12), urna z imieniem (15), grawerowany cytat (17), prezent po stracie (18), srebrny relief rasy (19)
 Materiały (tagi tekstowe, EN): wood, brass handles, silver plated metal relief
