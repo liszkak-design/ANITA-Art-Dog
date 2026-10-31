@@ -1,12 +1,66 @@
 {
  "data": "2026-10-31",
  "zrodlo": "odpowiedzi właścicielki w czacie po przejrzeniu arkuszy porównawczych",
- "bez_filmu_2": [1380176110, 1394181431, 674107939, 1380175976, 660267206, 1394182233],
- "oferta_usunieta_przez_wlascicielke": [1394177227],
- "pominiete_big_horse": [1381486535, 1381486029],
- "folder_reczny": {"1394183167": "185. La laguna terrier 5056739233078"},
- "podpis_rasy_reczny": {"1394183167": "Presa Canario", "1380176110": "Bobtail", "1394181431": "Boxer", "674107939": "Dobermann", "1380175976": "Havanese", "660267206": "Yorkshire Terrier", "1394182233": "Spinone Italiano", "659836252": "Rough Collie"},
+ "bez_filmu_2": [
+  1380176110,
+  1394181431,
+  674107939,
+  1380175976,
+  660267206,
+  1394182233
+ ],
+ "oferta_usunieta_przez_wlascicielke": [
+  1394177227
+ ],
+ "pominiete_big_horse": [
+  1381486535,
+  1381486029
+ ],
+ "folder_reczny": {
+  "1394183167": "185. La laguna terrier 5056739233078"
+ },
+ "podpis_rasy_reczny": {
+  "1394183167": "Presa Canario",
+  "1380176110": "Bobtail",
+  "1394181431": "Boxer",
+  "674107939": "Dobermann",
+  "1380175976": "Havanese",
+  "660267206": "Yorkshire Terrier",
+  "1394182233": "Spinone Italiano",
+  "659836252": "Rough Collie"
+ },
  "film_1": "video/video-urn-brelok-dogs-anita.mp4 (dla wszystkich: psy, koty, konie; plik jeszcze nie dostarczony do repozytorium)",
  "film_2": "z folderu 089 (plik bez 'brand'), poza ofertami z listy bez_filmu_2",
- "zdjecie_7": "tylko psy: media/urny_brelok/original_pies.jpg"
+ "zdjecie_7": "tylko psy: media/urny_brelok/original_pies.jpg",
+ "rasa_id_reczny": {
+  "673609249": "R127",
+  "673678923": "R076",
+  "659836630": "R111",
+  "659760230": "R088",
+  "1380177284": "R129",
+  "1394182805": "R235",
+  "673599899": "R048",
+  "1380180644": "R093",
+  "673609753": "R025",
+  "659759682": "R025",
+  "659830146": "R059",
+  "659836252": "R059",
+  "1394178949": "R134"
+ },
+ "odmiana_reczna": {
+  "673609753": "Dachshund Wire-haired",
+  "659759682": "Dachshund Smooth-haired",
+  "659830146": "Collie Smooth",
+  "659836252": "Collie Rough (w EN nazwa Rough Collie)"
+ },
+ "nazwa_bez_tlumaczen": {
+  "1380181530": "Lagotto Romagnolo (taka sama we wszystkich językach)",
+  "659843268": "Spitz (taka sama we wszystkich językach)"
+ },
+ "synonim_en": {
+  "1380176110": "Old English Sheepdog (tylko w opisie EN; w tytule i tłumaczeniach Bobtail)"
+ },
+ "uwagi_otwarte": [
+  "1394178949 Ibizan Hound wirehaired: R134 bez słowa odmiany (brak frazy w arkuszu 'Słowa stałe'), do potwierdzenia"
+ ]
 }
