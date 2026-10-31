@@ -43,6 +43,7 @@ MAT_VALUES = ("68,203,1059,174", "Brass,Pine,Birch,Metal")  # Brass, Pine, Birch
 LANG_ALL = U.LANG_ALL
 TODAY = datetime.date.today()
 MAX_WORDS = 14
+WORDS_EXCEPTION = {673678923}  # 31.10.2026: Irish Soft Coated Wheaten Terrier (nazwa rasy 5 słów): dłuższy tytuł dozwolony, limit 140 znaków
 SPW = {"pies": "dog", "kot": "cat", "koń": "horse"}
 QUOTE = "Those we love don't go away, They walk beside us everyday, Unseen, unheard, but always near, Still loved, still missed and very dear"
 NAME_ALL = {1380181530: "Lagotto Romagnolo", 659843268: "Spitz", 1380176110: "Bobtail"}  # bez tłumaczeń nazwy (decyzja 31.10.2026)
@@ -93,13 +94,14 @@ def title_fill(pat, name, sp):
 
 
 def pick_title(lid, pats, name, sp):
+    max_w = 99 if lid in WORDS_EXCEPTION else MAX_WORDS
     start = U.pick(lid, "T", len(pats))
     fb = None
     for k in range(len(pats)):
         i = (start + k) % len(pats)
         t = title_fill(pats[i], name, sp)
         fb = fb or (t, i + 1)
-        if len(t) <= 140 and words(t) <= MAX_WORDS:
+        if len(t) <= 140 and words(t) <= max_w:
             return t, i + 1
     return fb
 
@@ -271,9 +273,9 @@ def render(c, fw):
     return enx, trans
 
 
-def check(enx, trans, sp):
+def check(enx, trans, sp, lid=0):
     p = []
-    if len(enx["title"]) > 140 or enx["slow_w_tytule"] > MAX_WORDS:
+    if len(enx["title"]) > 140 or (enx["slow_w_tytule"] > MAX_WORDS and lid not in WORDS_EXCEPTION):
         p.append(f"tytuł EN {len(enx['title'])} zn. / {enx['slow_w_tytule']} słów")
     if re.search(r"natural ears", enx["title"] + enx["description"], re.I):
         p.append("Natural Ears")
@@ -301,7 +303,7 @@ def raport():
             why, nt, nw = list(c["why"]), "", ""
             if not [x for x in why if x != "już zoptymalizowana"] and c["rr"]:
                 enx, trans = render(c, fw)
-                why += check(enx, trans, c["sp"])
+                why += check(enx, trans, c["sp"], c["lid"])
                 nt, nw = enx["title"], enx["slow_w_tytule"]
             w.writerow([c["lid"], c["views"], c["sp"], c["st"]["title"][:60], c["breed"], c["key"], nt, nw, c["film2"], "; ".join(why)])
     r = list(csv.DictReader(open(out, encoding="utf-8")))
@@ -326,7 +328,7 @@ def plan(n, size):
             print("pomijam", c["lid"], c["breed"], c["why"])
             continue
         enx, trans = render(c, fw)
-        prob = check(enx, trans, c["sp"])
+        prob = check(enx, trans, c["sp"], c["lid"])
         if prob:
             print("pomijam", c["lid"], c["breed"], prob)
             continue
