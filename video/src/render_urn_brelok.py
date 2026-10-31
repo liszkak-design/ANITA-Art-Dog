@@ -17,7 +17,7 @@ W, H, FPS = R.W, R.H, R.FPS
 FADE = R.FADE
 SPECIES = "dog"
 ASSETS = HERE / "assets_urn_brelok" / SPECIES
-S = [0.0, 2.0, 6.4, 12.9, 15.0]
+S = [0.0, 1.9, 5.9, 12.9, 15.0]
 BREEDS = "200"
 DESIGNS = "150+"
 ease = R.ease
@@ -66,7 +66,7 @@ for n in range(1, 7):
     TILES.append(im.resize((PW, round(im.height * PW / im.width)), Image.LANCZOS).convert("RGBA"))
 PCX, PCY = 90 + PW // 2, 520
 T2 = R.text_block("SILVER-PLATED RELIEF", ["Choose your", "*breed*"], f"{DESIGNS} designs to choose from", 1160, H // 2, max_w=700, title_size=86)
-STARTS2 = [0.2 + i * 0.6 for i in range(6)]
+STARTS2 = [0.2 + i * 0.55 for i in range(6)]
 
 
 def scene2(t):
@@ -81,8 +81,8 @@ def scene2(t):
 URN = load(6)
 FW, FH = 840, 560
 FCX, FCY = 90 + FW // 2, H // 2
-KEYS = [(0.0, 1000, 1000, 2000), (0.9, 580, 906, 700), (2.1, 580, 906, 700), (3.0, 1467, 905, 700), (4.0, 1467, 905, 700),
-        (5.0, 1020, 1144, 1400), (6.5, 1020, 1144, 1400)]
+KEYS = [(0.0, 1000, 1000, 2000), (0.8, 580, 906, 700), (2.1, 580, 906, 700), (2.9, 1467, 905, 700), (4.0, 1467, 905, 700),
+        (4.9, 1020, 1144, 1400), (7.0, 1020, 1144, 1400)]
 
 
 def cam(t):
@@ -114,9 +114,9 @@ TXB = {"name": tb("NAME", ["Your dog's", "*name*"], "Engraved on the small plaqu
 def scene3(t):
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     put(layer, view(t), FCX, FCY, ease(t / FADE))
-    put_text(layer, TXB["name"], t, 1.0, 2.2)
-    put_text(layer, TXB["dates"], t, 3.1, 4.1)
-    put_text(layer, TXB["quote"], t, 5.1)
+    put_text(layer, TXB["name"], t, 0.9, 2.1)
+    put_text(layer, TXB["dates"], t, 3.0, 4.0)
+    put_text(layer, TXB["quote"], t, 5.0)
     return layer
 
 
