@@ -4,7 +4,7 @@
   python3 -I scripts/batch_brelok.py plan N [--lid=ID[,ID]] [--size=K]   # dry-run partii N (plans/partia_brelok_00N.csv i _dryrun.json)
   python3 -I scripts/batch_brelok.py apply N --apply             # zapis do Etsy (tylko po "tak" właścicielki dla partii N)
 Zakres na ofertę: kopia zapasowa; tytuł (do 14 słów), opis, 13 tagów, materiały tekstowe (wood, brass handles, silver plated metal relief), Materials
-(Brass, Pine, Birch, Metal), personalizacja (3 pytania), alt texty zdjęć 1-6 (bez wymiany zdjęć), zdjęcie 7 (oryginał, tylko psy), film 1
+(Brass, Pine, Birch, Metal), personalizacja (3 pytania), alt texty zdjęć 1-6 (bez wymiany zdjęć), zdjęcie 7 (oryginał, wszystkie gatunki), film 1
 (video-urn-brelok-dogs-anita.mp4), film 2 z folderu 089 (poza ofertami bez filmu 2), 8 tłumaczeń. Teksty: templates/brelok_propozycja_tekstow.md i brelok_tlumaczenie_<język>.md.
 Kolejność: od najmniej do najczęściej oglądanych. Limit API: etsy_api (okno 24 h, stop 9000).
 """
@@ -266,8 +266,7 @@ def render(c, fw):
     title, tidx = pick_title(lid, en()["titles"], name, spw)
     enx = {"title": title, "description": desc, "tags": en_tags(lid, spw), "alts": en_alts(name, spw), "wzorzec_tytulu": tidx,
            "ABC": {k: v[0] + 1 for k, v in ch.items()}, "nick": nick, "synonim": syn, "odmiana": c["key"], "slow_w_tytule": words(title)}
-    if sp == "pies":
-        enx["alts"][7] = ALT7
+    enx["alts"][7] = ALT7  # zdjęcie 7 dla wszystkich gatunków (decyzja 31.10.2026); alt opisuje to, co widać na zdjęciu
     fwd = fw.get(c["key"], {}) if c["key"] else {}
     trans = {code: tr_render(code, lid, sp, rr, ch, tidx, fwd.get(code, "")) for code in LANG_ALL}
     return enx, trans
@@ -346,7 +345,7 @@ def plan(n, size):
     dry = []
     for c in batch:
         v2 = BASE_V + urllib.parse.quote(c["folder"]) + "/" + urllib.parse.quote(c["film2"]) if c["film2"] else ""
-        dry.append({"listing_id": c["lid"], "rasa": c["breed"], "gatunek": c["sp"], "film2": v2, "film2_nazwa": c["film2"], "zdjecie_7": c["sp"] == "pies",
+        dry.append({"listing_id": c["lid"], "rasa": c["breed"], "gatunek": c["sp"], "film2": v2, "film2_nazwa": c["film2"], "zdjecie_7": True,
                     "images_before": {str(r[0]): r[1] for r in c["st"]["images"]}, "tytul_przed": c["st"]["title"], "en": c["en"], "tlumaczenia": c["trans"]})
     (ROOT / "plans" / f"partia_brelok_{n:03d}_dryrun.json").write_text(json.dumps(dry, ensure_ascii=False, indent=1))
     print(f"partia {n}: {len(batch)} ofert, gatunki {Counter(c['sp'] for c in batch)}")
