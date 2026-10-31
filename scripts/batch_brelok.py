@@ -357,7 +357,7 @@ def plan(n, size):
 def personalization():
     return [{"question_type": "text_input", "question_text": "Name", "required": True, "max_allowed_characters": 50},
             {"question_type": "text_input", "question_text": "Dates", "required": True, "max_allowed_characters": 50},
-            {"question_type": "text_input", "question_text": "Quote on the plaque (optional)", "required": False, "max_allowed_characters": 600,
+            {"question_type": "text_input", "question_text": "Quote on the plaque", "required": False, "max_allowed_characters": 600,
              "instructions": "Leave empty for the default verse, or type the exact text you'd like engraved on the large plaque."}]
 
 

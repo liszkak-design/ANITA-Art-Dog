@@ -703,3 +703,8 @@
 2026-10-31T15:18:46 POST /v3/application/shops/19255336/listings/659838444/translations/sv
 2026-10-31T15:18:47 GET /v3/application/listings/659838444
 2026-10-31T15:18:47 GET /v3/application/shops/19255336/listings/659838444/properties
+2026-10-31T15:23:21 GET /v3/application/listings/659838444
+2026-10-31T15:23:21 GET /v3/application/shops/19255336/listings/659838444/properties
+2026-10-31T15:23:22 GET /v3/application/listings/659838444/inventory
+2026-10-31T15:23:22 POST /v3/application/shops/19255336/listings/659838444/personalization
+2026-10-31T15:23:24 GET /v3/application/listings/659838444
