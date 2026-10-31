@@ -20,7 +20,7 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 4. Przed zmianą istniejącej oferty zapisz jej stan w `backup/<listing\_id>\_<data>.json` (tytuł, opis, tagi, materiały, personalizacja, zdjęcia z kolejnością i alt textem, wideo).
 5. Partie maksymalnie po 50 ofert. Po każdej partii: log w `logs/` (id oferty, pole, wartość przed, po, status, czas) i prośba o sprawdzenie próbki w Etsy, zanim ruszy następna partia.
 6. Skrypty muszą dać się wznowić (pomijają wykonane pozycje według logu) i obsługiwać błędy i limity API bez zgadywania.
-7. Limity API: 10 zapytań/s i 10 000/dobę, liczone w oknie kroczącym 24 h, nie od północy (stwierdzone 29.10.2026). Licz zapytania w logu z ostatnich 24 h i przerwij przy 8 000.
+7. Limity API: 10 zapytań/s i 10 000/dobę, liczone w oknie kroczącym 24 h, nie od północy (stwierdzone 29.10.2026). Licz zapytania w logu z ostatnich 24 h i przerwij przy 9 000 (podniesione z 8 000 za zgodą właścicielki 31.10.2026).
 8. Nie wymyślaj danych o produktach (wymiary, pojemność, materiał, terminy, ceny, cła, wysyłka). Braki zgłoś jako pytanie. Nie zgaduj rasy ze zdjęcia, nazwy rasy ani tłumaczeń: braki w `Rasy.xlsx` zgłoś na liście. Jeśli w kontekście oferty tłumaczenie rasy z `Rasy.xlsx` wydaje ci się nie prawidłowe zgłoś jako pytanie.
 9. Nie uruchamiaj kilku zapisów do sklepu równolegle.
 10. Nie zmieniaj cen, stanów, profili wysyłki ani statusu aktywności ofert, chyba że użytkowniczka wyraźnie poprosi.

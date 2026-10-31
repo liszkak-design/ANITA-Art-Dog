@@ -55,7 +55,7 @@ Ostatnia aktualizacja: 28.10.2026 (po zakończeniu optymalizacji 299 płytek "wi
 
 ## Dalej (po odblokowaniu)
 1. Kopia zapasowa i test na ofercie Sphynx (tytuł, opis, tagi, materiały: ceramic, 7 zdjęć nadpisane w kolejności 3, 4, 5, 2, 6, 7, original, alt texty, wideo, pola personalizacji, SKU tylko jeśli bezpieczne, tłumaczenie DE), kontrola w Etsy przez właścicielkę.
-2. Partie po maks. 50 ofert, log w `logs/`, próbka do sprawdzenia przed następną partią. Licznik zapytań: `logs/api_requests_<data>.log` (stop przy 8000 dziennie).
+2. Partie po maks. 50 ofert, log w `logs/`, próbka do sprawdzenia przed następną partią. Licznik zapytań: `logs/api_requests_<data>.log` (stop przy 9000 w oknie 24 h od 31.10.2026).
 3. Tłumaczenia pozostałych języków i ich wgranie po zatwierdzeniu.
 
 ## Uruchomienie nowej sesji
@@ -90,3 +90,4 @@ Ostatnia aktualizacja: 28.10.2026 (po zakończeniu optymalizacji 299 płytek "wi
 * Urny with Graphics: film 1 = video/video-urn-graphics-dogs-anita.mp4 (30.10.2026, z gałęzi stoic-edison).
 * **ZAKOŃCZONO urny z płytką "with Graphics", tylko psy (30.10.2026): 100 ofert zapisanych i zweryfikowanych** (test 674873257 Griffon, partia 2 = 50, partia 3 = 49; wszystkie weryfikacje ok). Skrypt `scripts/batch_grafika.py`, plany `plans/partia_grafika_00N*`, logi `logs/partia_grafika_*`. Skróty z tytułów (do potwierdzenia): Amstaff = R027, Labrador = R002, Dachshund Wirehaired = R025 + Wire-haired. Czeka na kontrolę próbki partii 3 (w niej najczęściej oglądane). Otwarte: koty z Graphics (45), płytki z Graphics (145), pozostałe typy, nowe oferty; ręcznie w Etsy: SKU, GPSR, shopping basket summary.
 * **Zdjęcie 7 (oryginał bez edycji, `media/urny_graphics/original_geometryczna.jpg`) dodane do wszystkich 100 urn "with Graphics" (psy), 31.10.2026** (test 674873257 + 50 + 49, wszystkie weryfikacje ok; zdjęcia 1-6 bez zmian). Skrypt `scripts/zdjecie7_grafika.py`. Alt: "Unedited photo of the front of the wooden urn with a geometric paw-shaped plaque with a quote, an oval ceramic plaque with a printed photo of a dog, and a nameplate with a name and dates." Czeka na kontrolę próbki ostatniej partii (49, najpopularniejsze). Koty z Graphics (45) wymagają osobnego zdjęcia.
+* Limit API od 31.10.2026: stop skryptów przy **9000** w oknie 24 h (zgoda właścicielki; było 8000), ostrzeżenie od 8000; limit Etsy 10 000.

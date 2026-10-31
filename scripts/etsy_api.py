@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TOKEN = ROOT / ".secrets" / "etsy_token.json"
-DAILY_STOP = 8000
+DAILY_STOP = 9000  # 31.10.2026: właścicielka dopuściła podniesienie z 8000 na 9000
 
 
 def _count_today():
@@ -56,11 +56,11 @@ def api_key_header():
 
 
 def check_limit():
-    """Wspólna kontrola limitu dla WSZYSTKICH wywołań Etsy (odczyty, zapisy, odświeżanie tokenu): stop przy 8000 w oknie 24 h, ostrzeżenie od 7000."""
+    """Wspólna kontrola limitu dla WSZYSTKICH wywołań Etsy (odczyty, zapisy, odświeżanie tokenu): stop przy 9000 w oknie 24 h, ostrzeżenie od 8000."""
     n = _count_today()
     if n >= DAILY_STOP:
-        raise RuntimeError(f"limit 8000 zapytań w oknie 24 h osiągnięty ({n}), przerywam")
-    if n >= 7000:
+        raise RuntimeError(f"limit {DAILY_STOP} zapytań w oknie 24 h osiągnięty ({n}), przerywam")
+    if n >= 8000:
         print(f"UWAGA: {n} zapytań w ostatnich 24 h (stop przy {DAILY_STOP}, limit Etsy 10 000)", file=sys.stderr)
     return n
 
