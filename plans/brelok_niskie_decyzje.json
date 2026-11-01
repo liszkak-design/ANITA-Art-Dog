@@ -35,5 +35,6 @@
  "wymiary": "zewnętrzne 21 x 29 x 11 cm; wewnętrzne 21 x 14 x 5 cm; pojemność ok. 1,5 litra; bez mosiężnych uchwytów; rzeźbione elementy tak",
  "materials": "Pine, Birch, Metal (bez Brass); materiały tekstowe: wood, silver plated metal relief",
  "nazwy": "jak w wysokiej urnie (Lagotto Romagnolo, Spitz, Bobtail bez zmian; Rough Collie; Presa Canario; Ibizan Hound Wire-haired; wyjątek długości tytułu dla Irish Soft Coated Wheaten Terrier)",
- "uwaga_clumber_spinone": "01.11.2026: zmiana decyzji: Clumber Spaniel (1380187472) i Spinone Italiano (1394190003) zostają ze zdjęciem i nazwą rasy z oferty, bez filmu 2"
+ "uwaga_clumber_spinone": "01.11.2026: zmiana decyzji: Clumber Spaniel (1380187472) i Spinone Italiano (1394190003) zostają ze zdjęciem i nazwą rasy z oferty, bez filmu 2",
+ "zdjecie_4": "01.11.2026: zdjęcie 4 (widok wnętrza) zastąpione w każdej ofercie niskiej urny plikiem media/urny_brelok_niskie/zdjecie_4.jpg; alt text zostaje (View of the inside of the urn with the lid removed); wymiana przez uploadListingImage rank=4 overwrite=true (bez usuwania, bez listings_d); najpierw test na 673157877"
 }

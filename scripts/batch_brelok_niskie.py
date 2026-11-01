@@ -36,6 +36,7 @@ INDEX = ROOT / "plans" / "brelok_niskie_foldery_index.csv"
 MAPA = ROOT / "plans" / "brelok_niskie_mapa_final.csv"
 CACHE = B.CACHE.parent / "brelok_niskie"
 VIDEO1 = ROOT / "video" / "video-urn-low-brelok-dogs-anita.mp4"
+PHOTO4 = ROOT / "media" / "urny_brelok_niskie" / "zdjecie_4.jpg"  # zastępuje zdjęcie 4 (decyzja 01.11.2026); alt bez zmian
 MATERIALS_TEXT = "wood,silver plated metal relief"
 MAT_VALUES = ("203,1059,174", "Pine,Birch,Metal")  # bez Brass (niska urna nie ma uchwytów), Metal id 174, zatwierdzone 01.11.2026
 LANG_ALL = U.LANG_ALL
@@ -371,6 +372,7 @@ def steps_for(c):
           "fields": {"value_ids": MAT_VALUES[0], "values": MAT_VALUES[1]}},
          {"id": "how_its_made", "method": "PATCH", "path": b, "kind": "form", "fields": {"who_made": "collective", "when_made": "made_to_order", "is_supply": "false"}},
          {"id": "personalizacja", "method": "POST", "path": b + "/personalization", "kind": "json", "fields": {"personalization_questions": personalization()}}]
+    s.append({"id": "zdjecie_4_wymiana", "method": "POST", "path": b + "/images", "kind": "replace4", "fields": {"rank": "4", "overwrite": "true", "alt_text": en_["alts"][4]}})
     for k in range(1, 5):
         s.append({"id": f"alt_{k}", "method": "POST", "path": b + "/images", "kind": "alt_existing", "rank": k, "fields": {"alt_text": en_["alts"][k]}})
     s.append({"id": "wideo_1_brelok", "method": "POST", "path": b + "/videos", "kind": "video", "src": str(VIDEO1), "fields": {"name": VIDEO1.name}})
@@ -420,8 +422,8 @@ def apply_batch(n):
     batch = load_frozen(n)
     if len(batch) > 50:
         sys.exit("BŁĄD: partia większa niż 50")
-    if not VIDEO1.exists():
-        sys.exit("BŁĄD: brak filmu 1")
+    if not VIDEO1.exists() or not PHOTO4.exists():
+        sys.exit("BŁĄD: brak filmu 1 lub zdjęcia 4")
     summary = ROOT / "logs" / f"partia_brelok_niskie_{n:03d}_{TODAY}.jsonl"
     print(f"partia brelok niskie {n}: {len(batch)} ofert z planu")
     for i, c in enumerate(batch, 1):
@@ -447,7 +449,22 @@ def apply_batch(n):
                 if len(vids) >= (1 if s["id"] == "wideo_1_brelok" else 2):
                     U.zlog(lid, s["id"], "backup/" + p.name, "już w ofercie (wykryte przy wznowieniu)", "ok")
                     continue
-            if s["kind"] == "alt_existing":
+            if s["kind"] == "replace4":
+                cur = {im["rank"]: im["listing_image_id"] for im in api.get(f"/v3/application/listings/{lid}?includes=Images").get("images", [])}
+                if cur.get(4) != ids_before[4]:  # wznowienie: zdjęcie 4 już wymienione
+                    ids_before[4] = cur[4]
+                    U.zlog(lid, s["id"], "backup/" + p.name, "zdjęcie 4 już wymienione (wykryte przy wznowieniu)", "ok")
+                    continue
+                data, ct = base.multipart(s["fields"], ("image", PHOTO4.name), PHOTO4.read_bytes(), "image/jpeg")
+                resp = api.request("POST", s["path"], headers={"Content-Type": ct}, data=data, retries=1)
+                if base.ok(resp):
+                    time.sleep(2)
+                    new = {im["rank"]: im["listing_image_id"] for im in api.get(f"/v3/application/listings/{lid}?includes=Images").get("images", [])}
+                    if len(new) != 4 or new.get(4) == ids_before[4]:
+                        resp = {"error": f"wymiana zdjęcia 4 nie zadziałała: {len(new)} zdjęć, id 4 {new.get(4)}"}
+                    else:
+                        ids_before[4] = new[4]
+            elif s["kind"] == "alt_existing":
                 resp = U.alt_existing(s, c, ids_before)
             elif s["kind"] == "video":
                 path = Path(s["src"]) if not s["src"].startswith("http") else R.curl_to(s["src"], CACHE / "wideo" / s["fields"]["name"])
@@ -476,7 +493,7 @@ def apply_batch(n):
             mat = next((pp for pp in props.get("results", []) if pp["property_id"] == B.MATERIAL_PROPERTY), {})
             chk = {"cena_ok": after["price"] == live["price"], "stan_ok": after["quantity"] == live["quantity"], "status_ok": after["state"] == live["state"],
                    "zdjec": len(imgs), "alt_ok": all(html.unescape(im.get("alt_text") or "") == c["en"]["alts"][im["rank"]] for im in imgs) if len(imgs) == n_img else False,
-                   "kolejnosc_ok": [im["listing_image_id"] for im in imgs] == [ids_before[k] for k in range(1, 5)] if len(imgs) == 4 else False,
+                   "kolejnosc_ok": [im["listing_image_id"] for im in imgs] == [ids_before[k] for k in range(1, 5)] and ids_before[4] != c["images_before"][4] if len(imgs) == 4 else False,
                    "wideo": len(after.get("videos", [])), "pytan": len(after["personalization"]["personalization_questions"]),
                    "tlumaczen": sum(1 for k, v in after["translations"].items() if v and k != "en-US"), "who_made": after["who_made"],
                    "materialy_ok": sorted(after["materials"]) == sorted(MATERIALS_TEXT.split(",")), "materials_prop": sorted(mat.get("values", [])), "proba": attempt + 1}
