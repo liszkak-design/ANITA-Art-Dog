@@ -5,7 +5,7 @@ Zasady jak dotąd: banki A/B/C, NICK/SYN w zdaniu A (tylko EN), "handmade", bez 
 `{BREED}` = kolumna C Rasy.xlsx (z odmianą w tytule), `{sp}` = dog / cat / horse (w tytule `{SP}` = Dog / Cat / Horse, pomijane gdy nazwa rasy zawiera dog/hound itp.). Nazwy i wyjątki jak w wysokiej urnie (Bobtail z synonimem EN Old English Sheepdog, Lagotto Romagnolo, Spitz, Rough Collie, Presa Canario, Ibizan Hound Wire-haired).
 
 ## 1. Tytuły (rasa na początku; wzorzec losowany po ID oferty; generator bierze pierwszy wzorzec od wylosowanego mieszczący się w 14 słowach i 140 znakach)
-1. {BREED} Compact Urn for {SP} Ashes, Wooden Memorial with Silver Plated Relief and Quote Plaque
+1. {BREED} Compact Urn for {SP} Ashes, Wooden Memorial with Silver Plated Relief and Engraved Plaques
 2. {BREED} Wooden Urn for {SP} Ashes with Silver Relief, Personalized Name, Dates and Quote
 3. {BREED} Silver Relief Cremation Urn for Your {SP}, Handmade Low Wooden Memorial
 4. {BREED} Personalised Urn for {SP} Ashes, Handmade Wood with Silver Plated Relief Portrait
@@ -13,34 +13,34 @@ Zasady jak dotąd: banki A/B/C, NICK/SYN w zdaniu A (tylko EN), "handmade", bez 
 6. {BREED} Wooden Keepsake Urn for Your {SP}, Silver Plated Breed Relief and Engraved Plaques
 
 ## 2. Tagi (13, max 20 zn., bez ras, bez powtórzeń)
-**Stałe (7):** silver relief urn (17), {sp} cremation urn (dog cremation urn 18 / cat cremation urn 18 / horse cremation urn 20), personalised pet urn (20), compact urn (11), low wooden urn (14), memorial keepsake (17), urn with plaques (16).
-**Pula (6 losowanych, bez wspólnych słów kluczowych ze stałymi i między sobą):** pet remembrance gift (20), forever loved (13), in loving memory (16), rainbow bridge (14), furry family member (19), pet sympathy gift (17), beloved companion (17), tribute urn (11), engraved nameplate (18), bereavement keepsake (20), last farewell (13), home memorial (13), silver portrait (15), handmade pet urn (16), name and dates (14), cherished friend (16), always remembered (17), memory box (10).
+**Stałe (7):** tribute urn (11), {sp} cremation urn (dog cremation urn 18 / cat cremation urn 18 / horse cremation urn 20), personalised pet urn (20), compact urn (11), low wooden urn (14), memorial keepsake (17), urn with plaques (16).
+**Pula (6 losowanych, bez wspólnych słów kluczowych ze stałymi i między sobą):** pet remembrance gift (20), forever loved (13), in loving memory (16), rainbow bridge (14), furry family member (19), pet sympathy gift (17), beloved companion (17), engraved nameplate (18), bereavement keepsake (20), last farewell (13), home memorial (13), silver portrait (15), handmade pet urn (16), name and dates (14), cherished friend (16), always remembered (17), memory box (10).
 Materiały tekstowe w ofercie: **wood, silver plated metal relief**. Materials (lista Etsy): Pine, Birch, Metal (bez Brass).
 
 ## 3. Pierwszy akapit (banki A + B + C)
 **A bez NICK/SYN**
-- A1: A small silver plated relief of a {BREED} sits on the front of this low, handmade wooden urn, made to hold the ashes of your {sp}.
+- A1: A small silver plated relief of a {BREED} sits on the front of this handmade wooden urn, made to hold the ashes of your {sp}.
 - A2: This compact wooden urn for {sp} ashes is handmade and set with a silver plated relief of a {BREED}, beside plaques engraved with a quote, a name and dates.
-- A3: Remember your {BREED} with a handmade low wooden urn, finished with a silver plated breed relief and two engraved plaques.
+- A3: Remember your {BREED} with a handmade wooden urn, finished with a silver plated breed relief and two engraved plaques.
 - A4: Made to order, this handmade wooden urn carries a silver plated relief of a {BREED} and a place for the name, dates and favourite words of your {sp}.
-- A5: For the day you say goodbye to your {BREED}, this low handmade wooden urn with a silver plated relief offers a dignified resting place for the ashes.
+- A5: For the day you say goodbye to your {BREED}, this handmade wooden urn with a silver plated relief offers a dignified resting place for the ashes.
 
 **A ze zdrobnieniem [N]**
-- A6 [N]: A small silver plated relief of a {BREED} adorns this low, handmade wooden urn, made to keep your faithful {NICK} close.
+- A6 [N]: A small silver plated relief of a {BREED} adorns this handmade wooden urn, made to keep your faithful {NICK} close.
 - A7 [N]: This compact handmade wooden urn, set with a silver plated relief, is made to remember your much-loved {NICK}.
-- A8 [N]: Remember your {BREED} with a handmade low wooden urn, a silver plated breed relief and two engraved plaques for your dear {NICK}.
+- A8 [N]: Remember your {BREED} with a handmade wooden urn, a silver plated breed relief and two engraved plaques for your dear {NICK}.
 - A9 [N]: Made to order, with a silver plated relief and plaques engraved with the name and words you choose, this wooden urn gives your {NICK} a dignified home.
-- A10 [N]: When the time comes to say goodbye, this low handmade wooden urn with a silver plated relief keeps the ashes of your {NICK} close.
+- A10 [N]: When the time comes to say goodbye, this handmade wooden urn with a silver plated relief keeps the ashes of your {NICK} close.
 
 **A z synonimem [S]** (tylko EN: np. Bobtail = Old English Sheepdog)
-- A11 [S]: A small silver plated relief of {SYN} sits on the front of this low, handmade wooden urn, made to hold the ashes of your {sp}.
+- A11 [S]: A small silver plated relief of {SYN} sits on the front of this handmade wooden urn, made to hold the ashes of your {sp}.
 - A12 [S]: This compact wooden urn for {sp} ashes is handmade and set with a silver plated relief of {SYN}, beside plaques engraved with a quote, a name and dates.
-- A13 [S]: Remember your {SYN} with a handmade low wooden urn, finished with a silver plated breed relief and two engraved plaques.
+- A13 [S]: Remember your {SYN} with a handmade wooden urn, finished with a silver plated breed relief and two engraved plaques.
 - A14 [S]: Made to order, this handmade wooden urn carries a silver plated relief of {SYN} and a place for the name, dates and favourite words of your {sp}.
-- A15 [S]: For the day you say goodbye to your {SYN}, this low handmade wooden urn with a silver plated relief offers a dignified resting place for the ashes.
+- A15 [S]: For the day you say goodbye to your {SYN}, this handmade wooden urn with a silver plated relief offers a dignified resting place for the ashes.
 
 **B (zastosowanie)**
-- B1: Its low shape sits comfortably on a shelf, a sideboard or a windowsill, wherever you like to remember your {sp}.
+- B1: Its compact shape sits comfortably on a shelf, a sideboard or a windowsill, wherever you like to remember your {sp}.
 - B2: Keep it where the family gathers, and let the silver relief bring back the face you loved.
 - B3: A gentle keepsake for your home, close to the people your {sp} loved.
 - B4 [N]: Keep your {NICK} close, in a spot at home that feels like theirs.
@@ -68,8 +68,7 @@ On the right of the front panel sits a small relief with the head of a {BREED}, 
 
 PERSONALISATION
 Every urn is made to order. Please tell us:
-- Name: the name for the lower plaque, together with the dates.
-- Dates: the dates for the lower plaque, in any format you like.
+- Name and dates: the name and dates for the lower plaque, in any format you like.
 - Quote: the upper plaque carries "You left our lives, but you will never leave our hearts" unless you give us your own exact wording.
 - The relief cannot be personalised.
 
@@ -85,7 +84,7 @@ Our products are shipped from Poland, so import charges may apply in some countr
 1. Name (wymagane, 50). 2. Dates (wymagane, 50). 3. Quote on the plaque, 600, instrukcja: "Leave empty for the default quote, or type the exact text you'd like engraved on the upper plaque."
 
 ## 6. Alt texty (4 zdjęcia, bez zdjęcia 7)
-1: "Low wooden urn for ashes with a small silver plated relief of {a/an} {BREED} {sp}, a plaque with a quote above a plaque with a name and dates." 
+1: "Compact wooden urn for ashes with a small silver plated relief of {a/an} {BREED} {sp}, a plaque with a quote above a plaque with a name and dates." 
 2: "Close-up of the carved rope trim along the lower edge of the urn." (jak alt 4 z urn z płytką)
 3: "Corner of the urn with the carved rope trim and the rounded base." (jak alt 5)
 4: "View of the inside of the urn with the lid removed." (jak alt 6)
