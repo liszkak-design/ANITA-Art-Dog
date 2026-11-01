@@ -5,15 +5,16 @@ Status: EN zatwierdzony przez właścicielkę 01.11.2026 (tytuł 3 z "Compact", 
 ## Tytuł (6 wzorców)
 1. {B} kompaktowa urna na prochy {gen}, drewniana pamiątka z posrebrzanym reliefem i grawerowanymi tabliczkami
 2. {B} drewniana urna na prochy {gen} z posrebrzanym reliefem, personalizowane imię, daty życia i cytat
-3. {B} urna kremacyjna z posrebrzanym reliefem dla {gen}, ręcznie robiona kompaktowa drewniana pamiątka
-4. {B} personalizowana urna na prochy {gen}, ręcznie robione drewno z posrebrzanym portretem rasy
-5. {B} urna pamiątkowa dla {gen} z posrebrzanym reliefem, grawerowane imię, daty życia i cytat, drewniana pamiątka
+3. {B} urna kremacyjna z posrebrzanym reliefem dla {gen}, ręcznie robiona niewielka drewniana pamiątka
+4. {B} personalizowana urna na prochy {gen}, ręcznie robiona, drewniana z posrebrzanym portretem rasy
+5. {B} urna pamiątkowa dla {gen} z posrebrzanym reliefem, grawerowane imię, daty życia i cytat, pamiątka po {loc}
 6. {B} drewniana urna pamiątkowa dla {gen}, posrebrzany relief rasy i grawerowane tabliczki
 
 ## Pierwszy akapit: banki
+Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny); dotyczy wszystkich języków i EN.
 **A**
 - A1: Mały, posrebrzany relief rasy {B} zdobi przód tej ręcznie robionej drewnianej urny, stworzonej na prochy Twojego {gen}.
-- A2: Ta kompaktowa, ręcznie robiona drewniana urna na prochy {gen} (rasa: {B}) ma posrebrzany relief rasy oraz tabliczki z cytatem, imieniem i datami życia.
+- A2: Ta niewielka, ręcznie robiona drewniana urna na prochy {gen} (rasa: {B}) ma posrebrzany relief rasy oraz tabliczki z cytatem, imieniem i datami życia.
 - A3: Zachowaj pamięć o swoim {loc}, rasa {B}: ręcznie robiona drewniana urna z posrebrzanym reliefem rasy i dwiema grawerowanymi tabliczkami.
 - A4: Wykonana na zamówienie, ręcznie robiona drewniana urna z posrebrzanym reliefem rasy {B} ma miejsce na imię, daty życia i ulubione słowa Twojego {gen}.
 - A5: Gdy przyjdzie dzień pożegnania, ta ręcznie robiona drewniana urna (rasa: {B}) z posrebrzanym reliefem będzie godnym miejscem spoczynku dla prochów.
@@ -59,5 +60,5 @@ Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać n
 
 ## Tagi (max 20 znaków)
 **Stałe:** urna ku pamięci (15), urna po {loc} (psie 12, kocie 13, koniu 13), personalizowana urna (20), kompaktowa urna (15), niska drewniana urna (20), pamiątka ku pamięci (19), urna z tabliczkami (18) (EN: tribute urn, {sp} cremation urn, personalised pet urn, compact urn, low wooden urn, memorial keepsake, urn with plaques)
-**Pula:** pamiątka po pupilu (18), kochany na zawsze (17), ku pamięci (10), tęczowy most (12), futrzany domownik (17), prezent po stracie (18), ukochany towarzysz (18), tabliczka z grawerem (20), pamiątka po stracie (19), ostatnie pożegnanie (19), pamiątka do domu (16), srebrny portret (15), urna ręcznie robiona (20), imię i daty życia (17), drogi przyjaciel (16), zawsze w pamięci (16), szkatułka pamięci (17)
+**Pula:** pamiątka po pupilu (18), kochany na zawsze (17), ku pamięci (10), tęczowy most (12), futrzany domownik (17), prezent po stracie (18), ukochany towarzysz (18), tabliczka z grawerem (20), pamiątka po stracie (19), ostatnie pożegnanie (19), pamiątka do domu (16), srebrny portret (15), urna ręcznie robiona (20), imię i daty życia (17), drogi przyjaciel (16), zawsze w pamięci (16), pamiątkowa szkatułka (20)
 Materiały (tagi tekstowe, EN): wood, silver plated metal relief

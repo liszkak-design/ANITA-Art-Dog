@@ -18,6 +18,7 @@ Zasady jak dotąd: banki A/B/C, NICK/SYN w zdaniu A (tylko EN), "handmade", bez 
 Materiały tekstowe w ofercie: **wood, silver plated metal relief**. Materials (lista Etsy): Pine, Birch, Metal (bez Brass).
 
 ## 3. Pierwszy akapit (banki A + B + C)
+Zakaz kombinacji A2 + B1 (powtórzenie słowa "compact"): generator losuje wtedy inne B.
 **A bez NICK/SYN**
 - A1: A small silver plated relief of a {BREED} sits on the front of this handmade wooden urn, made to hold the ashes of your {sp}.
 - A2: This compact wooden urn for {sp} ashes is handmade and set with a silver plated relief of a {BREED}, beside plaques engraved with a quote, a name and dates.
