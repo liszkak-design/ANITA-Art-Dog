@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny). Uwaga: sekc
 - A1: Um pequeno relevo prateado da raça {B} enfeita a frente desta urna de madeira feita à mão, criada para as cinzas {DO}.
 - A2: Esta pequena urna de madeira feita à mão para as cinzas {DO} (raça: {B}) tem um relevo prateado da raça e placas com citação, nome e datas de vida.
 - A3: Guarde a memória {DO}, raça {B}: urna de madeira feita à mão com relevo prateado da raça e duas placas gravadas.
-- A4: Feita por encomenda, esta urna de madeira feita à mão com relevo prateado da raça {B} tem espaço para o nome, as datas de vida e as palavras preferidas {DO}.
+- A4: Feita por encomenda, esta urna de madeira feita à mão com relevo prateado da raça {B} tem espaço para o nome, as datas de vida e algumas palavras dedicadas {AO}.
 - A5: Quando chegar o dia do adeus, esta urna de madeira feita à mão (raça: {B}) com relevo prateado será um lugar de descanso digno para as cinzas.
 
 **B**

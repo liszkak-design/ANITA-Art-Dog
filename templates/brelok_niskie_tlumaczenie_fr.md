@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny). Uwaga: sekc
 - A1: Un petit relief argenté de la race {B} orne l'avant de cette urne en bois faite main, créée pour les cendres de votre {S}.
 - A2: Cette petite urne en bois faite main pour les cendres de votre {S} (race : {B}) porte un relief argenté de la race ainsi que des plaquettes avec la citation, le nom et les dates de vie.
 - A3: Gardez le souvenir de votre {S}, race {B} : urne en bois faite main avec un relief argenté de la race et deux plaquettes gravées.
-- A4: Fabriquée sur commande, cette urne en bois faite main avec un relief argenté de la race {B} offre une place pour le nom, les dates de vie et les mots préférés de votre {S}.
+- A4: Fabriquée sur commande, cette urne en bois faite main avec un relief argenté de la race {B} offre une place pour le nom, les dates de vie et quelques mots sur votre {S}.
 - A5: Lorsque viendra le jour de l'adieu, cette urne en bois faite main (race : {B}) avec un relief argenté sera un lieu de repos digne pour les cendres.
 
 **B**

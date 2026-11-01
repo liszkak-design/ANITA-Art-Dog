@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny); dotyczy wsz
 - A1: Mały, posrebrzany relief rasy {B} zdobi przód tej ręcznie robionej drewnianej urny, stworzonej na prochy Twojego {gen}.
 - A2: Ta niewielka, ręcznie robiona drewniana urna na prochy {gen} (rasa: {B}) ma posrebrzany relief rasy oraz tabliczki z cytatem, imieniem i datami życia.
 - A3: Zachowaj pamięć o swoim {loc}, rasa {B}: ręcznie robiona drewniana urna z posrebrzanym reliefem rasy i dwiema grawerowanymi tabliczkami.
-- A4: Wykonana na zamówienie, ręcznie robiona drewniana urna z posrebrzanym reliefem rasy {B} ma miejsce na imię, daty życia i ulubione słowa Twojego {gen}.
+- A4: Wykonana na zamówienie, ręcznie robiona drewniana urna z posrebrzanym reliefem rasy {B} ma miejsce na imię, daty życia i kilka słów o Twoim {loc}.
 - A5: Gdy przyjdzie dzień pożegnania, ta ręcznie robiona drewniana urna (rasa: {B}) z posrebrzanym reliefem będzie godnym miejscem spoczynku dla prochów.
 
 **B**

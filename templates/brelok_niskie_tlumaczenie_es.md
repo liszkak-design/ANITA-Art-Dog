@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny). Uwaga: sekc
 - A1: Un pequeño relieve plateado de la raza {B} adorna el frente de esta urna de madera hecha a mano, creada para las cenizas de tu {S}.
 - A2: Esta pequeña urna de madera hecha a mano para las cenizas de tu {S} (raza: {B}) tiene un relieve plateado de la raza y placas con la cita, el nombre y las fechas de vida.
 - A3: Guarda la memoria de tu {S}, raza {B}: urna de madera hecha a mano con relieve plateado de la raza y dos placas grabadas.
-- A4: Hecha por encargo, esta urna de madera hecha a mano con relieve plateado de la raza {B} tiene un espacio para el nombre, las fechas de vida y las palabras preferidas de tu {S}.
+- A4: Hecha por encargo, esta urna de madera hecha a mano con relieve plateado de la raza {B} tiene un espacio para el nombre, las fechas de vida y unas palabras sobre tu {S}.
 - A5: Cuando llegue el día de la despedida, esta urna de madera hecha a mano (raza: {B}) con relieve plateado será un lugar de descanso digno para las cenizas.
 
 **B**

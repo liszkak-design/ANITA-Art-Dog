@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny). Uwaga: sekc
 - A1: Ein kleines, versilbertes Relief der Rasse {B} ziert die Vorderseite dieser handgefertigten Holzurne, geschaffen für die Asche {GEN}.
 - A2: Diese kleine, handgefertigte Holzurne für die Asche {GEN} (Rasse: {B}) hat ein versilbertes Rassenrelief sowie Schilder mit Zitat, Name und Lebensdaten.
 - A3: Bewahren Sie die Erinnerung an {ACC}, Rasse {B}: handgefertigte Holzurne mit versilbertem Rassenrelief und zwei gravierten Schildern.
-- A4: Auf Bestellung gefertigt, bietet diese handgefertigte Holzurne mit versilbertem Relief der Rasse {B} Platz für Name, Lebensdaten und Lieblingsworte {GEN}.
+- A4: Auf Bestellung gefertigt, bietet diese handgefertigte Holzurne mit versilbertem Relief der Rasse {B} Platz für Name, Lebensdaten und einige Worte über {ACC}.
 - A5: Wenn der Tag des Abschieds kommt, wird diese handgefertigte Holzurne (Rasse: {B}) mit versilbertem Relief ein würdevoller Ruheort für die Asche sein.
 
 **B**

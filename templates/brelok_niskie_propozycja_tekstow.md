@@ -23,7 +23,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie słowa "compact"): generator losuje wtedy
 - A1: A small silver plated relief of a {BREED} sits on the front of this handmade wooden urn, made to hold the ashes of your {sp}.
 - A2: This compact wooden urn for {sp} ashes is handmade and set with a silver plated relief of a {BREED}, beside plaques engraved with a quote, a name and dates.
 - A3: Remember your {BREED} with a handmade wooden urn, finished with a silver plated breed relief and two engraved plaques.
-- A4: Made to order, this handmade wooden urn carries a silver plated relief of a {BREED} and a place for the name, dates and favourite words of your {sp}.
+- A4: Made to order, this handmade wooden urn carries a silver plated relief of a {BREED} and has a place for the name, dates and a few words about your {sp}.
 - A5: For the day you say goodbye to your {BREED}, this handmade wooden urn with a silver plated relief offers a dignified resting place for the ashes.
 
 **A ze zdrobnieniem [N]**
@@ -37,7 +37,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie słowa "compact"): generator losuje wtedy
 - A11 [S]: A small silver plated relief of {SYN} sits on the front of this handmade wooden urn, made to hold the ashes of your {sp}.
 - A12 [S]: This compact wooden urn for {sp} ashes is handmade and set with a silver plated relief of {SYN}, beside plaques engraved with a quote, a name and dates.
 - A13 [S]: Remember your {SYN} with a handmade wooden urn, finished with a silver plated breed relief and two engraved plaques.
-- A14 [S]: Made to order, this handmade wooden urn carries a silver plated relief of {SYN} and a place for the name, dates and favourite words of your {sp}.
+- A14 [S]: Made to order, this handmade wooden urn carries a silver plated relief of {SYN} and has a place for the name, dates and a few words about your {sp}.
 - A15 [S]: For the day you say goodbye to your {SYN}, this handmade wooden urn with a silver plated relief offers a dignified resting place for the ashes.
 
 **B (zastosowanie)**

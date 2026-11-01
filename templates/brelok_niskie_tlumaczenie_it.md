@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny). Uwaga: sekc
 - A1: Un piccolo rilievo argentato della razza {B} adorna il fronte di questa urna in legno fatta a mano, creata per le ceneri {DEL}.
 - A2: Questa piccola urna in legno fatta a mano per le ceneri {DEL} (razza: {B}) ha un rilievo argentato della razza e targhette con citazione, nome e date di vita.
 - A3: Conservi il ricordo {DEL}, razza {B}: urna in legno fatta a mano con rilievo argentato della razza e due targhette incise.
-- A4: Realizzata su ordinazione, questa urna in legno fatta a mano con rilievo argentato della razza {B} ha uno spazio per nome, date di vita e parole preferite {DEL}.
+- A4: Realizzata su ordinazione, questa urna in legno fatta a mano con rilievo argentato della razza {B} ha uno spazio per nome, date di vita e alcune parole dedicate {AL}.
 - A5: Quando arriverà il giorno dell'addio, questa urna in legno fatta a mano (razza: {B}) con rilievo argentato sarà un degno luogo di riposo per le ceneri.
 
 **B**

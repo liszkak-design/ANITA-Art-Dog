@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny). Uwaga: sekc
 - A1: En liten försilvrad relief av rasen {B} pryder framsidan av denna handgjorda träurna, skapad för askan efter din {S}.
 - A2: Denna lilla handgjorda träurna för askan efter din {S} (ras: {B}) har en försilvrad rasrelief samt skyltar med citat, namn och levnadsdatum.
 - A3: Bevara minnet av din {S}, ras {B}: handgjord träurna med försilvrad rasrelief och två graverade skyltar.
-- A4: Tillverkad på beställning har denna handgjorda träurna med försilvrad relief av rasen {B} plats för namn, levnadsdatum och favoritord för din {S}.
+- A4: Tillverkad på beställning har denna handgjorda träurna med försilvrad relief av rasen {B} plats för namn, levnadsdatum och några ord om din {S}.
 - A5: När avskedets dag kommer blir denna handgjorda träurna (ras: {B}) med försilvrad relief en värdig viloplats för askan.
 
 **B**

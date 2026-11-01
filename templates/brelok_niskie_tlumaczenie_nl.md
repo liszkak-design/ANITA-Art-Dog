@@ -16,7 +16,7 @@ Zakaz kombinacji A2 + B1 (powtórzenie określenia wielkości urny). Uwaga: sekc
 - A1: Een klein verzilverd reliëf van het ras {B} siert de voorkant van deze handgemaakte houten urn, gemaakt voor de as van uw {S}.
 - A2: Deze kleine, handgemaakte houten urn voor de as van uw {S} (ras: {B}) heeft een verzilverd rasreliëf en plaatjes met citaat, naam en levensdata.
 - A3: Bewaar de herinnering aan uw {S}, ras {B}: handgemaakte houten urn met verzilverd rasreliëf en twee gegraveerde plaatjes.
-- A4: Op bestelling gemaakt biedt deze handgemaakte houten urn met verzilverd reliëf van het ras {B} ruimte voor de naam, levensdata en lievelingswoorden van uw {S}.
+- A4: Op bestelling gemaakt biedt deze handgemaakte houten urn met verzilverd reliëf van het ras {B} ruimte voor de naam, levensdata en enkele woorden over uw {S}.
 - A5: Wanneer de dag van het afscheid komt, wordt deze handgemaakte houten urn (ras: {B}) met verzilverd reliëf een waardige rustplaats voor de as.
 
 **B**
