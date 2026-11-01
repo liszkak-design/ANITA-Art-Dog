@@ -7,7 +7,7 @@ Zasady jak dotąd: banki A/B/C, NICK/SYN w zdaniu A (tylko EN), "handmade", bez 
 ## 1. Tytuły (rasa na początku; wzorzec losowany po ID oferty; generator bierze pierwszy wzorzec od wylosowanego mieszczący się w 14 słowach i 140 znakach)
 1. {BREED} Compact Urn for {SP} Ashes, Wooden Memorial with Silver Plated Relief and Engraved Plaques
 2. {BREED} Wooden Urn for {SP} Ashes with Silver Relief, Personalized Name, Dates and Quote
-3. {BREED} Silver Relief Cremation Urn for Your {SP}, Handmade Low Wooden Memorial
+3. {BREED} Silver Relief Cremation Urn for Your {SP}, Handmade Compact Wooden Memorial
 4. {BREED} Personalised Urn for {SP} Ashes, Handmade Wood with Silver Plated Relief Portrait
 5. {BREED} {SP} Memorial Urn with Silver Relief, Engraved Name, Dates and Quote, Wooden Keepsake
 6. {BREED} Wooden Keepsake Urn for Your {SP}, Silver Plated Breed Relief and Engraved Plaques
