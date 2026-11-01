@@ -314,3 +314,8 @@
 2026-11-01T13:38:40 PUT /v3/application/shops/19255336/listings/673157877/translations/es
 2026-11-01T13:38:40 PUT /v3/application/shops/19255336/listings/673157877/translations/sv
 2026-11-01T13:38:43 GET /v3/application/listings/673157877
+2026-11-01T13:43:52 GET /v3/application/listings/673157877
+2026-11-01T13:43:53 GET /v3/application/shops/19255336/listings/673157877/properties
+2026-11-01T13:43:53 GET /v3/application/listings/673157877/inventory
+2026-11-01T13:43:54 POST /v3/application/shops/19255336/listings/673157877/images
+2026-11-01T13:43:57 GET /v3/application/listings/673157877
