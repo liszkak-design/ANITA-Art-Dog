@@ -21,7 +21,7 @@ B:
 - A1: {B}: handgemaakte houten urn voor as met een reliëf van koud gegoten brons, gemaakt ter nagedachtenis aan een geliefd huisdier.
 - A2: Handgemaakte houten urn voor uw {S} (ras: {B}), versierd met een gedetailleerd reliëf van koud gegoten brons.
 - A3: Aandenken aan uw {S}, ras: {B}: handgemaakte houten urn met een reliëf dat het karakter van het ras weergeeft.
-- A4: Gepersonaliseerde urn met een bronzen reliëf, ras: {B}. Gemaakt om een geliefde metgezel te eren.
+- A4: Gepersonaliseerde urn met een reliëf van koud gegoten brons, ras: {B}. Gemaakt om een geliefde metgezel te eren.
 - A5: Wanneer de droevigste dag komt, wordt deze handgemaakte urn (ras: {B}) een mooie en waardige plek voor de as van uw {S}.
 
 **B**

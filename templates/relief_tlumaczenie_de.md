@@ -21,7 +21,7 @@ B:
 - A1: {B}: handgefertigte Holzurne für die Asche mit einem Relief aus kalt gegossener Bronze, geschaffen zur Erinnerung an ein geliebtes Haustier.
 - A2: Handgefertigte Holzurne für {ACC} (Rasse: {B}), verziert mit einem detailreichen Relief aus kalt gegossener Bronze.
 - A3: Erinnerung an {ACC}, Rasse: {B}: handgefertigte Holzurne mit einem Relief, das den Charakter der Rasse einfängt.
-- A4: Personalisierte Urne mit einem Bronzerelief, Rasse: {B}. Geschaffen, um einem geliebten Begleiter die letzte Ehre zu erweisen.
+- A4: Personalisierte Urne mit einem Relief aus kalt gegossener Bronze, Rasse: {B}. Geschaffen, um einem geliebten Begleiter die letzte Ehre zu erweisen.
 - A5: Wenn der traurigste Tag kommt, wird diese handgefertigte Urne (Rasse: {B}) ein schöner und würdevoller Ort für die Asche {GEN} sein.
 
 **B**

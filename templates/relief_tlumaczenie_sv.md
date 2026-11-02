@@ -21,7 +21,7 @@ B:
 - A1: {B}: handgjord träurna för aska, med ett relief i kallgjuten brons, skapad till minne av ett älskat djur.
 - A2: Handgjord träurna för din {S} (ras: {B}), dekorerad med ett detaljrikt relief i kallgjuten brons.
 - A3: Ett minne av din {S}, ras: {B}: handgjord träurna med ett relief som fångar rasens karaktär.
-- A4: Personlig urna med ett bronsrelief, ras: {B}. Skapad för att hedra en älskad följeslagare.
+- A4: Personlig urna med ett relief i kallgjuten brons, ras: {B}. Skapad för att hedra en älskad följeslagare.
 - A5: När den sorgligaste dagen kommer blir den här handgjorda urnan (ras: {B}) en vacker och värdig plats för askan efter din {S}.
 
 **B**

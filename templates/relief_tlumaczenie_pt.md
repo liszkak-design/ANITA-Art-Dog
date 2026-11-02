@@ -21,7 +21,7 @@ B:
 - A1: {B}: urna de madeira feita à mão para cinzas, com um baixo-relevo em bronze fundido a frio, criada em memória de um animal querido.
 - A2: Urna de madeira feita à mão para {P} (raça: {B}), decorada com um baixo-relevo detalhado em bronze fundido a frio.
 - A3: Uma lembrança {DO}, raça: {B}: urna de madeira feita à mão com um baixo-relevo que traduz o carácter da raça.
-- A4: Urna personalizada com um baixo-relevo em bronze, raça: {B}. Criada para homenagear um companheiro querido.
+- A4: Urna personalizada com um baixo-relevo em bronze fundido a frio, raça: {B}. Criada para homenagear um companheiro querido.
 - A5: Quando chega o dia mais triste, esta urna feita à mão (raça: {B}) será um lugar bonito e digno para as cinzas {DO}.
 
 **B**

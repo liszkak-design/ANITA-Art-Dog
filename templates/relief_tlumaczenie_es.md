@@ -21,7 +21,7 @@ B:
 - A1: {B}: urna de madera hecha a mano para cenizas, con un relieve de bronce fundido en frío, creada en recuerdo de una mascota querida.
 - A2: Urna de madera hecha a mano para tu {S} (raza: {B}), decorada con un relieve detallado de bronce fundido en frío.
 - A3: Un recuerdo de tu {S}, raza: {B}: urna de madera hecha a mano con un relieve que refleja el carácter de la raza.
-- A4: Urna personalizada con un relieve de bronce, raza: {B}. Creada para rendir homenaje a un compañero querido.
+- A4: Urna personalizada con un relieve de bronce fundido en frío, raza: {B}. Creada para rendir homenaje a un compañero querido.
 - A5: Cuando llega el día más triste, esta urna hecha a mano (raza: {B}) será un lugar hermoso y digno para las cenizas de tu {S}.
 
 **B**

@@ -21,7 +21,7 @@ B:
 - A1: {B}: urna in legno fatta a mano per le ceneri, con un bassorilievo in bronzo fuso a freddo, creata in ricordo di un animale amato.
 - A2: Urna in legno fatta a mano per {P} (razza: {B}), decorata con un bassorilievo dettagliato in bronzo fuso a freddo.
 - A3: Un ricordo {DEL}, razza: {B}: urna in legno fatta a mano con un bassorilievo che rende il carattere della razza.
-- A4: Urna personalizzata con un bassorilievo in bronzo, razza: {B}. Creata per rendere omaggio a un compagno amato.
+- A4: Urna personalizzata con un bassorilievo in bronzo fuso a freddo, razza: {B}. Creata per rendere omaggio a un compagno amato.
 - A5: Quando arriva il giorno più triste, questa urna fatta a mano (razza: {B}) sarà un luogo bello e dignitoso per le ceneri {DEL}.
 
 **B**

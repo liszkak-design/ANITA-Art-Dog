@@ -30,21 +30,21 @@ Materiały (tagi tekstowe): **wood, brass handles, cold cast bronze relief** (to
 **A bez NICK/SYN**
 - A1: This {BREED} dog urn is a handmade wooden urn for ashes, with a cold cast bronze relief portrait of the breed, made to remember a much-loved pet.
 - A2: A handmade wooden urn for your {BREED}, decorated with a finely detailed cold cast bronze relief of the breed.
-- A3: Remember your {BREED} with this handmade wooden urn for dog ashes, with a bronze relief portrait that captures the character of the breed.
-- A4: This personalised pet urn features a bronze relief of a {BREED}, created to honour a much-loved companion.
+- A3: Remember your {BREED} with this handmade wooden urn for dog ashes, with a cold cast bronze relief portrait that captures the character of the breed.
+- A4: This personalised pet urn features a cold cast bronze relief of a {BREED}, created to honour a much-loved companion.
 - A5: When the saddest day comes, this handmade {BREED} urn offers a quiet, lasting place for the ashes of your dog.
 
 **A ze zdrobnieniem [N]**
-- A6 [N]: Remember your beloved {BREED} with this handmade wooden urn with a bronze relief, made to honour your faithful {NICK}.
+- A6 [N]: Remember your beloved {BREED} with this handmade wooden urn with a cold cast bronze relief, made to honour your faithful {NICK}.
 - A7 [N]: A handmade wooden urn with a cold cast bronze relief portrait, made to remember your much-loved {NICK}.
-- A8 [N]: This handmade wooden urn keeps your dear {NICK} close, with a finely detailed bronze relief of the breed.
-- A9 [N]: A personalised wooden urn for your {BREED}, with a bronze relief, made as a lasting place for your faithful {NICK}.
+- A8 [N]: This handmade wooden urn keeps your dear {NICK} close, with a finely detailed cold cast bronze relief of the breed.
+- A9 [N]: A personalised wooden urn for your {BREED}, with a cold cast bronze relief, made as a lasting place for your faithful {NICK}.
 - A10 [N]: When the saddest day comes, this handmade urn offers a quiet, lasting place for the ashes of your {NICK}.
 
 **A z synonimem [S]**
 - A11 [S]: This {SYN} dog urn is a handmade wooden urn for ashes, with a cold cast bronze relief portrait of the dog.
-- A12 [S]: A handmade wooden urn for your {SYN}, decorated with a finely detailed bronze relief of the breed.
-- A13 [S]: Remember your {SYN} with this handmade wooden urn for dog ashes, with a bronze relief portrait.
+- A12 [S]: A handmade wooden urn for your {SYN}, decorated with a finely detailed cold cast bronze relief of the breed.
+- A13 [S]: Remember your {SYN} with this handmade wooden urn for dog ashes, with a cold cast bronze relief portrait.
 - A14 [S]: This personalised {SYN} urn features a cold cast bronze relief, created to honour a much-loved companion.
 - A15 [S]: When the saddest day comes, this handmade {SYN} urn offers a quiet, lasting place for the ashes of your dog.
 

@@ -21,7 +21,7 @@ B (wzorce 2 i 6 jak w A; wzorca 3 w wersji B nie ma: dla ofert B, którym wypadn
 - A1: {B}: ręcznie robiona drewniana urna na prochy z płaskorzeźbą z brązu odlewanego na zimno, stworzona na pamiątkę ukochanego pupila.
 - A2: Ręcznie robiona drewniana urna dla Twojego psa (rasa: {B}), ozdobiona szczegółową płaskorzeźbą z brązu odlewanego na zimno.
 - A3: Pamiątka po Twoim psie, rasa: {B}: ręcznie robiona drewniana urna z płaskorzeźbą, która oddaje charakter rasy.
-- A4: Spersonalizowana urna z płaskorzeźbą z brązu, rasa: {B}. Stworzona, by oddać hołd ukochanemu towarzyszowi.
+- A4: Spersonalizowana urna z płaskorzeźbą z brązu odlewanego na zimno, rasa: {B}. Stworzona, by oddać hołd ukochanemu towarzyszowi.
 - A5: Gdy nadejdzie najsmutniejszy dzień, ta ręcznie robiona urna (rasa: {B}) będzie pięknym i godnym miejscem dla prochów Twojego psa.
 
 **B**

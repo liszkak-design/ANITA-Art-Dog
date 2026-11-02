@@ -4,12 +4,12 @@ Założenia (do potwierdzenia przy pytaniach otwartych): wszystkie 38 ofert; zdj
 `{BREED}` = Rasy.xlsx kolumna C, `{NICK}`/`{SYN}` = kolumna E (zasady jak dotąd: gdy rasa ma zdrobnienie/synonim, zdanie A losowane tylko z wariantów [N]/[S]; jedno zdanie nie zawiera pełnej nazwy rasy dwa razy).
 
 ## 1. Tytuły (rasa na początku; do 14 słów i 140 znaków; wzorzec losowany po ID oferty, generator bierze pierwszy mieszczący się)
-1. {BREED} Memorial Board with Bronze Relief, Engraved Name Plate, Dog Loss Gift
-2. {BREED} Dog Memorial Plaque with Bronze Relief, Personalized Engraved Plate
-3. {BREED} Pet Loss Gift, Memorial Board with Bronze Relief and Name Plate
+1. {BREED} Memorial Board with Bronze-Look Relief, Engraved Name Plate, Dog Loss Gift
+2. {BREED} Dog Memorial Plaque with Bronze-Look Relief, Personalized Engraved Plate
+3. {BREED} Pet Loss Gift, Memorial Board with Bronze-Look Relief and Name Plate
 4. {BREED} Personalized Dog Memorial Board, Engraved Gold Name Plate, Wall or Shelf
 5. {BREED} Sympathy Gift for Dog Owners, Memorial Board with Engraved Plate
-6. {BREED} Memorial Board, Bronze Dog Relief, Engraved Name Plate, Custom Gift
+6. {BREED} Memorial Board, Bronze-Look Dog Relief, Engraved Name Plate, Custom Gift
 
 ## 2. Tagi (13: 5 stałych + 8 z puli, max 20 zn., bez ras)
 **Stałe (5):** dog memorial board (19), pet loss gift (13), dog remembrance (17), shelf memorial (15), engraved keepsake (17).
@@ -18,22 +18,22 @@ Założenia (do potwierdzenia przy pytaniach otwartych): wszystkie 38 ofert; zdj
 
 ## 3. Pierwszy akapit (banki A + B + C)
 **A bez NICK/SYN**
-- A1: This {BREED} memorial board is a calm place to remember a beloved dog, with a small bronze relief of the breed above an engraved gold name plate.
-- A2: A small bronze relief of a {BREED} sits above an engraved gold name plate on this cherry wood-look memorial board, made to honour a much-loved dog.
-- A3: Remember your {BREED} with a memorial board that brings together a small bronze relief of the breed and a gold name plate engraved with your own words.
-- A4: This memorial board for a {BREED} keeps a name, dates and a few chosen words close, beside a small bronze relief of the breed.
-- A5: A cherry wood-look board with a small bronze relief of a {BREED} and an engraved gold name plate, made as a place of remembrance for your dog.
+- A1: This {BREED} memorial board is a calm place to remember a beloved dog, with a small, detailed relief of the breed above an engraved gold name plate.
+- A2: A small, detailed relief of a {BREED} sits above an engraved gold name plate on this cherry wood-look memorial board, made to honour a much-loved dog.
+- A3: Remember your {BREED} with a memorial board that brings together a small, detailed relief of the breed and a gold name plate engraved with your own words.
+- A4: This memorial board for a {BREED} keeps a name, dates and a few chosen words close, beside a small, detailed relief of the breed.
+- A5: A cherry wood-look board with a small, detailed relief of a {BREED} and an engraved gold name plate, made as a place of remembrance for your dog.
 
 **A ze zdrobnieniem [N]**
-- A6 [N]: This {BREED} memorial board keeps your faithful {NICK} close, with a small bronze relief of the breed above an engraved gold name plate.
-- A7 [N]: A small bronze relief and a gold name plate engraved with the name and dates of your {NICK}, set on a cherry wood-look memorial board.
-- A8 [N]: Remember your {BREED} with a memorial board that holds the name, the dates and a few words for your dear {NICK}, beside a small bronze relief.
-- A9 [N]: A place of remembrance for your {NICK}: a cherry wood-look board with a small bronze relief of a {BREED} and an engraved gold name plate.
+- A6 [N]: This {BREED} memorial board keeps your faithful {NICK} close, with a small, detailed relief of the breed above an engraved gold name plate.
+- A7 [N]: A small, detailed relief and a gold name plate engraved with the name and dates of your {NICK}, set on a cherry wood-look memorial board.
+- A8 [N]: Remember your {BREED} with a memorial board that holds the name, the dates and a few words for your dear {NICK}, beside a small, detailed relief.
+- A9 [N]: A place of remembrance for your {NICK}: a cherry wood-look board with a small, detailed relief of a {BREED} and an engraved gold name plate.
 
 **A z synonimem [S]**
-- A10 [S]: This {SYN} memorial board is a calm place to remember a beloved dog, with a small bronze relief of the breed above an engraved gold name plate.
+- A10 [S]: This {SYN} memorial board is a calm place to remember a beloved dog, with a small, detailed relief of the breed above an engraved gold name plate.
 - A11 [S]: A small bronze relief of a {SYN} sits above an engraved gold name plate on this cherry wood-look memorial board.
-- A12 [S]: Remember your {SYN} with a memorial board that brings together a small bronze relief of the breed and a gold name plate engraved with your own words.
+- A12 [S]: Remember your {SYN} with a memorial board that brings together a small, detailed relief of the breed and a gold name plate engraved with your own words.
 
 **B (zastosowanie)**
 - B1: It makes a thoughtful pet loss gift, a sympathy gift for someone who has lost a dog, or a lasting dog memorial for the home.
@@ -51,7 +51,7 @@ Założenia (do potwierdzenia przy pytaniach otwartych): wszystkie 38 ofert; zdj
 ```
 THE PIECE
 - Board: MDF covered with a wood-look finish in a cherry color.
-- Bronze relief: a small dog head in low relief, made of cold cast bronze (bronze powder mixed with epoxy resin, poured into a silicone mold) and hand-designed by a Polish craftsman.
+- Relief: a small dog head in low relief, made of cold cast bronze (bronze powder mixed with epoxy resin, poured into a silicone mold) and hand-designed by a Polish craftsman.
 - Name plate: brushed gold laminate with black engraving.
 - Size: the board is 34 x 24 cm (13.4 x 9.4 in).
 - Display: hang it on the wall or stand it on a shelf.
@@ -70,7 +70,7 @@ WAYS TO USE IT
 - A custom plaque for any occasion: the text engraved on the gold plate can be anything you choose, so the board can also serve as an award, a distinction or a thank-you gift.
 
 WHY YOU WILL LOVE IT
-It brings together the details that matter: your dog's name and dates, a few words of your own and a small bronze relief of the breed, all in one piece you can display in your own way. The warm wood tones and gold plate give it a calm, dignified look. For many owners it becomes a gentle point of remembrance at home.
+It brings together the details that matter: your dog's name and dates, a few words of your own and a small, detailed relief of the breed, all in one piece you can display in your own way. The warm wood tones and gold plate give it a calm, dignified look. For many owners it becomes a gentle point of remembrance at home.
 
 INTERNATIONAL ORDERS
 Our products are shipped from Poland, so import charges may apply in some countries. These charges do not apply to EU countries, the United Kingdom and the USA. If you have any doubts, please contact us for details.

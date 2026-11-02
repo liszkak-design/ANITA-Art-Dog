@@ -21,7 +21,7 @@ B:
 - A1: {B} : urne en bois faite main pour cendres, avec un bas-relief en bronze coulé à froid, créée en souvenir d'un animal bien-aimé.
 - A2: Urne en bois faite main pour votre {S} (race : {B}), ornée d'un bas-relief détaillé en bronze coulé à froid.
 - A3: Un souvenir de votre {S}, race : {B} : urne en bois faite main avec un bas-relief qui reflète le caractère de la race.
-- A4: Urne personnalisée avec un bas-relief en bronze, race : {B}. Créée pour rendre hommage à un compagnon bien-aimé.
+- A4: Urne personnalisée avec un bas-relief en bronze coulé à froid, race : {B}. Créée pour rendre hommage à un compagnon bien-aimé.
 - A5: Quand arrive le jour le plus triste, cette urne faite main (race : {B}) sera un lieu beau et digne pour les cendres de votre {S}.
 
 **B**
