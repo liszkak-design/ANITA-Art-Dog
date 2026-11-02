@@ -1375,3 +1375,6 @@
 2026-11-02T13:45:24 GET /v3/application/seller-taxonomy/nodes
 2026-11-02T13:45:33 GET /v3/application/seller-taxonomy/nodes
 2026-11-02T13:46:04 GET /v3/application/seller-taxonomy/nodes
+2026-11-02T13:52:47 GET /v3/application/listings/1380905523
+2026-11-02T13:52:47 POST /v3/application/shops/19255336/listings/1380905523/personalization
+2026-11-02T13:52:48 GET /v3/application/listings/1380905523

@@ -4,7 +4,7 @@
   python3 -I scripts/batch_deski.py plan N [--lid=ID[,ID]] [--size=K]   # dry-run partii N (plans/partia_deski_00N.csv i _dryrun.json)
   python3 -I scripts/batch_deski.py apply N --apply             # zapis do Etsy (tylko po "tak" właścicielki dla partii N)
 Zakres na ofertę: kopia zapasowa; tytuł (do 14 słów), opis, tagi (5 stałych + 8), materiały tekstowe (cold cast bronze, MDF board, engraving laminate), Materials (Bronze, Resin, Composite),
-atrybuty Height 34 i Width 24 (cm; bez Depth), personalizacja (Name and dates 50, wymagane; Quote 1024, opcjonalne), 6 alt textów (bez wymiany zdjęć),
+atrybuty Height 34 i Width 24 (cm; bez Depth), personalizacja (Name 50 i Dates 50, wymagane; Quote 1024, opcjonalne), 6 alt textów (bez wymiany zdjęć),
 2 filmy z folderu 218 (bez "brand" pierwszy), 8 tłumaczeń. Home style bez zmian. Kolejność: od najmniej do najczęściej oglądanych. Limit API: etsy_api (stop 9000).
 """
 import csv
@@ -323,7 +323,8 @@ def plan(n, size):
 
 
 def personalization():
-    return [{"question_type": "text_input", "question_text": "Name and dates", "required": True, "max_allowed_characters": 50},
+    return [{"question_type": "text_input", "question_text": "Name", "required": True, "max_allowed_characters": 50},
+            {"question_type": "text_input", "question_text": "Dates", "required": True, "max_allowed_characters": 50},
             {"question_type": "text_input", "question_text": "Quote on the name plate", "required": False, "max_allowed_characters": 1024,
              "instructions": "Leave empty for the default quote, or type the exact text you'd like engraved on the name plate."}]
 
@@ -443,7 +444,7 @@ def apply_batch(n):
                    "materialy_ok": sorted(after["materials"]) == sorted(MATERIALS_TEXT.split(",")), "materials_prop": sorted(mat.get("values", [])),
                    "wymiary_ok": all(any(pp["property_id"] == pid and pp.get("values") == [val] and pp.get("scale_id") == SCALE_CM for pp in props.get("results", [])) for pid, val in ((H_PROP, HEIGHT), (W_PROP, WIDTH))),
                    "proba": attempt + 1}
-            good = chk["cena_ok"] and chk["stan_ok"] and chk["status_ok"] and chk["zdjec"] == 6 and chk["alt_ok"] and chk["kolejnosc_ok"] and chk["wideo"] == 2 and chk["pytan"] == 2 \
+            good = chk["cena_ok"] and chk["stan_ok"] and chk["status_ok"] and chk["zdjec"] == 6 and chk["alt_ok"] and chk["kolejnosc_ok"] and chk["wideo"] == 2 and chk["pytan"] == 3 \
                 and chk["tlumaczen"] == 8 and chk["materialy_ok"] and chk["materials_prop"] == sorted(MAT_VALUES[1].split(",")) and chk["wymiary_ok"]
             if good:
                 break
