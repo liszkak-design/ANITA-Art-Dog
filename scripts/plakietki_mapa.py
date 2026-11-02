@@ -48,7 +48,7 @@ def main():
             note = "szerokość 10 ze zdjęcia (arkusz 9), decyzja właścicielki"
         elif lid == 1380892897:  # Rottweiler mały: zdjęcie 7,5 x 6,5, arkusz 12,5 x 12 (błąd)
             r = [x for x in xl if x[1] == "5060383448993"][0]
-            note = "arkusz podaje 12,5 x 12 (błąd), zdjęcie 7,5 x 6,5; grubość nieznana, do potwierdzenia"
+            note = "arkusz podaje 12,5 x 12 (błąd); właściwy wymiar 7,5 x 6,5 (właścicielka 02.11.2026); grubość 1,5 z wiersza arkusza (do potwierdzenia)"
         else:
             r, note = None, f"brak jednoznacznego dopasowania ({len(exact)} wierszy z {len(cand)} kandydatów)"
         ean = r[1] if r else ""

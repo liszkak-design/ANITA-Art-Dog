@@ -16,12 +16,12 @@ Zasady: w tytule bez "cold cast bronze" i bez "bust" (używamy bas-relief / reli
 (Zmiana: "dog flat sculpture" zastąpione "flat dog relief", bo "sculpture" nie pasuje do plakietki.)
 **Pula (6 losowanych, bez wspólnych słów kluczowych ze stałymi i między sobą):** dog memorial gift (17), dog show trophy (15), dog trophy (10), home office decor (17), dog bas relief (14), dog memorial plaque (19), bronze dog plaque (17), pet memorial (12), dog loss gift (13), in memory of dog (16), bronze look plaque (18), garden memorial (15), dog owner gift (14), desk decor (10), dog art (7), oraz 5 nowych: dog head relief (15), dog relief plaque (17), breed trophy (12), memorial keepsake (17), dog head wall art (17).
 Usunięte z puli (sculpture/statue/bust): dog bust, dog head sculpture, small dog statue, resin bronze statue, outdoor dog statue.
-Materials (lista Etsy): Bronze, Resin. Materiały tekstowe: cold cast bronze, epoxy resin (do potwierdzenia).
+Materials (lista Etsy): Bronze, Resin. Materiały tekstowe: cold cast bronze (zatwierdzone 02.11.2026).
 
 ## 3. Pierwszy akapit (banki A + B + C; A zawiera pełną nazwę rasy, nie powtarzamy tytułu)
 **A bez NICK/SYN**
 - A1: This {SIZE} {BREED} dog head relief is finished by hand with close attention to the features of the breed, from the fur to the expression of the face.
-- A2: A hand-finished relief of a {BREED}, shaped as a flat dog head in low relief and made to be glued onto a surface of your choice.
+- A2: A hand-finished {BREED} plaque, shaped as a flat dog head in low relief and made to be glued onto a surface of your choice.
 - A3: This {BREED} plaque shows the head of the breed in fine bas-relief, finished by hand and made to be kept close, at home, at the office or in the garden.
 - A4: Made for people who love the {BREED}, this {SIZE} flat relief captures the character of the breed in a hand-finished dog head.
 - A5: A {SIZE} bas-relief of a {BREED}, finished by hand and made to remember a much-loved dog or to honour a favourite breed.
@@ -34,8 +34,8 @@ Materials (lista Etsy): Bronze, Resin. Materiały tekstowe: cold cast bronze, ep
 
 **A z synonimem [S]**
 - A10 [S]: This {SIZE} {SYN} dog head relief is finished by hand with close attention to the features of the breed.
-- A11 [S]: A hand-finished relief of a {SYN} (also called {BREED}), shaped as a flat dog head in low relief.
-- A12 [S]: Made for people who love the {SYN}, this {SIZE} flat relief is a hand-finished dog head in low relief.
+- A11 [S]: A hand-finished {SYN} plaque, shaped as a flat dog head in low relief.
+- A12 [S]: Made for people who love the {SYN}, this {SIZE} flat plaque is a hand-finished dog head in low relief.
 
 **B (zastosowanie)**
 - B1: It works as a dog memorial gift, a keepsake for a {BREED} lover, a dog show trophy or a quiet accent for a home or office.
@@ -68,14 +68,12 @@ WAYS TO USE IT
 WHY YOU WILL LOVE IT
 It gives you a lasting way to keep your {BREED} close. The bronze look and feel make it a dignified keepsake, and its size suits a quiet corner as well as a prominent place. It is a thoughtful gift for someone who has lost a dog, and for anyone who simply loves the breed.
 
-We would be honoured to help you say goodbye to your beloved dog with dignity.
-
 INTERNATIONAL ORDERS
 Our products are shipped from Poland, so import charges may apply in some countries. These charges do not apply to EU countries, the United Kingdom and the USA. If you have any doubts, please contact us for details.
 ```
-Uwagi do części stałej względem przykładu: grubość podstawiana z arkusza (nie stałe 2 cm), "it can be placed outdoors" zamiast "can stand outdoors", wymiary w wierszu "Size" per oferta ("width x height"), wiersz "Mounting" z zaleceniem kleju, zdanie końcowe jak w poprzednich ofertach.
+Uwagi do części stałej względem przykładu: grubość podstawiana z arkusza (nie stałe 2 cm), "it can be placed outdoors" zamiast "can stand outdoors", wymiary w wierszu "Size" per oferta ("width x height"), wiersz "Mounting" z zaleceniem kleju, bez zdania końcowego "We would be honoured…" (usunięte na prośbę właścicielki), sekcja "International Orders" jak dotąd.
 
-## 5. Atrybuty produktu (Etsy): szerokość = {W}, wysokość = {H}, grubość = {D} (w cm; do potwierdzenia, które pole Etsy dostaje grubość).
+## 5. Atrybuty produktu (Etsy, w cm; zatwierdzone 02.11.2026): item_width = {W}, item_height = {H}, item_length = {D} (grubość).
 
 ## 6. Alt texty (3 zdjęcia, zdjęcia bez wymiany)
 1: "Front view of a hand-finished {BREED} dog head relief on a white background."
