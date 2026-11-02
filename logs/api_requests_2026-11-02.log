@@ -1332,3 +1332,5 @@
 2026-11-02T13:26:26 GET /v3/application/listings/1366242760/inventory
 2026-11-02T13:26:26 PATCH /v3/application/shops/19255336/listings/1366242760
 2026-11-02T13:26:27 GET /v3/application/listings/1366242760
+2026-11-02T13:34:01 POST /v3/public/oauth/token
+2026-11-02T13:34:02 GET /v3/application/seller-taxonomy/nodes/2844/properties

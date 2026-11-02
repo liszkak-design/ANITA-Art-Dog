@@ -1,0 +1,107 @@
+{
+ "Width": {
+  "property_id": 47626759898,
+  "scales": [
+   {
+    "scale_id": 7,
+    "display_name": "Centimeters",
+    "description": ""
+   },
+   {
+    "scale_id": 11,
+    "display_name": "Feet",
+    "description": ""
+   },
+   {
+    "scale_id": 5,
+    "display_name": "Inches",
+    "description": ""
+   },
+   {
+    "scale_id": 10,
+    "display_name": "Meters",
+    "description": ""
+   },
+   {
+    "scale_id": 4,
+    "display_name": "Millimeters",
+    "description": ""
+   },
+   {
+    "scale_id": 9,
+    "display_name": "Yards",
+    "description": ""
+   }
+  ]
+ },
+ "Height": {
+  "property_id": 47626759834,
+  "scales": [
+   {
+    "scale_id": 7,
+    "display_name": "Centimeters",
+    "description": ""
+   },
+   {
+    "scale_id": 11,
+    "display_name": "Feet",
+    "description": ""
+   },
+   {
+    "scale_id": 5,
+    "display_name": "Inches",
+    "description": ""
+   },
+   {
+    "scale_id": 10,
+    "display_name": "Meters",
+    "description": ""
+   },
+   {
+    "scale_id": 4,
+    "display_name": "Millimeters",
+    "description": ""
+   },
+   {
+    "scale_id": 9,
+    "display_name": "Yards",
+    "description": ""
+   }
+  ]
+ },
+ "Depth": {
+  "property_id": 54142602037,
+  "scales": [
+   {
+    "scale_id": 7,
+    "display_name": "Centimeters",
+    "description": ""
+   },
+   {
+    "scale_id": 11,
+    "display_name": "Feet",
+    "description": ""
+   },
+   {
+    "scale_id": 5,
+    "display_name": "Inches",
+    "description": ""
+   },
+   {
+    "scale_id": 10,
+    "display_name": "Meters",
+    "description": ""
+   },
+   {
+    "scale_id": 4,
+    "display_name": "Millimeters",
+    "description": ""
+   },
+   {
+    "scale_id": 9,
+    "display_name": "Yards",
+    "description": ""
+   }
+  ]
+ }
+}
