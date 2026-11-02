@@ -1372,3 +1372,6 @@
 2026-11-02T13:42:38 POST /v3/application/shops/19255336/listings/1380905523/translations/sv
 2026-11-02T13:42:38 GET /v3/application/listings/1380905523
 2026-11-02T13:42:39 GET /v3/application/shops/19255336/listings/1380905523/properties
+2026-11-02T13:45:24 GET /v3/application/seller-taxonomy/nodes
+2026-11-02T13:45:33 GET /v3/application/seller-taxonomy/nodes
+2026-11-02T13:46:04 GET /v3/application/seller-taxonomy/nodes
