@@ -48,14 +48,14 @@ def main():
             note = "szerokość 10 ze zdjęcia (arkusz 9), decyzja właścicielki"
         elif lid == 1380892897:  # Rottweiler mały: zdjęcie 7,5 x 6,5, arkusz 12,5 x 12 (błąd)
             r = [x for x in xl if x[1] == "5060383448993"][0]
-            note = "arkusz podaje 12,5 x 12 (błąd); właściwy wymiar 7,5 x 6,5 (właścicielka 02.11.2026); grubość 1,5 z wiersza arkusza (do potwierdzenia)"
+            note = "arkusz podaje 12,5 x 12 (błąd); właściwy wymiar 7,5 x 6,5 (właścicielka 02.11.2026); grubość 1 cm (właścicielka 02.11.2026)"
         else:
             r, note = None, f"brak jednoznacznego dopasowania ({len(exact)} wierszy z {len(cand)} kandydatów)"
         ean = r[1] if r else ""
         if ean:
             used.setdefault(ean, []).append(lid)
         rows.append({"listing_id": lid, "wyswietlenia": stan[str(lid)]["views"], "rasa_w_tytule": title, "szerokosc_zdjecie": w, "wysokosc_zdjecie": h, "ean": ean,
-                     "nazwa_arkusz": r[0] if r else "", "szerokosc_arkusz": r[2] if r else "", "wysokosc_arkusz": r[3] if r else "", "grubosc_arkusz": r[4] if r else "",
+                     "nazwa_arkusz": r[0] if r else "", "szerokosc_arkusz": r[2] if r else "", "wysokosc_arkusz": r[3] if r else "", "grubosc_arkusz": (1 if lid == 1380892897 else r[4]) if r else "",
                      "folder": fol.get(ean, ""), "uwagi": note})
     for r in rows:
         if r["ean"] and len(used[r["ean"]]) > 1:
