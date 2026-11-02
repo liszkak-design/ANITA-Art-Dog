@@ -8,7 +8,7 @@ Zasady: w tytule bez "cold cast bronze" i bez "bust" (używamy bas-relief / reli
 2. {BREED} Dog Head Relief, Wall Plaque, Pet Loss Gift, Dog Show Trophy
 3. {BREED} Bronze Look Relief Plaque, Handmade Dog Memorial, Garden or Home Decor
 4. {BREED} Flat Bas-Relief, Dog Lover Gift, Dog Show Trophy, Office Decor
-5. {BREED} Memorial Plaque, Dog Head Relief to Glue on Wood, Stone or Frame
+5. {BREED} Memorial Plaque, Dog Head Relief to Glue on Wood or Stone
 6. {BREED} Dog Head Plaque in Low Relief, Outdoor Dog Memorial, Sympathy Gift
 
 ## 2. Tagi (13, max 20 zn., bez ras, bez powtórzeń)

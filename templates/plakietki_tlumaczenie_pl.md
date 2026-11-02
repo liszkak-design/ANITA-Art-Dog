@@ -7,7 +7,7 @@ Status: EN zatwierdzony przez właścicielkę 02.11.2026. Polski sprawdza właś
 2. {B} głowa psa w płaskorzeźbie, plakietka ścienna, prezent po stracie psa, trofeum wystawowe
 3. {B} płaskorzeźba o wyglądzie brązu, ręcznie robiona pamiątka po psie, dekoracja do ogrodu lub domu
 4. {B} płaskorzeźba w kształcie głowy psa, prezent dla miłośnika psów, trofeum wystawowe, dekoracja biura
-5. {B} plakietka pamiątkowa, płaskorzeźba głowy psa do przyklejenia na drewno, kamień lub ramkę
+5. {B} plakietka pamiątkowa, płaskorzeźba głowy psa do przyklejenia na drewno lub kamień
 6. {B} plakietka z głową psa w niskim reliefie, pamiątka po psie do ogrodu, prezent po stracie psa
 
 ## Pierwszy akapit: banki
