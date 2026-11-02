@@ -60,7 +60,7 @@ THE PIECE
 PERSONALISATION
 Every board is made to order. Please tell us:
 - Name and dates: the name and dates for the name plate, in any format you like.
-- Quote: the words you would like engraved on the name plate.
+- Quote: the name plate carries "You'll always be here with me, even if you're gone, you'll always have my love, our memory will live on." unless you give us your own exact wording.
 - If the plate is meant for another occasion, such as an award, a distinction or a thank-you gift, we can change the engraving completely. Please contact us with a message first.
 
 WAYS TO USE IT
@@ -77,8 +77,11 @@ Our products are shipped from Poland, so import charges may apply in some countr
 ```
 Zmiany względem wzoru: "bust" → "relief"; "designed by hand by Polish artisans" → "hand-designed by a Polish craftsman"; grawer czarny (nie złoty); "Name and dates" w jednym punkcie; dodany punkt o zmianie grawerunku (nagroda, podziękowanie); "gold engraving" w "Why you will love it" zastąpione "gold plate".
 
-## 5. Pola personalizacji Etsy
-1. Name and dates (wymagane, 50). 2. Quote (limit 1024, wymagane/opcjonalne do ustalenia, domyślny cytat do ustalenia).
+## 5. Pola personalizacji Etsy (zatwierdzone 02.11.2026)
+1. Name and dates (wymagane, limit 50 jak dotąd). 2. Quote (opcjonalne, limit 1024 = maksimum Etsy dla pola tekstowego; instrukcja: "Leave empty for the default quote, or type the exact text you'd like engraved on the name plate."). Cytat domyślny: "You'll always be here with me, even if you're gone, you'll always have my love, our memory will live on."
+
+## 5a. Atrybuty i materiały
+Atrybuty (cm): Height 34, Width 24; Depth pominięta (decyzja właścicielki). Home style: bez zmian. Materials (lista Etsy): do wyboru (lista Etsy nie ma MDF ani laminatu): Bronze, Resin + Wood albo Composite (propozycja w czacie). Materiały tekstowe: cold cast bronze, MDF board, engraving laminate (angielska nazwa laminatu do graweru: "engraving laminate"; do potwierdzenia).
 
 ## 6. Alt texty (6 zdjęć, bez wymiany)
 1: "Cherry wood-look memorial board with a bronze {BREED} relief above a gold name plate engraved with a name, dates and a quote."
