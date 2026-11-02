@@ -3,11 +3,11 @@
 Status: EN zatwierdzony przez właścicielkę 02.11.2026. Polski sprawdza właścicielka. `{B}` = kolumna "PL nazwa" arkusza Rasy. `{W}`, `{H}`, `{D}` = szerokość, wysokość, grubość w cm (przecinek dziesiętny), `{Win}`, `{Hin}`, `{Din}` w calach. `{SMALL}` = "mała " gdy większy wymiar <= 10 cm, w przeciwnym razie puste. Bez zdrobnień i synonimów (tylko A1-A5), bez "trwały/trwałe", bez "ciche miejsce", bez słowa "popiersie/bust" (płaskorzeźba, relief).
 
 ## Tytuł (6 wzorców)
-1. {B} płaskorzeźba, {SMALL}płaska głowa psa, pamiątka po psie do domu lub biura
-2. {B} głowa psa w płaskorzeźbie, plakietka ścienna odporna na pogodę, prezent po stracie psa, trofeum wystawowe
+1. {B} płaskorzeźba, {SMALL}płaska głowa psa, pamiątka po psie
+2. {B} głowa psa w płaskorzeźbie, plakietka ścienna, prezent po stracie psa, trofeum wystawowe
 3. {B} płaskorzeźba o wyglądzie brązu, ręcznie robiona pamiątka po psie, dekoracja do ogrodu lub domu
-4. {B} płaskorzeźba w kształcie głowy psa, prezent dla miłośnika psów, trofeum wystawowe, dekoracja domu i biura
-5. {B} plakietka pamiątkowa, ręcznie robiona płaskorzeźba głowy psa do przyklejenia na drewno, kamień lub ramkę
+4. {B} płaskorzeźba w kształcie głowy psa, prezent dla miłośnika psów, trofeum wystawowe, dekoracja biura
+5. {B} plakietka pamiątkowa, płaskorzeźba głowy psa do przyklejenia na drewno, kamień lub ramkę
 6. {B} plakietka z głową psa w niskim reliefie, pamiątka po psie do ogrodu, prezent po stracie psa
 
 ## Pierwszy akapit: banki

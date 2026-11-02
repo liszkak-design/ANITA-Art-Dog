@@ -3,12 +3,12 @@
 Zasady: w tytule bez "cold cast bronze" i bez "bust" (używamy bas-relief / relief), tytuł do 14 słów; w pierwszym akapicie bez wyjaśniania czym jest cold cast bronze; bez personalizacji; bez zdania, że klej nie jest w zestawie; w części stałej zalecenie dwuskładnikowego, przezroczystego kleju epoksydowego; tagi bez "sculpture"/"statue"/"bust". Wymiary (szerokość x wysokość x grubość) per oferta z arkusza (po korekcie H/W i wyjątkach), ze zdjęcia 3 oferty.
 `{BREED}` = nazwa rasy z Rasy.xlsx (kolumna C), `{NICK}`/`{SYN}` = kolumna E (zasady jak dotąd, gdy rasa ma zdrobnienie/synonim zdanie A losowane tylko z wariantów [N]/[S]). `{W}`, `{H}`, `{D}` = szerokość, wysokość, grubość w cm (przecinek dziesiętny jako kropka w EN), `{Win}`, `{Hin}`, `{Din}` = w calach (1 miejsce po przecinku). `{SIZE}` = "small" gdy większy wymiar <= 10 cm, w przeciwnym razie "compact".
 
-## 1. Tytuły (rasa na początku; wzorzec losowany po ID oferty; generator bierze pierwszy wzorzec od wylosowanego mieszczący się w 14 słowach i 140 znakach)
-1. {BREED} Bas-Relief Plaque, {SIZE} Flat Dog Head, Dog Memorial Gift for Home or Office
-2. {BREED} Dog Head Relief, Weatherproof Wall Plaque, Pet Loss Gift, Dog Show Trophy
+## 1. Tytuły (rasa na początku; wzorzec losowany po ID oferty; generator bierze pierwszy wzorzec od wylosowanego mieszczący się w 14 słowach i 140 znakach; wzorce skrócone 02.11.2026, żeby mieściły się dla wszystkich 38 ras; "Bas-Relief" liczone jako 1 słowo)
+1. {BREED} Bas-Relief Plaque, {SIZE} Flat Dog Head, Dog Memorial Gift
+2. {BREED} Dog Head Relief, Wall Plaque, Pet Loss Gift, Dog Show Trophy
 3. {BREED} Bronze Look Relief Plaque, Handmade Dog Memorial, Garden or Home Decor
-4. {BREED} Flat Bas-Relief, Dog Lover Gift, Dog Show Trophy, Home and Office Decor
-5. {BREED} Memorial Plaque, Handcrafted Dog Head Relief to Glue on Wood, Stone or Frame
+4. {BREED} Flat Bas-Relief, Dog Lover Gift, Dog Show Trophy, Office Decor
+5. {BREED} Memorial Plaque, Dog Head Relief to Glue on Wood, Stone or Frame
 6. {BREED} Dog Head Plaque in Low Relief, Outdoor Dog Memorial, Sympathy Gift
 
 ## 2. Tagi (13, max 20 zn., bez ras, bez powtórzeń)
