@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Odczyt (tylko GET) stanu żywego ofert sekcji "Plaques with dog" (38 ofert "Memorial Board, Cold Cast Bronze Plaque") = niska urna z małą posrebrzaną płaskorzeźbą.
+"""Odczyt (tylko GET) stanu żywego ofert sekcji "Plaques with dog": 38 ofert "{rasa} Bust, Cold Cast Bronze Sculpture, Small dog bust ..." (plakietki same) = niska urna z małą posrebrzaną płaskorzeźbą.
 Wejście: plans/plakietki_sekcja_lista.json (oferty z lokalnej listy tytułów "Dog Loss Board"), nic nie pomija.
 Wyjście: plans/plakietki_stan_zywy.json. 1 zapytanie na ofertę (Images, Videos, Personalization, Translations w jednym wywołaniu).
 """
