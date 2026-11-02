@@ -21,10 +21,10 @@ Status: EN zatwierdzony przez właścicielkę 02.11.2026. Polski sprawdza właś
 **B**
 - B1: Sprawdzi się jako pamiątka po psie, prezent dla miłośnika rasy {B}, trofeum wystawowe albo spokojny akcent w domu lub biurze.
 - B2: Daj jej miejsce na drewnianej tablicy, kamieniu, małym pudełku lub ramce, jako osobiste miejsce pamięci albo prezent dla kogoś, kto kocha tę rasę.
-- B3: Użyj jej jako hołdu dla psa, którego już z nami nie ma, jako trofeum na wystawę psów albo ozdoby półki lub biurka.
+- B3: Użyj jej jako hołdu dla psa, którego już z nami nie ma, jako trofeum na wystawę psów albo ozdobę półki lub biurka.
 
 **C**
-- C1: Jest niewielka, odporna na warunki atmosferyczne i przeznaczona do przyklejenia na płaskiej powierzchni, więc możesz nadać jej miejsce, które najbardziej Ci odpowiada.
+- C1: Jest niewielka, odporna na warunki atmosferyczne i przeznaczona do przyklejenia na płaskiej powierzchni, więc możesz ją umieścić w miejscu, które najbardziej Ci odpowiada.
 - C2: Odporna na warunki atmosferyczne i niska w profilu, jest przeznaczona do przyklejenia na wybranej płaskiej powierzchni, w domu lub na zewnątrz.
 - C3: Lekka, odporna na warunki atmosferyczne i łatwa w montażu, jest przeznaczona do przyklejenia na płaskiej powierzchni, wszędzie tam, gdzie chcesz wspominać swojego psa.
 - C4: Przeznaczona do przyklejenia na płaskiej powierzchni, przylega blisko do podłoża i jest odporna na warunki atmosferyczne.
@@ -33,7 +33,7 @@ Status: EN zatwierdzony przez właścicielkę 02.11.2026. Polski sprawdza właś
 ```
 SZCZEGÓŁY PRODUKTU
 - Materiał: cold cast bronze, czyli mieszanka proszku brązu i żywicy epoksydowej odlewana w silikonowej formie. Wygląda jak klasyczna płaskorzeźba z brązu i jest zimna w dotyku, ale jest lżejsza i tańsza niż lity brąz.
-- Ręczne wykonanie: każdy egzemplarz jest wykończany przez polskich rzemieślników, z dokładnie opracowaną sierścią i wyrazem pyska.
+- Ręcznie wykonane: każdy egzemplarz jest ręcznie zaprojektowany przez polskiego rzemieślnika, z dbałością o szczegóły jak sierść czy wyraz pyska.
 - Rozmiar: ok. {W} x {H} cm ({Win} x {Hin} cala), szerokość x wysokość.
 - Niski profil: ma tylko {D} cm ({Din} cala) grubości, dzięki czemu przylega blisko do powierzchni i pasuje na tablicę, małe pudełko lub ramkę, nie zajmując dużo miejsca.
 - Montaż: przeznaczona do przyklejenia na płaskiej powierzchni. Zalecamy przezroczysty, dwuskładnikowy klej epoksydowy.
@@ -46,7 +46,7 @@ JAK JĄ WYKORZYSTAĆ
 - W ogrodzie: może być umieszczona na zewnątrz, ale pogoda może z czasem stopniowo zmieniać jej kolor.
 
 DLACZEGO TO POKOCHASZ
-Pozwala zachować przy sobie psa rasy {B} na długo. Wygląd i dotyk brązu sprawiają, że jest godną pamiątką, a jej rozmiar pasuje zarówno do spokojnego kąta, jak i do eksponowanego miejsca. To przemyślany prezent dla kogoś, kto stracił psa, i dla każdego, kto po prostu kocha tę rasę.
+Pozwala zachować przy sobie psa rasy {B} na długo. Wygląd i dotyk brązu sprawiają, że jest godną pamiątką, a jej rozmiar pasuje zarówno do spokojnego miejsca pamięci, jak i do eksponowanego miejsca. To przemyślany prezent dla kogoś, kto stracił psa, i dla każdego, kto po prostu kocha tę rasę.
 
 ZAMÓWIENIA MIĘDZYNARODOWE
 Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać naliczone opłaty importowe. Opłaty nie dotyczą krajów UE, Wielkiej Brytanii ani USA. W razie wątpliwości skontaktuj się z nami, a podamy szczegóły.
