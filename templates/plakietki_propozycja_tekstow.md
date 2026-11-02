@@ -53,7 +53,7 @@ Materials (lista Etsy): Bronze, Resin. Materiały tekstowe: cold cast bronze (za
 ```
 THE PIECE
 - Material: cold cast bronze, a mix of bronze powder and epoxy resin poured into a silicone mold. It looks like a classic bronze relief and is cold to the touch, but it is lighter and more affordable than solid bronze.
-- Made by hand: each piece is finished by Polish artisans, with the fur and the expression of the face carefully worked.
+- Made by hand: each piece is hand-designed by a Polish craftsman, with close attention to details such as the fur and the expression of the face.
 - Size: about {W} x {H} cm ({Win} x {Hin} in), width x height.
 - Low profile: it is only {D} cm ({Din} in) thick, so it sits close to the surface and fits neatly on a board, a small box or a frame without taking up much space.
 - Mounting: made to be glued onto a flat surface. We recommend a transparent two-component epoxy glue.
