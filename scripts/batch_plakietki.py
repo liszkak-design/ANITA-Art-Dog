@@ -4,7 +4,7 @@
   python3 -I scripts/batch_plakietki.py plan N [--lid=ID[,ID]] [--size=K]   # dry-run partii N (plans/partia_plakietki_00N.csv i _dryrun.json)
   python3 -I scripts/batch_plakietki.py apply N --apply             # zapis do Etsy (tylko po "tak" właścicielki dla partii N)
 Zakres na ofertę: kopia zapasowa; tytuł (do 14 słów), opis, 13 tagów, materiały tekstowe ("cold cast bronze"), Materials (Bronze, Resin), wymiary w atrybutach
-(item_width = szerokość, item_height = wysokość, item_length = grubość, cm), alt texty 3 zdjęć (bez wymiany zdjęć), 2 filmy z folderu 219 (bez "brand" pierwszy, "brand" drugi),
+(atrybuty Height, Width, Depth w cm, scale_id 7; ustawiane jako właściwości oferty, nie jako pola item_*), alt texty 3 zdjęć (bez wymiany zdjęć), 2 filmy z folderu 219 (bez "brand" pierwszy, "brand" drugi),
 8 tłumaczeń. Bez personalizacji. Teksty: templates/plakietki_propozycja_tekstow.md i plakietki_tlumaczenie_<język>.md. Kolejność: od najmniej do najczęściej oglądanych.
 Limit API: etsy_api (okno 24 h, stop 9000).
 """
@@ -36,6 +36,8 @@ INDEX = ROOT / "plans" / "plakietki_foldery_index.csv"
 MATIDS = json.load(open(ROOT / "plans" / "plakietki_material_ids.json"))
 MAT_VALUES = (",".join(str(v[0]) for v in MATIDS["values"] if v[1] in ("Bronze", "Resin")), "Bronze,Resin")
 MATERIALS_TEXT = "cold cast bronze"
+DIM_PROPS = {"h": 47626759834, "w": 47626759898, "d": 54142602037}  # atrybuty "Height", "Width", "Depth" (jednostka Centimeters, scale_id 7); odczytane z oferty 1380875733 po ręcznym wpisaniu (02.11.2026)
+SCALE_CM = 7
 CACHE = B.CACHE.parent / "plakietki"
 LANG_ALL = U.LANG_ALL
 MAX_WORDS = 14
@@ -355,8 +357,10 @@ def steps_for(c):
     b = f"/v3/application/shops/{B.SHOP_ID}/listings/{lid}"
     s = [{"id": "listing", "method": "PATCH", "path": b, "kind": "form",
           "fields": {"title": en_["title"], "description": en_["description"], "tags": ",".join(en_["tags"]), "materials": MATERIALS_TEXT,
-                     "item_width": num(dm["w"]), "item_height": num(dm["h"]), "item_length": num(dm["d"]), "item_dimensions_unit": "cm"}},
+                     }},
          {"id": "wlasciwosc_materials", "method": "PUT", "path": f"{b}/properties/{B.MATERIAL_PROPERTY}", "kind": "form", "fields": {"value_ids": MAT_VALUES[0], "values": MAT_VALUES[1]}}]
+    for key, nm in (("h", "wysokosc"), ("w", "szerokosc"), ("d", "grubosc")):
+        s.append({"id": f"atrybut_{nm}", "method": "PUT", "path": f"{b}/properties/{DIM_PROPS[key]}", "kind": "form", "fields": {"value_ids": "", "values": num(dm[key]), "scale_id": str(SCALE_CM)}})
     for k in range(1, 4):
         s.append({"id": f"alt_{k}", "method": "POST", "path": b + "/images", "kind": "alt_existing", "rank": k, "fields": {"alt_text": en_["alts"][k]}})
     s.append({"id": "wideo_1_bez_brand", "method": "POST", "path": b + "/videos", "kind": "video", "src": c["film1"], "fields": {"name": c["film1_nazwa"]}})
@@ -461,7 +465,7 @@ def apply_batch(n):
                    "kolejnosc_ok": [im["listing_image_id"] for im in imgs] == [ids_before[k] for k in (1, 2, 3)] if len(imgs) == 3 else False,
                    "wideo": len(after.get("videos", [])), "tlumaczen": sum(1 for k, v in after["translations"].items() if v and k != "en-US"),
                    "materialy_ok": sorted(after["materials"]) == sorted(MATERIALS_TEXT.split(",")), "materials_prop": sorted(mat.get("values", [])),
-                   "wymiary_ok": [after.get("item_width"), after.get("item_height"), after.get("item_length"), after.get("item_dimensions_unit")] == [dm["w"], dm["h"], dm["d"], "cm"], "proba": attempt + 1}
+                   "wymiary_ok": all(any(pp["property_id"] == DIM_PROPS[k] and pp.get("values") == [num(dm[k])] and pp.get("scale_id") == SCALE_CM for pp in props.get("results", [])) for k in ("h", "w", "d")), "proba": attempt + 1}
             good = chk["cena_ok"] and chk["stan_ok"] and chk["status_ok"] and chk["zdjec"] == 3 and chk["alt_ok"] and chk["kolejnosc_ok"] and chk["wideo"] == 2 \
                 and chk["tlumaczen"] == 8 and chk["materialy_ok"] and chk["materials_prop"] == sorted(MAT_VALUES[1].split(",")) and chk["wymiary_ok"]
             if good:

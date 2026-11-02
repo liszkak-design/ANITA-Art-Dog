@@ -1,0 +1,67 @@
+{
+ "count": 5,
+ "results": [
+  {
+   "property_id": 47626759834,
+   "property_name": "Height",
+   "scale_id": 7,
+   "scale_name": "Centimeters",
+   "value_ids": [
+    99745714153
+   ],
+   "values": [
+    "10"
+   ]
+  },
+  {
+   "property_id": 47626759898,
+   "property_name": "Width",
+   "scale_id": 7,
+   "scale_name": "Centimeters",
+   "value_ids": [
+    82835799255
+   ],
+   "values": [
+    "7"
+   ]
+  },
+  {
+   "property_id": 54142602037,
+   "property_name": "Depth",
+   "scale_id": 7,
+   "scale_name": "Centimeters",
+   "value_ids": [
+    151691767053
+   ],
+   "values": [
+    "1.2"
+   ]
+  },
+  {
+   "property_id": 145330288652,
+   "property_name": "Home style",
+   "scale_id": null,
+   "scale_name": null,
+   "value_ids": [
+    2382
+   ],
+   "values": [
+    "Art deco"
+   ]
+  },
+  {
+   "property_id": 148789511893,
+   "property_name": "Material multi",
+   "scale_id": null,
+   "scale_name": null,
+   "value_ids": [
+    71,
+    227
+   ],
+   "values": [
+    "Bronze",
+    "Resin"
+   ]
+  }
+ ]
+}
