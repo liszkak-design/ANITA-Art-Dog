@@ -1378,3 +1378,13 @@
 2026-11-02T13:52:47 GET /v3/application/listings/1380905523
 2026-11-02T13:52:47 POST /v3/application/shops/19255336/listings/1380905523/personalization
 2026-11-02T13:52:48 GET /v3/application/listings/1380905523
+2026-11-02T14:01:28 GET /v3/application/listings/1366912012
+2026-11-02T14:01:28 GET /v3/application/shops/19255336/listings/1366912012/properties
+2026-11-02T14:01:29 GET /v3/application/listings/1366912012/inventory
+2026-11-02T14:01:29 PATCH /v3/application/shops/19255336/listings/1366912012
+2026-11-02T14:01:30 PUT /v3/application/shops/19255336/listings/1366912012/properties/148789511893
+2026-11-02T14:01:31 PUT /v3/application/shops/19255336/listings/1366912012/properties/47626759834
+2026-11-02T14:01:32 PUT /v3/application/shops/19255336/listings/1366912012/properties/47626759898
+2026-11-02T14:01:33 POST /v3/application/shops/19255336/listings/1366912012/personalization
+2026-11-02T14:01:33 GET /v3/application/listings/1366912012
+2026-11-02T14:01:34 POST /v3/application/shops/19255336/listings/1366912012/images
