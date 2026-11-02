@@ -85,7 +85,7 @@ Atrybuty (cm): Height 34, Width 24; Depth pominięta (decyzja właścicielki). H
 
 ## 6. Alt texty (6 zdjęć, bez wymiany)
 1: "Cherry wood-look memorial board with a bronze-look {BREED} relief above a gold name plate engraved with a name, dates and a quote."
-2: "Memorial board seen at an angle, with the bronze {BREED} relief and the gold name plate."
+2: "Memorial board seen at an angle, with the bronze-look {BREED} relief and the gold name plate."
 3: "Front view of the memorial board with its size, 34 cm high and 24 cm wide."
 4: "Back of the memorial board with the hanging slots and the folding stand."
 5: "Close-up of the gold name plate with black engraving."
