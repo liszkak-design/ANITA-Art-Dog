@@ -81,10 +81,10 @@ Zmiany względem wzoru: "bust" → "relief"; "designed by hand by Polish artisan
 1. Name and dates (wymagane, limit 50 jak dotąd). 2. Quote (opcjonalne, limit 1024 = maksimum Etsy dla pola tekstowego; instrukcja: "Leave empty for the default quote, or type the exact text you'd like engraved on the name plate."). Cytat domyślny: "You'll always be here with me, even if you're gone, you'll always have my love, our memory will live on."
 
 ## 5a. Atrybuty i materiały
-Atrybuty (cm): Height 34, Width 24; Depth pominięta (decyzja właścicielki). Home style: bez zmian. Materials (lista Etsy): do wyboru (lista Etsy nie ma MDF ani laminatu): Bronze, Resin + Wood albo Composite (propozycja w czacie). Materiały tekstowe: cold cast bronze, MDF board, engraving laminate (angielska nazwa laminatu do graweru: "engraving laminate"; do potwierdzenia).
+Atrybuty (cm): Height 34, Width 24; Depth pominięta (decyzja właścicielki). Home style: bez zmian. Materials (lista Etsy; nie ma MDF ani laminatu): Bronze, Resin, Composite (zatwierdzone 02.11.2026). Materiały tekstowe: cold cast bronze, MDF board, engraving laminate (zatwierdzone 02.11.2026).
 
 ## 6. Alt texty (6 zdjęć, bez wymiany)
-1: "Cherry wood-look memorial board with a bronze {BREED} relief above a gold name plate engraved with a name, dates and a quote."
+1: "Cherry wood-look memorial board with a bronze-look {BREED} relief above a gold name plate engraved with a name, dates and a quote."
 2: "Memorial board seen at an angle, with the bronze {BREED} relief and the gold name plate."
 3: "Front view of the memorial board with its size, 34 cm high and 24 cm wide."
 4: "Back of the memorial board with the hanging slots and the folding stand."
