@@ -116,3 +116,17 @@
 2026-11-03T09:55:32 GET /v3/application/listings/971379618
 2026-11-03T09:55:32 GET /v3/application/shops/19255336/listings/971379618/properties
 2026-11-03T10:05:46 GET /v3/application/listings/971379618
+2026-11-03T10:08:16 GET /v3/application/listings/971379618
+2026-11-03T10:08:17 GET /v3/application/shops/19255336/listings/971379618/properties
+2026-11-03T10:08:17 GET /v3/application/listings/971379618/inventory
+2026-11-03T10:08:17 PATCH /v3/application/shops/19255336/listings/971379618
+2026-11-03T10:08:18 PUT /v3/application/shops/19255336/listings/971379618/translations/pl
+2026-11-03T10:08:19 PUT /v3/application/shops/19255336/listings/971379618/translations/de
+2026-11-03T10:08:19 PUT /v3/application/shops/19255336/listings/971379618/translations/nl
+2026-11-03T10:08:20 PUT /v3/application/shops/19255336/listings/971379618/translations/fr
+2026-11-03T10:08:21 PUT /v3/application/shops/19255336/listings/971379618/translations/it
+2026-11-03T10:08:21 PUT /v3/application/shops/19255336/listings/971379618/translations/pt
+2026-11-03T10:08:22 PUT /v3/application/shops/19255336/listings/971379618/translations/es
+2026-11-03T10:08:23 PUT /v3/application/shops/19255336/listings/971379618/translations/sv
+2026-11-03T10:08:23 GET /v3/application/listings/971379618
+2026-11-03T10:08:24 GET /v3/application/listings/971379618
