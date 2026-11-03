@@ -42,7 +42,7 @@ Założenia (do potwierdzenia, patrz pytania w czacie): ta sama płytka co "with
 **C (personalizacja)**
 - C1: If you would rather remember your own dog, choose your own photo instead and we will print it.
 - C2: You can add your dog's name, or name and dates, above the portrait.
-- C3: Prefer your own dog's portrait? Attach a photo, in the original or in colour with the background removed.
+- C3: Prefer your own dog's portrait? Attach a photo and we will print it in the original or with the background removed.
 - C4 [N]: You can also have your own {NICK} on the plaque: attach a photo and we will print it.
 
 ## 4. Sekcje stałe

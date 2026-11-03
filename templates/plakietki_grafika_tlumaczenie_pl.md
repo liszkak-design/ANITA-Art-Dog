@@ -20,13 +20,13 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. Polski sprawdza właś
 
 **B**
 - B1: Umieść ją na grobie lub w innym miejscu pamięci jako hołd dla psa, który był częścią Twojego życia.
-- B2: Może oznaczać grób albo znaleźć miejsce tam, gdzie jest dla Ciebie ważne, jako przypomnienie o ukochanym psie.
-- B3: Posłuży jako oznaczenie grobu albo pamiątka w miejscu pamięci, przystosowana do użytku na zewnątrz.
+- B2: Może wyznaczać grób lub inne, ważne dla Ciebie miejsce, w którym wspominasz swojego ukochanego zwierzaka.
+- B3: Posłuży jako oznaczenie grobu albo innego miejsca pamięci. Jest przystosowana do użytku na zewnątrz.
 
 **C**
-- C1: Jeśli wolisz upamiętnić własnego psa, wybierz swoje zdjęcie, a nadrukujemy je zamiast projektu.
+- C1: Jeśli wolisz upamiętnić własnego psa, wybierz swoje zdjęcie, a nadrukujemy je zamiast widocznego w ofercie projektu.
 - C2: Możesz dodać imię psa albo imię i daty życia nad portretem.
-- C3: Wolisz portret własnego psa? Załącz zdjęcie, w oryginale lub w kolorze z usuniętym tłem.
+- C3: Wolisz portret własnego psa? Załącz zdjęcie, a my nadrukujemy je w oryginale lub z usuniętym tłem.
 
 ## Sekcje stałe
 ```
@@ -58,4 +58,4 @@ Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać n
 
 ## Tagi (max 20 znaków, długości policzone skryptem)
 **Stałe:** płytka pamięci psa (18), geometryczny pies (17), pamiątka po pupilu (18), oznaczenie grobu (16), płytka nagrobna (15) (EN: dog memorial plaque, geometric dog, pet loss gift, grave marker, tombstone plaque)
-**Pula:** płytka ceramiczna (17), płytka na zamówienie (20), płytka ze zdjęciem (18), nagrobek zwierzaka (18), pamiątka żałobna (16), wyrazy współczucia (18), ku pamięci (10), pamiątka do ogrodu (18), grafika geometryczna (20), portret psa (11), znak na grób psa (16), pamięć o pupilu (15), odporna na pogodę (17), owalna płytka (13), pamiątka na zewnątrz (20), kamień pamięci (14), tęczowy most (12)
+**Pula:** płytka ceramiczna (17), płytka na zamówienie (20), płytka ze zdjęciem (18), nagrobek zwierzaka (18), pamiątka żałobna (16), wyrazy współczucia (18), ku pamięci (10), pamiątka do ogrodu (18), grafika geometryczna (20), portret psa (11), znak na grób psa (16), pamięć o pupilu (15), odporna na pogodę (17), owalna płytka (13), pamiątka na zewnątrz (20), kamień pamięci (14), tęczowy most (12), kondolencje (11)
