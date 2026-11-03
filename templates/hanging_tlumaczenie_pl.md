@@ -12,7 +12,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Pierwszy akapit: banki
 **A**
-- A1: To wiszące popiersie psa rasy {B} wnosi na Twoją ścianę charakter rasy, w odlewie o wyglądzie brązu, wykonanym z ręcznie zaprojektowanego modelu.
+- A1: To wiszące popiersie psa rasy {B} odwzierciedla charakter rasy, w odlewie o wyglądzie brązu, wykonanym z ręcznie zaprojektowanego modelu.
 - A2: Głowa i szyja psa rasy {B}, zaprojektowane ręcznie i odlane w cold cast bronze, gotowe do powieszenia na ścianie.
 - A3: Pokaż, jak kochasz rasę {B}, wiszącym popiersiem, które oddaje wyraz pyska i szczegóły rasy.
 - A4: To ścienne popiersie psa rasy {B} to ręcznie zaprojektowany portret rasy, stworzony do powieszenia w domu, w biurze lub w miejscu pamięci.
@@ -21,7 +21,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 **B**
 - B1: To wyjątkowa dekoracja salonu, gabinetu lub biura i prezent dla każdego, kto kocha tę rasę.
 - B2: Powieś je jako dekorację domu lub biura, podaruj jako nagrodę na wystawie psów albo podziękowanie, lub zachowaj jako pamiątkę po psie, którego już nie ma.
-- B3: Może być ozdobą, nagrodą, podziękowaniem lub delikatną pamiątką po ukochanym psie.
+- B3: Może być ozdobą, nagrodą, podziękowaniem lub elegancką pamiątką po ukochanym psie.
 
 **C**
 - C1: Tył jest zabezpieczony miękkim filcem i ma przymocowany hak, więc łatwo powiesić je na ścianie.
@@ -45,10 +45,10 @@ GDZIE SIĘ SPRAWDZI
 - Dekoracja ścienna domu, gabinetu lub biura.
 - Prezent dla miłośnika psów, hodowcy, myśliwego lub fana wystaw psów.
 - Trofeum, nagroda lub podziękowanie.
-- Pamiątka po psie, element spokojnego kącika pamięci.
+- Pamiątka po psie, element kącika pamięci.
 
 DLACZEGO MIŁOŚNICY PSÓW JE WYBIERAJĄ
-Przedstawia rasę z dużą dbałością o szczegóły: wyraz pyska, uszy, fałdy i fakturę sierści. Wykończenie o wyglądzie brązu nadaje mu spokojny, godny charakter, a popiersie jest gotowe do powieszenia w takiej formie, w jakiej jest. Dla wielu miłośników psów staje się ulubionym elementem ściany.
+Statuetka przedstawia rasę z dużą dbałością o szczegóły: wyraz pyska, uszy, fałdy i fakturę sierści. Wykończenie o wyglądzie brązu nadaje jej spokojny, godny charakter, a statuetka jest gotowa do powieszenia w takiej formie, w jakiej jest. Dla wielu miłośników psów staje się ulubioną dekoracją.
 
 ZAMÓWIENIA MIĘDZYNARODOWE
 Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać naliczone opłaty importowe. Opłaty nie dotyczą krajów UE, Wielkiej Brytanii ani USA. W razie wątpliwości skontaktuj się z nami, a podamy szczegóły.

@@ -49,7 +49,7 @@ NAME_FIX = {"Fila Brasileiro, Brazilian Mastiff": "Fila Brasileiro", "Grand Bass
             "Belgian Shepherd": "Belgian Shepherd", "Bouvier des Flandres": "Bouvier", "Malinois": "Malinois Belgian Shepherd"}
 FEATURE_BY_LID = {971371492: "Dachshund Wire-haired", 985333223: "Dachshund Long-haired", 985358693: "Dachshund Smooth-haired", 985331775: "Chihuahua Long-haired",
                   985331389: "Chihuahua Short-haired", 985339913: "Fox Terrier Wire", 971390684: "Collie Rough", 971366156: "cropped ears", 971380106: "cropped ears", 985351947: "cropped ears"}
-HOLD = {971376774: "English Staffordshire Terrier: do potwierdzenia rasa (Staffordshire Bull Terrier czy American Staffordshire Terrier)", 971393258: "Staffordshire Terrier: do potwierdzenia rasa (Staffordshire Bull Terrier czy American Staffordshire Terrier)"}
+HOLD = {}
 # zdjęcia z filcem rozpoznane wzrokowo (03.11.2026): zbliżenie haczyka i widok tyłu (listing_id, ranga)
 CLOSE_RANKS = {(985357391, 7), (971399078, 7), (985360373, 8), (971399904, 8), (971372844, 7), (971392262, 7)}
 BACK_RANKS = {(985357391, 6), (971399078, 6), (971367252, 6), (985360373, 7), (971399904, 7), (971372844, 6), (1362981052, 8), (985327151, 5), (971392262, 6)}
