@@ -6,13 +6,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TPL = ROOT / "templates"
 R = {}
-R["pl"] = [("ozdobiona nowoczesnym geometrycznym portretem, zbudowanym z drobnych ścianek w kolorach rasy", "ozdobiona uroczym kreskówkowym portretem w kolorach rasy"),
+R["pl"] = [("o psie rasy {B}", "o kocie (rasa: {B})"), ("psa rasy {B}", "kota (rasa: {B})"), ("ozdobiona nowoczesnym geometrycznym portretem, zbudowanym z drobnych ścianek w kolorach rasy", "ozdobiona uroczym kreskówkowym portretem w kolorach rasy"),
  ("geometryczny portret psa na ceramice", "kreskówkowy portret kota na ceramice"), ("geometryczną głową psa", "kreskówkową głową kota"), ("geometryczna pamiątka po psie", "kreskówkowa pamiątka po kocie"),
  ("geometryczna grafika", "kreskówkowa grafika"), ("nowoczesny geometryczny portret psa rasy", "uroczy kreskówkowy portret kota rasy"), ("nowoczesny geometryczny portret", "uroczy kreskówkowy portret"),
  ("geometrycznego portretu", "kreskówkowego portretu"), ("geometrycznym portretem", "kreskówkowym portretem"), ("geometryczny portret", "kreskówkowy portret"), ("geometryczny pies", "kreskówkowy kot"), ("nowoczesny portret, który", "uroczy portret, który"),
  ("grafika geometryczna", "grafika kreskówkowa"), ("Twoim psie", "Twoim kocie"), ("psa rasy", "kota rasy"), ("Twojego psa", "Twojego kota"), ("własnego psa", "własnego kota"), ("imię psa", "imię kota"),
  ("ukochanego psa", "ukochanego kota"), ("po stracie psa", "po stracie kota"), ("po psie", "po kocie"), ("o psie", "o kocie"), ("psa, który", "kota, który"), ("pamięci psa", "pamięci kota"),
- ("grób psa", "grób kota"), ("portret psa", "portret kota"), ("dla psa", "dla kota"), ("z psem", "z kotem")]
+ ("grób psa", "grób kota"), ("portret psa", "portret kota"), ("dla psa", "dla kota"), ("z psem", "z kotem"), ("geometryczną głową kota", "kreskówkową głową kota")]
 R["de"] = [("mit einem modernen geometrischen Porträt verziert, aufgebaut aus feinen Facetten in den Farben der Rasse", "mit einem niedlichen Cartoon-Porträt in den Farben der Rasse verziert"),
  ("geometrisches Hundeporträt auf Keramik", "Katzenporträt im Cartoon-Stil auf Keramik"), ("geometrische Erinnerung an den Hund", "Erinnerung an die Katze im Cartoon-Stil"), ("geometrischem Hundekopf", "Cartoon-Katzenkopf"),
  ("geometrische Grafik", "Cartoon-Grafik"), ("modernes geometrisches Porträt", "niedliches Cartoon-Porträt"), ("Modernes geometrisches Porträt eines Hundes der Rasse", "Niedliches Cartoon-Porträt einer Katze der Rasse"),
@@ -64,6 +64,9 @@ def main():
         t = (TPL / f"plakietki_grafika_tlumaczenie_{code}.md").read_text(encoding="utf-8")
         for a, b in pairs:
             t = t.replace(a, b)
+        t = t.replace("(EN: dog memorial plaque, geometric dog,", "(EN: cat memorial plaque, cartoon cat,")
+        t = t.replace("Status: EN zatwierdzony przez właścicielkę 03.11.2026. Polski sprawdza właścicielka.", "Status: wersja dla kotów oparta na zatwierdzonej wersji dla psów (04.11.2026), do sprawdzenia. Polski sprawdza właścicielka.")
+        t = t.replace("Status: EN i PL zatwierdzone przez właścicielkę 03.11.2026.", "Status: wersja dla kotów oparta na zatwierdzonych EN i PL dla psów (04.11.2026).")
         t = t.replace("geometryczne psy, 100 ofert", "koty (grafika kreskówkowa), 45 ofert").replace("(geometryczne psy, 100 ofert;", "(koty, grafika kreskówkowa, 45 ofert;")
         # przeliczenie długości tagów
         out = []

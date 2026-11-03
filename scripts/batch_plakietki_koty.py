@@ -156,7 +156,12 @@ def en_tags(lid):
 
 
 def en_alts(name):
-    return {k: v.replace("{BREED}", name) for k, v in ALT12.items()}
+    out = {}
+    for k, v in ALT12.items():
+        t = v.replace("{BREED}", name)
+        t = re.sub(r"\b([Aa]n?) (?=" + re.escape(name) + ")", lambda m: (B.article(name).capitalize() if m.group(1)[0] == "A" else B.article(name)) + " ", t)
+        out[k] = t
+    return out
 
 
 def tr_load(code):

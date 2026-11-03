@@ -1,6 +1,6 @@
 # Tłumaczenie na polski: płytki ceramiczne "with a Graphics" (koty (grafika kreskówkowa), 45 ofert; szkic Claude'a do sprawdzenia przez właścicielkę, 03.11.2026)
 
-Status: EN zatwierdzony przez właścicielkę 03.11.2026. Polski sprawdza właścicielka. `{B}` = kolumna "PL nazwa" arkusza Rasy (nazwa rasy zawsze w mianowniku, po dwukropku, myślniku lub po słowie "rasa"). Bez zdrobnień i synonimów (tylko A1-A5), bez słów "trwały/trwałe", bez "ciche miejsce", "daty życia" przy datach. Personalizacja: styl tylko dla własnego zdjęcia (oryginał albo kolor z usuniętym tłem), bez portretu geometrycznego na życzenie. Pola personalizacji Etsy nie są tłumaczone.
+Status: wersja dla kotów oparta na zatwierdzonej wersji dla psów (04.11.2026), do sprawdzenia. Polski sprawdza właścicielka. `{B}` = kolumna "PL nazwa" arkusza Rasy (nazwa rasy zawsze w mianowniku, po dwukropku, myślniku lub po słowie "rasa"). Bez zdrobnień i synonimów (tylko A1-A5), bez słów "trwały/trwałe", bez "ciche miejsce", "daty życia" przy datach. Personalizacja: styl tylko dla własnego zdjęcia (oryginał albo kolor z usuniętym tłem), bez portretu geometrycznego na życzenie. Pola personalizacji Etsy nie są tłumaczone.
 
 ## Tytuł (6 wzorców)
 1. {B} płytka pamiątkowa, kreskówkowy portret kota na ceramice, personalizowana tabliczka nagrobna
@@ -12,11 +12,11 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. Polski sprawdza właś
 
 ## Pierwszy akapit: banki
 **A**
-- A1: Ta płytka pamiątkowa dla kota rasy {B} jest wykonana z ceramiki i ozdobiona uroczym kreskówkowym portretem w kolorach rasy.
+- A1: Ta płytka pamiątkowa dla kota (rasa: {B}) jest wykonana z ceramiki i ozdobiona uroczym kreskówkowym portretem w kolorach rasy.
 - A2: Ceramiczna płytka nagrobna dla Twojego kota (rasa: {B}) z kreskówkowym portretem rasy.
-- A3: Zachowaj pamięć o kocie rasy {B} dzięki ceramicznej płytce z nadrukowanym kreskówkowym portretem rasy.
-- A4: Ta ceramiczna płytka pamiątkowa przedstawia kota rasy {B} jako kreskówkowy portret, nowoczesny sposób, by oddać hołd ukochanemu towarzyszowi.
-- A5: Ceramiczne oznaczenie grobu z kreskówkową głową kota rasy {B}: uroczy portret, który przywołuje pamięć o Twoim kocie.
+- A3: Zachowaj pamięć o kocie (rasa: {B}) dzięki ceramicznej płytce z nadrukowanym kreskówkowym portretem rasy.
+- A4: Ta ceramiczna płytka pamiątkowa przedstawia kota (rasa: {B}) jako kreskówkowy portret, nowoczesny sposób, by oddać hołd ukochanemu towarzyszowi.
+- A5: Ceramiczne oznaczenie grobu z kreskówkową głową kota (rasa: {B}): uroczy portret, który przywołuje pamięć o Twoim kocie.
 
 **B**
 - B1: Umieść ją na grobie lub w innym miejscu pamięci jako hołd dla kota, który był częścią Twojego życia.
@@ -32,7 +32,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. Polski sprawdza właś
 ```
 W SKRÓCIE
 - Ceramiczna owalna płytka, ok. 10,5 x 7,5 cm (4,13 x 2,95 cala), grubość ok. 0,5 cm (0,2 cala)
-- Nowoczesny kreskówkowy portret kota rasy {B} albo Twoje zdjęcie
+- Nowoczesny kreskówkowy portret kota (rasa: {B}) albo Twoje zdjęcie
 - Nadruk odporny na warunki atmosferyczne, nie blaknie
 - Gładka, zaokrąglona krawędź, nie potrzebuje dodatkowej oprawy
 - Z tyłu nie ma otworu ani haczyka, płytkę należy przykleić dowolnym klejem uniwersalnym
@@ -57,5 +57,5 @@ Nasze produkty wysyłamy z Polski, dlatego w niektórych krajach mogą zostać n
 ```
 
 ## Tagi (max 20 znaków, długości policzone skryptem)
-**Stałe:** płytka pamięci kota (19), kreskówkowy kot (15), pamiątka po pupilu (18), oznaczenie grobu (16), płytka nagrobna (15) (EN: dog memorial plaque, geometric dog, pet loss gift, grave marker, tombstone plaque)
+**Stałe:** płytka pamięci kota (19), kreskówkowy kot (15), pamiątka po pupilu (18), oznaczenie grobu (16), płytka nagrobna (15) (EN: cat memorial plaque, cartoon cat, pet loss gift, grave marker, tombstone plaque)
 **Pula:** płytka ceramiczna (17), płytka na zamówienie (20), płytka ze zdjęciem (18), nagrobek zwierzaka (18), pamiątka żałobna (16), wyrazy współczucia (18), ku pamięci (10), pamiątka do ogrodu (18), grafika kreskówkowa (19), portret kota (12), znak na grób kota (17), pamięć o pupilu (15), odporna na pogodę (17), owalna płytka (13), pamiątka na zewnątrz (20), kamień pamięci (14), tęczowy most (12), kondolencje (11)

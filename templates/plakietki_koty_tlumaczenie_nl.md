@@ -1,6 +1,6 @@
 # Tłumaczenie (Nederlands): płytki ceramiczne "with a Graphics" (koty (grafika kreskówkowa), 45 ofert; szkic Claude'a, bez weryfikacji osoby natywnej, 03.11.2026)
 
-Status: EN i PL zatwierdzone przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z Rasy.xlsx dla tego języka. Wspólne zdania (zdjęcie, orientacja, pytania, zamówienia międzynarodowe) z zatwierdzonych szablonów płytek "with a Photo". Forma zwracania się: u/uw. Pola personalizacji Etsy nie są tłumaczone.
+Status: wersja dla kotów oparta na zatwierdzonych EN i PL dla psów (04.11.2026). `{B}` = nazwa rasy z Rasy.xlsx dla tego języka. Wspólne zdania (zdjęcie, orientacja, pytania, zamówienia międzynarodowe) z zatwierdzonych szablonów płytek "with a Photo". Forma zwracania się: u/uw. Pola personalizacji Etsy nie są tłumaczone.
 
 ## Tytuł (6 wzorców)
 1. {B} herdenkingsplaat, kattenportret in cartoonstijl op keramiek, gepersonaliseerde grafplaat
