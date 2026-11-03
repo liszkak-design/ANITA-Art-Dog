@@ -2,7 +2,8 @@
 """Film o personalizacji płytki ceramicznej z grafiką (portret rasy / własne zdjęcie / imię i daty). 1920x1080, 30 kl./s, bez dźwięku, 15 s.
 Jak render.py (płytki ze szkicem), ale scena 3 bez szkicu: portret rasy, zdjęcie oryginalne, zdjęcie bez tła.
 Zdjęcia: assets_plaque_graphics/ (A-D przykłady zdjęć klientów, 0 / 0-photo / 0-nobg, 1 / 1-name / 1-name-dates).
-Użycie: python3 -I render_plaque_graphics.py WYJŚCIE.mp4 [--frames-dir KATALOG --at T [T ...]]
+Użycie: python3 -I render_plaque_graphics.py WYJŚCIE.mp4 [--species dog|cat] [--frames-dir KATALOG --at T [T ...]]
+Zdjęcia sceny 2 (A-D) są wspólne (katalog główny), reszta w podkatalogu gatunku: assets_plaque_graphics/dog|cat/.
 """
 import subprocess
 import sys
@@ -16,12 +17,18 @@ import render as R  # noqa: E402
 
 W, H, FPS = R.W, R.H, R.FPS
 FADE = R.FADE
-ASSETS = HERE / "assets_plaque_graphics"
-BREEDS = "100"
+ROOT = HERE / "assets_plaque_graphics"
+SPECIES = sys.argv[sys.argv.index("--species") + 1] if "--species" in sys.argv else "dog"
+BREEDS = {"dog": "100", "cat": "45"}[SPECIES]
+
+
+def asset(name):
+    p = ROOT / SPECIES / f"{name}.jpg"
+    return p if p.exists() else ROOT / f"{name}.jpg"
 
 
 def photo(name, height, cx, cy):
-    im = Image.open(ASSETS / f"{name}.jpg").convert("RGB").crop(R.CROP)
+    im = Image.open(asset(name)).convert("RGB").crop(R.CROP)
     w = round(im.width * height / im.height)
     im = im.resize((w, height), Image.LANCZOS)
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
