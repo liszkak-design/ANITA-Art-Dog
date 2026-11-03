@@ -474,7 +474,7 @@ def apply_batch(n):
                     data, ct = base.multipart({"rank": str(s["rank"]), "overwrite": "false", "alt_text": s["fields"]["alt_text"]}, ("image", fp.name), fp.read_bytes(), "image/jpeg")
                     resp = api.request("POST", s["path"], headers={"Content-Type": ct}, data=data, retries=1)
             elif s["kind"] == "video":
-                path = R.curl_to(s["src"], CACHE / "wideo" / s["fields"]["name"])
+                path = Path(s["src"]) if not s["src"].startswith("http") else R.curl_to(s["src"], CACHE / "wideo" / s["fields"]["name"])
                 data, ct = base.multipart({"name": s["fields"]["name"]}, ("video", path.name), path.read_bytes(), "video/mp4")
                 resp = api.request(s["method"], s["path"], headers={"Content-Type": ct}, data=data, retries=1)
                 if not base.ok(resp) and re.search(r"reset|timed out|timeout|disconnect|closed", str(resp), re.I):
