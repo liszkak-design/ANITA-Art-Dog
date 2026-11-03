@@ -1,6 +1,6 @@
 # Płytki ceramiczne "with a Graphics" (geometryczne psy, 100 ofert, sekcja 25604492): propozycja tekstów EN (szkic do akceptacji, 03.11.2026)
 
-Założenia (do potwierdzenia, patrz pytania w czacie): ta sama płytka co "with a Photo" (owalna płytka ceramiczna), inny nadruk: geometryczny portret psa. Tytuł do 14 słów i 140 znaków, rasa (kolumna C Rasy.xlsx) na początku, bez powtórzeń słów w tytule (zwłaszcza dog i for). Opis jak dla płytek "with a Photo" (banki A/B/C, sekcje stałe), z nową personalizacją (cała dobrowolna): portret geometryczny jak na zdjęciu, własne zdjęcie (oryginał albo kolor z usuniętym tłem), imię albo imię i daty. Bez zdania "we do not customize geometric dogs basing on the photo" ze starego opisu.
+Założenia (do potwierdzenia, patrz pytania w czacie): ta sama płytka co "with a Photo" (owalna płytka ceramiczna), inny nadruk: geometryczny portret psa. Tytuł do 14 słów i 140 znaków, rasa (kolumna C Rasy.xlsx) na początku, bez powtórzeń słów w tytule (zwłaszcza dog i for). Opis wzorowany na płytkach "with a Photo" (banki A/B/C, sekcje stałe) i na urnach "with Graphics", bez odniesień do starego opisu oferty. Personalizacja jak przy płytkach "with a Photo" (cała dobrowolna), ze stylem zamiast "Sketch style": portret geometryczny, własne zdjęcie w oryginale albo w kolorze z usuniętym tłem; imię albo imię i daty. Materials: tekstowe "ceramic plate" bez zmian, z listy Ceramic; bez wymiarów w atrybutach; who_made: collective. Wymiary w opisie 10,5 x 7,5 x 0,5 cm (potwierdzone 03.11.2026).
 `{BREED}` = Rasy.xlsx kol. C (+ odmiana z arkusza "Słowa stałe"), `{NICK}`/`{SYN}` = kol. E (zasady jak dotąd: zdrobnienie w wariantach [N], synonim w wariantach [S]).
 
 ## 1. Tytuły (wzorzec losowany po ID oferty, generator bierze pierwszy mieszczący się w 14 słowach i bez powtórzeń słów)
@@ -53,15 +53,15 @@ IN SHORT
 - Weather-resistant print that does not fade
 - Smooth, rounded edge, no extra frame or setting needed
 - No hole or hook on the back, attach it with any universal adhesive
-- Personalisation available: your photo, name and dates
+- Personalisation available: your photo, print style, name and dates
 
 A TRIBUTE THAT STAYS WITH YOU
 A ceramic plaque is a gentle way to remember a dog who has passed away. The smooth edge needs no special frame, the high-quality print is made to last, and personalisation lets you make the plaque truly yours.
 
 PERSONALISATION
 Order the plaque exactly as shown, or personalise it. Every option below is optional.
-- Geometric portrait: the plaque shown in the photos, with the geometric portrait of the breed.
-- Your own photo: we can print any photo you send us, either as the original or in full colour with the background removed. Attach it in the personalisation box when ordering, or send it by Etsy message.
+- Your photo: we can print any photo you send us. Attach it in the personalisation box when ordering, or send it by Etsy message.
+- Style: choose the geometric portrait shown, your own photo as the original, or your own photo in full colour with the background removed.
 - Name and dates: add your dog's name, or name and dates of life, to the geometric portrait or to your own photo, or leave the plaque without text.
 - Orientation: a plaque with your photo can be placed vertically or horizontally.
 
@@ -73,13 +73,16 @@ INTERNATIONAL ORDERS
 Our products are shipped from Poland, so import charges may apply in some countries. These charges do not apply to EU countries, the United Kingdom and the USA. If you have any doubts, please contact us for details.
 ```
 
-## 5. Pola personalizacji Etsy (wszystkie dobrowolne)
-1. dropdown "What would you like on the plaque?": "Geometric portrait, as shown" / "Your own photo, original" / "Your own photo, colour, no background".
-2. upload "Your photo (if you chose your own photo)", instrukcja: "Attach a clear photo of your dog, or send it later by Etsy message. Leave empty if you chose the geometric portrait."
-3. text (50) "Name and dates (optional)", instrukcja: "Name, or name and dates, as they should appear, e.g. Felix 12/29/2013 - 11/9/2026. Leave empty for no text."
-4. dropdown "Plaque orientation (if own photo)": "Vertical" / "Horizontal".
+## 5. Pola personalizacji Etsy (wszystkie dobrowolne; układ jak przy płytkach "with a Photo", zmieniona tylko lista stylu)
+1. dropdown "Do you want to personalize the plaque?": "No, as shown" / "Yes, personalize it".
+2. upload "Your photo (optional)", instrukcja: "Attach a clear photo of your pet, or send it later by Etsy message. Leave empty if you chose No."
+3. dropdown "Print style (if personalizing)": "Geometric portrait" / "Original photo" / "No background" (dotychczas: Original photo / No background / Sketch style).
+4. text (50) "Name and dates (optional)", instrukcja: "Name, or name and dates, as they should appear, e.g. Felix 12/29/2013 - 11/9/2026. Leave empty for no text."
+5. dropdown "Plaque orientation (if own photo)": "Vertical" / "Horizontal".
+Portret geometryczny z imieniem albo z imieniem i datami = "Yes, personalize it" + "Geometric portrait" + tekst w polu 4.
 
-## 6. Alt texty
-1: "Oval ceramic memorial plaque with a geometric portrait of a {BREED} on a white marble surface" (zdjęcie 1 istniejące)
-2: "Ceramic oval plaque with a geometric {BREED} portrait seen at an angle, showing the smooth rounded edge" (zdjęcie 2 istniejące)
-Alt dla zdjęć dodanych: do ustalenia po decyzji, które zdjęcia dodajemy.
+## 6. Zdjęcia i alt texty (4 zdjęcia: 2 istniejące bez zmian + 2 dodane na końcu)
+1 (istniejące): "Oval ceramic memorial plaque with a geometric portrait of a {BREED} on a white marble surface"
+2 (istniejące): "Ceramic oval plaque with a geometric {BREED} portrait seen at an angle, showing the smooth rounded edge"
+3 (dodane, `media/plakietki_grafika/tyl_plytki.jpg`): "Back of the ceramic plaque, flat and plain, with no hole or hook"
+4 (dodane, `media/plakietki_grafika/oryginal_kolorowe.jpg`): "Unedited photo of a finished ceramic oval plaque printed with a colour photo of a dog and a quote"
