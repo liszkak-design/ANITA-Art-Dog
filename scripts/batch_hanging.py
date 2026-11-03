@@ -100,6 +100,26 @@ def words(t):
     return len(t.replace(",", " ").split())
 
 
+SKIP_REP = {"or", "and", "with", "the", "of", "a", "to", "in", "for_"}
+
+
+def repeated(t, name=""):
+    """Etsy: unikaj powtórzeń słów w tytule (zwłaszcza dog i for). Zwraca listę powtórzonych słów (bez krótkich spójników)."""
+    nw = set(re.findall(r"[\w'-]+", name.lower()))
+    ws = [w for w in re.findall(r"[\w'-]+", t.lower()) if w not in SKIP_REP and w not in nw]
+    return sorted({w for w in ws if ws.count(w) > 1})
+
+
+FOR_WORDS = {"para", "pour", "für", "voor", "dla", "per", "för", "till", "for"}
+
+
+def repeated_tr(t, name):
+    """Jak repeated(), ale dla tłumaczeń: bez słów nazwy rasy i bez krótkich słów funkcyjnych (de, da, z, à...), z wyjątkiem słów 'dla/für/pour...'."""
+    nw = {w for w in re.findall(r"[\w'-]+", name.lower())}
+    ws = [w for w in re.findall(r"[\w'-]+", t.lower()) if w not in nw and (len(w) >= 4 or w in FOR_WORDS)]
+    return sorted({w for w in ws if ws.count(w) > 1})
+
+
 def pick_title(lid, pats, name):
     start = U.pick(lid, "T", len(pats))
     fb = None
@@ -107,7 +127,7 @@ def pick_title(lid, pats, name):
         i = (start + k) % len(pats)
         t = re.sub(r"\s+", " ", pats[i].replace("{BREED}", name)).strip()
         fb = fb or (t, i + 1)
-        if len(t) <= 140 and words(t) <= MAX_WORDS:
+        if len(t) <= 140 and words(t) <= MAX_WORDS and not repeated(t, name):
             return t, i + 1
     return fb
 
@@ -192,7 +212,7 @@ def tr_render(code, lid, rr, ch, tidx, feat, dm):
     title = ""
     for k in range(6):
         title = re.sub(r"\s+", " ", d["titles"][(tidx - 1 + k) % 6].replace("{B}", name)).strip()
-        if len(title) <= 140:
+        if len(title) <= 140 and not repeated_tr(title, name):
             break
     order = sorted(d["pool"], key=lambda x: hashlib.sha256(f"{lid}:{code}:{x}".encode()).hexdigest())
     pool, used = [], set()
@@ -271,6 +291,13 @@ def build_candidates():
     return out, fw
 
 
+def tnames_of(c, fw):
+    fwd = fw.get(c["key"], {}) if c["key"] else {}
+    d = {code: (c["rr"][U.NAME_COL[code]] + " " + fwd.get(code, "")).strip() for code in LANG_ALL}
+    d["en"] = (c["breed"] + " " + (U.feature_en(c["key"]) if c["key"] else "")).strip()
+    return d
+
+
 def render(c, fw):
     lid, rr = c["lid"], c["rr"]
     e = (rr.get("Potoczne EN") or "").strip()
@@ -287,10 +314,15 @@ def render(c, fw):
     return enx, trans
 
 
-def check(enx, trans):
+def check(enx, trans, tnames):
     p = []
     if len(enx["title"]) > 140 or enx["slow_w_tytule"] > MAX_WORDS:
         p.append(f"tytuł EN {len(enx['title'])} zn. / {enx['slow_w_tytule']} słów")
+    if repeated(enx["title"], tnames["en"]):
+        p.append("powtórzone słowa w tytule EN: " + ",".join(repeated(enx["title"], tnames["en"])))
+    first = enx["description"].split("\n\n")[0]
+    if sum(1 for x in re.split(r"(?<=[.!?]) ", first) if re.search(r"\bfelt\b|\bhook\b", x)) > 1:
+        p.append("filc/haczyk w więcej niż jednym zdaniu pierwszego akapitu")
     if "cold cast bronze" in enx["title"].lower() or re.search(r"plaque", enx["title"] + enx["description"] + " ".join(enx["tags"]), re.I):
         p.append("zakazane słowo (cold cast bronze w tytule / plaque)")
     if len(enx["tags"]) != 13 or len(set(enx["tags"])) != 13 or any(len(x) > 20 for x in enx["tags"]):
@@ -300,6 +332,8 @@ def check(enx, trans):
     for code, d in trans.items():
         if len(d["title"]) > 140:
             p.append(f"tytuł {code} {len(d['title'])} zn.")
+        if repeated_tr(d["title"], tnames[code]):
+            p.append(f"powtórzone słowa w tytule {code}: " + ",".join(repeated_tr(d["title"], tnames[code])))
         if len(d["tags"]) != 13 or len(set(d["tags"])) != 13 or any(len(x) > 20 for x in d["tags"]):
             p.append(f"tagi {code}")
         if "{" in d["title"] + d["description"]:
@@ -317,7 +351,7 @@ def raport():
             why, nt, nw = list(c["why"]), "", ""
             if not [x for x in why if x != "już zoptymalizowana"] and c["rr"]:
                 enx, trans = render(c, fw)
-                why += check(enx, trans)
+                why += check(enx, trans, tnames_of(c, fw))
                 nt, nw = enx["title"], enx["slow_w_tytule"]
             w.writerow([c["lid"], c["views"], c["breed"], c["key"], c["ean"], nt, nw, c["film1"], c["film2"], "; ".join(why)])
     r = list(csv.DictReader(open(out, encoding="utf-8")))
@@ -342,7 +376,7 @@ def plan(n, size):
             print("pomijam", c["lid"], c["breed"], c["why"])
             continue
         enx, trans = render(c, fw)
-        prob = check(enx, trans)
+        prob = check(enx, trans, tnames_of(c, fw))
         if prob:
             print("pomijam", c["lid"], c["breed"], prob)
             continue

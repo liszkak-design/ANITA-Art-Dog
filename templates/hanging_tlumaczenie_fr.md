@@ -4,19 +4,19 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Tytuł (6 wzorców)
 1. {B} buste de chien à suspendre, décoration murale effet bronze, cadeau souvenir
-2. {B} tête de chien à suspendre, décoration murale effet bronze, cadeau pour amoureux des chiens
+2. {B} tête de chien à suspendre, décoration murale effet bronze, cadeau pour passionnés de la race
 3. {B} sculpture murale, buste de chien effet bronze, décoration, cadeau trophée
 4. {B} statue à suspendre, tête de chien effet bronze pour le mur, maison ou bureau
 5. {B} buste de chien à suspendre avec dos en feutre, décoration murale, trophée ou souvenir
-6. {B} statuette à suspendre effet bronze, buste de chien pour le mur, cadeau pour propriétaire de chien
+6. {B} statuette à suspendre effet bronze, buste, décoration murale, cadeau pour propriétaire de chien
 
 ## Pierwszy akapit: banki
 **A**
 - A1: Ce buste à suspendre d'un chien de race {B} apporte le caractère de la race sur votre mur, dans une coulée effet bronze réalisée d'après un modèle conçu à la main.
-- A2: Tête et cou d'un chien de race {B}, conçus à la main et coulés en cold cast bronze, prêts à être accrochés à votre mur.
+- A2: Tête et cou d'un chien de race {B}, conçus à la main et coulés en cold cast bronze, avec une finition effet bronze.
 - A3: Montrez votre amour pour la race {B} avec un buste à suspendre qui capte l'expression et les détails de la race.
-- A4: Ce buste mural d'un chien de race {B} est un portrait de la race conçu à la main, fait pour être accroché à la maison, au bureau ou dans un lieu de souvenir.
-- A5: Détaillé, conçu à la main et prêt à être accroché : un buste de chien de race {B} effet bronze, avec du feutre doux au dos et un crochet pour le mur.
+- A4: Ce buste mural d'un chien de race {B} est un portrait de la race conçu à la main, pensé pour la maison, le bureau ou un lieu de souvenir.
+- A5: Détaillé, conçu à la main et coulé avec un effet bronze : un buste de chien de race {B} qui apporte le caractère de la race sur votre mur.
 
 **B**
 - B1: C'est une décoration originale pour un salon, un bureau ou un cabinet de travail, et un cadeau pour tous ceux qui aiment la race.
@@ -25,7 +25,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 **C**
 - C1: Le dos est protégé par du feutre doux et muni d'un crochet fixé, ce qui permet de l'accrocher facilement au mur.
-- C2: Un crochet est fixé au dos protégé par du feutre, le buste est donc prêt à être accroché dès sa réception.
+- C2: Un crochet est fixé au dos protégé par du feutre, le buste peut donc rejoindre le mur dès sa réception.
 - C3: Le feutre doux au dos et le crochet monté facilitent l'accrochage, à l'intérieur ou dans un endroit abrité à l'extérieur.
 
 ## Sekcje stałe

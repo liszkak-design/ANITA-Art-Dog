@@ -4,19 +4,19 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Tytuł (6 wzorców)
 1. {B} hangende hondenbuste, wanddecoratie in brons-look, herinneringscadeau
-2. {B} hangende hondenkop, wanddecoratie in brons-look, cadeau voor hondenliefhebbers
+2. {B} hangende hondenkop, wanddecoratie in brons-look, cadeau voor liefhebbers van het ras
 3. {B} hangend beeld, hondenbuste in brons-look, woondecoratie, trofeecadeau
 4. {B} hangend standbeeld, hondenkop in brons-look voor aan de muur, thuis of kantoor
-5. {B} hangende hondenbuste met viltachterkant, wanddecoratie, hondentrofee of aandenken
-6. {B} hangend beeldje in brons-look, hondenbuste voor aan de muur, cadeau voor hondenbezitters
+5. {B} hangende hondenbuste met viltachterkant, wanddecoratie, trofee of aandenken
+6. {B} hangend beeldje in brons-look, hondenbuste, wanddecoratie, cadeau voor baasjes
 
 ## Pierwszy akapit: banki
 **A**
 - A1: Deze hangende buste van een hond van het ras {B} brengt het karakter van het ras aan uw muur, in een afgietsel in brons-look naar een met de hand ontworpen model.
-- A2: Kop en hals van een hond van het ras {B}, met de hand ontworpen en gegoten in cold cast bronze, klaar om aan uw muur te hangen.
+- A2: Kop en hals van een hond van het ras {B}, met de hand ontworpen en gegoten in cold cast bronze, met een brons-look afwerking.
 - A3: Toon uw liefde voor het ras {B} met een hangende buste die de uitdrukking en de details van het ras vastlegt.
-- A4: Deze wandbuste van een hond van het ras {B} is een met de hand ontworpen portret van het ras, gemaakt om thuis, op kantoor of op een herinneringsplek te hangen.
-- A5: Gedetailleerd, met de hand ontworpen en klaar om op te hangen: een buste van een hond van het ras {B} in brons-look, met zacht vilt aan de achterkant en een haak voor de muur.
+- A4: Deze wandbuste van een hond van het ras {B} is een met de hand ontworpen portret van het ras, bedoeld voor thuis, kantoor of een herinneringsplek.
+- A5: Gedetailleerd, met de hand ontworpen en gegoten in brons-look: een buste van een hond van het ras {B} die het karakter van het ras aan uw muur brengt.
 
 **B**
 - B1: Het is een bijzondere decoratie voor woonkamer, werkkamer of kantoor en een cadeau voor iedereen die van het ras houdt.
@@ -25,7 +25,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 **C**
 - C1: De achterkant is beschermd met zacht vilt en heeft een bevestigde haak, zodat het gemakkelijk aan de muur hangt.
-- C2: Een haak is bevestigd aan de met vilt beschermde achterkant, zodat de buste direct na ontvangst kan worden opgehangen.
+- C2: Een haak is bevestigd aan de met vilt beschermde achterkant, zodat de buste direct na ontvangst aan de muur kan.
 - C3: Zacht vilt aan de achterkant en een gemonteerde haak maken ophangen eenvoudig, binnen of op een beschutte plek buiten.
 
 ## Sekcje stałe

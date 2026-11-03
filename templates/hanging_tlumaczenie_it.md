@@ -4,19 +4,19 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Tytuł (6 wzorców)
 1. {B} busto di cane da appendere, decorazione da parete effetto bronzo, regalo in ricordo
-2. {B} testa di cane da appendere, decorazione da parete effetto bronzo, regalo per amanti dei cani
+2. {B} testa di cane da appendere, decorazione da parete effetto bronzo, regalo per appassionati della razza
 3. {B} scultura da parete, busto di cane effetto bronzo, decorazione, regalo trofeo
 4. {B} statua da appendere, testa di cane effetto bronzo per la parete, casa o ufficio
 5. {B} busto di cane da appendere con retro in feltro, decorazione, trofeo o ricordo
-6. {B} statuetta da appendere effetto bronzo, busto di cane per la parete, regalo per chi ha un cane
+6. {B} statuetta da appendere effetto bronzo, busto di cane, decorazione da parete, regalo per proprietari
 
 ## Pierwszy akapit: banki
 **A**
 - A1: Questo busto da appendere di un cane di razza {B} porta il carattere della razza sulla Sua parete, in una fusione effetto bronzo ricavata da un modello progettato a mano.
-- A2: Testa e collo di un cane di razza {B}, progettati a mano e fusi in cold cast bronze, pronti da appendere alla Sua parete.
+- A2: Testa e collo di un cane di razza {B}, progettati a mano e fusi in cold cast bronze, con una finitura effetto bronzo.
 - A3: Mostri il Suo amore per la razza {B} con un busto da appendere che cattura l'espressione e i dettagli della razza.
-- A4: Questo busto da parete di un cane di razza {B} è un ritratto della razza progettato a mano, pensato per essere appeso in casa, in ufficio o in un luogo del ricordo.
-- A5: Dettagliato, progettato a mano e pronto da appendere: un busto di cane di razza {B} effetto bronzo, con morbido feltro sul retro e un gancio per la parete.
+- A4: Questo busto da parete di un cane di razza {B} è un ritratto della razza progettato a mano, pensato per la casa, l'ufficio o un luogo del ricordo.
+- A5: Dettagliato, progettato a mano e fuso con effetto bronzo: un busto di cane di razza {B} che porta il carattere della razza sulla Sua parete.
 
 **B**
 - B1: È una decorazione particolare per il soggiorno, lo studio o l'ufficio e un regalo per chiunque ami la razza.
@@ -25,7 +25,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 **C**
 - C1: Il retro è protetto da morbido feltro e ha un gancio applicato, quindi è facile da appendere alla parete.
-- C2: Un gancio è applicato al retro protetto dal feltro, perciò il busto è pronto da appendere appena arriva.
+- C2: Un gancio è applicato al retro protetto dal feltro, perciò il busto può andare sulla parete appena arriva.
 - C3: Il morbido feltro sul retro e il gancio montato rendono semplice appenderlo, in casa o in un luogo riparato all'aperto.
 
 ## Sekcje stałe

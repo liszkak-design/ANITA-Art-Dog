@@ -3,34 +3,34 @@
 Założenia (do potwierdzenia, patrz pytania w czacie): zdjęcia nie są wymieniane ani dodawane z folderów; dodajemy tylko zbliżenie haczyka i filcu (`media/hanging/zblizenie_haczyk_filc.jpg`, jako ostatnie) do 73 ofert, które go nie mają (6 ma: 985357391, 971399078, 985360373, 971399904, 971372844, 971392262); alt text wszystkich zdjęć; filmy z folderu 022 (bez "brand" pierwszy, "brand" drugi); bez personalizacji; Materials (lista Etsy): Bronze, Resin; materiały tekstowe: cold cast bronze; atrybuty Height/Width/Depth (cm, wg zdjęcia 2 oferty po sprawdzeniu z arkuszem); wymiary w opisie per oferta. Tytuł do 14 słów i 140 znaków, rasa (kolumna C Rasy.xlsx) na początku, bez "cold cast bronze". Proces (nie opisujemy go, ale zdania są z nim spójne): rzeźbiony ręcznie model artysty -> forma -> odlew (też ręczny, bez polerowania); ręcznie tylko zamocowanie filcu i haczyka. Dlatego "designed by hand", nie "finished by hand". Słowa: bust, statue, sculpture, statuette dozwolone (decyzja 03.11.2026), natomiast NIE "plaque" (przedmiot jest trójwymiarowy). Rasy: Grand Basset -> Basset Griffon Vendéen (R127), Sheltie -> Shetland Sheepdog (nowy wiersz R334, zdrobnienie Sheltie), Scottish Sheep Dog -> Collie Rough (R059, odmiana jak w "Słowa stałe"), Bouvier (R085) = Bouvier des Flandres. Język podobieństwa do brązu ("bronze-look", "looks like a classic bronze piece"), nie "bronze statue" jako materiał.
 `{BREED}` = Rasy.xlsx kol. C (+ odmiana z arkusza "Słowa stałe"), `{NICK}`/`{SYN}` = kol. E (zasady jak dotąd).
 
-## 1. Tytuły (słowo kluczowe zróżnicowane: bust / hanging dog head / hanging sculpture / hanging statue / statuette; wzorzec losowany po ID oferty, generator bierze pierwszy mieszczący się w 14 słowach i 140 znakach)
-1. {BREED} Hanging Dog Bust, Bronze-Look Wall Decor, Dog Memorial Gift
-2. {BREED} Hanging Dog Head, Bronze-Look Wall Decor, Gift for Dog Lovers
+## 1. Tytuły (bez powtórzeń słów w tytule, w szczególności dog i for (podpowiedź Etsy); słowo kluczowe zróżnicowane: bust / hanging dog head / hanging sculpture / hanging statue / statuette; wzorzec losowany po ID oferty, generator bierze pierwszy mieszczący się w 14 słowach i 140 znakach)
+1. {BREED} Hanging Dog Bust, Bronze-Look Wall Decor, Memorial or Trophy Gift
+2. {BREED} Hanging Dog Head, Bronze-Look Wall Decor, Gift for Breed Lovers
 3. {BREED} Hanging Sculpture, Bronze-Look Dog Bust, Home Decor, Trophy Gift
 4. {BREED} Hanging Statue, Bronze-Look Dog Head for Wall, Home or Office
-5. {BREED} Wall Hanging Dog Bust with Felt Back, Decor, Dog Trophy or Memorial
-6. {BREED} Bronze-Look Hanging Statuette, Dog Bust for Wall, Gift for Dog Owners
+5. {BREED} Wall Hanging Bust with Felt Back, Bronze-Look Decor, Dog Trophy or Memorial
+6. {BREED} Bronze-Look Hanging Statuette, Wall Decor Bust, Gift for Dog Owners
 
 ## 2. Tagi (13: 5 stałych + 8 z puli, max 20 zn., bez ras; "statue", "sculpture", "statuette" dozwolone)
 **Stałe (5):** hanging dog bust (16), dog head wall decor (19), dog lover gift (14), wall hanging dog (16), dog memorial gift (17).
 **Pula (8 losowanych, max 3 powtórzenia słowa kluczowego poza "dog"):** dog trophy (10), dog owner gift (14), bronze look decor (17), dog bust (8), office decor dog (16), pet loss gift (13), dog wall art (12), dog head bust (13), dog show gift (13), housewarming gift (17), dog figurine (12), dog statuette (13), pet memorial gift (18), hunter gift (11), dog sculpture gift (18), dog statue decor (16), animal wall hanging (19).
 
-## 3. Pierwszy akapit (banki A + B + C)
+## 3. Pierwszy akapit (banki A + B + C; wzmianka o filcu i haczyku tylko w części C, bez powtórzeń w zdaniach A/B)
 **A bez NICK/SYN**
 - A1: This hanging {BREED} bust brings the character of the breed to your wall, in a bronze-look cast made from a model designed by hand.
-- A2: A {BREED} head and neck, designed by hand and cast in cold cast bronze, ready to hang on your wall.
+- A2: A {BREED} head and neck, designed by hand and cast in cold cast bronze, with a bronze-look finish.
 - A3: Show your love for the {BREED} with a hanging bust that captures the expression and the details of the breed.
-- A4: This {BREED} wall bust is a hand-designed portrait of the breed, made to be hung at home, in the office or in a place of remembrance.
-- A5: Detailed, hand-designed and ready to hang: a {BREED} bust with a bronze-look finish, soft felt on the back and a hook for the wall.
+- A4: This {BREED} wall bust is a hand-designed portrait of the breed, made for a home, an office or a place of remembrance.
+- A5: Detailed, hand-designed and cast with a bronze-look finish: a {BREED} bust that brings the character of the breed to your wall.
 
 **A ze zdrobnieniem [N]**
 - A6 [N]: A little {NICK} on your wall: this hanging {BREED} bust captures the expression of the breed in a bronze-look cast from a hand-designed model.
 - A7 [N]: For everyone who loves their {NICK}, a hanging bust with the details and the character of the breed, designed by hand.
-- A8 [N]: Keep your {NICK} close with a hand-designed {BREED} bust in a bronze-look cast, made to hang on the wall.
+- A8 [N]: Keep your {NICK} close with a hand-designed {BREED} bust in a bronze-look cast.
 
 **A z synonimem [S]**
 - A9 [S]: This hanging {SYN} bust brings the character of the breed to your wall, in a bronze-look cast made from a model designed by hand.
-- A10 [S]: A {SYN} head and neck, designed by hand and cast in cold cast bronze, ready to hang on your wall.
+- A10 [S]: A {SYN} head and neck, designed by hand and cast in cold cast bronze, with a bronze-look finish.
 - A11 [S]: Show your love for the {SYN} with a hanging bust that captures the expression and the details of the breed.
 
 **B (zastosowanie)**
@@ -41,7 +41,7 @@ Założenia (do potwierdzenia, patrz pytania w czacie): zdjęcia nie są wymieni
 
 **C (zawieszenie)**
 - C1: The back is protected with soft felt and has a hook attached, so it is easy to hang on a wall.
-- C2: A hook is attached to the felt-protected back, so the bust is ready to hang as soon as it arrives.
+- C2: A hook is attached to the felt-protected back, so the bust can go on the wall as soon as it arrives.
 - C3: Soft felt on the back and a mounted hook make it simple to hang, indoors or in a sheltered spot outside.
 
 ## 4. Sekcje stałe (nowe tytuły akapitów: THE BUST IN DETAIL, CARE AND DISPLAY, WHERE IT BELONGS, WHY DOG LOVERS CHOOSE IT, INTERNATIONAL ORDERS)

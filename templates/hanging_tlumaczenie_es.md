@@ -4,19 +4,19 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Tytuł (6 wzorców)
 1. {B} busto de perro para colgar, decoración de pared efecto bronce, regalo de recuerdo
-2. {B} cabeza de perro para colgar, decoración de pared efecto bronce, regalo para amantes de los perros
+2. {B} cabeza de perro para colgar, decoración de pared efecto bronce, regalo de aficionado
 3. {B} escultura de pared, busto de perro efecto bronce, decoración del hogar, regalo trofeo
-4. {B} estatua para colgar, cabeza de perro efecto bronce para la pared, hogar u oficina
+4. {B} estatua para colgar, cabeza de perro efecto bronce, decoración de pared, hogar u oficina
 5. {B} busto de perro para colgar con trasera de fieltro, decoración, trofeo o recuerdo
-6. {B} estatuilla para colgar efecto bronce, busto de perro para la pared, regalo para dueños de perros
+6. {B} estatuilla para colgar efecto bronce, busto de perro, decoración de pared, regalo para dueños
 
 ## Pierwszy akapit: banki
 **A**
 - A1: Este busto para colgar de un perro de raza {B} lleva el carácter de la raza a tu pared, en una pieza fundida con efecto bronce a partir de un modelo diseñado a mano.
-- A2: Cabeza y cuello de un perro de raza {B}, diseñados a mano y fundidos en cold cast bronze, listos para colgar en tu pared.
+- A2: Cabeza y cuello de un perro de raza {B}, diseñados a mano y fundidos en cold cast bronze, con un acabado efecto bronce.
 - A3: Muestra tu amor por la raza {B} con un busto para colgar que capta la expresión y los detalles de la raza.
-- A4: Este busto de pared de un perro de raza {B} es un retrato de la raza diseñado a mano, hecho para colgarse en casa, en la oficina o en un lugar de recuerdo.
-- A5: Detallado, diseñado a mano y listo para colgar: un busto de perro de raza {B} con efecto bronce, con fieltro suave en la parte trasera y un gancho para la pared.
+- A4: Este busto de pared de un perro de raza {B} es un retrato de la raza diseñado a mano, pensado para la casa, la oficina o un lugar de recuerdo.
+- A5: Detallado, diseñado a mano y fundido con efecto bronce: un busto de perro de raza {B} que lleva el carácter de la raza a tu pared.
 
 **B**
 - B1: Es una decoración distinta para el salón, el estudio o la oficina y un regalo para cualquiera que ame la raza.
@@ -25,7 +25,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 **C**
 - C1: La parte trasera está protegida con fieltro suave y lleva un gancho colocado, por lo que es fácil de colgar en la pared.
-- C2: Hay un gancho colocado en la parte trasera protegida con fieltro, así que el busto está listo para colgar en cuanto llega.
+- C2: Hay un gancho colocado en la parte trasera protegida con fieltro, así que el busto puede ir a la pared en cuanto llega.
 - C3: El fieltro suave detrás y el gancho montado facilitan colgarlo, en casa o en un lugar protegido al aire libre.
 
 ## Sekcje stałe

@@ -4,19 +4,19 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Tytuł (6 wzorców)
 1. {B} wiszące popiersie psa, dekoracja ścienna o wyglądzie brązu, prezent pamiątkowy
-2. {B} wisząca głowa psa, dekoracja ścienna o wyglądzie brązu, prezent dla miłośnika psów
-3. {B} wisząca rzeźba, popiersie psa o wyglądzie brązu, dekoracja domu, prezent na nagrodę
+2. {B} wisząca głowa psa, dekoracja ścienna o wyglądzie brązu, prezent dla miłośnika rasy
+3. {B} wisząca rzeźba, popiersie psa o wyglądzie brązu, dekoracja domu, trofeum lub prezent
 4. {B} wisząca figura, głowa psa o wyglądzie brązu na ścianę, do domu lub biura
 5. {B} wiszące popiersie psa z filcem z tyłu, dekoracja, nagroda lub pamiątka
-6. {B} wisząca statuetka o wyglądzie brązu, popiersie psa na ścianę, prezent dla właściciela psa
+6. {B} wisząca statuetka o wyglądzie brązu, popiersie psa na ścianę, prezent dla właściciela
 
 ## Pierwszy akapit: banki
 **A**
 - A1: To wiszące popiersie psa rasy {B} odwzierciedla charakter rasy, w odlewie o wyglądzie brązu, wykonanym z ręcznie zaprojektowanego modelu.
-- A2: Głowa i szyja psa rasy {B}, zaprojektowane ręcznie i odlane w cold cast bronze, gotowe do powieszenia na ścianie.
+- A2: Głowa i szyja psa rasy {B}, zaprojektowane ręcznie i odlane w cold cast bronze, w wykończeniu o wyglądzie brązu.
 - A3: Pokaż, jak kochasz rasę {B}, wiszącym popiersiem, które oddaje wyraz pyska i szczegóły rasy.
-- A4: To ścienne popiersie psa rasy {B} to ręcznie zaprojektowany portret rasy, stworzony do powieszenia w domu, w biurze lub w miejscu pamięci.
-- A5: Szczegółowe, ręcznie zaprojektowane i gotowe do powieszenia: popiersie psa rasy {B} o wyglądzie brązu, z miękkim filcem z tyłu i hakiem do powieszenia na ścianie.
+- A4: To ścienne popiersie psa rasy {B} to ręcznie zaprojektowany portret rasy, stworzony dla domu, biura lub miejsca pamięci.
+- A5: Szczegółowe, ręcznie zaprojektowane i odlane w wykończeniu o wyglądzie brązu: popiersie psa rasy {B}, które wnosi na Twoją ścianę charakter rasy.
 
 **B**
 - B1: To wyjątkowa dekoracja salonu, gabinetu lub biura i prezent dla każdego, kto kocha tę rasę.
@@ -25,7 +25,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 **C**
 - C1: Tył jest zabezpieczony miękkim filcem i ma przymocowany hak, więc łatwo powiesić je na ścianie.
-- C2: Hak jest przymocowany do tyłu zabezpieczonego filcem, więc popiersie jest gotowe do powieszenia zaraz po otrzymaniu.
+- C2: Hak jest przymocowany do tyłu zabezpieczonego filcem, więc popiersie może zawisnąć na ścianie zaraz po otrzymaniu.
 - C3: Miękki filc z tyłu i zamocowany hak ułatwiają powieszenie, w domu lub w osłoniętym miejscu na zewnątrz.
 
 ## Sekcje stałe

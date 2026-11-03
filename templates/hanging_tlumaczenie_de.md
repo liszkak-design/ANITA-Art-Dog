@@ -4,19 +4,19 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Tytuł (6 wzorców)
 1. {B} hängende Hundebüste, Wanddeko in Bronzeoptik, Gedenkgeschenk
-2. {B} hängender Hundekopf, Wanddeko in Bronzeoptik, Geschenk für Hundefreunde
+2. {B} hängender Hundekopf, Wanddeko in Bronzeoptik, Geschenk für Liebhaber der Rasse
 3. {B} hängende Skulptur, Hundebüste in Bronzeoptik, Wohndeko, Ehrenpreis
-4. {B} hängende Statue, Hundekopf in Bronzeoptik für die Wand, für Zuhause oder Büro
-5. {B} hängende Hundebüste mit Filzrückseite, Wanddeko, Hundetrophäe oder Andenken
-6. {B} hängende Statuette in Bronzeoptik, Hundebüste für die Wand, Geschenk für Hundehalter
+4. {B} hängende Statue, Hundekopf in Bronzeoptik, Wandschmuck für Zuhause oder Büro
+5. {B} hängende Hundebüste mit Filzrückseite, Wanddeko, Trophäe oder Andenken
+6. {B} hängende Statuette in Bronzeoptik, Hundebüste, Wanddeko, Geschenk für Hundehalter
 
 ## Pierwszy akapit: banki
 **A**
 - A1: Diese hängende Büste eines Hundes der Rasse {B} bringt den Charakter der Rasse an Ihre Wand, als Guss in Bronzeoptik nach einem von Hand gestalteten Modell.
-- A2: Kopf und Hals eines Hundes der Rasse {B}, von Hand gestaltet und in Cold Cast Bronze gegossen, bereit zum Aufhängen an Ihrer Wand.
+- A2: Kopf und Hals eines Hundes der Rasse {B}, von Hand gestaltet und in Cold Cast Bronze gegossen, mit bronzeähnlicher Oberfläche.
 - A3: Zeigen Sie Ihre Liebe zur Rasse {B} mit einer hängenden Büste, die den Ausdruck und die Details der Rasse einfängt.
-- A4: Diese Wandbüste eines Hundes der Rasse {B} ist ein von Hand gestaltetes Porträt der Rasse, gemacht zum Aufhängen zu Hause, im Büro oder an einem Ort der Erinnerung.
-- A5: Detailreich, von Hand gestaltet und bereit zum Aufhängen: eine Büste eines Hundes der Rasse {B} in Bronzeoptik, mit weichem Filz auf der Rückseite und einem Haken für die Wand.
+- A4: Diese Wandbüste eines Hundes der Rasse {B} ist ein von Hand gestaltetes Porträt der Rasse, gedacht für Zuhause, Büro oder einen Ort der Erinnerung.
+- A5: Detailreich, von Hand gestaltet und in Bronzeoptik gegossen: eine Büste eines Hundes der Rasse {B}, die den Charakter der Rasse an Ihre Wand bringt.
 
 **B**
 - B1: Sie ist ein besonderer Schmuck für Wohnzimmer, Arbeitszimmer oder Büro und ein Geschenk für alle, die die Rasse lieben.
@@ -25,7 +25,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 **C**
 - C1: Die Rückseite ist mit weichem Filz geschützt und hat einen angebrachten Haken, sodass sie sich leicht an der Wand aufhängen lässt.
-- C2: Ein Haken ist an der filzgeschützten Rückseite angebracht, sodass die Büste gleich nach Erhalt aufgehängt werden kann.
+- C2: Ein Haken ist an der filzgeschützten Rückseite angebracht, sodass die Büste gleich nach Erhalt an die Wand kann.
 - C3: Weicher Filz auf der Rückseite und ein montierter Haken machen das Aufhängen einfach, drinnen oder an einem geschützten Platz im Freien.
 
 ## Sekcje stałe

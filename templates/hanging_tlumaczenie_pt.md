@@ -4,19 +4,19 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 ## Tytuł (6 wzorców)
 1. {B} busto de cão para pendurar, decoração de parede com efeito bronze, presente de homenagem
-2. {B} cabeça de cão para pendurar, decoração de parede com efeito bronze, presente para amantes de cães
+2. {B} cabeça de cão para pendurar, decoração de parede com efeito bronze, presente para apreciadores da raça
 3. {B} escultura de parede, busto de cão com efeito bronze, decoração, presente troféu
-4. {B} estátua para pendurar, cabeça de cão com efeito bronze para a parede, casa ou escritório
+4. {B} estátua para pendurar, cabeça de cão com efeito bronze, decoração de casa ou escritório
 5. {B} busto de cão para pendurar com costas em feltro, decoração, troféu ou lembrança
-6. {B} estatueta para pendurar com efeito bronze, busto de cão para a parede, presente para donos de cães
+6. {B} estatueta para pendurar com efeito bronze, busto de cão, decoração de parede, presente para donos
 
 ## Pierwszy akapit: banki
 **A**
 - A1: Este busto para pendurar de um cão da raça {B} traz a personalidade da raça para a sua parede, numa peça fundida com efeito bronze a partir de um modelo desenhado à mão.
-- A2: Cabeça e pescoço de um cão da raça {B}, desenhados à mão e fundidos em cold cast bronze, prontos para pendurar na sua parede.
+- A2: Cabeça e pescoço de um cão da raça {B}, desenhados à mão e fundidos em cold cast bronze, com acabamento efeito bronze.
 - A3: Mostre o seu amor pela raça {B} com um busto para pendurar que capta a expressão e os detalhes da raça.
-- A4: Este busto de parede de um cão da raça {B} é um retrato da raça desenhado à mão, feito para ser pendurado em casa, no escritório ou num lugar de memória.
-- A5: Detalhado, desenhado à mão e pronto a pendurar: um busto de cão da raça {B} com efeito bronze, com feltro macio nas costas e um gancho para a parede.
+- A4: Este busto de parede de um cão da raça {B} é um retrato da raça desenhado à mão, pensado para casa, escritório ou um lugar de memória.
+- A5: Detalhado, desenhado à mão e fundido com efeito bronze: um busto de cão da raça {B} que traz a personalidade da raça para a sua parede.
 
 **B**
 - B1: É uma decoração distinta para a sala, o escritório ou o gabinete e um presente para quem gosta da raça.
@@ -25,7 +25,7 @@ Status: EN zatwierdzony przez właścicielkę 03.11.2026. `{B}` = nazwa rasy z R
 
 **C**
 - C1: As costas são protegidas com feltro macio e têm um gancho colocado, por isso é fácil pendurar na parede.
-- C2: Um gancho está colocado nas costas protegidas com feltro, por isso o busto está pronto a pendurar assim que chega.
+- C2: Um gancho está colocado nas costas protegidas com feltro, por isso o busto pode ir para a parede assim que chega.
 - C3: O feltro macio nas costas e o gancho montado facilitam a colocação, em casa ou num local abrigado no exterior.
 
 ## Sekcje stałe
