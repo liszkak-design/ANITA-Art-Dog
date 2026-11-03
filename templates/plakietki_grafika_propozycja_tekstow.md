@@ -1,6 +1,6 @@
 # Płytki ceramiczne "with a Graphics" (geometryczne psy, 100 ofert, sekcja 25604492): propozycja tekstów EN (szkic do akceptacji, 03.11.2026)
 
-Założenia (do potwierdzenia, patrz pytania w czacie): ta sama płytka co "with a Photo" (owalna płytka ceramiczna), inny nadruk: geometryczny portret psa. Tytuł do 14 słów i 140 znaków, rasa (kolumna C Rasy.xlsx) na początku, bez powtórzeń słów w tytule (zwłaszcza dog i for). Opis wzorowany na płytkach "with a Photo" (banki A/B/C, sekcje stałe) i na urnach "with Graphics", bez odniesień do starego opisu oferty. Personalizacja jak przy płytkach "with a Photo" (cała dobrowolna), ze stylem zamiast "Sketch style": portret geometryczny, własne zdjęcie w oryginale albo w kolorze z usuniętym tłem; imię albo imię i daty. Materials: tekstowe "ceramic plate" bez zmian, z listy Ceramic; bez wymiarów w atrybutach; who_made: collective. Wymiary w opisie 10,5 x 7,5 x 0,5 cm (potwierdzone 03.11.2026).
+Założenia (do potwierdzenia, patrz pytania w czacie): ta sama płytka co "with a Photo" (owalna płytka ceramiczna), inny nadruk: geometryczny portret psa. Tytuł do 14 słów i 140 znaków, rasa (kolumna C Rasy.xlsx) na początku, bez powtórzeń słów w tytule (zwłaszcza dog i for). Opis wzorowany na płytkach "with a Photo" (banki A/B/C, sekcje stałe) i na urnach "with Graphics", bez odniesień do starego opisu oferty. Personalizacja jak przy płytkach "with a Photo" (cała dobrowolna), ze stylem tylko dla własnego zdjęcia (oryginał albo kolor z usuniętym tłem; bez Sketch style i bez portretu geometrycznego na życzenie); imię albo imię i daty przy portrecie geometrycznym lub przy własnym zdjęciu. Materials: tekstowe "ceramic plate" bez zmian, z listy Ceramic; bez wymiarów w atrybutach; who_made: collective. Wymiary w opisie 10,5 x 7,5 x 0,5 cm (potwierdzone 03.11.2026).
 `{BREED}` = Rasy.xlsx kol. C (+ odmiana z arkusza "Słowa stałe"), `{NICK}`/`{SYN}` = kol. E (zasady jak dotąd: zdrobnienie w wariantach [N], synonim w wariantach [S]).
 
 ## 1. Tytuły (wzorzec losowany po ID oferty, generator bierze pierwszy mieszczący się w 14 słowach i bez powtórzeń słów)
@@ -13,7 +13,7 @@ Założenia (do potwierdzenia, patrz pytania w czacie): ta sama płytka co "with
 
 ## 2. Tagi (13: 5 stałych + 8 z puli, max 20 zn., bez ras; z puli max 3 powtórzenia słowa kluczowego poza "dog")
 **Stałe (5):** dog memorial plaque (19), geometric dog (13), pet loss gift (13), grave marker (12), tombstone plaque (16).
-**Pula (17):** ceramic plaque (14), personalized plaque (19), custom photo plaque (19), pet headstone (13), memorial keepsake (17), sympathy gift (13), in loving memory (16), garden memorial (15), geometric art (13), dog portrait plaque (19), cemetery marker (15), pet remembrance (15), weatherproof plaque (19), oval memorial plaque (20), outdoor memorial (16), pet memorial stone (18), rainbow bridge (14).
+**Pula (17):** ceramic plaque (14), personalized plaque (19), custom photo plaque (19), pet headstone (13), memorial keepsake (17), sympathy gift (13), in loving memory (16), garden memorial (15), geometric art (13), dog portrait plaque (19), dog cemetery marker (19), pet remembrance (15), weatherproof plaque (19), oval memorial plaque (20), outdoor memorial (16), pet memorial stone (18), rainbow bridge (14).
 
 ## 3. Pierwszy akapit (banki A + B + C)
 **A bez NICK/SYN**
@@ -41,7 +41,7 @@ Założenia (do potwierdzenia, patrz pytania w czacie): ta sama płytka co "with
 
 **C (personalizacja)**
 - C1: If you would rather remember your own dog, choose your own photo instead and we will print it.
-- C2: You can add your dog's name, or name and dates, below the portrait.
+- C2: You can add your dog's name, or name and dates, above the portrait.
 - C3: Prefer your own dog's portrait? Attach a photo, in the original or in colour with the background removed.
 - C4 [N]: You can also have your own {NICK} on the plaque: attach a photo and we will print it.
 
@@ -61,7 +61,7 @@ A ceramic plaque is a gentle way to remember a dog who has passed away. The smoo
 PERSONALISATION
 Order the plaque exactly as shown, or personalise it. Every option below is optional.
 - Your photo: we can print any photo you send us. Attach it in the personalisation box when ordering, or send it by Etsy message.
-- Style: choose the geometric portrait shown, your own photo as the original, or your own photo in full colour with the background removed.
+- Style: for your own photo, choose the original or full colour with the background removed.
 - Name and dates: add your dog's name, or name and dates of life, to the geometric portrait or to your own photo, or leave the plaque without text.
 - Orientation: a plaque with your photo can be placed vertically or horizontally.
 
@@ -76,10 +76,10 @@ Our products are shipped from Poland, so import charges may apply in some countr
 ## 5. Pola personalizacji Etsy (wszystkie dobrowolne; układ jak przy płytkach "with a Photo", zmieniona tylko lista stylu)
 1. dropdown "Do you want to personalize the plaque?": "No, as shown" / "Yes, personalize it".
 2. upload "Your photo (optional)", instrukcja: "Attach a clear photo of your pet, or send it later by Etsy message. Leave empty if you chose No."
-3. dropdown "Print style (if personalizing)": "Geometric portrait" / "Original photo" / "No background" (dotychczas: Original photo / No background / Sketch style).
+3. dropdown "Print style (if own photo)": "Original photo" / "No background" (dotychczas: Original photo / No background / Sketch style; portretu geometrycznego na życzenie nie robimy, więc go nie ma na liście).
 4. text (50) "Name and dates (optional)", instrukcja: "Name, or name and dates, as they should appear, e.g. Felix 12/29/2013 - 11/9/2026. Leave empty for no text."
 5. dropdown "Plaque orientation (if own photo)": "Vertical" / "Horizontal".
-Portret geometryczny z imieniem albo z imieniem i datami = "Yes, personalize it" + "Geometric portrait" + tekst w polu 4.
+Portret geometryczny z imieniem albo z imieniem i datami = "Yes, personalize it" + tekst w polu 4, bez zdjęcia i bez stylu. Własne zdjęcie = "Yes, personalize it" + zdjęcie + styl (+ tekst, + orientacja).
 
 ## 6. Zdjęcia i alt texty (4 zdjęcia: 2 istniejące bez zmian + 2 dodane na końcu)
 1 (istniejące): "Oval ceramic memorial plaque with a geometric portrait of a {BREED} on a white marble surface"
