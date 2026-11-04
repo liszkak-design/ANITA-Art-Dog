@@ -2,7 +2,7 @@
 
 Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert piszesz po angielsku (potem tłumaczenia), chyba że poproszę inaczej.
 
-**Na początku każdej sesji przeczytaj `DECYZJE.md` i `STAN_PRAC.md`.** `DECYZJE.md` zawiera ustalone reguły treści, reguły nazw ras, zapisy w tytułach, zdjęcia i wideo oraz sprawy otwarte. `STAN_PRAC.md` opisuje, co jest gotowe, co zablokowane i co robić dalej. Gdy `DECYZJE.md` jest sprzeczny z danymi z Etsy, obowiązuje `DECYZJE.md`.
+**Na początku każdej sesji przeczytaj `PRZEKAZANIE_SESJI.md` (instrukcja pracy krok po kroku), `DECYZJE.md` i `STAN_PRAC.md` (sekcja "STAN NA 04.11.2026" na górze).** Wykaz plików do przeniesienia na nową gałąź: `PRZEKAZANIE_PLIKI.md`. `DECYZJE.md` zawiera ustalone reguły treści, reguły nazw ras, zapisy w tytułach, zdjęcia i wideo oraz sprawy otwarte. `STAN_PRAC.md` opisuje, co jest gotowe, co zablokowane i co robić dalej. Gdy `DECYZJE.md` jest sprzeczny z danymi z Etsy, obowiązuje `DECYZJE.md`.
 
 ## Kontekst
 
@@ -69,3 +69,14 @@ Użytkowniczka pisze po polsku. Odpowiadaj po polsku, konkretnie. Teksty ofert p
 8. Tłumaczenia po zatwierdzeniu angielskich wersji i słownika: najpierw 1-2 języki, potem reszta.
 9. Nowe oferty (ok. 200) jako szkice, publikacja po akceptacji użytkowniczki.
 
+## Dodatkowe ustalenia (stan 04.11.2026; szczegóły w `PRZEKAZANIE_SESJI.md` i `DECYZJE.md`, sekcje 11-16)
+
+* **Zgoda na zapis:** "tak, zapisz test/partię N" (lub "tak" na pytanie o zapis) dla konkretnej partii. Zatwierdzenie tekstów ("zatwierdzam, rób test") nie jest zgodą na zapis partii: zapytaj osobno. Skrypty zapisu czytają wyłącznie zamrożony plan (`plans/partia_<grupa>_00N_dryrun.json`).
+* **Tytuły nowych grup:** do 14 słów (wyraz z myślnikiem = 1) i 140 znaków, BEZ powtórzeń słów (zwłaszcza dog i for; podpowiedź Etsy), rasa z kolumny C na początku, bez "cold cast bronze", zróżnicowane słowo kluczowe (bust / hanging dog head / sculpture / statue / statuette). Nigdy "Natural Ears".
+* **Język:** w polskim nigdy "trwały/trwałe", "ciche miejsce"; przy datach "daty życia". "bust" tylko dla trójwymiarowych głów (popiersia wiszące); dla płyt i reliefów: relief/bas-relief/płaskorzeźba; nie "plaque" dla przedmiotów 3D. Podobieństwo do brązu ("bronze-look", "cold cast bronze" z objaśnieniem) jest poprawne, "bronze relief" jako materiał nie. Statuetki: "designed by hand", nie "finished by hand".
+* **Zdjęcia:** nie wymieniamy; alt texty dopisujemy do istniejących (rodzaj zdjęcia rozpoznawany z obrazu); dodatkowe zdjęcia wskazuje właścicielka; nieedytowane zdjęcie prawdziwego przedmiotu zawsze ostatnie.
+* **Filmy:** max 2; film 1 z gałęzi `claude/stoic-edison-coahbl` (`git fetch` i `git checkout origin/claude/stoic-edison-coahbl -- video/<plik>`), film 2 z folderu EAN (zwykle bez `-brand`); sprawdź stałą `VIDEO1` i nazwy filmów w logu po teście.
+* **Materiały:** w urnach dopisujemy "plywood" do materiałów tekstowych i do właściwości Material (id 5199) bez zastępowania obecnych zapisów (`scripts/plywood_korekta.py`).
+* **Usuwanie:** nie usuwaj niczego (nawet błędnie wgranego filmu); poproś właścicielkę o ręczne usunięcie w Etsy i dopiero wgraj poprawne pliki. Nie używamy `listings_d`.
+* **Ręcznie robi właścicielka:** SKU (EAN), GPSR, shopping basket summary, publikacja nowych ofert, kategoria (zmieniamy tylko na jej decyzję), "Home style".
+* **Pytania:** przy każdym nowym typie najpierw zadaj pytania (lista w `PRZEKAZANIE_SESJI.md`, sekcja 13) i nie zgaduj; odpowiadaj konkretnymi liczbami z logów i licznika API.
