@@ -17,7 +17,7 @@ W, H, FPS = R.W, R.H, R.FPS
 FADE = R.FADE
 SPECIES = "dog"
 ASSETS = HERE / "assets_urn_statue_relief" / SPECIES
-S = [0.0, 1.9, 5.9, 12.9, 15.0]
+S = [0.0, 1.9, 7.1, 13.4, 15.0]
 BREEDS = "90"
 DESIGNS = "90+"
 ease = R.ease
@@ -85,7 +85,7 @@ TILES = [urn_tile(n) for n in range(1, 6)]
 TX2 = 1000
 T2 = R.text_block("COLD CAST BRONZE · SILVER-PLATED RELIEF", ["Choose your", "*breed*"], f"{DESIGNS} designs to choose from",
                   TX2, H // 2, max_w=700, title_size=86)
-STARTS2 = [0.2 + i * 0.55 for i in range(5)]
+STARTS2 = [0.2 + i * 0.85 for i in range(5)]
 
 
 def scene2(t):
@@ -100,8 +100,8 @@ def scene2(t):
 URN = load(6)
 FW, FH = 840, 560
 FCX, FCY = 90 + FW // 2, H // 2
-KEYS = [(0.0, 750, 750, 1500), (0.8, 482, 873, 340), (2.1, 482, 873, 340), (2.9, 1010, 873, 340), (4.0, 1010, 873, 340),
-        (4.9, 745, 1125, 780), (7.0, 745, 1125, 780)]
+KEYS = [(0.0, 750, 750, 1500), (0.7, 482, 873, 340), (1.7, 482, 873, 340), (2.4, 1010, 873, 340), (3.2, 1010, 873, 340),
+        (3.9, 745, 1125, 780), (6.3, 745, 1125, 780)]
 
 
 def cam(t):
@@ -133,9 +133,9 @@ TXB = {"name": tb("NAME", ["Your dog's", "*name*"], "Engraved on the small plaqu
 def scene3(t):
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     put(layer, view(t), FCX, FCY, ease(t / FADE))
-    put_text(layer, TXB["name"], t, 0.9, 2.2)
-    put_text(layer, TXB["dates"], t, 3.0, 4.1)
-    put_text(layer, TXB["quote"], t, 5.0)
+    put_text(layer, TXB["name"], t, 0.8, 1.8)
+    put_text(layer, TXB["dates"], t, 2.5, 3.3)
+    put_text(layer, TXB["quote"], t, 4.0)
     return layer
 
 
