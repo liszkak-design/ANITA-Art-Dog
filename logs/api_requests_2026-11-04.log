@@ -90,3 +90,10 @@
 2026-11-04T08:42:56 GET /v3/application/listings/674828881
 2026-11-04T08:42:57 GET /v3/application/shops/19255336/listings/674828881/properties
 2026-11-04T08:50:12 GET /v3/application/listings/674828881
+2026-11-04T09:13:36 GET /v3/application/listings/674828881
+2026-11-04T09:13:37 GET /v3/application/listings/674828881
+2026-11-04T09:13:37 GET /v3/application/shops/19255336/listings/674828881/properties
+2026-11-04T09:13:37 GET /v3/application/listings/674828881/inventory
+2026-11-04T09:13:38 POST /v3/application/shops/19255336/listings/674828881/videos
+2026-11-04T09:13:50 POST /v3/application/shops/19255336/listings/674828881/videos
+2026-11-04T09:13:59 GET /v3/application/listings/674828881
