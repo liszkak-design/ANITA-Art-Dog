@@ -1822,3 +1822,10 @@
 2026-11-04T10:04:00 POST /v3/application/shops/19255336/listings/660987680/translations/sv
 2026-11-04T10:04:01 GET /v3/application/listings/660987680
 2026-11-04T10:04:02 GET /v3/application/shops/19255336/listings/660987680/properties
+2026-11-04T11:24:49 POST /v3/public/oauth/token
+2026-11-04T11:24:49 GET /v3/application/listings/674223007
+2026-11-04T11:24:50 GET /v3/application/shops/19255336/listings/674223007/properties
+2026-11-04T11:24:50 PATCH /v3/application/shops/19255336/listings/674223007
+2026-11-04T11:24:51 PUT /v3/application/shops/19255336/listings/674223007/properties/148789511893
+2026-11-04T11:24:52 GET /v3/application/listings/674223007
+2026-11-04T11:24:52 GET /v3/application/shops/19255336/listings/674223007/properties

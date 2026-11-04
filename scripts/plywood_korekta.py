@@ -2,7 +2,7 @@
 """Korekta: dodanie plywood do materiałów (tekstowych i z listy Etsy) we wszystkich zoptymalizowanych urnach (decyzja właścicielki 04.11.2026).
 ZASADA: plywood jest DOPISYWANE do istniejących wartości, wszystkie obecne zapisy zostają bez zmian (odczyt na żywo przed zapisem). Nic poza materiałami nie jest zmieniane.
   python3 -I scripts/plywood_korekta.py plan                     # plan bez zapytań do Etsy: plans/plywood_plan.csv (partie po 50, od najmniej oglądanych)
-  python3 -I scripts/plywood_korekta.py apply N --apply          # zapis partii N (tylko po "tak" właścicielki)
+  python3 -I scripts/plywood_korekta.py apply N --apply [--lid=ID]   # zapis partii N albo jednej oferty z partii (tylko po "tak" właścicielki)
 Na ofertę: odczyt (oferta + właściwości) i kopia zapasowa backup/<id>_<data>_plywood.json, PATCH materials (tekst), PUT właściwości Material z dopisanym Plywood (id 5199),
 weryfikacja z odpowiedzi API, log logs/zapis_<id>_<data>.jsonl (kroki plywood_*). Pomija oferty, które już mają plywood w obu miejscach. Limit API: etsy_api (stop 9000)."""
 import csv
@@ -94,6 +94,9 @@ def apply_batch(n):
     if "listings_w" not in tok.get("scope", ""):
         sys.exit("BŁĄD: token bez listings_w")
     rows = [r for r in csv.DictReader(open(PLAN, encoding="utf-8")) if int(r["partia"]) == n]
+    only = {int(x) for a_ in sys.argv if a_.startswith("--lid=") for x in a_[6:].split(",")}
+    if only:
+        rows = [r for r in rows if int(r["listing_id"]) in only]
     if not rows or len(rows) > 50:
         sys.exit("BŁĄD: brak partii w planie albo większa niż 50")
     summary = ROOT / "logs" / f"partia_plywood_{n:03d}_{TODAY}.jsonl"
