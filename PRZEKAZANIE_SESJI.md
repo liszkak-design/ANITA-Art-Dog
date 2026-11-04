@@ -30,7 +30,7 @@ Pełny wykaz, poziomy ważności i polecenia git: patrz `PRZEKAZANIE_PLIKI.md`. 
 
 **Zoptymalizowane (zapisane i zweryfikowane):** płytki "with a Photo" 299, urny ze zdjęciem 299, urny z grafiką psy 100, urny z grafiką koty 45, urny z małym reliefem 154, niskie urny z reliefem 154, urny z reliefem z zimnego brązu 38, płytki "plakietki same" (relief) 38, tablice pamiątkowe 38, popiersia wiszące 78, płytki z grafiką psy 100, płytki z grafiką koty 45. Tabela grup, skryptów i szablonów: `STAN_PRAC.md`, sekcja "STAN NA 04.11.2026".
 
-**W toku:** korekta "plywood" w urnach: `scripts/plywood_korekta.py`, plan `plans/plywood_plan.csv` (745 ofert, 15 partii po 50, od najmniej oglądanych); zapisane partie 1-10 (50 ofert każda); zostały partie 11-15 (245 ofert, najczęściej oglądane, każda dopiero po "tak" właścicielki i sprawdzeniu próbki poprzedniej). Polecenie: `python3 -I scripts/plywood_korekta.py apply N --apply` (opcjonalnie `--lid=ID`). Skrypt dopisuje "plywood" do istniejących materiałów tekstowych (po "wood") i do właściwości Material (id 5199), niczego nie zastępuje.
+**Zakończone 04.11.2026:** korekta "plywood" w 745 urnach (partie 1-15, wszystkie weryfikacje ok): `scripts/plywood_korekta.py`, plan `plans/plywood_plan.csv`. Skrypt dopisuje "plywood" do istniejących materiałów tekstowych (po "wood") i do właściwości Material (id 5199), niczego nie zastępuje; ten sam wzorzec można użyć do kolejnych zbiorczych korekt materiałów (`apply N --apply [--lid=ID]`, apply pomija oferty z wpisem `plywood_weryfikacja` w logu).
 
 **Do zrobienia:**
 * 2 oferty "Big Urn for Horse" (1381486535, 1381486029; cena 199): osobna decyzja i zakres.

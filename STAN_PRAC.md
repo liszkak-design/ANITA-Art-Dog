@@ -18,10 +18,10 @@ Instrukcja pracy dla nowej sesji: `PRZEKAZANIE_SESJI.md`; wykaz plików do przen
 | Płytki z grafiką, psy (100) | `batch_plakietki_grafika.py` | `plakietki_grafika_*` | `plakietki_grafika_mapa.csv` | zrobione 04.11 |
 | Płytki z grafiką, koty (45) | `batch_plakietki_koty.py` | `plakietki_koty_*` | `plakietki_koty_mapa.csv` | zrobione 04.11 |
 | Urny z grafiką, koty (45) | `batch_urny_koty_grafika.py` | `urny_koty_grafika_*` | `urny_koty_grafika_mapa.csv` | zrobione 04.11 |
-| Korekta plywood w urnach (745) | `plywood_korekta.py` | (brak) | `plywood_plan.csv` | partie 1-10 zapisane, 11-15 do zrobienia |
+| Korekta plywood w urnach (745) | `plywood_korekta.py` | (brak) | `plywood_plan.csv` | zrobione 04.11 (partie 1-15, wszystkie weryfikacje ok) |
 
-**Do zrobienia:** (1) korekta plywood: partie 11-15 (245 najczęściej oglądanych urn; `python3 -I scripts/plywood_korekta.py apply 11 --apply` po "tak" i próbce partii 10); (2) 2 oferty "Big Urn for Horse" (1381486535, 1381486029); (3) ok. 40 innych typów produktów (zgodnie z `Audyt_Etsy_ArtDog.xlsx`, od najmniej sprzedających się); (4) ok. 200 nowych ofert jako szkice; (5) ręcznie właścicielka: SKU, GPSR, shopping basket summary, publikacja nowych ofert; (6) kontrola próbek ostatnich partii przez właścicielkę.
-**Licznik API:** `python3 -I scripts/api_licznik.py` (stop skryptów przy 9000 w oknie kroczącym 24 h). Dnia 04.11.2026 zużycie było ok. 8200 przy partii 10 plywood: kolejne partie planować po zwolnieniu okna.
+**Do zrobienia:** (1) kontrola próbki partii 15 plywood przez właścicielkę (korekta zakończona, 745 urn); (2) 2 oferty "Big Urn for Horse" (1381486535, 1381486029); (3) ok. 40 innych typów produktów (zgodnie z `Audyt_Etsy_ArtDog.xlsx`, od najmniej sprzedających się); (4) ok. 200 nowych ofert jako szkice; (5) ręcznie właścicielka: SKU, GPSR, shopping basket summary, publikacja nowych ofert; (6) kontrola próbek ostatnich partii przez właścicielkę.
+**Licznik API:** `python3 -I scripts/api_licznik.py` (stop skryptów przy 9000 w oknie kroczącym 24 h). Dnia 04.11.2026 po partii 10 plywood zużycie dochodziło do ok. 8600 (partie 13-15 zapisane po zwolnieniu okna).
 **Znane błędy z tej sesji (naprawione):** film 1 oferty testowej 674828881 był psi (stałe w skrypcie), poprawione po ręcznym usunięciu filmów przez właścicielkę; analiza "plakietki same" zaczęta błędnie od tablic (naprawione); weryfikacja alt textów z `&#39;` (porównanie po `html.unescape`).
 
 
