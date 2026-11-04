@@ -97,3 +97,11 @@
 2026-11-04T09:13:38 POST /v3/application/shops/19255336/listings/674828881/videos
 2026-11-04T09:13:50 POST /v3/application/shops/19255336/listings/674828881/videos
 2026-11-04T09:13:59 GET /v3/application/listings/674828881
+2026-11-04T09:18:16 GET /v3/application/seller-taxonomy/nodes/1428/properties
+2026-11-04T09:18:38 GET /v3/application/listings/674828881
+2026-11-04T09:18:39 GET /v3/application/shops/19255336/listings/674828881/properties
+2026-11-04T09:18:39 GET /v3/application/listings/674828881/inventory
+2026-11-04T09:18:39 PATCH /v3/application/shops/19255336/listings/674828881
+2026-11-04T09:18:40 PUT /v3/application/shops/19255336/listings/674828881/properties/148789511893
+2026-11-04T09:18:41 GET /v3/application/listings/674828881
+2026-11-04T09:18:41 GET /v3/application/shops/19255336/listings/674828881/properties

@@ -40,7 +40,8 @@ PHOTO7 = ROOT / "media" / "urny_graphics" / "original_kot.jpg"
 ALT7 = ("Unedited photo of the front of the wooden urn with a paw-shaped plaque with a quote, an oval ceramic plaque with a printed photo of a cat, "
         "and a nameplate with a name and dates.")
 VIDEO1 = ROOT / "video" / "video-urn-graphics-cats-anita.mp4"
-MAT_VALUES = U.MATERIAL_VALUES  # Ceramic, Brass, Pine, Birch (zatwierdzone 30.10.2026)
+MAT_VALUES = ("83,68,203,1059,5199", "Ceramic,Brass,Pine,Birch,Plywood")  # Ceramic, Brass, Pine, Birch + Plywood (dodane 04.11.2026)
+MATERIALS_TEXT = "wood,plywood,brass handles,ceramic plate"  # + plywood (04.11.2026)
 NAME_FIX = {"Norwegian Forest": "Norwegian Forest Cat", "Li Hua Dragon Li": "Dragon Li"}  # potwierdzone 04.11.2026
 OWNER_FEATURE = {}
 RID_OVERRIDE = {}
@@ -416,7 +417,7 @@ def steps_for(c):
     en_, tr, lid = c["en"], c["trans"], c["lid"]
     b = f"/v3/application/shops/{B.SHOP_ID}/listings/{lid}"
     s = [{"id": "listing", "method": "PATCH", "path": b, "kind": "form",
-          "fields": {"title": en_["title"], "description": en_["description"], "tags": ",".join(en_["tags"])}},  # materiały tekstowe bez zmian
+          "fields": {"title": en_["title"], "description": en_["description"], "tags": ",".join(en_["tags"]), "materials": MATERIALS_TEXT}},
          {"id": "wlasciwosc_materials", "method": "PUT", "path": f"{b}/properties/{B.MATERIAL_PROPERTY}", "kind": "form",
           "fields": {"value_ids": MAT_VALUES[0], "values": MAT_VALUES[1]}},
          {"id": "how_its_made", "method": "PATCH", "path": b, "kind": "form", "fields": {"who_made": "collective", "when_made": "made_to_order", "is_supply": "false"}},
@@ -517,7 +518,7 @@ def apply_batch(n):
                    "kolejnosc_ok": [im["listing_image_id"] for im in imgs[:6]] == [ids_before[k] for k in range(1, 7)] if len(imgs) >= 6 else False,
                    "wideo": len(after.get("videos", [])), "pytan": len(after["personalization"]["personalization_questions"]),
                    "tlumaczen": sum(1 for k, v in after["translations"].items() if v and k != "en-US"), "who_made": after["who_made"],
-                   "materialy_ok": sorted(after["materials"]) == sorted(live["materials"]), "materials_prop": sorted(mat.get("values", [])), "proba": attempt + 1}
+                   "materialy_ok": sorted(after["materials"]) == sorted(MATERIALS_TEXT.split(",")), "materials_prop": sorted(mat.get("values", [])), "proba": attempt + 1}
             good = chk["cena_ok"] and chk["stan_ok"] and chk["status_ok"] and chk["zdjec"] == 7 and chk["alt_ok"] and chk["kolejnosc_ok"] and chk["wideo"] == 2 \
                 and chk["pytan"] == 5 and chk["tlumaczen"] == 8 and chk["who_made"] == "collective" and chk["materialy_ok"] and chk["materials_prop"] == sorted(MAT_VALUES[1].split(","))
             if good:
