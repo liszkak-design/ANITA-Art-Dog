@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Film o personalizacji urny z płytką ceramiczną (portret rasy / własne zdjęcie, tabliczka imienna, cytat). 1920x1080, 30 kl./s, bez dźwięku, 15 s.
 Zdjęcia: assets_urn_ceramic/<gatunek>/<gatunek>-1.jpg (portret rasy), -2 (zdjęcie oryginalne), -3 (bez tła).
-Użycie: python3 -I render_urn_ceramic.py dog WYJŚCIE.mp4 [--frames-dir KATALOG --at T [T ...]]
+Użycie: python3 -I render_urn_ceramic.py dog|cat WYJŚCIE.mp4 [--frames-dir KATALOG --at T [T ...]]
 """
 import subprocess
 import sys
@@ -15,10 +15,13 @@ import render as R  # noqa: E402
 
 W, H, FPS = R.W, R.H, R.FPS
 FADE = R.FADE
-SPECIES = "dog"
+SPECIES = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in ("dog", "cat") else "dog"
+# breeds on the end card, camera centres: name plate (x, y) and quote plaque (x, y)
+CFG = {"dog": dict(breeds="100", nd=(1411, 1521), quote=(665, 1200)),
+       "cat": dict(breeds="45", nd=(1396, 1525), quote=(670, 1145))}[SPECIES]
 ASSETS = HERE / "assets_urn_ceramic" / SPECIES
 S = [0.0, 2.0, 5.8, 12.9, 15.0]
-BREEDS = "100"
+BREEDS = CFG["breeds"]
 ease = R.ease
 
 
@@ -72,7 +75,7 @@ def _head():
     R.draw_runs(d, 150, 110, [("CHOOSE YOUR PORTRAIT", R.opensans(26, 600))], R.GOLD, spacing=4)
     R.draw_runs(d, 150, 160, [("Breed portrait, ", R.playfair(76)), ("or your own photo", R.playfair(76, True))], R.DARK)
     d.rectangle([150, 270, 240, 272], fill=R.GOLD)
-    d.text((150, 292), "Standard: 1 of 100 breed portraits · your photo is optional", font=R.opensans(28, 400), fill=R.blend(R.DARK, 0.85))
+    d.text((150, 292), f"Standard: 1 of {BREEDS} breed portraits · your photo is optional", font=R.opensans(28, 400), fill=R.blend(R.DARK, 0.85))
     return head
 
 
@@ -107,7 +110,7 @@ def scene2(t):
 URN = load(1)  # urn with the geometric breed portrait
 FW, FH = 840, 560
 FCX, FCY = 90 + FW // 2, H // 2
-KEYS = [(0.0, 1000, 1000, 2000), (0.9, 1411, 1521, 760), (3.2, 1411, 1521, 760), (4.2, 665, 1200, 1120), (7.0, 665, 1200, 1120)]
+KEYS = [(0.0, 1000, 1000, 2000), (0.9, *CFG["nd"], 760), (3.2, *CFG["nd"], 760), (4.2, *CFG["quote"], 1120), (7.0, *CFG["quote"], 1120)]
 
 
 def cam(t):
@@ -127,7 +130,7 @@ def view(t):
     return URN.resize((FW, FH), Image.LANCZOS, box=(cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2)).convert("RGBA")
 
 
-TXB = {"nd": R.text_block("NAME AND DATES", ["Your dog's", "*name and dates*"], "Engraved on the nameplate", 1010, H // 2, max_w=820, title_size=96),
+TXB = {"nd": R.text_block("NAME AND DATES", [f"Your {SPECIES}'s", "*name and dates*"], "Engraved on the nameplate", 1010, H // 2, max_w=820, title_size=96),
        "quote": R.text_block("YOUR OWN WORDS", ["Your own quote,", "*if you wish*"], "Changed on request", 1010, H // 2, max_w=820, title_size=96)}
 
 
