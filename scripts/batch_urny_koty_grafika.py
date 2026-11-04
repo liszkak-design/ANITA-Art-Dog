@@ -39,7 +39,7 @@ CACHE = B.CACHE.parent / "urny_koty_grafika"
 PHOTO7 = ROOT / "media" / "urny_graphics" / "original_kot.jpg"
 ALT7 = ("Unedited photo of the front of the wooden urn with a paw-shaped plaque with a quote, an oval ceramic plaque with a printed photo of a cat, "
         "and a nameplate with a name and dates.")
-VIDEO1 = ROOT / "video" / "video-urn-graphics-dogs-anita.mp4"
+VIDEO1 = ROOT / "video" / "video-urn-graphics-cats-anita.mp4"
 MAT_VALUES = U.MATERIAL_VALUES  # Ceramic, Brass, Pine, Birch (zatwierdzone 30.10.2026)
 NAME_FIX = {"Norwegian Forest": "Norwegian Forest Cat", "Li Hua Dragon Li": "Dragon Li"}  # potwierdzone 04.11.2026
 OWNER_FEATURE = {}
@@ -391,7 +391,7 @@ def plan(n, size):
     dry = []
     for c in batch:
         v2 = BASE_V + urllib.parse.quote(c["folder"]["folder"]) + "/" + urllib.parse.quote(c["film2"])
-        dry.append({"listing_id": c["lid"], "rasa": c["breed"], "ean": c["folder"]["ean"], "film2": v2, "film2_nazwa": c["film2"],
+        dry.append({"listing_id": c["lid"], "rasa": c["breed"], "ean": c["folder"]["ean"], "film1_nazwa": VIDEO1.name, "film2": v2, "film2_nazwa": c["film2"],
                     "images_before": {str(r[0]): r[1] for r in c["st"]["images"]}, "tytul_przed": c["st"]["title"], "en": c["en"], "tlumaczenia": c["trans"]})
     (ROOT / "plans" / f"partia_urny_koty_grafika_{n:03d}_dryrun.json").write_text(json.dumps(dry, ensure_ascii=False, indent=1))
     print(f"partia {n}: {len(batch)} ofert, języki {sorted({k for c in batch for k in c['trans']})}")
